@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "chapters/*.qmd"
+    - "!downloads/"
+  resources:
+    - "downloads/"
 
 website:
   title: "Dynamic Corporate Transformation"

@@ -2,9 +2,14 @@
 """Generate the dct-course Quarto site from data/chapters.json."""
 import json, os, textwrap
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
-SITE = os.path.join(ROOT, 'dct-course')
-CH = json.load(open(os.path.join(ROOT, 'data', 'chapters.json')))
+# Layout-aware paths: run from tools/ inside the repo (SITE = repo root),
+# or from the authoring sandbox (SITE = ./dct-course).
+_HERE = os.path.dirname(os.path.abspath(__file__))
+if os.path.basename(_HERE) == 'tools':
+    SITE = os.path.dirname(_HERE)
+else:
+    SITE = os.path.join(_HERE, 'dct-course')
+CH = json.load(open(os.path.join(SITE, 'data', 'chapters.json')))
 
 # ---------------- 14-week allocation (locked with author) ----------------
 WEEKS = [
@@ -30,6 +35,14 @@ def chap(v, c):
 
 def slug(v, c):
     return f"v{v}ch{c:02d}"
+
+
+def dl(v, n, suffix):
+    """Link a download if the file exists in SITE/downloads, else mark forthcoming."""
+    fname = f"DCT_V{v}_Ch{n:02d}_{suffix}"
+    if os.path.exists(os.path.join(SITE, 'downloads', fname)):
+        return f"[`{fname}`](../downloads/{fname})"
+    return f"`{fname}` *(forthcoming)*"
 
 GROUP_NAMES = {'A': 'Part A — Concept checks', 'B': 'Part B — Mathematical exercises',
                'C': 'Part C — Computational exercises', 'D': 'Part D — Enterprise applications'}
@@ -104,9 +117,9 @@ advanced track. **Full solutions appear in the Instructor's Manual, Chapter {n}.
 
 | Resource | File | Seed |
 |---|---|---|
-| Lecture deck | `DCT_V{v}_Ch{n:02d}_Slides.pptx` *(forthcoming)* | — |
-| Python notebook | `DCT_V{v}_Ch{n:02d}_Lab.ipynb` *(forthcoming)* | `{seed(v,n)}` |
-| Excel workbook | `DCT_V{v}_Ch{n:02d}_Lab.xlsx` *(forthcoming)* | `{seed(v,n)}` |
+| Lecture deck | {dl(v,n,'Slides.pptx')} | — |
+| Python notebook | {dl(v,n,'Lab.ipynb')} | `{seed(v,n)}` |
+| Excel workbook | {dl(v,n,'Lab.xlsx')} | `{seed(v,n)}` |
 
 ::: {{.callout-note appearance="simple"}}
 All three companions consume the same seeded engine (`{seed(v,n)}`), so their numbers
@@ -557,6 +570,12 @@ def sidebar_entries(vol):
 qyml = f"""project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "chapters/*.qmd"
+    - "!downloads/"
+  resources:
+    - "downloads/"
 
 website:
   title: "Dynamic Corporate Transformation"
