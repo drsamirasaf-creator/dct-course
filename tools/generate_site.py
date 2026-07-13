@@ -636,5 +636,38 @@ format:
 """
 open(os.path.join(SITE, '_quarto.yml'), 'w').write(qyml)
 
+# ---------------- asset completeness report ----------------
 print("Site generated:", SITE)
+print()
+print("ASSET COMPLETENESS " + "="*47)
+print(f"{'chapter':10s} {'deck':>6s} {'ipynb':>6s} {'xlsx':>6s} {'labpage':>8s}")
+missing = 0
+for c in CH:
+    v, n = c['vol'], c['ch']
+    marks = []
+    for suffix in ('Slides.pptx', 'Lab.ipynb', 'Lab.xlsx'):
+        ok = os.path.exists(os.path.join(SITE, 'downloads', f"DCT_V{v}_Ch{n:02d}_{suffix}"))
+        marks.append('ok' if ok else '--')
+        missing += (not ok)
+    lab = os.path.exists(os.path.join(SITE, 'labs', f"v{v}ch{n:02d}_laboratory.ipynb"))
+    marks.append('ok' if lab else '--')
+    missing += (not lab)
+    if any(m == 'ok' for m in marks) or (v, n) <= (1, 8):
+        print(f"V{v}.Ch{n:02d}    {marks[0]:>6s} {marks[1]:>6s} {marks[2]:>6s} {marks[3]:>8s}")
+released = [c for c in CH if any(os.path.exists(os.path.join(SITE, 'downloads', f"DCT_V{c['vol']}_Ch{c['ch']:02d}_{s}")) for s in ('Slides.pptx','Lab.ipynb','Lab.xlsx'))]
+gaps = []
+for c in released:
+    v, n = c['vol'], c['ch']
+    for suffix in ('Slides.pptx', 'Lab.ipynb', 'Lab.xlsx'):
+        if not os.path.exists(os.path.join(SITE, 'downloads', f"DCT_V{v}_Ch{n:02d}_{suffix}")):
+            gaps.append(f"V{v}.Ch{n:02d} missing {suffix}")
+    if not os.path.exists(os.path.join(SITE, 'labs', f"v{v}ch{n:02d}_laboratory.ipynb")):
+        gaps.append(f"V{v}.Ch{n:02d} missing labs notebook")
+if gaps:
+    print()
+    print("!!! GAPS IN RELEASED CHAPTERS " + "!"*36)
+    for g in gaps: print("   ", g)
+    print("Fix these before publishing.")
+else:
+    print("No gaps in released chapters.")
 print("qmd pages:", sum(len(files) for _,_,files in os.walk(SITE) if True))
