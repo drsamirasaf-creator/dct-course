@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 1 · Introduction to Dynamic Corporate Transformation – Dynamic Corporate Transformation</title>
+<title>Chapter 5 · Enterprise State Representation – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -340,7 +340,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Chapter 1 · Introduction to Dynamic Corporate Transformation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch05.html">Chapter 5 · Enterprise State Representation</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -363,7 +363,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch01.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/v1ch01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapter 1 · Introduction to Dynamic Corporate Transformation</span></a>
   </div>
 </li>
@@ -387,7 +387,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch05.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/v1ch05.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Chapter 5 · Enterprise State Representation</span></a>
   </div>
 </li>
@@ -588,10 +588,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Chapter 1 · Introduction to Dynamic Corporate Transformation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch05.html">Chapter 5 · Enterprise State Representation</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 1 · Introduction to Dynamic Corporate Transformation</h1>
-<p class="subtitle lead">Volume I · Foundations · Week 1</p>
+<h1 class="title">Chapter 5 · Enterprise State Representation</h1>
+<p class="subtitle lead">Volume I · Mathematical Representation · Week 3</p>
 </div>
 
 
@@ -609,23 +609,27 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume I, Chapter 1</strong> · Taught in <a href="../schedule.html#week-1">Week 1</a> · Lab seed <code>26101</code></p>
+<p><strong>Volume I, Chapter 5</strong> · Taught in <a href="../schedule.html#week-3">Week 3</a> · Lab seed <code>26105</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Explain the motivation for Dynamic Corporate Transformation: why enterprise transformation, as practiced and as studied, lacks a unified mathematical representation, and what such a representation must provide.</li><li>Distinguish Dynamic Corporate Transformation from the management, finance, systems, and engineering frameworks it draws upon, identifying for each what it represents well and what it does not represent at all.</li><li>Describe the educational architecture of the textbook: the progression from concepts to definitions, from definitions to mathematical structures, from structures to architectures, and from architectures to the General Enterprise Optimization Problem.</li><li>Explain the relationship between Volume I, which constructs the mathematical framework, and Volume II, which develops the optimization, computational, and applied methods that solve transformation problems within it.</li><li>Describe the integrated learning ecosystem---textbook, Instructor's Manual, course website, AXIOM laboratory, and presentation library---and locate the AXIOM laboratories within the pedagogical sequence of each chapter.</li></ol>
+<ol class="los-list"><li>Define an enterprise state mathematically, including the canonical minimal state as the enterprise's future-relevant memory (Theorem (see book)).</li><li>Construct enterprise state vectors with declared variables, units, types, and measurement conventions.</li><li>Differentiate state variables from enterprise parameters, and explain why the boundary between them is horizon-relative.</li><li>Represent enterprises within multidimensional state spaces and read their geometry: admissibility, boundaries, and binding constraints.</li><li>Interpret enterprise trajectories, in continuous and discrete time, including their sampling relationship and concatenation algebra.</li><li>Identify feasible and infeasible enterprise states, and compute feasible regions as constraint intersections.</li><li>Explain enterprise equilibrium, classify its stability informally, and state existence conditions for equilibria.</li><li>Define enterprise configuration mathematically and translate configuration questions into vector-space geometry.</li><li>Analyze enterprise state transitions, including the flow map that links continuous evolution to discrete epochs.</li><li>Prepare enterprise representations for the transformation operator theory of Chapter 6.</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>The Transformation Question</li>
-<li>The Historical Development of Enterprise Analysis</li>
-<li>Limitations of Existing Frameworks</li>
-<li>The Vision and Scope of Dynamic Corporate Transformation</li>
-<li>The Structure of the Two-Volume Series</li>
-<li>The DCT Educational Ecosystem</li>
+<li>Motivation for Enterprise State Representation</li>
+<li>Enterprise State Concepts and the Minimal State</li>
+<li>Enterprise State Variables</li>
+<li>Enterprise State Spaces and Configurations</li>
+<li>Enterprise Trajectories and Transitions</li>
+<li>Equilibrium States</li>
+<li>Feasible State Regions</li>
+<li>State Dimension and Visualization</li>
+<li>Worked Examples</li>
+<li>Preparation for Enterprise Transformation</li>
 <li>Chapter Summary</li>
 <li>Exercises</li>
 <li>Notes and Sources</li>
@@ -633,42 +637,49 @@ window.Quarto = {
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-01">AXIOM-01 →</a> · <a href="https://axiom-webapp.example/modules/axiom-16">AXIOM-16 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-01">AXIOM-01 →</a> · <a href="https://axiom-webapp.example/modules/axiom-05">AXIOM-05 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>16 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 1.</strong></p>
+<p>18 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 5.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 1.1</strong> — State, in your own words and without consulting the text, the definitions of enterprise system, enterprise state, enterprise transformation, and enterprise architecture.</li>
-<li><strong>Exercise 1.2</strong> — For each of the six historical streams of Section (see book), name (a) the ingredient it contributes to DCT and (b) the attribute of Table (see book) it lacks, citing one representative work for each stream.</li>
-<li><strong>Exercise 1.3</strong> — Match each of Limitations L1–L5 to the chapters of Volume I that remove it, and explain in one sentence per limitation why the matched chapters are the right ones.</li>
-<li><strong>Exercise 1.4</strong> — Definition (see book) requires transformation to be <em>deliberate</em>.</li>
-<li><strong>Exercise 1.5</strong> — Without consulting the text, list the six canonical architectures with their symbols and their fundamental questions.</li>
-<li><strong>Exercise 1.6</strong> — Proposition (see book) has two premises.</li>
-<li><strong>Exercise 1.7</strong> — In the proof of Proposition (see book), identify precisely where the hypothesis <span class="math inline">\(n \ge 2\)</span> is used, and where the hypothesis that <span class="math inline">\(\Xc\)</span> contains a nonempty open set is used.</li>
-<li><strong>Exercise 1.8 ★</strong> — &nbsp;Strengthen Proposition (see book) as follows: show that for every continuous <span class="math inline">\(v: \Xc \to \R\)</span> (with <span class="math inline">\(\Xc\)</span> as hypothesized) and every value <span class="math inline">\(c\)</span> in the interior of the range of <span class="math inline">\(v\)</span> restricted to an open ball, the level set <span class="math inline">\(\{\x : v(\x) = c\}\)</span> meeting that ball is infinite.</li>
+<li><strong>Exercise 5.1</strong> — Using the touchstone “the state is the memory the future requires,” argue for or against state membership of each of the following, in two or three sentences each: (a) cumulative historical R&amp;D spend; (b) the current patent portfolio; (c) last year’s reported earnings; (d) the CEO’s remaining contract term; (e) a concluded litigation’s outcome.</li>
+<li><strong>Exercise 5.2</strong> — Give two quantities from your own enterprise that are parameters at a one-year horizon and state variables at a ten-year horizon, and one quantity for which the promotion has <em>already happened</em> in your organization’s planning practice.</li>
+<li><strong>Exercise 5.3</strong> — Explain, citing Theorem (see book)(iii) and Example (see book), why a covenant model written with <span class="math inline">\(x_2 &lt; 4.5\)</span> instead of <span class="math inline">\(x_2 \le 4.5\)</span> is not a harmless stylistic choice.</li>
+<li><strong>Exercise 5.4</strong> — Distinguish an enterprise <em>equilibrium</em> from an enterprise <em>target</em>, and give one example where they coincide and one where a target is deliberately set at a non-equilibrium state.</li>
+<li><strong>Exercise 5.5</strong> — In your own words: what exactly does Theorem (see book) make non-arbitrary about “the state,” and what does it leave as a modeling commitment?</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 1.9</strong> — Select an enterprise you know well (employer, client, or a public company with adequate disclosure).</li>
-<li><strong>Exercise 1.10</strong> — For the enterprise of Exercise (see book), specify two genuinely different transformation programs and sketch, coordinate by coordinate, the qualitative trajectories each induces over a three-year horizon, in the manner of Examples (see book)–(see book).</li>
-<li><strong>Exercise 1.11</strong> — Using Meridian’s state (see book), construct two explicit distinct states <span class="math inline">\(\x, \x' \in \R^{8}\)</span> and a plausible weighted scalar metric <span class="math inline">\(v(\x) = \mathbf{w}^{\!\top}\x\)</span> such that <span class="math inline">\(v(\x) = v(\x')\)</span> while <span class="math inline">\(\x\)</span> and <span class="math inline">\(\x'\)</span> differ materially in transformation-relevant ways; state which feasible transformations differ between them.</li>
-<li><strong>Exercise 1.12</strong> — Example (see book) noted that restructuring moves the state discontinuously.</li>
-<li><strong>Exercise 1.13 ★</strong> — &nbsp;Example (see book) argued the turnaround could be locally improving yet globally inferior because it degrades Meridian’s <em>transformation capacity</em>.</li>
+<li><strong>Exercise 5.6</strong> — Prove the unproved refinements of Proposition (see book): that an arbitrary (possibly infinite) family of convex sets has convex intersection, and that the binding set <span class="math inline">\(\mathcal{B}(\x)\)</span> is upper hemicontinuous in the following elementary sense: if <span class="math inline">\(g_j(\x) &lt; 0\)</span>, then <span class="math inline">\(j \notin \mathcal{B}(\x')\)</span> for all <span class="math inline">\(\x'\)</span> sufficiently near <span class="math inline">\(\x\)</span>.</li>
+<li><strong>Exercise 5.7</strong> — Prove that concatenation of discrete trajectories is associative where defined (Proposition (see book)(ii)), and show that the set of trajectories with concatenation forms a category whose objects are states—identifying identities and composition.</li>
+<li><strong>Exercise 5.8 ★</strong> — &nbsp;Carry out the construction of Theorem (see book) on a miniature behavior: outputs in <span class="math inline">\(\{0, 1\}\)</span>, decisions in <span class="math inline">\(\{a, b\}\)</span>, no environment, with <span class="math inline">\(\beta\)</span> defined by “output 1 exactly when the history contains at least two <span class="math inline">\(b\)</span>’s.</li>
+<li><strong>Exercise 5.9 ★</strong> — &nbsp;Complete the continuation theory of Theorem (see book)(ii): show that the local solution extends to a maximal interval, and that if the maximal interval is bounded, the solution leaves every compact subset of the Lipschitz region.</li>
+<li><strong>Exercise 5.10</strong> — Derive from (see book) the <em>a posteriori</em> bound <span class="math inline">\(\norm{\x_k - \x^{\ast}} \le \frac{L}{1 - L} \norm{\x_k - \x_{k-1}}\)</span>, and explain its practical advantage over the a priori bound in monitoring a running transformation program.</li>
+<li><strong>Exercise 5.11</strong> — Construct a continuous map of <span class="math inline">\([0, 1]^2\)</span> into itself with exactly three equilibria, verify the hypotheses of Theorem (see book)(ii), and classify each equilibrium’s stability by linearization at the fixed points (using the spectral test of Table (see book)).</li>
+<li><strong>Exercise 5.12</strong> — Prove that the sampled map <span class="math inline">\(\Phi_\Delta\)</span> of Proposition (see book)(iii) inherits the Lipschitz property from <span class="math inline">\(f\)</span> on a compact invariant region, with constant at most <span class="math inline">\(e^{L\Delta}\)</span>, using Gr"onwall’s inequality (state and prove the inequality’s elementary integral form as part of your answer).</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 1.14</strong> — A skeptical colleague objects: “Enterprises are made of people; representing one as a vector is category error, and optimizing the vector will optimize the representation, not the enterprise.</li>
-<li><strong>Exercise 1.15</strong> — From your own professional or academic home discipline, identify the single concept most valuable to a theory of enterprise transformation that this chapter did <em>not</em> mention, and argue in two paragraphs where in the six-architecture scheme it belongs.</li>
-<li><strong>Exercise 1.16</strong> — After completing AXIOM-01: evaluate the claim of Section (see book) that computational laboratories supply “what derivation cannot.</li>
+<li><strong>Exercise 5.13</strong> — (With AXIOM-05 or the Chapter 5 notebook.</li>
+<li><strong>Exercise 5.14</strong> — (With AXIOM-05 or the Chapter 5 notebook.</li>
+<li><strong>Exercise 5.15 ★</strong> — &nbsp;(With the Chapter 5 notebook.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part D — Enterprise applications
+</h4>
+<ul>
+<li><strong>Exercise 5.16</strong> — Produce the Table (see book)-style declaration for your Exercise 4.</li>
+<li><strong>Exercise 5.17</strong> — Identify the strongest candidate for an operating equilibrium of your enterprise (or a unit of it), state the balancing mechanisms that would make its period map contractive, and estimate—from one observed period-to-period change and a guessed <span class="math inline">\(L\)</span>—the convergence budget (see book) to within tolerance of steady state.</li>
+<li><strong>Exercise 5.18</strong> — Write a one-page memo in the voice of Example (see book)’s CFO: name the wall your growth trajectory will meet first, the constraint type it instantiates (Table (see book)), the regime handover you must design for the boundary, and the validity horizon of the current expansive model per Theorem (see book)’s Scope and Limits.</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
@@ -684,18 +695,18 @@ Part C — Computational exercises
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V1_Ch01_Slides.pptx"><code>DCT_V1_Ch01_Slides.pptx</code></a></td>
+<td><code>DCT_V1_Ch05_Slides.pptx</code> <em>(forthcoming)</em></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>Python notebook</td>
-<td><a href="../downloads/DCT_V1_Ch01_Lab.ipynb"><code>DCT_V1_Ch01_Lab.ipynb</code></a></td>
-<td><code>26101</code></td>
+<td><code>DCT_V1_Ch05_Lab.ipynb</code> <em>(forthcoming)</em></td>
+<td><code>26105</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V1_Ch01_Lab.xlsx"><code>DCT_V1_Ch01_Lab.xlsx</code></a></td>
-<td><code>26101</code></td>
+<td><code>DCT_V1_Ch05_Lab.xlsx</code> <em>(forthcoming)</em></td>
+<td><code>26105</code></td>
 </tr>
 </tbody>
 </table>
@@ -705,7 +716,7 @@ Part C — Computational exercises
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26101</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26105</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>

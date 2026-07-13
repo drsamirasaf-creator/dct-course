@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 1 · Introduction to Dynamic Corporate Transformation – Dynamic Corporate Transformation</title>
+<title>Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -340,7 +340,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Chapter 1 · Introduction to Dynamic Corporate Transformation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch12.html">Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -363,7 +363,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch01.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/v1ch01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapter 1 · Introduction to Dynamic Corporate Transformation</span></a>
   </div>
 </li>
@@ -429,7 +429,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch12.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/v1ch12.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture</span></a>
   </div>
 </li>
@@ -588,10 +588,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Chapter 1 · Introduction to Dynamic Corporate Transformation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch12.html">Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 1 · Introduction to Dynamic Corporate Transformation</h1>
-<p class="subtitle lead">Volume I · Foundations · Week 1</p>
+<h1 class="title">Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture</h1>
+<p class="subtitle lead">Volume I · Enterprise Architectures · Week 6</p>
 </div>
 
 
@@ -609,23 +609,27 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume I, Chapter 1</strong> · Taught in <a href="../schedule.html#week-1">Week 1</a> · Lab seed <code>26101</code></p>
+<p><strong>Volume I, Chapter 12</strong> · Taught in <a href="../schedule.html#week-6">Week 6</a> · Lab seed <code>26112</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Explain the motivation for Dynamic Corporate Transformation: why enterprise transformation, as practiced and as studied, lacks a unified mathematical representation, and what such a representation must provide.</li><li>Distinguish Dynamic Corporate Transformation from the management, finance, systems, and engineering frameworks it draws upon, identifying for each what it represents well and what it does not represent at all.</li><li>Describe the educational architecture of the textbook: the progression from concepts to definitions, from definitions to mathematical structures, from structures to architectures, and from architectures to the General Enterprise Optimization Problem.</li><li>Explain the relationship between Volume I, which constructs the mathematical framework, and Volume II, which develops the optimization, computational, and applied methods that solve transformation problems within it.</li><li>Describe the integrated learning ecosystem---textbook, Instructor's Manual, course website, AXIOM laboratory, and presentation library---and locate the AXIOM laboratories within the pedagogical sequence of each chapter.</li></ol>
+<ol class="los-list"><li>Define enterprise risk mathematically: the exposure of declared objectives to the state distribution, evaluated by declared risk functionals.</li><li>Distinguish risk, uncertainty, robustness, and resilience as four different mathematical objects answering four different questions.</li><li>Construct enterprise risk vectors with declared loss channels and architectural supports.</li><li>Model enterprise vulnerabilities as damage maps on the architecture.</li><li>Analyze resilience and recoverability through basin geometry and contraction rates, including recovery to the volatility band rather than to a point.</li><li>Evaluate enterprise robustness: worst-case guarantees, robustness radii, and the price of the worst case.</li><li>Measure enterprise survivability: survival functions, hazards, and the race between shock arrival and recovery.</li><li>Understand systemic enterprise risk: gain-weighted propagation, cascade thresholds, and common-shock dependence.</li><li>Integrate uncertainty into architectural analysis: stress equilibria, reverse stress tests, and the audit framework.</li><li>Prepare the risk architecture for unification in UETA and optimization under uncertainty in Volume II.</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>The Transformation Question</li>
-<li>The Historical Development of Enterprise Analysis</li>
-<li>Limitations of Existing Frameworks</li>
-<li>The Vision and Scope of Dynamic Corporate Transformation</li>
-<li>The Structure of the Two-Volume Series</li>
-<li>The DCT Educational Ecosystem</li>
+<li>Motivation for the Risk Architecture</li>
+<li>Risk, Uncertainty, and the Architecture</li>
+<li>Shocks, Stress, and Vulnerability</li>
+<li>Enterprise Robustness</li>
+<li>Enterprise Resilience and Recoverability</li>
+<li>Enterprise Survivability</li>
+<li>Risk Propagation and Systemic Risk</li>
+<li>The Risk Architecture Assembled</li>
+<li>Worked Examples</li>
+<li>Preparation for the Unified Architecture</li>
 <li>Chapter Summary</li>
 <li>Exercises</li>
 <li>Notes and Sources</li>
@@ -633,42 +637,50 @@ window.Quarto = {
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-01">AXIOM-01 →</a> · <a href="https://axiom-webapp.example/modules/axiom-16">AXIOM-16 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-12">AXIOM-12 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>16 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 1.</strong></p>
+<p>19 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 12.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 1.1</strong> — State, in your own words and without consulting the text, the definitions of enterprise system, enterprise state, enterprise transformation, and enterprise architecture.</li>
-<li><strong>Exercise 1.2</strong> — For each of the six historical streams of Section (see book), name (a) the ingredient it contributes to DCT and (b) the attribute of Table (see book) it lacks, citing one representative work for each stream.</li>
-<li><strong>Exercise 1.3</strong> — Match each of Limitations L1–L5 to the chapters of Volume I that remove it, and explain in one sentence per limitation why the matched chapters are the right ones.</li>
-<li><strong>Exercise 1.4</strong> — Definition (see book) requires transformation to be <em>deliberate</em>.</li>
-<li><strong>Exercise 1.5</strong> — Without consulting the text, list the six canonical architectures with their symbols and their fundamental questions.</li>
-<li><strong>Exercise 1.6</strong> — Proposition (see book) has two premises.</li>
-<li><strong>Exercise 1.7</strong> — In the proof of Proposition (see book), identify precisely where the hypothesis <span class="math inline">\(n \ge 2\)</span> is used, and where the hypothesis that <span class="math inline">\(\Xc\)</span> contains a nonempty open set is used.</li>
-<li><strong>Exercise 1.8 ★</strong> — &nbsp;Strengthen Proposition (see book) as follows: show that for every continuous <span class="math inline">\(v: \Xc \to \R\)</span> (with <span class="math inline">\(\Xc\)</span> as hypothesized) and every value <span class="math inline">\(c\)</span> in the interior of the range of <span class="math inline">\(v\)</span> restricted to an open ball, the level set <span class="math inline">\(\{\x : v(\x) = c\}\)</span> meeting that ball is infinite.</li>
+<li><strong>Exercise 12.1</strong> — Using Table (see book), classify each of the following statements by which member of the quartet it invokes, rewriting any that conflate two: “we can absorb a $20”there is a $5 breach at the identity provider would take out three systems”; “we were back inside plan range within four quarters.</li>
+<li><strong>Exercise 12.2</strong> — Explain the Knightian split (Definition (see book)) in two sentences, give one enterprise channel you would treat with a declared law and one with only a set, and justify each choice.</li>
+<li><strong>Exercise 12.3</strong> — “Choosing between VaR and expected shortfall is a technical detail for the risk team.</li>
+<li><strong>Exercise 12.4</strong> — A post-crisis report tracks distance to the pre-shock operating point and concludes “recovery incomplete” eight quarters running.</li>
+<li><strong>Exercise 12.5</strong> — Explain, without formulas, the two distinct reasons systemic risk exceeds the sum of marginal risks (Theorem (see book)(iv)), with one enterprise instance of each.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 1.9</strong> — Select an enterprise you know well (employer, client, or a public company with adequate disclosure).</li>
-<li><strong>Exercise 1.10</strong> — For the enterprise of Exercise (see book), specify two genuinely different transformation programs and sketch, coordinate by coordinate, the qualitative trajectories each induces over a three-year horizon, in the manner of Examples (see book)–(see book).</li>
-<li><strong>Exercise 1.11</strong> — Using Meridian’s state (see book), construct two explicit distinct states <span class="math inline">\(\x, \x' \in \R^{8}\)</span> and a plausible weighted scalar metric <span class="math inline">\(v(\x) = \mathbf{w}^{\!\top}\x\)</span> such that <span class="math inline">\(v(\x) = v(\x')\)</span> while <span class="math inline">\(\x\)</span> and <span class="math inline">\(\x'\)</span> differ materially in transformation-relevant ways; state which feasible transformations differ between them.</li>
-<li><strong>Exercise 1.12</strong> — Example (see book) noted that restructuring moves the state discontinuously.</li>
-<li><strong>Exercise 1.13 ★</strong> — &nbsp;Example (see book) argued the turnaround could be locally improving yet globally inferior because it degrades Meridian’s <em>transformation capacity</em>.</li>
+<li><strong>Exercise 12.6</strong> — Construct your own VaR subadditivity failure at the $99 choose loss probabilities and sizes for two independent exposures so that each has $_{0.</li>
+<li><strong>Exercise 12.7</strong> — Prove the minimax inequality of Theorem (see book)(ii) in full, and construct a <span class="math inline">\(2 \times 2\)</span> decision–disturbance table with a strict gap; interpret the gap as the value of foresight about the disturbance.</li>
+<li><strong>Exercise 12.8</strong> — Derive the recovery clock (see book) from the contraction bound, including the ceiling; then derive the first-order sensitivity <span class="math inline">\(\partial k_{\varepsilon}/\partial \bar\rho \approx k_{\varepsilon}/(1 - \bar\rho)\)</span> near <span class="math inline">\(\bar\rho = 1\)</span> and interpret the divergence.</li>
+<li><strong>Exercise 12.9</strong> — Verify Theorem (see book)(ii)’s construction: compute both recovery clocks for a shock <span class="math inline">\(s = 0.5\)</span> at <span class="math inline">\(\varepsilon = 0.05\)</span>, exhibit a shock size where the rankings reverse, and prove that no scalar score <span class="math inline">\(\sigma(m, \bar\rho)\)</span>, strictly monotone in each argument, can rank both comparisons consistently.</li>
+<li><strong>Exercise 12.10 ★</strong> — &nbsp;Complete the induction of Theorem (see book)(ii): state the entrywise vector induction precisely, justify the triangle-inequality step from the componentwise Lipschitz hypothesis, and show where nonexpansiveness in a component’s own state is used (exhibit a counterexample bound when it fails).</li>
+<li><strong>Exercise 12.11</strong> — Prove the Neumann equivalence of Theorem (see book)(iii): convergence of <span class="math inline">\(\sum_j \mathbf{G}^j\)</span> iff <span class="math inline">\(\rho(\mathbf{G}) &lt; 1\)</span>, using Theorem 7.</li>
+<li><strong>Exercise 12.12</strong> — Prove the hazard factorization and the expected-survival identity <span class="math inline">\(\E[\text{failure epoch}] = \sum_{k \ge 0} S(k)\)</span> of Theorem (see book)(i), and evaluate both for stationary $h = 1.6 quarter survival under the stressed hazard $9.</li>
+<li><strong>Exercise 12.13 ★</strong> — &nbsp;Generalize the common-shock construction of Theorem (see book)(iv): for common-cause probability <span class="math inline">\(z\)</span> and idiosyncratic probability <span class="math inline">\(q\)</span> per unit, derive the exact joint failure probability and the ratio to the independence estimate; show the ratio is maximized as <span class="math inline">\(q \to 0\)</span> and compute its limit <span class="math inline">\(1/z\)</span>; interpret.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 1.14</strong> — A skeptical colleague objects: “Enterprises are made of people; representing one as a vector is category error, and optimizing the vector will optimize the representation, not the enterprise.</li>
-<li><strong>Exercise 1.15</strong> — From your own professional or academic home discipline, identify the single concept most valuable to a theory of enterprise transformation that this chapter did <em>not</em> mention, and argue in two paragraphs where in the six-architecture scheme it belongs.</li>
-<li><strong>Exercise 1.16</strong> — After completing AXIOM-01: evaluate the claim of Section (see book) that computational laboratories supply “what derivation cannot.</li>
+<li><strong>Exercise 12.14</strong> — (With AXIOM-12 or the Chapter 12 notebook.</li>
+<li><strong>Exercise 12.15</strong> — (With AXIOM-12 or the Chapter 12 notebook.</li>
+<li><strong>Exercise 12.16</strong> — (With AXIOM-12 or the Chapter 12 notebook.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part D — Enterprise applications
+</h4>
+<ul>
+<li><strong>Exercise 12.17</strong> — Construct the risk vector for an enterprise you know: eight or more channels of Table (see book) with loss channel, architectural support (from your Exercise 9.</li>
+<li><strong>Exercise 12.18</strong> — Audit one real stress-testing exercise you have seen against Table (see book): score each row present/absent/partial, identify whether a reverse stress test (robustness radius) was run, and write the two-paragraph gap memo.</li>
+<li><strong>Exercise 12.19</strong> — Write the race memo for one recurring shock channel: estimate <span class="math inline">\(\lambda\)</span> from the record, compute <span class="math inline">\(T_{\mathrm{rec}}\)</span> from your enterprise’s observed recovery episodes (state the tolerance used), report <span class="math inline">\(1 - e^{-\lambda T_{\mathrm{rec}}}\)</span>, and propose one lever on each of <span class="math inline">\(\lambda\)</span>, <span class="math inline">\(T_{\mathrm{rec}}\)</span>, and margin with rough costs.</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
@@ -684,18 +696,18 @@ Part C — Computational exercises
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V1_Ch01_Slides.pptx"><code>DCT_V1_Ch01_Slides.pptx</code></a></td>
+<td><code>DCT_V1_Ch12_Slides.pptx</code> <em>(forthcoming)</em></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>Python notebook</td>
-<td><a href="../downloads/DCT_V1_Ch01_Lab.ipynb"><code>DCT_V1_Ch01_Lab.ipynb</code></a></td>
-<td><code>26101</code></td>
+<td><code>DCT_V1_Ch12_Lab.ipynb</code> <em>(forthcoming)</em></td>
+<td><code>26112</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V1_Ch01_Lab.xlsx"><code>DCT_V1_Ch01_Lab.xlsx</code></a></td>
-<td><code>26101</code></td>
+<td><code>DCT_V1_Ch12_Lab.xlsx</code> <em>(forthcoming)</em></td>
+<td><code>26112</code></td>
 </tr>
 </tbody>
 </table>
@@ -705,7 +717,7 @@ Part C — Computational exercises
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26101</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26112</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>
