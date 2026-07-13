@@ -1,0 +1,94 @@
+---
+title: "Chapter 14 · Mathematical Analysis of the Unified Enterprise Transformation Architecture"
+subtitle: "Volume I · Integration and Transition · Week 7"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 14** · Taught in [Week 7](../schedule.html#week-7) · Lab seed `26114`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Analyze the mathematical properties of unified enterprise systems: regularity, compactness, coupling, and the assumption panel that makes analysis honest.</li><li>Establish the analytical consistency conditions under which the unified object is a well-posed dynamic system.</li><li>Evaluate enterprise stability: spectral tests, Lyapunov certificates, certified stability budgets, and the coupling-destabilization phenomenon.</li><li>Analyze enterprise feasibility beyond the single period: feasible regions, viability kernels, and recursive feasibility.</li><li>Investigate enterprise sensitivity: variational dynamics, steady-state multipliers, and conditioning near criticality.</li><li>Characterize enterprise equilibria: existence, uniqueness, location in the feasible region, and their response to transformation.</li><li>Prove the principal analytical results governing unified enterprise evolution, invoking Parts II--III without re-derivation.</li><li>Interpret each analytical property as a governance quantity with an owner, a monitor, and a failure mode.</li><li>Evaluate structural robustness: how spectra, sensitivities, and feasible regions respond to structural perturbation.</li><li>Prepare unified enterprise models for optimization: the assumptions, conditions, and derivative objects the GEOP consumes.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Mathematical Analysis
+2. The Analytical Setting
+3. Existence and Uniqueness
+4. Enterprise Stability
+5. Sensitivity and Perturbation
+6. Feasible Enterprise Regions
+7. Structural Consistency
+8. Enterprise Invariants
+9. Unified Convergence
+10. Analytical Complexity
+11. Worked Examples
+12. Preparation for Enterprise Optimization
+13. Chapter Summary
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-14 →](https://axiom-webapp.example/modules/axiom-14)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+19 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 14.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 14.1** — For each row of the assumption panel (Table (see book)), name the enterprise office that owns it, one way it fails in practice, and one theorem of this chapter that dies with it.
+- **Exercise 14.2** — "Our model produces a forecast, so the plan exists.
+- **Exercise 14.3** — A group CFO proposes certifying enterprise stability by collecting stability attestations from the five architecture owners.
+- **Exercise 14.4** — Explain, without formulas, why the same number governs how fast an enterprise recovers from shocks and how violently it responds to recalibrations (Theorem (see book)(iii)), and what this implies for change management during integrations (Example (see book)).
+- **Exercise 14.5** — Give two operational consequences of backward non-uniqueness (Theorem (see book)(iv)): one for audit design and one for dispute resolution over "what caused the current state.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 14.6** — Prove the unified Lipschitz assembly claim of Proposition (see book): for $f$ built from layer maps by composition and superposition, exhibit the unified constant $L$ in terms of the layer constants, and give an example where the bound is tight.
+- **Exercise 14.7** — Prove Theorem (see book)(ii) in full, then extend it to time-varying parameters $\theta_k$ with $\sum_k \norm{\theta_{k+1} - \theta_k} < \infty$, bounding the trajectory drift by the total declaration variation.
+- **Exercise 14.8 ★** — Prove the norm construction used in Theorem (see book)(i): for any matrix $\Jac$ and any $r > \rho(\Jac)$ there exists a vector norm whose induced matrix norm satisfies $\norm{\Jac} \le r$.
+- **Exercise 14.9** — Prove the block bound $\rho(\Jac) \le \rho(\widehat{\mathbf{M}})$ of Theorem (see book)(iii), and construct a two-layer system where the diagonal blocks have radius $0.5$, the block small-gain test fails, and the unified system is unstable.
+- **Exercise 14.10** — Derive the steady-state multiplier $\mathbf{S}_{\infty} = (\mathbf{I} - \mathbf{A})^{-1}\mathbf{B}$ three ways: as the fixed point of (see book), by the implicit function theorem on $\x^{*} = f(\x^{*};\theta)$, and by summing the walk expansion; verify the three agree on a $2 \times 2$ example with one cross-layer channel.
+- **Exercise 14.11** — Prove the Perron-direction comparison of Theorem (see book)(iii), and show by example that for non-normal $\mathbf{A}$ the transient sensitivity $\norm{\mathbf{S}_k}$ can exceed the steady-state $\norm{\mathbf{S}_{\infty}}$ before settling.
+- **Exercise 14.12 ★** — Prove that the viability iteration of Theorem (see book)(iii) converges to the kernel under A1--A2 with a compact admissible decision set, including the finite-intersection selection argument, and exhibit a system where $V_j \ne V_{j+1}$ for all $j$ (the kernel is reached only in the limit).
+- **Exercise 14.13** — Prove the discrete invariance principle (Theorem (see book)(ii)) in full from the limit-set properties of trajectories under continuous maps on compact sets, and derive clause (i)'s global convergence as a corollary with $V(\x) = \norm{\x - \x^{*}}$ in the contraction norm.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 14.14** — (AXIOM-14) On the Meridian stability bench, find the single-block gain increase with the largest destabilizing effect per unit of gain (the spectral sensitivity of $\rho$ to blocks), compare with the interaction-matrix answer of Exercise (see book), and explain any difference.
+- **Exercise 14.15** — (AXIOM-14) Run the viability iteration on the restructuring corridor of Example (see book); report the emptying horizon, then implement both repairs and report the reopened kernels' volumes and the repairs' ledger costs.
+- **Exercise 14.16** — (AXIOM-14) Continue the equilibrium $\x^{*}(\theta)$ along the digital program's schedule (Example (see book)); verify $\Delta\x^{*} \approx \mathbf{S}_{\infty}\Delta\theta$ for small steps, locate where the linear prediction degrades, and relate the degradation to the Hessian flag of Theorem (see book)(v).
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 14.17** — Design the gain audit of Theorem (see book)(ii) for an enterprise you know: data sources for estimating three Jacobian blocks, the comparison procedure against declared ceilings, the escalation path for a violation, and the localization argument you would use.
+- **Exercise 14.18** — For a publicized acquisition in your industry, reconstruct Example (see book)'s panel qualitatively: which blocks of the combined gain matrix were new, what the integration plan's milestones were in gain-reduction terms, and one observed symptom consistent with a collapsed spectral gap.
+- **Exercise 14.19** — Set up the monotone bracketing of Theorem (see book)(iii) for a planning cycle: specify conservative and optimistic declarations, state the order-preservation check on the Jacobian sign pattern, identify one coupling in your enterprise that would break it, and describe what the twin books certify while it holds.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch14_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch14_Lab.ipynb` *(forthcoming)* | `26114` |
+| Excel workbook | `DCT_V1_Ch14_Lab.xlsx` *(forthcoming)* | `26114` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26114`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

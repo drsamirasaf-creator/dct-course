@@ -1,0 +1,88 @@
+---
+title: "Chapter 14 · Artificial Intelligence for Enterprise Optimization"
+subtitle: "Volume II · Multi-Objective and Intelligent Enterprise Optimization · Week 14"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 14** · Taught in [Week 14](../schedule.html#week-14) · Lab seed `26214`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the role of artificial intelligence in enterprise optimization, and distinguish it from machine learning.</li><li>Formulate AI-assisted enterprise optimization as a Markov decision process.</li><li>Construct enterprise knowledge graphs and ontologies.</li><li>Apply dynamic programming, value iteration, and policy iteration to enterprise MDPs.</li><li>Apply reinforcement learning (Q-learning, policy gradients, actor--critic) to enterprise decisions.</li><li>Develop intelligent and multi-agent enterprise systems.</li><li>Integrate generative AI into enterprise planning with retrieval and verification.</li><li>Design hybrid AI--optimization architectures with certified outputs.</li><li>Evaluate explainable AI for enterprise governance.</li><li>Prepare enterprise systems for autonomous transformation.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Artificial Intelligence in Enterprise Transformation
+2. Enterprise Knowledge Representation
+3. Knowledge Graphs and Enterprise Ontologies
+4. Expert Systems and Rule-Based Enterprise Decision Making
+5. Reinforcement Learning
+6. Deep Reinforcement Learning
+7. Generative Artificial Intelligence
+8. Multi-Agent Enterprise Systems
+9. Hybrid AI--Optimization Architectures
+10. Enterprise Applications
+11. Computational Implementation
+12. Preparation for Enterprise Digital Twins
+13. Chapter Summary
+14. Worked Examples
+15. Exercises
+16. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-14 →](https://axiom-webapp.example/modules/axiom-14)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 14.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 14.1** — Using Table (see book), classify six enterprise tasks as optimization, learning, or AI problems, and for each AI task name the state, action, reward, and why a single-shot predictor or static optimizer is insufficient.
+- **Exercise 14.2** — Explain, via Theorem (see book), why placing a learned policy inside a certified optimizer's envelope is the correct governance pattern for autonomous enterprise action, and what specifically the certificate does and does not guarantee about the AI component.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 14.3** — Prove the Bellman optimality operator is a $\gamma$-contraction directly from the max-of-affine structure, and compute the exact iteration count to $10^{-6}$ for the Example (see book) MDP; compare with the observed count.
+- **Exercise 14.4** — Derive the policy-gradient theorem $\nabla_\theta J = \E[\nabla_\theta \log \pol_\theta(a\mid s)\, Q^{\pol}(s,a)]$ from the definition of $J$, and explain why the value baseline in actor--critic reduces variance without introducing bias.
+- **Exercise 14.5** — For the Example (see book) knowledge graph, compute the personalized PageRank in closed form as $(I - d M^{\top})^{-1}(1-d)\mathbf{p}$, verify the reported top four, and show how the ranking shifts as the damping $d$ and the affinity seed $\mathbf{p}$ vary.
+- **Exercise 14.6** — Prove that policy iteration terminates in at most $\abs{\Ac}^{\abs{\Sc}}$ steps and that each non-terminal step strictly increases value at some state; exhibit the Example (see book) trajectory.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 14.7** — Prove the Q-learning convergence theorem's martingale-difference and bounded-variance claims in full for a finite MDP with bounded rewards, reducing the result to the stochastic-approximation theorem for sup-norm contractions; state precisely where infinite visitation is used.
+- **Exercise 14.8** — Prove Theorem (see book)(ii) for exact branch-and-bound: the certified optimal value is independent of branching and variable-selection order, and valid inequalities derived by any (learned or classical) separator preserve the optimum.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 14.9** — Reproduce Examples (see book) and (see book): implement value iteration and tabular Q-learning on the liquidity MDP, plot convergence, and study the sensitivity of Q-learning's success to exploration schedule and step-size annealing (violate Robbins--Monro deliberately and report the failure).
+- **Exercise 14.10** — Reproduce Example (see book): measure warm-start savings across a grid of prior qualities and discount factors $\gamma$, and verify the Theorem (see book) iteration-count formula against observation.
+- **Exercise 14.11** — Meridian autonomous treasury: using the AXIOM-14 module, build the full Definition (see book) loop for cash and liquidity management---MDP from the Chapter 5 state, RL policy with certified value-iteration baseline, knowledge- graph constraints as the verified envelope, and a governance report documenting the certificate, the envelope, and the monitoring plan for unattended operation.
+- **Exercise 14.12 ★** — Develop distributionally robust reinforcement learning for the enterprise MDP: replace the transition law by a Chapter 11 ambiguity set per state--action, derive the robust Bellman operator, prove it remains a $\gamma$-contraction, and quantify on Example (see book) how the robust policy grows more conservative as the per-transition Wasserstein radius widens---connecting AIEO to the uncertainty trilogy.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch14_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch14_Lab.ipynb` *(forthcoming)* | `26214` |
+| Excel workbook | `DCT_V2_Ch14_Lab.xlsx` *(forthcoming)* | `26214` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26214`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

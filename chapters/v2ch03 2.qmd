@@ -1,0 +1,88 @@
+---
+title: "Chapter 3 · Convex Enterprise Optimization"
+subtitle: "Volume II · Enterprise Optimization Foundations · Week 9"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 3** · Taught in [Week 9](../schedule.html#week-9) · Lab seed `26203`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Define convex sets and convex functions precisely, and verify convexity of declared enterprise objects from first principles and from the preservation calculus.</li><li>Distinguish convex from non-convex enterprise optimization problems, and state exactly which guarantees are gained or lost at that boundary.</li><li>Formulate convex enterprise optimization models in the canonical form $\min f$ subject to convex inequalities and affine equalities, starting from a declared GEOP instance.</li><li>Analyze convex feasible regions: verify convexity blockwise, exploit closure under intersection, and read the geometry of binding constraints.</li><li>Apply first-order and second-order convexity conditions to test declared objectives and constraints, with and without differentiability.</li><li>Explain why local optimality implies global optimality in convex problems, and what this promise is worth in enterprise governance.</li><li>Interpret Lagrangian duality within enterprise optimization: dual variables as shadow prices, weak duality as an audit bound, and strong duality as a certificate of optimality.</li><li>Analyze convex enterprise resource allocation problems and derive the equal-marginal-value principle from the KKT conditions.</li><li>Implement convex enterprise models computationally, using disciplined convex programming and modern solvers, and audit the returned certificates.</li><li>Prepare enterprise optimization models for nonlinear generalization: identify which convex structures survive locally and which guarantees must be renegotiated.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Convex Enterprise Optimization
+2. Convex Sets
+3. Convex Functions
+4. Convex Constraint Systems
+5. Convex Enterprise Decision Spaces
+6. Optimality Conditions
+7. Duality Theory
+8. Computational Solution Methods
+9. Enterprise Applications
+10. Preparation for Nonlinear Optimization
+11. Computational Considerations
+12. Worked Examples
+13. Chapter Summary
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-03 →](https://axiom-webapp.example/modules/axiom-03)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+13 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 3.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 3.1** — State the four clauses of the convex contract of Section (see book) and, for each, name one enterprise governance question it retires.
+- **Exercise 3.2** — The equal-marginal principle appeared three times (Examples (see book), (see book), (see book)).
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 3.3** — Prove the first-order characterization of Table (see book): differentiable $f$ is convex on open convex $C$ iff the tangent-underestimation inequality (see book) holds.
+- **Exercise 3.4** — Prove the second-order characterization of Table (see book): twice-differentiable $f$ is convex on open convex $C$ iff $\nabla^2 f \succeq 0$ on $C$, and $f$ is $m$-strongly convex iff $\nabla^2 f \succeq mI$.
+- **Exercise 3.5** — Prove the monotone composition rule ($h$ convex nondecreasing, $g$ convex $\Rightarrow h \circ g$ convex) and exhibit convex $h, g$ with $h \circ g$ non-convex when monotonicity fails.
+- **Exercise 3.6** — Prove that sublevel sets of convex functions are convex, and that the function $f(\x) = \norm{\x}_2 / (1 + \norm{\x}_2)$ has all sublevel sets convex without being convex (quasiconvexity).
+- **Exercise 3.7** — Establish the properties of Euclidean projection onto a nonempty closed convex set $\feas$: existence, uniqueness, the variational characterization $(\x - P_{\feas}(\x))^{\top}(\mathbf{y} - P_{\feas}(\x)) \le 0$ for all $\mathbf{y} \in \feas$, and nonexpansiveness $\norm{P_{\feas}(\x) - P_{\feas}(\mathbf{y})} \le \norm{\x - \mathbf{y}}$.
+- **Exercise 3.8** — Complete the coercivity bootstrap in the proof of Proposition (see book)(i): show directly from (see book) with a fixed anchor that $f(\x) \to \infty$ as $\norm{\x} \to \infty$ on $\feas$, and conclude boundedness of sublevel sets.
+- **Exercise 3.9** — Verify the convex-set fact used in Theorem (see book), Step 2: if $C$ is convex and $\x_0 \in \partial C$, then $\x_0$ is not an interior point of $\operatorname{cl} C$.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 3.10** — Prove the subgradient existence claim of Section (see book): a convex $f : \R^n \to \R$ has $\partial f(\x) \neq \emptyset$ at every point.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 3.11** — Declare Example (see book) in CVXPY, confirm DCP verification passes, solve, and reconcile the returned budget multiplier with $\lambda^{*} = 1.0$ to solver tolerance.
+- **Exercise 3.12** — Rewrite Meridian's covenant requirement (interest cover within a declared band, standing price $0.9 a CEO block, and use (see book) to bound the value impact of…
+- **Exercise 3.13 ★** — Study the statistical stability of shadow prices: if declared data are estimated with sampling error, derive distributional statements for $\boldsymbol{\lambda}^{*}$ under strong convexity and a stable binding pattern, and connect to the resolve-threshold policy of Section (see book).
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch03_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch03_Lab.ipynb` *(forthcoming)* | `26203` |
+| Excel workbook | `DCT_V2_Ch03_Lab.xlsx` *(forthcoming)* | `26203` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26203`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

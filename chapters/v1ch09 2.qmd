@@ -1,0 +1,92 @@
+---
+title: "Chapter 9 · Enterprise State Architecture"
+subtitle: "Volume I · Enterprise Architectures · Week 5"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 9** · Taught in [Week 5](../schedule.html#week-5) · Lab seed `26109`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Define the Enterprise State Architecture mathematically as the triple $\AS = (\Xc, \mathcal{R}, \mathcal{C})$.</li><li>Construct enterprise state architectures for complex organizations: components, interfaces, wiring, and constraints, declared to contract standard.</li><li>Identify state hierarchies and state dependencies, including the intrinsic causal hierarchy every dependency structure owns.</li><li>Represent enterprise subsystems within a unified state architecture, and reassemble global behavior from wired components.</li><li>Analyze enterprise structural consistency: interface, constraint, and hierarchical consistency, and the exact role of cycles in defeating local checks.</li><li>Model interactions among enterprise states through the dependency graph, with propagation bounds along its paths.</li><li>Evaluate architectural completeness relative to declared question classes.</li><li>Interpret enterprise architectures graphically and mathematically, including the one-directional trust rule for aggregated dependency maps.</li><li>Assess enterprise structural complexity with graph measures, and know what such measures do not measure.</li><li>Prepare enterprise state architectures for the capital, performance, and risk architectures and their integration within UETA.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Enterprise State Architecture
+2. Architecture versus Representation
+3. Enterprise Topology and State Dependencies
+4. Structural Dependency and Propagation
+5. Hierarchical Enterprise States
+6. Architectural Constraints and Consistency
+7. Architectural Completeness and Validation
+8. Architecture Metrics and Complexity
+9. Worked Examples
+10. Preparation for Enterprise Capital Architecture
+11. Chapter Summary
+12. Exercises
+13. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-09 →](https://axiom-webapp.example/modules/axiom-09)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+19 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 9.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 9.1** — Distinguish representation from architecture in two sentences, and give one enterprise question answerable from the representation alone and one requiring the architecture (the wiring), justifying each.
+- **Exercise 9.2** — For an enterprise you know, list six dependencies and classify each by Table (see book)'s types; identify one edge carrying multiple types and state which type each of two named analyses would read.
+- **Exercise 9.3** — Explain the terminological note in Definition (see book): what does "topology" mean here, what did it mean in Chapter 3, and what single idea do the usages share?
+- **Exercise 9.4** — Using Meridian (Example (see book)), explain in one paragraph how the intrinsic causal hierarchy can disagree with the organizational hierarchy and why the disagreement predicts coordination cost.
+- **Exercise 9.5** — State in plain language why three policies can be pairwise compatible and jointly infeasible, and name the graph property that makes this possible and the one that forbids it.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 9.6** — Write out in full the proof that the condensation is acyclic (Proposition (see book)), including the composition-of- paths step, and exhibit a $6$-node digraph with exactly two nontrivial SCCs whose condensation has depth $3$.
+- **Exercise 9.7** — Re-prove the propagation bound (Theorem (see book)(ii)) with all induction details: state the induction hypothesis as a set equality of unaffected components, verify the in-neighbor distance inequality, and identify exactly where the proof uses that component updates read only in-neighbors.
+- **Exercise 9.8 ★** — \ Complete the activation splice of Theorem (see book)(iii): given a path $u = w_0 \to \cdots \to w_m = v$ with each edge's dependence active at some state configuration, construct a single configuration and horizon at which perturbing $u$ alters $v$, stating the additional hypothesis you need on the ability to steer intermediate blocks (and exhibiting a two-edge example where, without it, the influences cancel).
+- **Exercise 9.9** — For the spurious-path counterexample of Theorem (see book)(ii), determine the minimal conditions under which a coarse edge $A \to B$ does certify some fine edge: characterize the aggregates $A$ for which coarse paths through $A$ are never spurious (hint: internal connectivity from every in-interface node to every out-interface node).
+- **Exercise 9.10** — Complete Theorem (see book)(ii)'s induction as a formal leaf-elimination argument: define arc-consistency projection onto the parent, show projections of arc-consistent families remain arc-consistent on the reduced tree, and conclude by induction on $\abs{V}$; then explain in one sentence why the same argument fails on a cycle.
+- **Exercise 9.11** — Construct a four-constraint family on a $4$-cycle of scalar components, all constraints of the form $x_i - x_j \le b_{ij}$, that is arc-consistent and globally infeasible; state the general infeasibility criterion for difference constraints on a cycle (sum of bounds around the cycle) and verify it on your instance.
+- **Exercise 9.12** — Prove that the projection of Theorem (see book)(i) is functorial for walks: concatenation of fine walks projects to concatenation of coarse walks, and lengths never increase; deduce $d'([u], [v]) \le d(u, v)$ formally.
+- **Exercise 9.13 ★** — \ Magnitude along paths (first synthesis with Part II): suppose each component update is $L$-Lipschitz in each in-neighbor block and nonexpansive in its own.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 9.14** — (With AXIOM-09 or the Chapter 9 notebook.
+- **Exercise 9.15** — (With AXIOM-09 or the Chapter 9 notebook.
+- **Exercise 9.16** — (With AXIOM-09 or the Chapter 9 notebook.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 9.17** — Write the one-page ESA declaration for an enterprise you know: $6$--$10$ components with spaces and interfaces, the typed edge list with one witnessing scenario per edge, three scoped constraints, and the intrinsic layering; flag every non-edge you are least confident in as an invariance claim to test.
+- **Exercise 9.18** — Write a quarantine memo: for one shock source and one protected component in your Exercise (see book) architecture, list *all* directed paths between them, identify the smallest set of edges whose removal severs every path, and translate each removed edge into a managerial action with its cost in lost coordination (informal min-cut; the optimization is Volume II).
+- **Exercise 9.19** — Conduct a constraint audit in the style of Example (see book): draw $G_{\mathcal{C}}$ for eight or more real policies/obligations, compute $\beta$, list the cycles, and propose the joint-review calendar the cycles require---one meeting per cycle, memberships attached.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch09_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch09_Lab.ipynb` *(forthcoming)* | `26109` |
+| Excel workbook | `DCT_V1_Ch09_Lab.xlsx` *(forthcoming)* | `26109` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26109`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

@@ -1,0 +1,36 @@
+---
+title: "Syllabus"
+subtitle: "One-semester graduate course · MBA, MSc, PhD, MFE, MQF"
+---
+
+## Course description
+
+Dynamic Corporate Transformation (DCT) develops the enterprise as a dynamic system and
+enterprise transformation as a mathematical optimization problem. Weeks 1–7 build the
+framework (Volume I) and culminate in the General Enterprise Optimization Problem;
+weeks 8–14 solve it (Volume II) across convex, nonlinear, dynamic, stochastic, robust,
+multi-objective, and AI-assisted formulations, closing with digital twins and
+integrated case studies.
+
+## Materials
+
+- **Required:** *Dynamic Corporate Transformation*, Volumes I & II.
+- **Laboratory:** the AXIOM WebApp, plus per-chapter Python notebooks and Excel
+  workbooks (this site, Downloads).
+- Each chapter's page on this site is the index to its materials — start there each week.
+
+## Assessment (default template — instructors adapt)
+
+| Component | Weight |
+|---|---|
+| Weekly problem sets (from the A–D exercise groups) | 30% |
+| Laboratory reports (AXIOM / notebook, seeded and validated) | 20% |
+| Midterm (Volume I, week 7) | 20% |
+| Capstone case study (week 14) | 30% |
+
+## Weekly rhythm
+
+Read the chapters before class; lecture follows the chapter's section flow; the lab
+session runs the chapter's AXIOM modules; the problem set draws from the exercise
+groups, with starred (★) exercises for the advanced track. Full solutions are in the
+Instructor's Manual — instructors, see [Instructor Resources](instructor.qmd).

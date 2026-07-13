@@ -1,0 +1,87 @@
+---
+title: "Chapter 8 · Hamilton--Jacobi--Bellman Enterprise Framework"
+subtitle: "Volume II · Dynamic Enterprise Optimization · Week 11"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 8** · Taught in [Week 11](../schedule.html#week-11) · Lab seed `26208`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the relationship between optimal control and dynamic programming in continuous time.</li><li>Derive the Hamilton--Jacobi--Bellman equation from the continuous-time Bellman principle.</li><li>Construct continuous-time enterprise value functions.</li><li>Interpret HJB equations economically and mathematically.</li><li>Solve simple continuous-time enterprise optimization problems in closed form via value-function ans\"atze.</li><li>Distinguish necessary conditions (Pontryagin) from sufficient conditions (verification).</li><li>Analyze enterprise feedback policies and closed-loop systems.</li><li>Formulate continuous-time enterprise optimization models in HJB form.</li><li>Implement numerical HJB approximations by monotone upwind schemes.</li><li>Prepare enterprise models for stochastic optimization.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Hamilton--Jacobi--Bellman Theory
+2. Continuous-Time Dynamic Programming
+3. Enterprise Value Functions
+4. Derivation of the HJB Equation
+5. Interpretation of the HJB Equation
+6. Feedback Enterprise Policies
+7. Verification Theorems
+8. Numerical Approximation Methods
+9. Enterprise Applications
+10. Computational Challenges
+11. Preparation for Stochastic Enterprise Optimization
+12. Chapter Summary
+13. Worked Examples
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-08 →](https://axiom-webapp.example/modules/axiom-08)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 8.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 8.1** — Explain, using Table (see book) and the asset- pricing reading of (see book), why a strict inequality $\rho V(\x) > \max_u\{L + \nabla V^\top f\}$ at some state signals overvaluation, and what governance action each inequality direction warrants.
+- **Exercise 8.2** — For each worked example, identify the verification items (V1)--(V3) and state which one would fail first under (a) an unbounded decision set, (b) a misdeclared terminal value.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 8.3** — Assemble the Lipschitz estimate for $V$ claimed in \S(see book) from (B1)--(B2), Gr\"onwall, and the Bellman identity (see book).
+- **Exercise 8.4** — Complete the LQ transversality check of Example (see book): show $e^{-\rho T}V(x(T)) \to 0$ along the closed loop and along every admissible comparison path with square-integrable controls, so verification applies.
+- **Exercise 8.5** — In Theorem (see book)'s proof, derive the mesh estimate for the piecewise-constant $\varepsilon$-greedy control: exhibit $h(\varepsilon)$ such that grid maximizers on steps of length $h$ attain the HJB maximum within $\varepsilon$ along the trajectory.
+- **Exercise 8.6** — Show that the finite-horizon workforce Riccati solution $P(0; T)$ of Chapter 6 converges as $T \to \infty$ to the CARE solution of Example (see book), and quantify the gap at $T = 12$.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 8.7** — Prove the stationary Bellman principle asserted after Lemma (see book): $V(\mathbf{y}) = \sup_u\{\int_0^s e^{-\rho t}L\,dt + e^{-\rho s}V(\x(s))\}$ for all $s > 0$, and derive (see book) from it for $C^{1}$ $V$.
+- **Exercise 8.8** — Prove the comparison refinement of Proposition (see book): a $C^1$ *sub* solution with terminal data $\le \Phi$ lies below $V$; conclude the maximal-subsolution characterization in Theorem (see book) and identify where smoothness was indispensable.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 8.9** — Implement the upwind solver for Example (see book); reproduce the feedback law and steady state, then accelerate with policy iteration on the grid and report the sweep-count ratio.
+- **Exercise 8.10** — Reproduce the sustainability mesh ladder of Example (see book), add Richardson extrapolation, and compare the extrapolated value against $2.9375$; verify the policy-accuracy asymmetry on the coarsest mesh.
+- **Exercise 8.11** — Formulate Meridian's covenant-constrained deleveraging (Example 6.
+- **Exercise 8.12 ★** — Develop the viscosity-solution formulation for the digital instance with a hard capability floor $c \ge \underline{c}$ (state constraint): state the constrained viscosity property on the boundary, verify it numerically for the upwind scheme, and prove convergence of the scheme using the Barles--Souganidis framework.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch08_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch08_Lab.ipynb` *(forthcoming)* | `26208` |
+| Excel workbook | `DCT_V2_Ch08_Lab.xlsx` *(forthcoming)* | `26208` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26208`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

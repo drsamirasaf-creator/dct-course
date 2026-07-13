@@ -1,0 +1,17 @@
+---
+title: "Labs & Downloads"
+subtitle: "One deck, one notebook, one workbook per chapter — 96 files, one seed scheme"
+---
+
+Every chapter ships three companions on the seed `26VCC` (V = volume, CC = chapter):
+the lecture deck, the Python notebook, and the Excel workbook. Notebook and workbook
+consume the same seeded engine, so their numbers agree by construction; panel-level
+seeds append two digits (`26208·01`).
+
+Files are posted here chapter-by-chapter as they are released; each chapter page's
+Downloads table links its own three files.
+
+| Volume | Chapters | Status |
+|---|---|---|
+| I | 1–16 | In production |
+| II | 1–16 | In production |

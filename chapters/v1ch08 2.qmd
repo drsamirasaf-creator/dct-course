@@ -1,0 +1,93 @@
+---
+title: "Chapter 8 · Stochastic Enterprise Dynamics"
+subtitle: "Volume I · Mathematical Representation · Week 4"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 8** · Taught in [Week 4](../schedule.html#week-4) · Lab seed `26108`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the need for stochastic enterprise models, and name the modeling channels through which uncertainty enters.</li><li>Distinguish deterministic from stochastic enterprise dynamics, including the shift in what evolves deterministically---the state versus its distribution.</li><li>Define enterprise stochastic processes on a declared probability space, with adaptedness and the Markov property.</li><li>Represent enterprise uncertainty mathematically: random environments, noise sequences, and their declared distributions.</li><li>Formulate stochastic enterprise state equations in discrete time and as stochastic differential equations.</li><li>Interpret diffusion and jump processes as the two canonical shapes of enterprise randomness---continuous accumulation and discrete events.</li><li>Analyze stochastic enterprise trajectories: sample paths, fan charts, and the distinction between the mean path and typical paths.</li><li>Understand probabilistic state evolution through transition kernels and the Chapman--Kolmogorov structure.</li><li>Relate uncertainty to enterprise decision-making: the flaw of averages, uncertainty amplification through operators, and Monte Carlo estimation with honest error bars.</li><li>Prepare the probabilistic foundation for the risk and resilience architecture of Chapter 12 and the stochastic optimization of Volume II.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Stochastic Enterprise Dynamics
+2. Sources of Enterprise Uncertainty
+3. Probability Foundations for Enterprise Analysis
+4. Stochastic Enterprise Systems in Discrete Time
+5. The Evolution of Enterprise State Distributions
+6. Enterprise Diffusion
+7. Enterprise Jump Processes and Jump-Diffusion
+8. Expected Evolution and the Flaw of Averages
+9. Monte Carlo Simulation of Enterprise Dynamics
+10. Worked Examples
+11. Preparation for the Enterprise Architectures
+12. Chapter Summary
+13. Exercises
+14. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-08 →](https://axiom-webapp.example/modules/axiom-08)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+19 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 8.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 8.1** — Classify five uncertainties facing an enterprise you know into the rows of Table (see book), naming for each the model channel and the canonical shape (diffusion-like or jump-like) with one sentence of justification.
+- **Exercise 8.2** — "In the stochastic theory, nothing evolves deterministically.
+- **Exercise 8.3** — State the Markov property in one managerial sentence, and give one enterprise situation where it is a good declaration and one where it is not---identifying, in the second, the state enrichment (Chapter 5) that would restore it.
+- **Exercise 8.4** — Using Example (see book), explain the difference between the mean path and a typical path, and why "the plan was right on average" and "the venture failed" can both be true.
+- **Exercise 8.5** — Distinguish uncertainty, noise, and risk as this book reserves the terms, and state which chapter owns each.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 8.6** — From the definition of Brownian motion alone, derive $\E[W(t)] = 0$, $\Var(W(t)) = t$, and $\Cov(W(s), W(t)) = \min(s, t)$ (hint: for $s < t$ write $W(t) = W(s) + (W(t) - W(s))$ and use independent increments).
+- **Exercise 8.7 ★** — \ Complete the proof of Lemma (see book): state the monotone class theorem you invoke, verify its hypotheses for the class of $g$ satisfying the identity, and explain where boundedness of $g$ is used.
+- **Exercise 8.8** — For the two-state Markov chain with kernel $P = \bigl[\begin{smallmatrix} 0.9 & 0.1 \\ 0.3 & 0.7 \end{smallmatrix}\bigr]$ (states: on-plan, off-plan), verify Chapman--Kolmogorov numerically ($P^3 = P^2 P = P P^2$), compute the stationary distribution, and interpret its entries.
+- **Exercise 8.9** — Fill in the two steps quoted from [8] in the proof of Theorem (see book)(i): show that independent Gaussian vectors are jointly Gaussian, and that affine images of Gaussians are Gaussian, using characteristic functions.
+- **Exercise 8.10** — For $\mathbf{A} = \bigl[\begin{smallmatrix} 0.8 & 0.2 \\ 0 & 0.6 \end{smallmatrix}\bigr]$, $\mathbf{G}\mathbf{Q} \mathbf{G}^{\!\top} = \bigl[\begin{smallmatrix} 0.04 & 0 \\ 0 & 0.01 \end{smallmatrix}\bigr]$, solve the discrete Lyapunov equation for $\boldsymbol{\Sigma}_{\infty}$ (set up the three scalar equations and solve), and verify against a truncation of the series.
+- **Exercise 8.11 ★** — \ Complete the uniqueness proof in Theorem (see book)(i): show carefully that a right-continuous survival function satisfying $S(s + t) = S(s)S(t)$ with $S(0) = 1$ and $0 < S(1) < 1$ must be $e^{-\lambda t}$, treating the rational and irrational steps separately.
+- **Exercise 8.12** — Prove the law of total variance as used in Theorem (see book)(ii)---the identity of Theorem (see book)(iii)---directly from the tower property, and then apply it to decompose the variance of Example (see book)'s trough into within-jump-scenario and between-jump-scenario components (formulas only).
+- **Exercise 8.13** — Derive the Monte Carlo standard error: show $\Var(\hat\theta_N) = \Var(\varphi)/N$ for i.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 8.14** — (With AXIOM-08 or the Chapter 8 notebook.
+- **Exercise 8.15** — (With AXIOM-08 or the Chapter 8 notebook.
+- **Exercise 8.16** — (With AXIOM-08 or the Chapter 8 notebook.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 8.17** — Extend your Exercise 7.
+- **Exercise 8.18** — Write the covenant-risk memo of Example (see book) for a threshold and persistence you estimate for your own enterprise (or Meridian variant): stationary volatility budget, per-period breach probability, and the persistence-versus-shock management levers, one page.
+- **Exercise 8.19** — Conduct a jump audit for one event risk you know (regulatory, credit, key-person): estimate $\lambda$ and the size moments from whatever record exists (state your method), compute the two ledger lines of Theorem (see book), and write the memorylessness paragraph for your board---or argue, explicitly, why your risk's clock is not exponential and what you declare instead.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch08_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch08_Lab.ipynb` *(forthcoming)* | `26108` |
+| Excel workbook | `DCT_V1_Ch08_Lab.xlsx` *(forthcoming)* | `26108` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26108`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

@@ -1,0 +1,102 @@
+---
+title: "Chapter 15 · Mathematical Formulation of Enterprise Optimization"
+subtitle: "Volume I · Integration and Transition · Week 7"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 15** · Taught in [Week 7](../schedule.html#week-7) · Lab seed `26115`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Formulate the General Enterprise Optimization Problem in canonical form and instantiate it for a declared enterprise.</li><li>Identify enterprise decision variables and distinguish decisions from controls, policies, and programs.</li><li>Define enterprise objective functions and value functionals from the ledgers of Parts II--IV.</li><li>Construct enterprise constraint systems across the nine declared classes and audit their consistency.</li><li>Formulate multi-objective enterprise optimization problems and interpret their scalarizations.</li><li>Distinguish static, dynamic, multi-period, stochastic, robust, and adaptive formulations and know when each is the honest one.</li><li>Analyze feasible enterprise solution spaces, including their viability-honest cores.</li><li>Interpret Pareto-optimal enterprises and efficiency frontiers as governance objects.</li><li>Evaluate enterprise trade-offs through multipliers, shadow prices, and frontier slopes.</li><li>Prepare enterprise models for the solution methodologies of Volume II without committing to any of them.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Why Enterprise Optimization?
+2. The Problem, Stated
+3. Decision Variables and Policies
+4. Enterprise Objective Functions
+5. Enterprise Constraint Systems
+6. Feasible Regions and Solution Spaces
+7. Enterprise Optimality Conditions
+8. Multi-Objective Optimization and the Pareto Frontier
+9. Dynamic and Multi-Period Optimization
+10. Stochastic, Robust, and Adaptive Formulations
+11. Enterprise Policy Design
+12. Architecture and the Unified Optimization Theorem
+13. Computational Architecture and AI-Assisted Optimization
+14. Worked Examples
+15. Transition to Volume II
+16. Chapter Summary
+17. Exercises
+18. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-15 →](https://axiom-webapp.example/modules/axiom-15)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+24 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 15.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 15.1** — For each of the three inherited frameworks criticized in Section (see book) (portfolio selection, capacity planning, valuation maximization), state precisely which blocks of (see book)--(see book) it freezes, per Theorem (see book)(ii).
+- **Exercise 15.2** — Build the decision inventory of Table (see book) for an enterprise you know: three declared levers with owners and admissible bands, and one commonly assumed lever that fails the declaration test---say why.
+- **Exercise 15.3** — Take one KPI and write its four declarations per Table (see book) (objective component, constraint, policy input, monitor).
+- **Exercise 15.4** — Express the difference between the stochastic, robust, and adaptive GEOPs as three one-sentence promises to a board, and state for each the declaration object that backs the promise.
+- **Exercise 15.5** — A consultancy proposes to "optimize first and patch feasibility after.
+- **Exercise 15.6** — Explain, without formulas, why the holdable optimum of Theorem (see book)(iii) can be strictly worse on paper yet strictly better as a plan, and which two Chapter 14 certificates it is buying.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 15.7** — Carry out the $K = 1$ and static-lift reductions of Theorem (see book)(ii) and Theorem (see book)(iii) in full for a two-period instance: exhibit the lifted variables, constraints, and the identification of the dynamics' multipliers with the costates.
+- **Exercise 15.8 ★** — Prove the Farkas alternative used in Theorem (see book)(i) for polyhedral cones, and derive the KKT conditions (see book) from it under the Slater grade, including complementary slackness.
+- **Exercise 15.9** — Prove Theorem (see book)(iii) (the shadow-price derivative) from the perturbed value function's concavity, and compute the covenant multiplier in a two-dimensional capital-allocation instance with explicit data.
+- **Exercise 15.10** — Prove both directions of Theorem (see book)(ii), including the supporting-hyperplane converse under convexity, and construct a three-point nonconvex attainable set whose middle frontier point no weighted sum finds.
+- **Exercise 15.11** — Prove Theorem (see book)(iii) and its weak converse (maximizers of $\varepsilon$-constraint instances are weakly Pareto optimal; strengthen to Pareto optimal under uniqueness).
+- **Exercise 15.12** — Prove the maximum-theorem step of Theorem (see book)(i) in full for the finite horizon: upper hemicontinuity and compact-valuedness of the feasible decision correspondence, continuity of $V_k$, and attainment.
+- **Exercise 15.13 ★** — For the coordination result of Theorem (see book)(ii): state and prove strong duality for the partially relaxed convex GEOP under the Slater grade, show the coordinated block optima at $\boldsymbol{\lambda}_c^{*}$ solve the unified problem, and bound the duality gap when convexity fails, relating it to the value of coordination.
+- **Exercise 15.14** — Prove Theorem (see book)(ii): the Bellman operator's contraction, uniqueness of the fixed point, geometric convergence of value iteration with a priori and a posteriori bounds, and existence of an optimal stationary selection.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 15.15** — (AXIOM-15) Assemble the capital-allocation instance of Example (see book) in the GEOP builder; run both audits; report the binding set, all multipliers, and the…
+- **Exercise 15.16** — (AXIOM-15) Trace the growth--trough frontier by weight sweep and by $\varepsilon$-constraint; locate the knee and the segment the weight sweep misses; report frontier slopes at three declared points and reconcile them with the instances' multipliers.
+- **Exercise 15.17** — (AXIOM-15) Reproduce the turnaround comparison of Example (see book): certainty-equivalent, stochastic, and robust optima with their mutual gaps; then vary the ambiguity radius and plot the price of distrust.
+- **Exercise 15.18** — (AXIOM-15) Run the roadmap instance of Example (see book) with and without the terminal viability and holdability constraints; report the two value gaps and exhibit the corner-trap trajectory the unconstrained window recommends.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 15.19** — Draft the one-page "priced commitments" exhibit for a real or case enterprise: five plausibly binding constraints with owners, the multiplier each would carry, and the decision each price would inform.
+- **Exercise 15.20** — Prepare both ESG declarations of Example (see book) for a board: the ceiling form with its internal carbon price and the objective form with its frontier knee.
+- **Exercise 15.21** — Identify a coupling in an enterprise you know that is currently "coordinated" by negotiation.
+- **Exercise 15.22** — Design the measurement that would estimate the value of information for one dashboard upgrade: the two policy classes, the two GEOP instances, and the operational data needed to declare them honestly (Theorem (see book)(iii)).
+- **Exercise 15.23** — For a publicized turnaround or restructuring, reconstruct the instance qualitatively: decisions, objective, the three most plausible binding classes, and whether the observed plan shows corner-trap symptoms (per-window optimality with shrinking room).
+- **Exercise 15.24 ★** — Design a full multi-objective mandate for an enterprise of your choice: components with owners and units (Table (see book)), the chosen device of Table (see book) with justification, the frontier exhibit the board would see, and the governance protocol for moving along the frontier.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch15_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch15_Lab.ipynb` *(forthcoming)* | `26115` |
+| Excel workbook | `DCT_V1_Ch15_Lab.xlsx` *(forthcoming)* | `26115` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26115`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

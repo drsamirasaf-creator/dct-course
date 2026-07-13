@@ -1,0 +1,85 @@
+---
+title: "Chapter 4 · Enterprise Modeling Principles"
+subtitle: "Volume I · Foundations · Week 2"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 4** · Taught in [Week 2](../schedule.html#week-2) · Lab seed `26104`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the role of enterprise models as instruments--- purpose-built representations whose value lies in the questions they render answerable---and state the modeling contract every DCT model must declare.</li><li>Distinguish conceptual, logical, mathematical, and computational models, and trace a single enterprise question through the full chain from concept to code.</li><li>Apply abstraction and decomposition formally: construct abstraction maps, identify their fibers, and test the fiber-invariance condition under which coarse models are dynamically legitimate.</li><li>Evaluate model validity and consistency, distinguishing verification from validation, stating what a validation record can and provably cannot certify, and explaining why transformation modeling necessarily exceeds its validation domain.</li><li>Construct enterprise models suitable for quantitative analysis: declared attributes, units, measurement error, assumption classes, validation domain, and lifecycle plan.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Enterprise Modeling Philosophy
+2. Model Types and the Representation Bound
+3. Abstraction and Decomposition
+4. Aggregation and Hierarchies
+5. Measurement, Validation, and Verification
+6. The Model Lifecycle
+7. Chapter Summary
+8. Exercises
+9. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-04 →](https://axiom-webapp.example/modules/axiom-04)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+16 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 4.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 4.1** — Take the enterprise question "can Meridian fund the digital program without breaching leverage 4.
+- **Exercise 4.2** — State the precise content that Theorem (see book) gives to each half of "all models are wrong, but some are useful," and explain why the theorem makes the aphorism a consequence of Proposition 1.
+- **Exercise 4.3** — Classify each of the following under the assumption classes of Table (see book): (a) "competitor entry is excluded"; (b) "retraining converts 3 (c) "the capabil…
+- **Exercise 4.4** — A consultant reports: "the model reproduced the last five years with 2 are reliable.
+- **Exercise 4.5** — Give one question about your own enterprise that is answerable in a coarse ($L_2$-style) model and one that Theorem (see book)(ii) renders inexpressible there, and state the minimal representation amendment that would admit the second.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 4.6** — Prove the unproved direction details of Theorem (see book): that the constructed $\hat f'$ is the unique commuting transition, and that trajectory agreement holds for all horizons by explicit induction.
+- **Exercise 4.7** — Carry out the repair of Example (see book): take the enlarged $L_2$ state $(H, s)$ with $s = h_s / H$, derive its exact dynamics from the fine model, and verify fiber-invariance of the enlarged aggregation directly.
+- **Exercise 4.8 ★** — \ For $\hat f(\x) = \mathbf{A}\x$ and $\alpha(\x) = \mathbf{P}\x$ with $\mathbf{P}$ of full row rank, show that when $\mathbf{A}\ker\mathbf{P} \subseteq \ker\mathbf{P}$ the unique coarse map is $\hat f'(\x') = \mathbf{P}\mathbf{A}\mathbf{P}^{+}\x'$ with $\mathbf{P}^{+}$ any right inverse of $\mathbf{P}$, and that the expression is independent of the right inverse chosen.
+- **Exercise 4.9** — In the proof of Proposition (see book), the constructed $\hat f$ was arbitrary off the chosen fiber.
+- **Exercise 4.10 ★** — \ (Approximate aggregation.
+- **Exercise 4.11** — Make Theorem (see book) concrete: on $\Xc = [0, 10]$ with a record exciting only $[2, 5]$, exhibit two explicitly formulated one-dimensional models agreeing exactly on $[2, 5]$ and differing by at least $\Delta = 3$ at $x = 8$, and compute a validation discrepancy to confirm indistinguishability.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 4.12** — Write the full modeling contract (one to two pages) for the enterprise state vector you built in Exercise 3.
+- **Exercise 4.13** — Design the test that Meridian's CFO should run before trusting the consolidated (group-level) model for the transformation decision: which fibers does consolidation create, which known couplings cross them, and what data would detect fiber-splitting?
+- **Exercise 4.14 ★** — \ Conduct the domain audit of Example (see book) for a transformation you know: characterize the excited domain of the available record along four or more dimensions, locate the program's trajectory relative to it, and annotate three off-domain conclusions with the structural assumptions that carry each, assessing how each assumption could be independently credentialed.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 4.15** — (With AXIOM-04 or the Chapter 4 notebook.
+- **Exercise 4.16** — (With AXIOM-04 or the Chapter 4 notebook.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch04_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch04_Lab.ipynb` *(forthcoming)* | `26104` |
+| Excel workbook | `DCT_V1_Ch04_Lab.xlsx` *(forthcoming)* | `26104` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26104`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

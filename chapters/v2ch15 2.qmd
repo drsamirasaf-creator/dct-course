@@ -1,0 +1,88 @@
+---
+title: "Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation"
+subtitle: "Volume II · Multi-Objective and Intelligent Enterprise Optimization · Week 14"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 15** · Taught in [Week 14](../schedule.html#week-14) · Lab seed `26215`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the principles of Enterprise Digital Twins.</li><li>Distinguish Enterprise Digital Twins from traditional asset twins.</li><li>Construct enterprise digital twin architectures on the UETA state.</li><li>Integrate optimization, AI, simulation, and enterprise architectures in one loop.</li><li>Develop continuously synchronized enterprise models by Bayesian filtering.</li><li>Design autonomous enterprise decision systems with provable stability.</li><li>Apply real-time enterprise optimization with simulation-consistency guarantees.</li><li>Implement enterprise digital twins computationally.</li><li>Evaluate enterprise transformation scenarios inside the twin.</li><li>Design intelligent autonomous enterprise ecosystems under governance.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Introduction to Enterprise Digital Twins
+2. Evolution of Digital Twin Technology
+3. Enterprise Digital Twin Architecture
+4. Real-Time Enterprise State Estimation
+5. Enterprise Data Fusion
+6. Simulation-Based Enterprise Optimization
+7. AI-Augmented Enterprise Decision Making
+8. Autonomous Enterprise Transformation
+9. Enterprise Digital Twin Governance
+10. Cybersecurity and Trust
+11. Industrial and Financial Applications
+12. Future Autonomous Enterprises
+13. Chapter Summary
+14. Worked Examples
+15. Exercises
+16. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-15 →](https://axiom-webapp.example/modules/axiom-15)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 15.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 15.1** — For each row of Table (see book), explain what breaks if an asset-twin practice is transplanted unmodified to the enterprise twin, and which section of this chapter supplies the repair.
+- **Exercise 15.2** — Draft the graduated-autonomy protocol of \S(see book) for the treasury loop of Example (see book): the evidence thresholds (stability margins, coverage, false alerts, regret history) that expand the perimeter, and the breaches that contract it.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 15.3** — Derive the fusion identity of \S(see book) from the Kalman update with stacked observations, and quantify the precision overstatement when two "independent" sensors share a common upstream source with correlation $\rho$.
+- **Exercise 15.4** — Verify the scalar Riccati fixed point of Example (see book) analytically (solve $\phi(P) = P$), confirm $P_{\infty} = 0.0695$ and $K = 0.278$, and compute the sensitivity $\partial P_{\infty} / \partial r$---the value of a better sensor.
+- **Exercise 15.5** — Extend Theorem (see book) to time-varying gains $K_t \to K$: show the error dynamics remain geometrically stable once $\rho(A - AK_tC) \le \bar{\rho} < 1$ for all large $t$.
+- **Exercise 15.6** — In Proposition (see book)'s setting, derive the optimal confidence $z^{*}$ trading false-alert cost $c_{\mathrm{FA}}$ against per-period breach cost $c_{\mathrm{B}}$, and evaluate it on the bank instance of Example (see book).
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 15.7** — Prove the multivariable extension of Theorem (see book)(iii): under detectability of $(A, C)$ and stabilizability of $(A, Q^{1/2})$, the Riccati iteration converges to the unique positive-semidefinite stabilizing fixed point (follow the monotone-operator route; cite Volume I where needed).
+- **Exercise 15.8** — Prove that Theorem (see book) fails without separation structure: exhibit a nonlinear (or multiplicative-noise) loop where estimation and control are each stable in isolation but the interconnection is unstable, and identify which proof step breaks.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 15.9** — Reproduce Example (see book); then sweep the manual cadence from $1$ to $8$ periods and plot cost against cadence, locating where human-cycle latency costs one, five, and ten percent of value.
+- **Exercise 15.10** — Implement a particle-filter twin for a regime-switching demand state (calm/stress), compare its tracking against the Kalman twin through a regime break, and report when the Gaussian mirror is honestly wrong.
+- **Exercise 15.11** — Meridian twin, end to end: on the AXIOM-15 module's Meridian instance, stand up the mirror (streams, fusion, filter), certify the separation pair for the working-capital loop, run one Proposition (see book) improvement cycle, and deliver the board pack: state bands, error budget per Theorem (see book), autonomy perimeter, and the governance register.
+- **Exercise 15.12 ★** — Develop distributionally robust twin control: replace the certainty-equivalent policy of Theorem (see book) with a Chapter 11 worst-case policy over an ambiguity ball around the posterior $\pi_t$.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch15_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch15_Lab.ipynb` *(forthcoming)* | `26215` |
+| Excel workbook | `DCT_V2_Ch15_Lab.xlsx` *(forthcoming)* | `26215` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26215`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

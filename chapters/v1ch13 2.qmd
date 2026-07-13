@@ -1,0 +1,93 @@
+---
+title: "Chapter 13 · Unified Enterprise Transformation Architecture"
+subtitle: "Volume I · Integration and Transition · Week 6"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 13** · Taught in [Week 6](../schedule.html#week-6) · Lab seed `26113`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain why enterprise transformation cannot be understood from any single architecture, and why unification is a mathematical necessity rather than a presentational convenience.</li><li>Integrate the five enterprise architectures mathematically on their shared skeleton, and state exactly what the integration adds and what it leaves untouched.</li><li>Construct Unified Enterprise Transformation Architectures for declared enterprises: skeleton, layers, couplings, declarations.</li><li>Analyze interactions among architectures through the layered graph and the enterprise interaction matrix.</li><li>Evaluate architectural consistency across layers, including the cross-layer cycles that defeat local audits.</li><li>Model enterprise evolution in UETA: one state equation, five synchronized ledgers.</li><li>Analyze architectural dependencies: who reads what, who writes what, and along which certified channels.</li><li>Represent enterprise transformation holistically: a single program evaluated simultaneously in state, operator, capital, performance, and risk terms.</li><li>Prepare unified enterprise models for mathematical analysis (Chapter 14) and optimization (Chapter 15).</li><li>Understand the theoretical foundation that UETA provides for the General Enterprise Optimization Problem.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for a Unified Architecture
+2. The Five Architectures as Interfaces
+3. Integration Principles
+4. The Unified Enterprise Representation
+5. Enterprise Architecture Interactions
+6. Integrated Enterprise Dynamics
+7. Architectural Consistency
+8. The Enterprise Transformation Framework
+9. Architecture Visualization
+10. Worked Examples
+11. Preparation for Mathematical Analysis and Optimization
+12. Chapter Summary
+13. Exercises
+14. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-13 →](https://axiom-webapp.example/modules/axiom-13)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+19 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 13.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 13.1** — State the three integration principles of Section (see book) in your own words, and for each, name the theorem clause of this chapter that makes it exact.
+- **Exercise 13.2** — "Our transformation office evaluates programs on NPV; capital and risk sign off separately.
+- **Exercise 13.3** — A divisional CFO objects that unification will "override our capital model.
+- **Exercise 13.4** — For each zero block a governance team might declare in $\mathbf{M}$ (say $\AR \to \AT$: risk never restricts operator menus), state what the declaration certifies, what would void it, and who should be accountable for its honesty (Theorem (see book)(iii)).
+- **Exercise 13.5** — Explain, without formulas, why an enterprise that funds transformation from its stocks, manages to a plan corridor, and declares funded buffers *necessarily* has a constraint cycle that bilateral audits cannot certify (Theorem (see book)(iii)), and give the double-counted quantity in the canonical failure.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 13.6** — Write out the trivial unification of Proposition (see book) for a two-component enterprise (operators, capital map, one performance dimension, one risk functional, $\mathcal{K} = \varnothing$), verify (C1)--(C5) explicitly, and identify the first question that forces a nonempty $\mathcal{K}$.
+- **Exercise 13.7** — Complete the separating constructions of Theorem (see book)(iv): for the $\AP$ and $\AC$ cases, give explicit numerical instances (two declarations each) and the question whose answer separates them.
+- **Exercise 13.8 ★** — Formalize integration as a universal construction: show that $\AS \boxplus L$ satisfies a pushout-style universal property over the skeleton (any object receiving compatible maps from the layers factors through the UETA uniquely), and derive Theorem (see book)(i) from it.
+- **Exercise 13.9** — Two divisional UETAs share a treasury component but declare its funding-capacity indicator under different measurement contracts.
+- **Exercise 13.10** — Prove the principal-submatrix inequality used in Theorem (see book)(ii) (for nonnegative $\mathbf{M}$, $\rho(\mathbf{M}_{\ell\ell}) \le \rho(\mathbf{M})$), then generalize the gap construction: for any $\varepsilon > 0$, build $\mathbf{M}$ with all diagonal radii $\le \varepsilon$ and $\rho(\mathbf{M}) \ge 1$.
+- **Exercise 13.11** — For the Meridian layered graph of Example (see book), prove that layered distances weakly exceed skeleton distances between paired nodes, and characterize exactly when the inequality is strict (as in the covenant's $3$ versus $2$).
+- **Exercise 13.12** — Prove the deterministic case of Theorem (see book)(ii) directly (point-mass kernel), then show by a two-point example with a strictly convex loss functional that replacing the law by its mean breaks the square, quantifying the gap via Jensen.
+- **Exercise 13.13 ★** — Make Theorem (see book)(v) sharp: construct a UETA in which an invariant violation is consistent with errors in two different layers within one layered SCC, and show no observation of readouts outside the SCC can distinguish them--- then give the minimal additional probe that can.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 13.14** — (AXIOM-13) Build the Meridian interaction matrix from Table (see book)'s standing gains, compute $\rho(\mathbf{M})$ and its block attribution, and find the smallest single-block gain increase that crosses the cascade threshold.
+- **Exercise 13.15** — (AXIOM-13) The consistency auditor's preloaded instance: verify computationally that each pairwise audit passes and the joint feasibility check fails; then repair the instance three ways (relax the buffer, the corridor, the funding) and compare the repairs' costs in the performance ledger.
+- **Exercise 13.16** — (AXIOM-13) Seed the digital program at $(\mathrm{DIG}, T)$ and a demand shock at $(\mathrm{MKT}, S)$ in the same quarter; simulate the layered wavefronts and produce the ledger-clock table: first admissible quarter of effect for every (component, layer) readout.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 13.17** — Take an enterprise you know and draft its coupling register: at least one channel per class of Table (see book), each with carrier, direction, and a defensible gain estimate.
+- **Exercise 13.18** — For the bank of Example (see book), write the three declarations that read regulatory capital (stock, buffer, denominator) as one skeleton quantity under (C2)--(C3), and construct a concrete pairwise-consistent, jointly-infeasible instance among the three functions.
+- **Exercise 13.19** — Reconstruct Example (see book)'s three separated verdicts as constrained versions of the unified problem (Proposition (see book)(ii)): state exactly what each office holds fixed, exhibit the active coupling its verdict ignores, and rank the three separation gaps using the standing Meridian numbers.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch13_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch13_Lab.ipynb` *(forthcoming)* | `26113` |
+| Excel workbook | `DCT_V1_Ch13_Lab.xlsx` *(forthcoming)* | `26113` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26113`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

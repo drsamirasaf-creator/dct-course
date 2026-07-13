@@ -1,0 +1,86 @@
+---
+title: "Chapter 3 · Mathematical Foundations"
+subtitle: "Volume I · Foundations · Week 2"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 3** · Taught in [Week 2](../schedule.html#week-2) · Lab seed `26103`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Apply vector and matrix notation to enterprise models, including coordinates, bases, units, and the scaling transformations that relate alternative representations of the same enterprise state.</li><li>Define enterprise state spaces formally, as constrained subsets of finite products of attribute spaces, and construct them for enterprises with mixed continuous, ordinal, and categorical attributes.</li><li>Distinguish deterministic from stochastic enterprise representations, and identify the modeling circumstances under which each is adequate.</li><li>Interpret mappings and operators---domains, ranges, injectivity, composition, invertibility, and the Lipschitz property---as the mathematical carriers of enterprise transformation.</li><li>Apply the DCT notation constitution consistently, and state which mathematical conclusions are invariant to representational choices (bases, units, norms) and which are not.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Mathematical Language
+2. Sets and Mappings
+3. Vector Spaces and Enterprise Vectors
+4. Matrices and Linear Operators
+5. Metrics, Norms, and Distances
+6. Enterprise State Spaces
+7. Deterministic and Stochastic Models
+8. Chapter Summary
+9. Exercises
+10. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-03 →](https://axiom-webapp.example/modules/axiom-03)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+16 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 3.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 3.1** — Type-check each expression against the notation hierarchy, marking it well-formed or ill-formed and correcting the ill-formed: (a) $\mathbf{A}\x + \uc$; (b) $\x + \mathbf{A}$; (c) $\x^{\!\top}\mathbf{A}\x$; (d) $\Top \le \Xc$; (e) $d(\x, \Top\x')$; (f) $\rank(\x)$.
+- **Exercise 3.2** — Give one enterprise mapping that is injective but not surjective, one surjective but not injective, and one bijective, drawing all three from reporting, transformation, or diagnosis contexts, and state in one sentence each what the property means for its context.
+- **Exercise 3.3** — Explain, with two concrete operators, why transformation operators are defined with explicit domains rather than as total maps, and what modeling error the total-map convention would smuggle in.
+- **Exercise 3.4** — For each situation, argue in two or three sentences whether a deterministic or stochastic model is the appropriate regime (Table (see book)): (a) capacity planning one quarter ahead in a utility; (b) sizing a liquidity buffer against funding shocks; (c) sequencing the workstreams of an ERP migration; (d) pricing a multi-year technology bet.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 3.5** — Prove: for any mapping $f: \mathcal{A} \to \mathcal{B}$ and subsets $\mathcal{T}_1, \mathcal{T}_2 \subseteq \mathcal{B}$, $f^{-1}(\mathcal{T}_1 \cap \mathcal{T}_2) = f^{-1}(\mathcal{T}_1) \cap f^{-1}(\mathcal{T}_2)$, and show by counterexample that the analogous identity for images, $f(\mathcal{S}_1 \cap \mathcal{S}_2) = f(\mathcal{S}_1) \cap f(\mathcal{S}_2)$, can fail.
+- **Exercise 3.6** — Verify the monoid axioms of Theorem (see book)(i) in detail for total operators, and exhibit a natural enterprise operator that is not injective, explaining which distinct states it merges and why the merger is economically irreversible.
+- **Exercise 3.7** — Show that the bound $L_2 L_1$ of Theorem (see book)(ii) is tight for linear operators (equality for suitable $\Top_1$, $\Top_2$) and strict for a pair of your construction.
+- **Exercise 3.8** — Establish the sharp sandwich constants between $\norm{\cdot}_1$ and $\norm{\cdot}_\infty$ on $\R^n$: $\norm{\x}_\infty \le \norm{\x}_1 \le n \norm{\x}_\infty$, identifying the vectors attaining each bound.
+- **Exercise 3.9** — Complete the proof of Proposition (see book): verify each metric axiom for $d_{\mathbf{W}}$ line by line, and determine whether $d_{\mathbf{W}}$ remains a metric when $\mathbf{W}$ is (a) diagonal with one zero entry, (b) a general invertible matrix.
+- **Exercise 3.10 ★** — \ For affine operators $\Top_i\x = \mathbf{A}_i\x + \mathbf{b}_i$ ($i = 1, 2$) on $\R^n$, derive the exact condition under which $\Top_1 \circ \Top_2 = \Top_2 \circ \Top_1$, separating a matrix condition from a vector condition.
+- **Exercise 3.11 ★** — \ For Example (see book): verify the stated eigenvalues, compute $\rho(\mathbf{A})$, and determine the steady state $\bar{\x}$ under constant investment $u_k \equiv \bar{u} = 10$ by solving $\bar{\x} = \mathbf{A}\bar{\x} + \mathbf{B}\bar{u}$.
+- **Exercise 3.12** — In Theorem (see book), replace the one-hot embedding of a categorical attribute with an arbitrary injective assignment of distinct real numbers to categories.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 3.13** — (With AXIOM-03 or the Chapter 3 notebook.
+- **Exercise 3.14** — (With AXIOM-03 or the Chapter 3 notebook.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 3.15** — Extend your enterprise state vector from Exercise 2.
+- **Exercise 3.16 ★** — \ Model a merger of two enterprises with state spaces $\Xc^{A} \subseteq \R^{n_A}$ and $\Xc^{B} \subseteq \R^{n_B}$ as a transformation operator on the product space $\Xc^{A} \times \Xc^{B}$ into a combined space $\Xc^{AB}$.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch03_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch03_Lab.ipynb` *(forthcoming)* | `26103` |
+| Excel workbook | `DCT_V1_Ch03_Lab.xlsx` *(forthcoming)* | `26103` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26103`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

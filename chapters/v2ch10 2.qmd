@@ -1,0 +1,88 @@
+---
+title: "Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization"
+subtitle: "Volume II · Enterprise Optimization Under Uncertainty · Week 12"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 10** · Taught in [Week 12](../schedule.html#week-12) · Lab seed `26210`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Distinguish probabilistic uncertainty from fuzzy (graded, linguistic) uncertainty.</li><li>Formulate fuzzy enterprise optimization models.</li><li>Construct fuzzy membership functions matched to managerial semantics.</li><li>Define linguistic enterprise variables and their term sets.</li><li>Build enterprise fuzzy rule bases.</li><li>Explain the five-layer ANFIS architecture.</li><li>Train ANFIS enterprise models by hybrid learning.</li><li>Integrate learned fuzzy structure into robust optimization.</li><li>Formulate neuro-fuzzy enterprise policies with possibility-level guarantees.</li><li>Apply NF-REO to enterprise transformation problems.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Limitations of Classical Robust Optimization
+2. Enterprise Ambiguity
+3. Fuzzy Enterprise Variables
+4. Membership Functions
+5. Enterprise Linguistic Variables
+6. Fuzzy Enterprise Constraints
+7. Adaptive Neuro-Fuzzy Inference Systems (ANFIS)
+8. Neuro-Fuzzy Enterprise Optimization
+9. Learning Enterprise Decision Rules
+10. Enterprise Applications
+11. Computational Implementation
+12. Transition to Distributionally Robust Optimization
+13. Chapter Summary
+14. Worked Examples
+15. Exercises
+16. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-10 →](https://axiom-webapp.example/modules/axiom-10)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 10.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 10.1** — Classify each of the following as risk, ambiguity, or vagueness, and name the governing chapter: next quarter's demand draw; the correctness of the demand model; "healthy pipeline"; counterparty default; "excellent management"; the volatility parameter's true value.
+- **Exercise 10.2** — Explain why coverage and parsimony pull against each other in granulation, and how hedges partially reconcile them; give a liquidity term set violating each principle and the resulting optimization pathology.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 10.3** — Prove that a fuzzy set on $\R$ is a fuzzy number (quasi-concave, u.
+- **Exercise 10.4** — Show that the four operators of Table (see book) are ordered pointwise ({\L}ukasiewicz $\le$ product $\le$ min on $[0,1]^{2}$), that each is a $t$-norm or a mean, and determine which preserve the LP structure of Lemma (see book).
+- **Exercise 10.5** — Derive the interval-arithmetic rules for addition and scalar multiplication of fuzzy numbers via $\alpha$-cuts, and compute the fuzzy NPV of a two-period projec…
+- **Exercise 10.6** — In Example (see book), derive the closed form of the frontier $v(\lambda)$ and verify the marked coincidence $v(0.5) = $ the $\Gamma = 1$ value; characterize instances where the fuzzy dial and the Bertsimas--Sim budget disagree at every interior point.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 10.7** — Extend Theorem (see book) to first-order TSK systems (affine consequents) and to generalized-bell memberships, indicating exactly where the Gaussian product-closure argument must be replaced and by what.
+- **Exercise 10.8** — Prove the possibility--probability consistency bound behind \S(see book): if $\Prob$ is any probability measure with $\Prob([\fz{U}]_{\alpha}) \ge 1 - \alpha$ for all $\alpha$, then for every event $E$, $\Prob(E) \le \mathrm{Poss}(E) + $ (the gap vanishing as the cut family refines), and exhibit the extremal $\Prob$.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 10.9** — Reproduce Example (see book); then coarsen to $2 \times 2$ and refine to $5 \times 5$ rules, reporting the RMSE--parsimony trade and the rule-usage histograms; prune dead rules and retrain.
+- **Exercise 10.10** — Implement the $\lambda$-frontier tracer for Example (see book) with all three memberships steerable; produce the three-way sensitivity report of $\lambda^{*}$ to core/support shifts.
+- **Exercise 10.11** — Meridian credit underwriting: design a three-input linguistic scorecard (coverage-checked term sets), train its ANFIS on the synthetic default data of the AXIOM-10 module, assemble the NF-REO approval policy with a fuzzy loss-tolerance goal, and present the explainability dashboard a regulator would receive: rule sentences, decision surface, and the $\lambda$-frontier.
+- **Exercise 10.12 ★** — Develop type-2 fuzzy NF-REO: memberships whose grades are themselves fuzzy (uncertainty about semantics).
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch10_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch10_Lab.ipynb` *(forthcoming)* | `26210` |
+| Excel workbook | `DCT_V2_Ch10_Lab.xlsx` *(forthcoming)* | `26210` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26210`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

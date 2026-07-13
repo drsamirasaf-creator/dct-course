@@ -1,0 +1,85 @@
+---
+title: "Chapter 2 · Enterprise Systems and Transformation"
+subtitle: "Volume I · Foundations · Week 1"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 2** · Taught in [Week 1](../schedule.html#week-1) · Lab seed `26102`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain enterprises as open dynamic systems: purposeful wholes maintaining themselves through continuous exchange with an environment, and formalize this claim in the system septuple of Definition (see book).</li><li>Distinguish systems, subsystems, and environments, and apply the distinction consistently to concrete enterprises at several levels of resolution.</li><li>Describe enterprise boundaries and interfaces, explain why boundary placement is a modeling decision, and state precisely what is and is not invariant to that decision (Theorem (see book)).</li><li>Explain feedback and adaptation, distinguish them formally (feedback acts on inputs; adaptation acts on the rule), and reduce adaptive systems to ordinary systems on an augmented state space (Proposition (see book)).</li><li>Interpret transformation as system evolution: a designed change of state, structure, or rule, formalized as the enterprise transformation process of Definition (see book).</li><li>Relate systems concepts to enterprise modeling, identifying for a given analytical question the appropriate boundary, resolution level, and feedback structure.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Systems Thinking and Enterprise Analysis
+2. Open Enterprise Systems
+3. Enterprise Boundaries and Environment
+4. Hierarchy and Subsystems
+5. Feedback, Adaptation, and Control
+6. Enterprise Transformation
+7. Chapter Summary
+8. Exercises
+9. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-02 →](https://axiom-webapp.example/modules/axiom-02)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+16 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 2.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 2.1** — For an enterprise you know well, instantiate every slot of the septuple (see book) in one line each, at enterprise-level resolution.
+- **Exercise 2.2** — Using Table (see book), explain why a run-off insurance portfolio approximates a closed system and why the approximation degrades over time.
+- **Exercise 2.3** — Classify each of the following recurring boundary debates as a choice of $B$ in Definition (see book), stating for each what moves between interface and interior: (a) franchisees; (b) a 40 (d) a sole-source supplier under a ten-year contract; (e) a captive finance subsidiary.
+- **Exercise 2.4** — Give Meridian's three-level hierarchy explicitly and, for the Advanced Materials division, list its environment per Definition (see book).
+- **Exercise 2.5** — Classify each of the following as negative or positive, and as first- or second-order, feedback (Table (see book)): (a) a thermostat-style working-capital policy; (b) a bonus formula revised after a risk failure; (c) viral referral incentives; (d) an annual strategy review that changes capital-allocation rules; (e) credit-rating downgrades raising funding costs.
+- **Exercise 2.6** — State, in two sentences without symbols and then in one line with symbols, the difference between feedback and adaptation.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 2.7** — In Proposition (see book), the absence of algebraic loops relied on the output map having no direct input channel.
+- **Exercise 2.8** — Write out the augmented system of Proposition (see book) fully for the scalar case $x_{k+1} = \theta_k x_k + u_k + w_k$, $u_k = -\theta_k x_k$, $\theta_{k+1} = \theta_k + \eta\,(x_k^2 - c)$, identifying $F$ explicitly.
+- **Exercise 2.9** — Prove the following supplement to Theorem (see book)(iii): if $B \subseteq B'$ and both induce the same classification of $F$, then every entity of $B' \setminus B$ is flow-disengaged ($\notin E_F$).
+- **Exercise 2.10 ★** — \ Let $E = \{1, 2, 3\}$ with flows $F = \{(1,2,\kappa_1), (2,3,\kappa_2), (3,1,\kappa_3)\}$.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 2.11** — Write a one-page memorandum to Meridian's board resolving the dealer-network boundary question.
+- **Exercise 2.12** — For the hospital of Example (see book), draw the loop diagram containing: occupancy, staffing, fatigue, attrition, quality, and referral volume.
+- **Exercise 2.13** — For the bank of Example (see book), express the state-dependence of the decision set as an explicit constraint $\uc_k \in \Uc(\x_k)$ induced by a capital-adequacy rule of the form (risk-weighted assets)/(capital) $\le \kappa$.
+- **Exercise 2.14 ★** — \ Ashby's law of requisite variety [3] asserts, informally, that a regulator must command at least as much variety as the disturbances it regulates against.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 2.15** — (With AXIOM-02 or the Chapter 2 notebook.
+- **Exercise 2.16** — (With AXIOM-02 or the Chapter 2 notebook.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch02_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch02_Lab.ipynb` *(forthcoming)* | `26102` |
+| Excel workbook | `DCT_V1_Ch02_Lab.xlsx` *(forthcoming)* | `26102` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26102`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

@@ -1,0 +1,87 @@
+---
+title: "Chapter 16 · Enterprise Applications and Integrated Transformation Case Studies"
+subtitle: "Volume II · Applications and Synthesis · Week 14"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 16** · Taught in [Week 14](../schedule.html#week-14) · Lab seed `26216`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Integrate all DCT enterprise architectures into a unified solution.</li><li>Formulate enterprise transformation problems as GEOP instances.</li><li>Apply the appropriate optimization methodology to each case's structure.</li><li>Select suitable AI and machine learning methods for decision support.</li><li>Construct Enterprise Digital Twin solutions.</li><li>Evaluate enterprise transformation alternatives on computed evidence.</li><li>Balance financial and non-financial objectives.</li><li>Develop enterprise implementation roadmaps.</li><li>Communicate optimization recommendations to executive stakeholders.</li><li>Critically evaluate transformation outcomes.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Integrated Enterprise Transformation Methodology
+2. Case Study Methodology
+3. Manufacturing Enterprise
+4. Financial Services Enterprise
+5. Healthcare Enterprise
+6. Energy and Infrastructure Enterprise
+7. Technology Enterprise
+8. Government and Public Sector Enterprise
+9. Private Equity and Venture Capital Enterprise
+10. Cross-Case Comparative Analysis
+11. Lessons Learned
+12. Future Enterprise Transformation
+13. Chapter Summary
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-16 →](https://axiom-webapp.example/modules/axiom-16)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 16.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 16.1** — For each case study, name the binding structure, its dual price's managerial meaning, and the convention the optimized answer displaced.
+- **Exercise 16.2** — The energy case found expectation and worst case agreeing; construct a plausible parameter change (capex, carbon distribution) under which they disagree, and explain which Chapter 9--11 doctrine then governs the build.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 16.3** — Derive the water-filling solution of the government case from the KKT conditions, including the threshold condition under which an area receives zero, and verify $(28.5, 18.0, 3.5, 0)$ analytically.
+- **Exercise 16.4** — Derive $t^{*} = (g - \rho)/d$ for the private-equity case, extend to a stochastic $g$ learned by the NAV twin (replace $g$ by the posterior mean), and quantify …
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 16.5** — Prove that in the bank LP any optimum exhausts the risk budget whenever every line's return is positive, and that the optimal allocation is monotone in the risk budget (parametric LP argument); interpret both facts for capital committees.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 16.6** — Reproduce the manufacturing case; then sweep the ESG intensity ceiling from $80$ to $110$ and plot NPV and $g^{*}$ against it, locating the ceiling at which green investment becomes voluntary.
+- **Exercise 16.7** — Reproduce the technology portfolio; then let an agentic scanner (Ch.
+- **Exercise 16.8** — Prepare the healthcare case's executive presentation: one page of formulation in clinical language, the computed mix with the binding ratio explained, the twin's resilience numbers, and the three questions a chief medical officer will ask with your answers.
+- **Exercise 16.9** — Design the government case's public disclosure: publish the welfare model, weights, saturations, and KKT price in a form a legislature can debate, and defend the program-4 corner against the equity objection.
+- **Exercise 16.10 ★** — Formulate the seven cases as a federated ecosystem (Definition 15.
+- **Exercise 16.11** — Full-stack engagement: select any real or synthetic enterprise, execute the complete Figure (see book) workflow---architectures, GEOP, learning, AI augmentation, twin, roadmap---and deliver the executive pack plus the AXIOM-16 laboratory instance, with every headline number computed and every binding structure named.
+- **Exercise 16.12** — Post-transformation audit: for a completed transformation (yours from Exercise (see book) or a published case), reconstruct what the DCT stack would have recommended, measure realized against recommended decisions, attribute the gap across the Theorem 15.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch16_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch16_Lab.ipynb` *(forthcoming)* | `26216` |
+| Excel workbook | `DCT_V2_Ch16_Lab.xlsx` *(forthcoming)* | `26216` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26216`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

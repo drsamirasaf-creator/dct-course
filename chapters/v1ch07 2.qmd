@@ -1,0 +1,91 @@
+---
+title: "Chapter 7 · Dynamic Enterprise Systems"
+subtitle: "Volume I · Mathematical Representation · Week 4"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 7** · Taught in [Week 4](../schedule.html#week-4) · Lab seed `26107`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Define a Dynamic Enterprise System mathematically, as the integration of state representation (ESA) and transformation operators (ETA) under an explicit time semantics.</li><li>Formulate deterministic enterprise state equations in continuous and discrete time, with declared system class (autonomous, time-invariant, linear).</li><li>Model enterprise evolution through time, including the superposition of inherited momentum and program contribution in the linear regime.</li><li>Distinguish continuous-time and discrete-time enterprise systems, and convert between them exactly in the linear time-invariant case.</li><li>Analyze enterprise trajectories: existence, uniqueness, continuous dependence on initial conditions, and invariance of the feasible region.</li><li>Interpret equilibrium and steady-state behavior, including input-shifted equilibria and multiplicity.</li><li>Evaluate enterprise stability by the spectral tests and by Lyapunov's direct method.</li><li>Apply feedback within enterprise dynamics: gain design, constructive pole placement, and the overcorrection phenomenon.</li><li>Analyze enterprise responses to external inputs, and determine which internal states are reconstructible from observed outputs.</li><li>Prepare deterministic enterprise systems for the stochastic generalization of Chapter 8.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Dynamic Enterprise Systems
+2. Dynamic Enterprise Systems and Their Equations
+3. Continuous and Discrete Time
+4. The State Transition Structure
+5. Enterprise Equilibria
+6. Enterprise Stability
+7. Feedback in Enterprise Dynamics
+8. Worked Examples
+9. Preparation for Stochastic Enterprise Dynamics
+10. Chapter Summary
+11. Exercises
+12. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-07 →](https://axiom-webapp.example/modules/axiom-07)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+19 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 7.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 7.1** — Classify each of the following along all four axes of Table (see book), one line each: (a) a quarterly covenant-compliance model; (b) an intraday liquidity model; (c) a platform-adoption model with network effects; (d) a model of demand under an announced regulatory phase-in.
+- **Exercise 7.2** — For your own enterprise, name two decision inputs, two environment inputs, one delivered output, and two reported outputs; state which reported output is a *mixture* of state coordinates rather than a single coordinate, and why that matters for Theorem (see book)(iii).
+- **Exercise 7.3** — Distinguish "equilibrium of the autonomous dynamics" from "steady state under a held policy," using (see book); give a Meridian instance where the two differ and explain which one a board target should reference.
+- **Exercise 7.4** — A colleague discretizes a continuous LTI treasury model by Euler's method with $\Delta$ one quarter.
+- **Exercise 7.5** — Give one enterprise scenario for each row of Table (see book), distinct from the instances printed there, and state for each which test you would run.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 7.6** — From the continuous-dependence bound (see book), derive the forecastable-horizon formula $t_{\max} \approx (1/L)\ln( \mathrm{tol}/\mathrm{err})$ for tolerance $\mathrm{tol}$ and initial measurement error $\mathrm{err}$; evaluate it for Meridian's capability coordinate ($\pm 5$ points per Table 5.
+- **Exercise 7.7** — Prove the generalized Gr\"onwall inequality with time-varying rate: if $\varphi(t) \le c + \int_0^t \ell(s)\varphi(s)\, \mathrm{d}s$ with $\ell \ge 0$ continuous, then $\varphi(t) \le c\,\exp\bigl(\int_0^t \ell(s)\,\mathrm{d}s\bigr)$.
+- **Exercise 7.8** — Prove the diagonalizable case of Theorem (see book)(i) in full: for $\mathbf{A} = \mathbf{V}\boldsymbol{\Lambda}\mathbf{V}^{-1}$, show $\norm{\x_k} \le \kappa(\mathbf{V})\,\rho(\mathbf{A})^{k} \norm{\x_0}$ with $\kappa(\mathbf{V}) = \norm{\mathbf{V}} \norm{\mathbf{V}^{-1}}$, and explain the enterprise meaning of a large eigenbasis condition number (near-parallel modes: transient growth before decay).
+- **Exercise 7.9 ★** — \ For the planar rotation $\mathbf{A} = \bigl[\begin{smallmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{smallmatrix}\bigr]$, prove Lyapunov stability of the origin directly from Definition (see book) (exhibit $\delta(\varepsilon)$), prove that asymptotic stability fails, and exhibit the Jordan pair at $\rho = 1$ whose instability completes the theorem's "inconclusive" clause.
+- **Exercise 7.10** — Re-derive (see book) by splitting $\x_k = \x_k^{\mathrm{free}} + \x_k^{\mathrm{forced}}$ from the start: define the two sequences by their own recursions, prove each satisfies it, and prove the sum satisfies the original---superposition as three small inductions.
+- **Exercise 7.11** — A covenant package reports $\mathbf{y}_k = \mathbf{C}\x_k$ with $\mathbf{C}$ selecting (leverage, liquidity) from a four-coordinate state (liquidity, leverage, capability, technology) whose $\mathbf{A}$ couples capability into liquidity with a one-period lag but couples technology into nothing financial for two periods.
+- **Exercise 7.12 ★** — \ Carry out Theorem (see book)(iii) for $n = 2$ from scratch: take $\mathbf{A} = \bigl[\begin{smallmatrix}0 & 1 \\ -a_2 & -a_1\end{smallmatrix} \bigr]$, $\mathbf{B} = [0, 1]^{\!\top}$, desired eigenvalues $\{0.5, 0.6\}$; compute $\mathbf{K}$, verify the closed-loop characteristic polynomial by direct expansion, and then repeat with desired eigenvalues $\{0.5 \pm 0.3i\}$ to confirm complex placement.
+- **Exercise 7.13** — Derive the general overcorrection threshold for the scalar system with delay: $x_{k+1} = a x_k + b u_{k-1}$ (the decision acts one period late), under $u_k = -k x_k$.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 7.14** — (With AXIOM-07 or the Chapter 7 notebook.
+- **Exercise 7.15** — (With AXIOM-07 or the Chapter 7 notebook.
+- **Exercise 7.16** — (With AXIOM-07 or the Chapter 7 notebook.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 7.17** — Write the dynamic declaration (Table (see book) row memberships, with justification and expiry conditions) for the enterprise model you built in Exercises 4.
+- **Exercise 7.18** — Write a one-page gain audit of one management control loop you know (pricing, hiring, inventory, credit approval): the deviation variable, the instrument, the estimated $(a, b)$, the operating gain and its Table (see book) regime, the computed $k_{\mathrm{crit}}$, and one observed episode reinterpreted through the chart.
+- **Exercise 7.19** — For a perimeter-changing transformation you know (divestiture, carve-out, acquisition), sketch the hybrid timeline of Example (see book): pre-dynamics, jump operator with feasibility check, post-dynamics, and the three-item discipline (jump feasibility, post-spectrum re-diagnosis, revalidation) with the evidence each item would require.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch07_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch07_Lab.ipynb` *(forthcoming)* | `26107` |
+| Excel workbook | `DCT_V1_Ch07_Lab.xlsx` *(forthcoming)* | `26107` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26107`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::
