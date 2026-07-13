@@ -92,9 +92,9 @@ advanced track. **Full solutions appear in the Instructor's Manual, Chapter 15.*
 
 | Resource | File | Seed |
 |---|---|---|
-| Lecture deck | `DCT_V1_Ch15_Slides.pptx` *(forthcoming)* | — |
-| Python laboratory | `DCT_V1_Ch15_Lab.ipynb` *(forthcoming)* | `26115` |
-| Excel workbook | `DCT_V1_Ch15_Lab.xlsx` *(forthcoming)* | `26115` |
+| Lecture deck | [`DCT_V1_Ch15_Slides.pptx`](../downloads/DCT_V1_Ch15_Slides.pptx) | — |
+| Python laboratory | [Open the laboratory page →](../labs/v1ch15_laboratory.html) · [`DCT_V1_Ch15_Lab.ipynb`](../downloads/DCT_V1_Ch15_Lab.ipynb) | `26115` |
+| Excel workbook | [`DCT_V1_Ch15_Lab.xlsx`](../downloads/DCT_V1_Ch15_Lab.xlsx) | `26115` |
 
 ::: {.callout-note appearance="simple"}
 All three companions consume the same seeded engine (`26115`), so their numbers
