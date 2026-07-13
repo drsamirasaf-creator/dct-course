@@ -1,0 +1,77 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Dynamic Corporate Transformation"
+  description: "Graduate course companion to the two-volume DCT series"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: syllabus.qmd
+        text: Syllabus
+      - href: schedule.qmd
+        text: Schedule
+      - href: axiom.qmd
+        text: AXIOM Lab
+      - href: labs.qmd
+        text: Labs & Downloads
+      - href: instructor.qmd
+        text: Instructors
+  sidebar:
+    - title: "Chapters"
+      style: docked
+      collapse-level: 1
+      contents:
+        - section: "Volume I — Foundations"
+          contents:
+          - chapters/v1ch01.qmd
+          - chapters/v1ch02.qmd
+          - chapters/v1ch03.qmd
+          - chapters/v1ch04.qmd
+          - chapters/v1ch05.qmd
+          - chapters/v1ch06.qmd
+          - chapters/v1ch07.qmd
+          - chapters/v1ch08.qmd
+          - chapters/v1ch09.qmd
+          - chapters/v1ch10.qmd
+          - chapters/v1ch11.qmd
+          - chapters/v1ch12.qmd
+          - chapters/v1ch13.qmd
+          - chapters/v1ch14.qmd
+          - chapters/v1ch15.qmd
+          - chapters/v1ch16.qmd
+        - section: "Volume II — Enterprise Optimization"
+          contents:
+          - chapters/v2ch01.qmd
+          - chapters/v2ch02.qmd
+          - chapters/v2ch03.qmd
+          - chapters/v2ch04.qmd
+          - chapters/v2ch05.qmd
+          - chapters/v2ch06.qmd
+          - chapters/v2ch07.qmd
+          - chapters/v2ch08.qmd
+          - chapters/v2ch09.qmd
+          - chapters/v2ch10.qmd
+          - chapters/v2ch11.qmd
+          - chapters/v2ch12.qmd
+          - chapters/v2ch13.qmd
+          - chapters/v2ch14.qmd
+          - chapters/v2ch15.qmd
+          - chapters/v2ch16.qmd
+  page-footer:
+    center: "© 2026 Samir Asaf · *Dynamic Corporate Transformation* · All rights reserved"
+
+format:
+  html:
+    theme:
+      light: [flatly, styles/theme.scss]
+      dark: [darkly, styles/theme-dark.scss]
+    css:
+      - styles/custom.css
+    toc: true
+    include-in-header: assets/mathjax-macros.html
+    html-math-method: mathjax

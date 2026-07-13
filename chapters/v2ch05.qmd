@@ -1,0 +1,87 @@
+---
+title: "Chapter 5 · Dynamic Enterprise Optimization"
+subtitle: "Volume II · Dynamic Enterprise Optimization · Week 10"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 5** · Taught in [Week 10](../schedule.html#week-10) · Lab seed `26205`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the distinction between static and dynamic enterprise optimization, and identify the declared mechanisms---stocks, delays, feedback, path constraints---that force the dynamic formulation.</li><li>Formulate enterprise optimization problems over continuous time in the canonical Bolza form, identifying state, decision, dynamics, running and terminal value, and path requirements.</li><li>Construct enterprise state trajectories as solutions of declared state-transition equations, and verify the hypotheses under which they exist, are unique, and depend continuously on data.</li><li>Define time-dependent decision variables and policy functions, and distinguish open-loop schedules from feedback rules by their information structure.</li><li>Interpret enterprise dynamics as optimization constraints that couple every instant's decision to every later state.</li><li>Formulate dynamic objective functionals with running and terminal components, discounting, and horizon conventions.</li><li>Analyze intertemporal enterprise trade-offs: investment versus harvest, smoothing versus timing, dips endured for landings.</li><li>Evaluate enterprise evolution under dynamic constraints, including corridors, integral budgets, and terminal targets, and read feasibility as a property of whole trajectories.</li><li>Develop complete dynamic enterprise optimization models for capital, workforce, transformation, innovation, restructuring, and sustainability planning.</li><li>Prepare enterprise models for optimal control: state the formulation contract that Pontryagin's theory (Chapter 6), dynamic programming (Chapter 8), and direct transcription consume.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Dynamic Enterprise Optimization
+2. Enterprise Dynamics
+3. Time-Dependent Enterprise States
+4. Enterprise Decision Policies
+5. Dynamic Objective Functionals
+6. Dynamic Enterprise Constraints
+7. Enterprise State Trajectories
+8. Intertemporal Trade-Offs
+9. Dynamic Enterprise Policy Design
+10. Computational Considerations
+11. Preparation for Optimal Control
+12. Chapter Summary
+13. Worked Examples
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-04 →](https://axiom-webapp.example/modules/axiom-04) · [AXIOM-05 →](https://axiom-webapp.example/modules/axiom-05)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 5.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 5.1** — A planning model treats "integration fatigue" as an exogenous quarterly adjustment.
+- **Exercise 5.2** — State the composition law (see book) in words and explain why it licenses planning $[0, T]$ in stages.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 5.3** — Prove the integral form of Gr\"onwall's inequality used in Theorem (see book)(i): if $\phi(t) \le a + b\int_0^t \phi(s)\, ds$ with $b > 0$, then $\phi(t) \le a e^{bt}$.
+- **Exercise 5.4** — For the pipeline system of Example (see book), write $A$ and $B$, compute the eigenvalues and $e^{At}$, and derive the senior-pool response to a unit hiring impulse.
+- **Exercise 5.5** — Derive $u^{*}(T, S) = A(T, S)/D(T)$ of Proposition (see book) in closed form (evaluate the integrals), and complete the numeric verification of strict monotonicity in $T$ on $(0, 2.1]$ left to this exercise by the proof.
+- **Exercise 5.6** — Construct an instance with a mixed constraint on built capability under which two admissible concentration plans blend to an *inadmissible* plan, completing the caveat of Theorem (see book)(iii).
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 5.7** — Prove the differential form of Gr\"onwall's inequality (if $\dot\phi \le b(t)\phi + a(t)$ a.
+- **Exercise 5.8** — Prove Jensen's inequality in the integral form used by Proposition (see book)(i), with the equality characterization.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 5.9** — Implement the capital instance with an error-controlled integrator; reproduce the four policy values of Example (see book) to three decimals and plot Figure (see book)'s trajectories.
+- **Exercise 5.10** — Implement gradient-through-simulation for the capital instance: forward simulate, backward accumulate the discrete adjoint, and verify the gradient of $J$ in the mesh decisions against finite differences.
+- **Exercise 5.11** — Formulate Meridian's covenant management dynamically: leverage state with declared amortization, covenant band as a state corridor, response schedule as the declared feedback family; audit trajectory-level admissibility across the standing scenario fan and identify the binding quarters.
+- **Exercise 5.12 ★** — Extend the admissibility theory to state-constrained instances with viability kernels: formalize the feasibility funnel of Example (see book) as a viability kernel, develop its computation, and prove the monotone shrinkage that the simulation exhibits.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch05_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch05_Lab.ipynb` *(forthcoming)* | `26205` |
+| Excel workbook | `DCT_V2_Ch05_Lab.xlsx` *(forthcoming)* | `26205` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26205`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

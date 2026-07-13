@@ -1,0 +1,92 @@
+---
+title: "Chapter 10 · Enterprise Capital Architecture"
+subtitle: "Volume I · Enterprise Architectures · Week 5"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 10** · Taught in [Week 5](../schedule.html#week-5) · Lab seed `26110`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Define enterprise capital mathematically: durable, accumulable, depreciable, productive stocks carried on the state architecture.</li><li>Distinguish among the forms of enterprise capital by their formal characteristics---depreciation, build time, tradability, separability---not by label alone.</li><li>Construct enterprise capital vectors as declared measurements on the ESA, with carriers, units, and indicators.</li><li>Analyze capital interactions: conversion channels with efficiencies, and complementarities with their bottleneck and supermodularity consequences.</li><li>Evaluate capital dependencies through the capital dependency graph, inheriting the propagation discipline of Chapter 9.</li><li>Measure the capital architecture: stocks, flows, productivity, and the conservation audit that detects undeclared channels.</li><li>Explain capital accumulation exactly: geometric dynamics, the sustaining-investment identity, and time-to-build floors.</li><li>Explain capital depletion and its asymmetry with accumulation---fast to burn, slow to rebuild---and its effect on the executable operator set.</li><li>Interpret enterprise capital dynamics as Part II dynamics on a distinguished sub-state, with allocation as the control.</li><li>Prepare capital representations for performance attribution (Chapter 11), risk (Chapter 12), and optimization (Chapter 15 and Volume II).</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Enterprise Capital Architecture
+2. Capital Beyond Finance
+3. The Enterprise Capital Architecture
+4. The Forms of Enterprise Capital
+5. Capital Dependencies
+6. Capital Accumulation and Depletion
+7. Capital Allocation and Productivity
+8. Architecture Consistency and Capital Dynamics
+9. Worked Examples
+10. Preparation for Enterprise Performance Architecture
+11. Chapter Summary
+12. Exercises
+13. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-09 →](https://axiom-webapp.example/modules/axiom-09) · [AXIOM-10 →](https://axiom-webapp.example/modules/axiom-10)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+19 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 10.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 10.1** — State the four stock-semantics properties of Definition (see book) and test each against three candidate "capitals": a brand, a quarterly revenue figure, and an exclusive license; classify each as capital, flow, or neither, with one sentence per test.
+- **Exercise 10.2** — Using Table (see book), explain why organizational capital's profile (untradable, non-separable, low $\delta$, long build) makes it simultaneously the most defensible and the most dangerous form to deplete.
+- **Exercise 10.3** — Give one enterprise situation each for the bottleneck regime and the complementarity regime of Theorem (see book), and name the observable that would tell you which regime you are in.
+- **Exercise 10.4** — Explain "capital is a rental" to a budget committee in four sentences, including the identity $I = \delta C^{\ast}$ and one concrete consequence of a one-year rent holiday.
+- **Exercise 10.5** — What is the plug of Theorem (see book)(iii), why is a persistent plug informative rather than embarrassing, and what two failures does a nonzero plug disambiguate between?
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 10.6** — Prove Theorem (see book)(i) by direct induction, then re-derive it as a corollary of Theorem 7.
+- **Exercise 10.7** — Derive the time-to-build floor in full: from the gap recursion $\bar C - C_{k+1} \ge (1-\delta)(\bar C - C_k)$, prove no admissible policy exceeds the full-throttle path at any date, and compute $k_{0.1}$ for $\delta \in \{0.05, 0.15, 0.30\}$.
+- **Exercise 10.8** — Extend Theorem (see book)(ii) to chains: for a conversion path $1 \to 2 \to \cdots \to m$ executed sequentially, show the end-to-end efficiency is $\prod \eta_{i,i+1}$ and the total leak of converting amount $T$ is $T(1 - \prod \eta)$; relate the product form to Theorem 6.
+- **Exercise 10.9 ★** — \ State and prove the equalization conditions of Theorem (see book)(i) as the KKT conditions of the concave program $\max F(\Cvec + \mathbf{a})$ s.
+- **Exercise 10.10** — For $F = \min(C_1/1,\ C_2/2)$ with $\Cvec_0 = (10, 30)$ and budget $B = 20$: compute the optimal allocation, the capacity path as a function of budget spent, and the kink point where the bottleneck rotates; sketch capacity versus budget.
+- **Exercise 10.11 ★** — \ For $F(C_1, C_2) = C_1^{\alpha} C_2^{\beta}$ with $\alpha, \beta > 0$, $\alpha + \beta < 1$: verify strict complementarity (compute the cross-partial), solve the equalization conditions explicitly for the optimal split of budget $B$, and show the funded ratio $a_1/a_2$ depends on the existing stocks---one-sided histories tilt optimal funding toward the neglected complement.
+- **Exercise 10.12** — Formalize the asymmetry of Proposition (see book): for a stock at floor $c$ suffering a write-off of size $w$, show the mandatory repurchase period is $k(w) \ge \ln\bigl((\bar C - c + w)/(\bar C - c)\bigr) / \ln(1/(1-\delta))$ and expand for small $w$ to obtain the marginal repurchase time $w / (\delta(\bar C - c))$ periods per unit written off.
+- **Exercise 10.13** — Prove the localization claim of Theorem (see book)(iii): if exactly one channel is undeclared, show $\pi_{i,k}$ equals that channel's flow (with sign determined by its direction), and explain how the correlation of $\pi$ with candidate drivers identifies the channel.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 10.14** — (With AXIOM-10 or the Chapter 10 notebook.
+- **Exercise 10.15** — (With AXIOM-10 or the Chapter 10 notebook.
+- **Exercise 10.16** — (With AXIOM-10 or the Chapter 10 notebook.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 10.17** — Construct the capital vector for an enterprise you know: seven or more forms with carriers, units, two indicators each (Table (see book) style), estimated $\delta$ with one sentence of evidence, and error bars---then flag the form whose measurement you trust least and why it matters most.
+- **Exercise 10.18** — Write the sustaining-investment memo: for three stocks from Exercise (see book), compute the rent $\delta C^{\ast}$, compare against actual maintenance flows, and state which stocks are being silently liquidated---one page, ending with the single reallocation you would propose.
+- **Exercise 10.19** — Audit one past or planned transformation as capital conversion: declare its channels ($I$, $O$, $T$ with $\eta$ estimates), compute the conversion bill, run the plug logic on the slow stocks ($C_O$, $C_R$), and price the repurchase liability of Proposition (see book)---the pro-forma line the original business case omitted.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch10_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch10_Lab.ipynb` *(forthcoming)* | `26110` |
+| Excel workbook | `DCT_V1_Ch10_Lab.xlsx` *(forthcoming)* | `26110` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26110`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

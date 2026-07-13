@@ -1,0 +1,87 @@
+---
+title: "Chapter 2 · The General Enterprise Optimization Problem Revisited"
+subtitle: "Volume II · Enterprise Optimization Foundations · Week 8"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 2** · Taught in [Week 8](../schedule.html#week-8) · Lab seed `26202`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Formulate the General Enterprise Optimization Problem in its canonical five-block form, discrete- and continuous-time.</li><li>Distinguish objective functions from enterprise performance measures, and state what promotion from measure to objective adds and obliges.</li><li>Identify enterprise decision variables and state variables, and keep the chosen/induced boundary exact.</li><li>Construct enterprise constraint systems across the five mathematical forms and six architectural provenances.</li><li>Differentiate equality and inequality constraints, and path, boundary, and decision-set constraints, with the multiplier previews each carries.</li><li>Define enterprise feasibility for policies and trajectories, and certify it rather than assume it.</li><li>Interpret enterprise solution spaces: feasible sets, optimal sets, and the value order that ranks only inside feasibility.</li><li>Explain enterprise optimization architectures: the five-layer computational stack from declaration to implementation.</li><li>Recognize the classes of enterprise optimization problems and place classical formulations as GEOP special cases.</li><li>Prepare GEOP formulations for computational solution: standard forms, scaling, sparsity, and export.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Review of GEOP from Volume I
+2. Enterprise Decision Variables
+3. Enterprise State Variables
+4. Objective Functions
+5. Constraint Systems
+6. Enterprise Feasible Regions
+7. Enterprise Optimization Architectures
+8. Classes of Enterprise Optimization Problems
+9. Canonical GEOP Formulation
+10. Computational Preparation
+11. Transition to Convex Optimization
+12. Worked Examples
+13. Chapter Summary
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-02 →](https://axiom-webapp.example/modules/axiom-02)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 2.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 2.1** — Name the five constraint blocks of the canonical GEOP and give one Meridian instance of each, citing the block's architectural provenance.
+- **Exercise 2.2** — Explain why the Bolza/Mayer/Lagrange choice is representational while the $L$-versus-$\Phi_T$ *content* split is governance, citing Theorem (see book) and the window doctrine.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 2.3** — Write Example (see book)'s instance fully in the notation of Table (see book): every block, every symbol bound, empty blocks declared empty.
+- **Exercise 2.4** — Carry out Mayer-to-Lagrange for $\Phi_T(\x) = \mathbf{c}^{\top} \x$ on linear dynamics: compute the induced running term $\ell_k$ explicitly and identify the policy-independent constant.
+- **Exercise 2.5** — Show that exponential discounting is a declared weight inside $L$ (define $L_k = \beta^k \ell(\x_k, \uc_k)$), and that re-expressing it as an augmented-state multiplicative factor yields the same optimal set; where does Theorem (see book)(iii) enter?
+- **Exercise 2.6** — Show that rescaling constraint $g_i \mapsto \gamma_i g_i$ ($\gamma_i > 0$) and variables $\uc \mapsto \mathbf{D}\uc$ (diagonal, positive) preserves feasible and optimal sets; identify what the rescaling changes (conditioning, multiplier units) and record the multiplier transformation rule.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 2.7** — Prove Proposition (see book)'s open-loop clause in detail: the constant-rule subclass is a declared policy class, its induced problem has the same data as the sequence-decision problem, and feasible/optimal correspondences are bijections.
+- **Exercise 2.8** — Prove that minimal infeasible subsystems need not be unique: construct an instance with two distinct minimal subsystems and show a repair relaxing a constraint in their intersection fixes both, while one outside some subsystem fixes neither.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 2.9** — (With AXIOM-02 or the Chapter 2 notebook.
+- **Exercise 2.10** — (With AXIOM-02 or the Chapter 2 notebook.
+- **Exercise 2.11** — Write one live decision of an enterprise you know in the full five-block template, empty blocks declared empty, every symbol of Table (see book) bound or explicitly unused.
+- **Exercise 2.12 ★** — \ Minimal infeasible subsystems can be exponentially numerous.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch02_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch02_Lab.ipynb` *(forthcoming)* | `26202` |
+| Excel workbook | `DCT_V2_Ch02_Lab.xlsx` *(forthcoming)* | `26202` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26202`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

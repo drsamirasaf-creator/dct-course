@@ -1,0 +1,91 @@
+---
+title: "Chapter 6 · Enterprise Transformation Operators"
+subtitle: "Volume I · Mathematical Representation · Week 3"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 6** · Taught in [Week 3](../schedule.html#week-3) · Lab seed `26106`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Define Enterprise Transformation Operators mathematically, as declared partial self-maps on the enterprise state space.</li><li>Distinguish deterministic from stochastic transformations by the single-valuedness of their event families, and know where each is treated.</li><li>Represent enterprise evolution using transformation mappings, including the equivalence between operator application and system transition (Theorem (see book)).</li><li>Analyze operator composition and sequencing, with the domain algebra that governs when programs chain.</li><li>Define transformation domains and codomains, and use domains as the mathematical carrier of preconditions.</li><li>Interpret transformation trajectories as orbits of operator words, and identify the sustainable core from which a playbook is indefinitely repeatable (Theorem (see book)).</li><li>Evaluate transformation feasibility, including mid-program feasibility and its failure modes.</li><li>Explain operator invertibility, and why irreversibility is the enterprise default.</li><li>Analyze transformation stability, including the propagation of implementation error through iterated and composed operators (Theorem (see book)).</li><li>Prepare transformation operators for the dynamic-systems integration of Chapter 7.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Enterprise Transformation Operators
+2. Transformation as Mathematical Mapping
+3. Composition and the Operator Algebra
+4. Iteration, Invariance, and the Sustainable Core
+5. Feasible Transformations and Constraints
+6. Transformation Paths and Reachability
+7. Transformation Stability
+8. Worked Examples
+9. Preparation for Dynamic Enterprise Systems
+10. Chapter Summary
+11. Exercises
+12. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-06 →](https://axiom-webapp.example/modules/axiom-06)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+19 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 6.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 6.1** — Give two distinct enterprise actions sharing one transformation mapping (Definition (see book)), and one analysis for which the distinction matters and one for which it does not.
+- **Exercise 6.2** — For five real transformation actions from an enterprise you know, fill a row each of Table (see book): type, plausible mathematical form, and the domain condition practice would call "readiness.
+- **Exercise 6.3** — A program office claims its operating-model program "can reach any target configuration the board specifies.
+- **Exercise 6.4** — Why does the identity operator belong in every repertoire, and what role does it play in (a) the monoid structure, (b) program appraisal, (c) the reachable set $R_k(\x_0)$?
+- **Exercise 6.5** — Classify each event family as deterministic or stochastic per Proposition (see book), one sentence each: (a) a price change with posted schedule; (b) a divestiture at auction; (c) a system migration with a tested cutover script; (d) a key-hire attempt; (e) a regulatory filing with discretionary review.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 6.6** — Prove the domain-associativity formula of Proposition (see book) for words of arbitrary finite length $K$ by induction, expressing $\operatorname{dom}(\Top_{K} \circ \cdots \circ \Top_1)$ as $K$ nested membership conditions.
+- **Exercise 6.7 ★** — \ Complete Theorem (see book)(iii): show that a composite of continuous maps on closed domains is continuous on its (closed) chained domain, and construct an example with $\operatorname{dom}\Top$ open in which $\Xc_{\infty}(\Top)$ fails to be closed.
+- **Exercise 6.8** — Show the bound (see book) is sharp: for each $L > 0$ and $\varepsilon > 0$, exhibit scalar operators $\Top\x = L\x$ and $\Top'\x = L\x + \varepsilon$ achieving equality at every $k$.
+- **Exercise 6.9** — Rerun the proof of Theorem (see book)(iii) when only $\Top$ is assumed contractive and $\Top'$ merely has *some* fixed point $\x'^{\ast}$: does the bound survive?
+- **Exercise 6.10** — Prove the minimality clause of Theorem (see book)(i) in detail, and show by example that $R(\x_0)$ can be strictly smaller than the set of states reachable when domain conditions are ignored---quantifying, on your example, the "feasibility gap.
+- **Exercise 6.11 ★** — \ Characterize the idempotent affine operators on $\R^n$: derive the exact conditions on $(\mathbf{A}, \mathbf{b})$ under which $\Top\x = \mathbf{A}\x + \mathbf{b}$ satisfies $\Top \circ \Top = \Top$, describe the fixed-point set geometrically, and interpret idempotence as the "one-and-done" program of Table (see book): which enterprise actions plausibly have it, and which merely claim it?
+- **Exercise 6.12** — Formalize the tolerance repair of Theorem (see book)(iii): show that for the repertoire $\Top\x = \x/2$ on $[0, 1]$, the tolerance target $\mathcal{G}_\varepsilon = [0, \varepsilon]$ is attained in exactly $\lceil \log_2(1/\varepsilon) \rceil$ steps from $\x_0 = 1$, and state the general principle relating tolerance to shortest-path length under a contraction.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 6.13** — (With AXIOM-06 or the Chapter 6 notebook.
+- **Exercise 6.14** — (With AXIOM-06 or the Chapter 6 notebook.
+- **Exercise 6.15** — (With AXIOM-06 or the Chapter 6 notebook.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 6.16** — Draft your enterprise's repertoire table: five to eight operators with declared effects, domains (Table (see book) types), Lipschitz class where estimable, and reversibility premium (finite estimate or "infinite: commitment").
+- **Exercise 6.17** — For a merger or major partnership you know (or a hypothetical for Meridian's Digital Solutions), write the seam memo of Example (see book): the three-operator word, the two seam conditions $\operatorname{ran}\Top_i \subseteq \operatorname{dom}\Top_{i+1}$ spelled as checkable predicates, the environmentally-carried effects flagged per Theorem (see book)(ii), and the gate at which the reversibility premium becomes infinite.
+- **Exercise 6.18** — Apply Example (see book) to a three-year transformation you know: augment the state with a change budget, cost each operator, verify prefix-sum feasibility of the intended word, determine whether the plan is a strategy or a trade (core empty or not), and if a trade, specify the minimal regeneration operator that would convert it.
+- **Exercise 6.19** — For Example (see book) with $\gamma = 0.8$, $q_{\min} = 0.3$, $\x_0 = (x_4, q) = (41, 0.9)$: iterate the closed-loop operator six periods, verify the trajectory respects the domain throughout, identify the operator's Lipschitz class in each coordinate, and state which regime of Theorem (see book) governs its execution-error budget.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch06_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch06_Lab.ipynb` *(forthcoming)* | `26106` |
+| Excel workbook | `DCT_V1_Ch06_Lab.xlsx` *(forthcoming)* | `26106` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26106`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

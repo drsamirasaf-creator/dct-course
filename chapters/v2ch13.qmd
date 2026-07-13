@@ -1,0 +1,88 @@
+---
+title: "Chapter 13 · Machine Learning for Enterprise Transformation"
+subtitle: "Volume II · Multi-Objective and Intelligent Enterprise Optimization · Week 13"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 13** · Taught in [Week 13](../schedule.html#week-13) · Lab seed `26213`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the role of machine learning in enterprise transformation.</li><li>Distinguish supervised, unsupervised, semi-supervised, and reinforcement learning.</li><li>Construct predictive enterprise models by regularized empirical risk minimization.</li><li>Select and engineer enterprise features, and prove why feature quality bounds model quality.</li><li>Evaluate model performance with statistically honest metrics and validation protocols.</li><li>Detect enterprise patterns through clustering.</li><li>Apply dimensionality reduction with the PCA optimality guarantee.</li><li>Integrate predictive models into enterprise optimization with quantified decision regret.</li><li>Interpret models through axiomatic Shapley explanations.</li><li>Prepare enterprise systems for artificial intelligence.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Introduction to Enterprise Machine Learning
+2. Enterprise Data Architecture
+3. Feature Engineering
+4. Supervised Learning
+5. Unsupervised Learning
+6. Ensemble Learning
+7. Explainable Artificial Intelligence (XAI)
+8. Enterprise Prediction Systems
+9. Machine Learning within GEOP
+10. Enterprise Applications
+11. Computational Implementation
+12. Preparation for Artificial Intelligence
+13. Chapter Summary
+14. Worked Examples
+15. Exercises
+16. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-13 →](https://axiom-webapp.example/modules/axiom-13)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 13.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 13.1** — Classify each enterprise task as supervised, unsupervised, semi-supervised, or reinforcement, and name the target and loss where applicable: churn scoring, supplier taxonomy, rare-defect detection with ten labeled cases, dynamic pricing, covenant-breach forecasting, log-anomaly triage.
+- **Exercise 13.2** — A business unit reports a validation AUC of $0.94$ achieved after evaluating $400$ model variants on the same holdout.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 13.3** — Prove the bias--variance decomposition in full, including the vanishing of both cross terms, and exhibit an enterprise estimator pair (deep tree vs stump) whose test errors order oppositely at two sample sizes.
+- **Exercise 13.4** — Derive the ensemble variance identity of \S(see book) and fit its two parameters $(\rho, \sigma^{2})$ to the forest curve of Figure (see book); report the impli…
+- **Exercise 13.5** — Show that $k$-means alternation monotonically decreases its objective and terminates finitely, and construct a two-cluster enterprise instance where it converges to a strictly suboptimal partition.
+- **Exercise 13.6** — Prove the kernel form of Theorem (see book): the best rank-$r$ reconstruction of centered data in feature space is given by the top eigenvectors of the Gram matrix, and relate retained variance to Gram eigenvalues.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 13.7** — Extend Theorem (see book)(i) to countable classes via a weighted union bound (prior $\pi$ on $\Hc$, penalty $\log(1/\pi(f))$), and interpret the result as a generalization guarantee for regularized ERM (see book).
+- **Exercise 13.8** — Prove that the Shapley value is the *only* attribution satisfying efficiency, symmetry, null, and linearity that is also given by an expectation over feature orderings; then show that dropping linearity admits alternative attributions and exhibit one.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 13.9** — Reproduce Example (see book); then inject a leakage feature (next-quarter collections) and demonstrate the validation--deployment gap it creates under random versus time-ordered splits.
+- **Exercise 13.10** — Reproduce Example (see book); then retrain the forecaster with an asymmetric (pinball) loss matched to $c_u : c_o$ and report whether decision-aware training beats estimate-then-optimize regret at $N = 150$, connecting the outcome to Theorem (see book)'s final clause.
+- **Exercise 13.11** — Meridian learning architecture: for the working-capital GEOP of the AXIOM-13 module, design the full Definition (see book) object---estimated components, pipelines with as-of-date features, evaluation and Shapley ledgers, drift triggers---and deliver the board pack: accuracy, calibration, decision-regret history, and the two model changes the ledgers recommend.
+- **Exercise 13.12 ★** — Develop distributionally robust learning-augmented optimization: replace the point prediction in Theorem (see book) with a Chapter 11 ambiguity set centered at the estimate with radius from the generalization bound.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch13_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch13_Lab.ipynb` *(forthcoming)* | `26213` |
+| Excel workbook | `DCT_V2_Ch13_Lab.xlsx` *(forthcoming)* | `26213` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26213`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

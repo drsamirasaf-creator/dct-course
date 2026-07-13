@@ -1,0 +1,16 @@
+---
+title: "Instructor Resources"
+subtitle: "Restricted — access code inside the Instructor's Manual"
+---
+
+::: {.callout-important}
+## Access
+This area is for verified instructors. The **access code is printed in the front
+matter of the Instructor's Manual** (either volume). Enter it below to unlock.
+:::
+
+Behind this gate: per-chapter **Teaching Maps**, **LOS guidance and assessment notes**,
+solution references keyed to the IM chapters, syllabus variants, and slide source files.
+Full worked solutions remain in the Instructor's Manuals themselves.
+
+*(The encryption gate is applied at deploy time via Staticrypt — see DEPLOY.md, step 5.)*

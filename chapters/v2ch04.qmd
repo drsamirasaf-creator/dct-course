@@ -1,0 +1,87 @@
+---
+title: "Chapter 4 · Nonlinear Enterprise Optimization"
+subtitle: "Volume II · Enterprise Optimization Foundations · Week 9"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 4** · Taught in [Week 9](../schedule.html#week-9) · Lab seed `26204`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Formulate nonlinear enterprise optimization problems in the canonical smooth form, identifying which declared blocks carry the nonlinearity and of what structural type.</li><li>Distinguish convex from non-convex models precisely, and state which clauses of Chapter 3's contract each declared instance retains, weakens, or forfeits.</li><li>Analyze nonlinear enterprise objective functions through gradients, Hessians, and Taylor models, and read curvature as economic structure (synergy, saturation, scale).</li><li>Construct nonlinear enterprise constraint systems, including genuine nonlinear equalities, and characterize the geometry of the resulting feasible regions.</li><li>Identify local and global optima, explain why the distinction now carries governance weight, and deploy the instruments (relaxation bounds, multistart, structure) that manage the gap between them.</li><li>Apply first-order necessary and second-order sufficient optimality conditions, including the critical-cone curvature test.</li><li>Interpret the Karush--Kuhn--Tucker conditions in the nonlinear setting: what they certify, under which constraint qualifications they are necessary, and what their multipliers price.</li><li>Evaluate nonlinear enterprise trade-offs---synergy against budgets, price against volume, scale against resilience---from the geometry of the declared instance.</li><li>Implement nonlinear enterprise models computationally with SQP, interior-point, and augmented Lagrangian methods, and audit candidate solutions with KKT and second-order checks.</li><li>Prepare enterprise models for dynamic optimization: parametrize decisions as policies and recognize trajectory structure as the next source of nonlinearity.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Nonlinear Enterprise Optimization
+2. Nonlinear Objective Functions
+3. Nonlinear Constraint Systems
+4. Local and Global Optimality
+5. First-Order Optimality Conditions
+6. Second-Order Optimality Conditions
+7. Karush--Kuhn--Tucker Conditions
+8. Computational Solution Algorithms
+9. Enterprise Applications
+10. Sensitivity and Parametric Analysis
+11. Preparation for Dynamic Optimization
+12. Worked Examples
+13. Chapter Summary
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-04 →](https://axiom-webapp.example/modules/axiom-04)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 4.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 4.1** — Restate the guarantee ledger of Table (see book) from memory, and for each lost guarantee name the section of this chapter that prices, bounds, or locally restores it.
+- **Exercise 4.2** — Explain in business terms why the two local optima of Example (see book) are both *honest* recommendations, and why a gradient-following funding process systematically produces one of them.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 4.3** — Compute gradient and Hessian of $f(\x) = 5.2\ln(1+x_1) + 4.3\ln(1+x_2) + 0.3 x_1 x_2$, verify the eigenvalues $(-0.596, +0.004)$ at $(3.189, 2.811)$, and find the locus in the positive quadrant where the Hessian is exactly singular.
+- **Exercise 4.4** — Verify every clause of the KKT system (see book) at the solution of Example (see book) using the stated numbers, and confirm LICQ by computing $\nabla g(\mathbf{e}^{*})$.
+- **Exercise 4.5** — In Example (see book), derive the closed form $p^{*} = c + 1/\varepsilon$ for demand $D_0 e^{-\varepsilon p}$ and cost $c$, prove unimodality of profit on $[c, \infty)$, and compute the cap multiplier $\lambda^{*}(\bar p)$ as a function of the cap for $\bar p < p^{*}$.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 4.6** — Prove the second-order *necessary* condition (SONC): if $\x^{*}$ is a local minimizer at which ACQ holds and, for the critical direction considered, an appropriate multiplier vector exists, then $\mathbf{d}^{\top}\nabla^2_{\x\x}\Lag\,\mathbf{d} \ge 0$ for all $\mathbf{d} \in \mathcal{C}(\x^{*})$.
+- **Exercise 4.7** — Prove that a finitely generated cone is closed: reduce by Carath\'eodory to simplicial subcones and show each is a closed set, completing the argument of Lemma (see book).
+- **Exercise 4.8** — Derive Gordan's theorem from Lemma (see book): exactly one of (a) $A\mathbf{d} < \mathbf{0}$ solvable, (b) $A^{\top}\boldsymbol{\lambda} = \mathbf{0}$, $\boldsymbol{\lambda} \ge \mathbf{0}$, $\boldsymbol{\lambda} \neq \mathbf{0}$ solvable; extend to the mixed form with equality rows used in the proof of Theorem (see book)(ii).
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 4.9** — Implement the audit function of Table (see book): inputs (declared functions, candidate triple), outputs (KKT residuals, active-set report, CQ rank check, reduced-Hessian eigenvalues, verdict).
+- **Exercise 4.10** — Run Algorithm (see book) on Example (see book) with $20$ uniform seeds: report the basin inventory, the fraction of seeds terminating at abstention, and the concave-envelope bracket; then repeat with seeds biased below $a = 1$ to reproduce the timid-pilot pathology.
+- **Exercise 4.11** — Re-declare Example (see book) with the resilience architecture priced in: add the declared expected-disruption cost $0.4\, \min(x, 100-x)^{0}\!\cdot\!\mathbb{1}$-free smooth proxy $0.4\,(1 - (x/100)(1-x/100)\cdot 4)^{-1}$ or a declared alternative, re-solve, and report where the concentration verdict reverses as the resilience weight grows.
+- **Exercise 4.12 ★** — Develop second-order theory without strict complementarity: state and prove the strong second-order sufficient condition and Robinson's strong regularity for the NEO class, and characterize the enterprise instances (zero-priced binding covenants) where the distinction is operative.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch04_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch04_Lab.ipynb` *(forthcoming)* | `26204` |
+| Excel workbook | `DCT_V2_Ch04_Lab.xlsx` *(forthcoming)* | `26204` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26204`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

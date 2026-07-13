@@ -1,0 +1,87 @@
+---
+title: "Chapter 6 · Optimal Control of Enterprise Systems"
+subtitle: "Volume II · Dynamic Enterprise Optimization · Week 10"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 6** · Taught in [Week 10](../schedule.html#week-10) · Lab seed `26206`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the principles of optimal control as the solution doctrine for the DEO problems of Chapter 5.</li><li>Formulate enterprise optimal control problems with declared states, controls, dynamics, and value.</li><li>Construct enterprise state equations and verify their control-system credentials.</li><li>Define enterprise control variables with their declared constraint sets and information structures.</li><li>Formulate Hamiltonian functions and read their components economically.</li><li>Derive adjoint equations and interpret costates as running shadow prices of enterprise states.</li><li>Apply Pontryagin's Maximum Principle to derive candidate optimal enterprise policies.</li><li>Interpret transversality conditions as horizon pricing.</li><li>Analyze optimal enterprise trajectories, including bang-bang and singular structures, and certify optimality where concavity permits.</li><li>Implement continuous-time enterprise control models with indirect and direct numerical methods.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Introduction to Optimal Control
+2. Enterprise Control Systems
+3. State Equations
+4. Control Variables
+5. Hamiltonian Formulation
+6. Adjoint Variables
+7. Pontryagin's Maximum Principle
+8. Transversality Conditions
+9. Enterprise Applications
+10. Numerical Solution Methods
+11. Preparation for Dynamic Programming
+12. Chapter Summary
+13. Worked Examples
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-04 →](https://axiom-webapp.example/modules/axiom-04) · [AXIOM-06 →](https://axiom-webapp.example/modules/axiom-06)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 6.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 6.1** — Explain, using Table (see book), why maximizing $H$ rather than $L$ repairs the myopia of Proposition 5.
+- **Exercise 6.2** — Read each condition of Table (see book) as a governance audit: what plan defect does each residual detect, and on which worked example would it fire?
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 6.3** — Derive the current-value costate equation $\dot{\mathbf{m}} = \rho\mathbf{m} - \nabla_\x \tilde H$ from (see book) by the substitution $\mathbf{m} = e^{\rho t}\lam$, and re-derive the closed form $m(t)$ of Example (see book).
+- **Exercise 6.4** — Verify by direct differentiation that the switching time $t_s = 6.165$ of Example (see book) satisfies $m(t_s) = 3$, and compute $dt_s/dc$: how does the switch respond to the unit cost of R&D?
+- **Exercise 6.5** — For Example (see book), derive $g_0 = 2.4/(e^{0.8} - 1)$ from the budget equality, verify the discounted cost $2.937$, and confirm $\mu = 0.196$ equals the constant discounted marginal $e^{-\rho t}c'(e^{*}(t))$.
+- **Exercise 6.6** — In the innovation-commitment witness of Proposition (see book), complete the parameter declaration: exhibit $(\ell, c, \bar u, \rho, \delta, T)$ for which both the abstention and a commitment extremal satisfy (see book), and compute both values.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 6.7** — Prove the variational-equation claim used in Proposition (see book) and Theorem (see book): under $C^1$ dynamics, the flow is differentiable in the initial state with derivative solving $\dot V = \nabla_\x f\, V$, $V(t_0) = I$, and $V(t)$ is invertible.
+- **Exercise 6.8** — Extend Theorem (see book) to the terminal- manifold problem: with affine $\mathbf{g}$ and the transversality of Theorem (see book)(ii), prove Mangasarian sufficiency for mandate-constrained instances.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 6.9** — Reproduce Example (see book)'s shooting solve: bracket $\lambda(0)$, locate the switch, verify $J^{*} = 12.85$ and the pointwise maximum condition on a time grid; then re-solve by direct transcription ($N = 48$ mesh) and reconcile the KKT multipliers with $\lambda(t)$.
+- **Exercise 6.10** — Implement the Riccati solve of Example (see book); reproduce $K(0) = (0.406, 1.090)$ and the penalty $335$, then sweep the control weight $R \in [0.1, 2]$ and plot the tracking--effort frontier.
+- **Exercise 6.11** — Formulate Meridian's covenant-management block as an EOCP (leverage state, amortization dynamics, covenant band as a state constraint) and derive the unconstrai…
+- **Exercise 6.12 ★** — Develop the constrained maximum principle for corridor- managed enterprises: state the multiplier-measure form for $s(\x, t) \le 0$, prove the costate jump conditions at junctions in the first-order state-constraint case, and implement an arc-structured shooting method on the restructuring funnel of Example 5.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch06_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch06_Lab.ipynb` *(forthcoming)* | `26206` |
+| Excel workbook | `DCT_V2_Ch06_Lab.xlsx` *(forthcoming)* | `26206` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26206`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

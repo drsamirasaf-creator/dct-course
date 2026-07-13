@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+// DCT palette — dark green, brass, ivory
+$pine-950: #041F17;
+$pine-900: #05291F;
+$pine-800: #0B3D2E;
+$pine-700: #14523F;
+$moss-600: #1B6B52;
+$brass:    #C8A24B;
+$brass-soft: #D9BE7A;
+$paper:    #F7F4EC;
+$ink:      #17231F;
+$graph:    #7FC8A9;
+
+$primary: $pine-800;
+$link-color: $pine-700;
+$navbar-bg: $pine-900;
+$navbar-fg: #EFEAD9;
+$footer-bg: $pine-950;
+$footer-fg: #CFE3D8;
+$body-bg: $paper;
+$body-color: $ink;
+$headings-color: $pine-900;
+$font-family-sans-serif: "Source Sans 3", system-ui, sans-serif;
+$headings-font-family: "STIX Two Text", Georgia, serif;
+$font-size-root: 17px;

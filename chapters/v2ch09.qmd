@@ -1,0 +1,87 @@
+---
+title: "Chapter 9 · Stochastic Enterprise Optimization"
+subtitle: "Volume II · Enterprise Optimization Under Uncertainty · Week 11"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 9** · Taught in [Week 11](../schedule.html#week-11) · Lab seed `26209`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain enterprise optimization under uncertainty and its departures from the deterministic doctrine.</li><li>Formulate stochastic enterprise optimization problems on filtered probability spaces.</li><li>Construct stochastic enterprise state equations as It\^o diffusions.</li><li>Model enterprise uncertainty using stochastic processes matched to its sources.</li><li>Develop expectation-based enterprise objective functionals.</li><li>Formulate stochastic control policies and distinguish adapted from anticipative rules.</li><li>Interpret stochastic enterprise trajectories through moments, bands, and laws.</li><li>Analyze enterprise optimization under probabilistic constraints.</li><li>Implement stochastic optimization models computationally, with both error sources controlled.</li><li>Prepare enterprise models for robust optimization under ambiguity.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Stochastic Enterprise Optimization
+2. Enterprise Uncertainty
+3. Stochastic Enterprise State Equations
+4. Stochastic Objective Functionals
+5. Stochastic Dynamic Programming
+6. Stochastic Optimal Control
+7. Risk-Neutral and Risk-Averse Enterprise Policies
+8. Chance-Constrained Enterprise Optimization
+9. Computational Methods
+10. Enterprise Applications
+11. Preparation for Robust Optimization
+12. Chapter Summary
+13. Worked Examples
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-09 →](https://axiom-webapp.example/modules/axiom-09)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 9.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 9.1** — For each row of Table (see book), propose the process model from Table (see book), defend the choice, and state one observable that would falsify it.
+- **Exercise 9.2** — Explain why certainty equivalence (Proposition (see book)(i)) is a property of the LQ structure and not of small noise: exhibit qualitatively how each departure---state-dependent $\sigma$, non-quadratic cost, risk aversion---breaks it, citing where the chapter proves each.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 9.3** — Derive the stationary variance $\sigma^{2}/(2\kappa)$ of the closed-loop OU process by applying It\^o's formula to $X^{2}$ and taking stationary expectations; recompute the Example (see book) thresholds.
+- **Exercise 9.4** — Solve the Lyapunov equation of Example (see book) for $\Sigma_{\infty}$ and size the $\pm 2$-sigma workforce corridors; compare with the deterministic Chapter 6 corridors.
+- **Exercise 9.5** — Establish sharpness of the threshold in Proposition (see book): exhibit, for $\bar\sigma^{2}$ above it, a sequence of admissible policies along which the objective diverges to $-\infty$ slower than any quadratic bound, and conclude no quadratic verified value exists.
+- **Exercise 9.6** — Derive the weak-error expansion $\E[g(X^{\Delta}_T)] - \E[g(X_T)] = c_1\Delta + O(\Delta^{2})$ for Euler--Maruyama on the OU instance with quadratic $g$ by explicit computation of both sides, identifying $c_1$; reconcile with the measured bias ladder of Example (see book).
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 9.7** — Prove the multidimensional certainty-equivalence and drag statement: for $dX = (AX + Bu)dt + \Sigma\,dW$ with quadratic cost, the optimal gain equals the deterministic CARE gain and the stationary value drag is $\mathrm{tr}(\Sigma\Sigma^{\top}P)/(2\rho)$, via the matrix completion-of-squares in the stochastic HJB equation.
+- **Exercise 9.8** — Prove the entropic--robust duality used in \S(see book): $-\tfrac1\theta\log\E_{\Prob} [e^{-\theta J}] = \min_{\mathbb{Q}}\{\E_{\mathbb{Q}}[J] + \tfrac1\theta\,\mathrm{KL}(\mathbb{Q}\,\Vert\,\Prob)\}$, with the minimizing tilt identified.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 9.9** — Reproduce Example (see book); add a control variate built from the deterministic value and report the variance-reduction factor; then add antithetic pairs and compare.
+- **Exercise 9.10** — Solve the stationary stochastic HJB equation for Example (see book) on a grid with the diffusion term included exactly (rather than the variance-penalty proxy), using a monotone centered/upwind hybrid; compare the computed policy with the closed-form proxy and quantify the proxy's error in gain and intercept.
+- **Exercise 9.11** — Meridian treasury mandate: combine Examples (see book) and (see book) into a two-constraint design---stationary breach $\le 1 $-1.
+- **Exercise 9.12 ★** — Extend the chapter's framework to jump--diffusion enterprise states $dX = f\,dt + \sigma\,dW + \gamma\,dN$ (compensated Poisson $N$): derive the integro-diffe…
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch09_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch09_Lab.ipynb` *(forthcoming)* | `26209` |
+| Excel workbook | `DCT_V2_Ch09_Lab.xlsx` *(forthcoming)* | `26209` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26209`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

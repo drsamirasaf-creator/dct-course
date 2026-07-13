@@ -1,0 +1,87 @@
+---
+title: "Chapter 1 · Introduction to Enterprise Optimization"
+subtitle: "Volume II · Enterprise Optimization Foundations · Week 8"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 1** · Taught in [Week 8](../schedule.html#week-8) · Lab seed `26201`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the purpose of enterprise optimization as the computational realization of the Dynamic Corporate Transformation framework.</li><li>Distinguish optimization from enterprise analysis, and state what each delivers that the other cannot.</li><li>Describe the relationship between the Unified Enterprise Transformation Architecture and enterprise optimization.</li><li>Identify enterprise decision variables and classify them by mathematical type and architectural residence.</li><li>Explain objective functions and enterprise constraints, with the declaration discipline each carries.</li><li>Differentiate static, dynamic, deterministic, and stochastic optimization, and place a given enterprise problem in the taxonomy.</li><li>Describe the enterprise optimization lifecycle from declaration through re-declaration.</li><li>Explain the role of optimization in enterprise transformation: selection among realizable programs by declared worth.</li><li>Identify the computational challenges of enterprise optimization: scale, structure, uncertainty, and certification.</li><li>Prepare enterprise models for mathematical optimization through the readiness gates inherited from Volume I.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Why Enterprise Optimization?
+2. Historical Evolution of Optimization
+3. Optimization within Dynamic Corporate Transformation
+4. Decision Variables
+5. Objective Functions
+6. Enterprise Constraints
+7. Enterprise Decision Spaces
+8. Optimization Taxonomy
+9. Computational Enterprise Optimization
+10. Preparation for the General Enterprise Optimization Problem
+11. Relationship to Volume I
+12. Worked Examples
+13. Chapter Summary
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-01 →](https://axiom-webapp.example/modules/axiom-01)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 1.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 1.1** — State the forward/inverse distinction between enterprise analysis and enterprise optimization in two sentences, and give one board question that each answers and the other cannot.
+- **Exercise 1.2** — Place each of the following in Table (see book)'s cells, justifying in one sentence: annual budget allocation at declared returns; a five-year ramp under demand scenarios; a plant-closure selection this quarter; a pricing policy responding to observed demand.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 1.3** — Encode in the canonical form (see book): maximize two-program value $F_1(a_1) + F_2(a_2)$ subject to budget $a_1 + a_2 \le B$, a floor $F_2(a_2) \ge \phi$, and nonnegativity.
+- **Exercise 1.4** — Give a one-line counterexample to existence for each dropped hypothesis of Theorem (see book)(iii): (a) unbounded feasible set; (b) open feasible set; (c) discontinuous objective.
+- **Exercise 1.5** — Derive the equal-marginal-value condition of Example (see book) for two funded programs by a feasible-perturbation argument: if $F_1'(a_1) > F_2'(a_2)$ with $a_2 > 0$, construct an improving feasible transfer, contradiction.
+- **Exercise 1.6** — Formalize the static/dynamic boundary: show that a $K$-epoch open-loop problem is a static problem in the lifted variable $\uc = (\uc_0, …, \uc_{K-1})$, and identify exactly what feature (state feedback in the policy class) breaks the lifting.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 1.7** — Prove Theorem (see book)(iii) in detail for a problem with two constraints: show that both enumeration orders and all sign conventions yield the same feasible set and the same optimal set, and identify the algebraic properties of conjunction and sub-level sets used.
+- **Exercise 1.8** — Prove that a product of finitely many compact blocks is compact without invoking general Tychonoff: sequential compactness and a diagonal subsequence over the blocks suffice.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 1.9** — (With AXIOM-01 or the Chapter 1 notebook.
+- **Exercise 1.10** — (With AXIOM-01 or the Chapter 1 notebook.
+- **Exercise 1.11** — Write the two-page memo introducing enterprise optimization to that enterprise's executive committee: the forward/inverse distinction, the three load-bearing words, the gates, and the first ninety days---no method names, only the discipline.
+- **Exercise 1.12 ★** — \ Formalize a partial order on policy classes by attainable value across a family of declared instances, and investigate when the value increments along a nested policy-class ladder ($\Pol \subseteq \Pol' \Rightarrow \sup_{\Pol} \J \le \sup_{\Pol'} \J$) admit uniform lower bounds---a first step toward pricing modeling restrictions.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch01_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch01_Lab.ipynb` *(forthcoming)* | `26201` |
+| Excel workbook | `DCT_V2_Ch01_Lab.xlsx` *(forthcoming)* | `26201` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26201`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

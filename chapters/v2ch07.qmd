@@ -1,0 +1,87 @@
+---
+title: "Chapter 7 · Dynamic Programming for Enterprise Systems"
+subtitle: "Volume II · Dynamic Enterprise Optimization · Week 11"
+---
+
+::: {.chapter-meta}
+**Volume II, Chapter 7** · Taught in [Week 11](../schedule.html#week-11) · Lab seed `26207`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain Bellman's Principle of Optimality and its role in sequential enterprise decision-making.</li><li>Formulate recursive enterprise optimization problems from declared multistage instances.</li><li>Construct enterprise value functions and read them as priced inventories of future opportunity.</li><li>Develop Bellman equations for finite- and infinite-horizon enterprise problems.</li><li>Analyze multistage enterprise decision processes through their recursive structure.</li><li>Interpret recursive enterprise policies as greedy rules against summarized futures.</li><li>Solve finite-horizon enterprise problems by backward induction.</li><li>Formulate infinite-horizon discounted enterprise models and certify their well-posedness.</li><li>Implement value iteration, policy iteration, and approximate dynamic programming computationally.</li><li>Prepare enterprise optimization models for Hamilton--Jacobi--Bellman analysis.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. Motivation for Dynamic Programming
+2. Sequential Enterprise Decision Problems
+3. Bellman's Principle of Optimality
+4. Enterprise Value Functions
+5. Bellman Equations
+6. Finite-Horizon Dynamic Programming
+7. Infinite-Horizon Dynamic Programming
+8. Computational Algorithms
+9. Enterprise Applications
+10. Approximate Dynamic Programming
+11. Preparation for Hamilton--Jacobi--Bellman Theory
+12. Chapter Summary
+13. Worked Examples
+14. Exercises
+15. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-07 →](https://axiom-webapp.example/modules/axiom-07)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+12 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 7.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 7.1** — Explain why the Principle of Optimality can fail for objectives that are not stage-separable (e.
+- **Exercise 7.2** — For each row of Table (see book), identify what the value function's slope prices, and name the governance decision that number would inform.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 7.3** — Derive the affine recursion of Example (see book) from (see book), verify $a_0 = 5.023$ and $V_0(10) = 90.98$, and show the slope recursion is the explicit Euler discretization of the Chapter 6 current-value adjoint.
+- **Exercise 7.4** — Re-solve Example (see book) on meshes $\Delta \in \{1, 1/2, 1/4, 1/8\}$ and confirm first-order convergence of $V_0^{\Delta}$ to the continuous optimum $91.60$.
+- **Exercise 7.5** — In Example (see book), derive the threshold structure analytically: show the keep-minus-replace value gap is increasing in age, so the optimal policy is a threshold, and compute how $a^{*}$ moves with the replacement cost.
+- **Exercise 7.6** — Formulate the infinite-horizon version of Example (see book) with stationary demand growth handled by a detrended state, and exhibit its stationary expansion policy.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 7.7** — Prove the Berge propagation step used in Theorem (see book): under (A1), if $W$ is continuous and bounded then $\Bop W$ is continuous, and the greedy correspondence is upper hemicontinuous with nonempty compact values.
+- **Exercise 7.8** — Prove that value iteration's iterates from $V_0 \equiv 0$ are monotone nondecreasing when $R \ge 0$, and combine with Theorem (see book)(i) to conclude uniform convergence from below with computable two-sided brackets.
+
+<h4 class='ex-part'>Part D — Enterprise applications</h4>
+
+- **Exercise 7.9** — Implement VI and PI on Example (see book); reproduce $279$ sweeps versus $2$ iterations, plot the Figure (see book) envelope, and time both as $\beta \uparrow 1$ over $\{0.9, 0.95, 0.99\}$.
+- **Exercise 7.10** — Implement fitted value iteration for Example (see book) with a quadratic-in-$x$ architecture; confirm the fit is exact (bound of Prop.
+- **Exercise 7.11** — Formulate Meridian's restructuring program (Example 5.
+- **Exercise 7.12 ★** — Develop average-reward dynamic programming for going-concern enterprises where discounting is contested: state the average-reward Bellman equation with gain and bias, prove its verification counterpart to Theorem (see book) under unichain assumptions, and compare the resulting replacement threshold with the discounted one across $\beta \uparrow 1$.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V2_Ch07_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V2_Ch07_Lab.ipynb` *(forthcoming)* | `26207` |
+| Excel workbook | `DCT_V2_Ch07_Lab.xlsx` *(forthcoming)* | `26207` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26207`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::

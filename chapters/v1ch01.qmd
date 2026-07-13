@@ -1,0 +1,82 @@
+---
+title: "Chapter 1 · Introduction to Dynamic Corporate Transformation"
+subtitle: "Volume I · Foundations · Week 1"
+---
+
+::: {.chapter-meta}
+**Volume I, Chapter 1** · Taught in [Week 1](../schedule.html#week-1) · Lab seed `26101`
+:::
+
+## Learning Outcome Statements
+
+After completing this chapter, the reader should be able to:
+
+```{=html}
+<ol class="los-list"><li>Explain the motivation for Dynamic Corporate Transformation: why enterprise transformation, as practiced and as studied, lacks a unified mathematical representation, and what such a representation must provide.</li><li>Distinguish Dynamic Corporate Transformation from the management, finance, systems, and engineering frameworks it draws upon, identifying for each what it represents well and what it does not represent at all.</li><li>Describe the educational architecture of the textbook: the progression from concepts to definitions, from definitions to mathematical structures, from structures to architectures, and from architectures to the General Enterprise Optimization Problem.</li><li>Explain the relationship between Volume I, which constructs the mathematical framework, and Volume II, which develops the optimization, computational, and applied methods that solve transformation problems within it.</li><li>Describe the integrated learning ecosystem---textbook, Instructor's Manual, course website, AXIOM laboratory, and presentation library---and locate the AXIOM laboratories within the pedagogical sequence of each chapter.</li></ol>
+```
+
+## Reading Guide
+
+Work through the chapter in section order; the full development, proofs, and worked
+examples are in the book — this page indexes them and does not replace them.
+
+1. The Transformation Question
+2. The Historical Development of Enterprise Analysis
+3. Limitations of Existing Frameworks
+4. The Vision and Scope of Dynamic Corporate Transformation
+5. The Structure of the Two-Volume Series
+6. The DCT Educational Ecosystem
+7. Chapter Summary
+8. Exercises
+9. Notes and Sources
+
+## AXIOM Laboratory
+
+This chapter is instrumented by: [AXIOM-01 →](https://axiom-webapp.example/modules/axiom-01) · [AXIOM-16 →](https://axiom-webapp.example/modules/axiom-16)
+
+Launch the module, load the chapter model, modify inputs, run the optimization,
+and compare against the worked examples in the book.
+
+## Exercises
+
+16 exercises, grouped **A** concept checks · **B** mathematical ·
+**C** computational · **D** enterprise applications. Starred (★) exercises are on the
+advanced track. **Full solutions appear in the Instructor's Manual, Chapter 1.**
+
+<h4 class='ex-part'>Part A — Concept checks</h4>
+
+- **Exercise 1.1** — State, in your own words and without consulting the text, the definitions of enterprise system, enterprise state, enterprise transformation, and enterprise architecture.
+- **Exercise 1.2** — For each of the six historical streams of Section (see book), name (a) the ingredient it contributes to DCT and (b) the attribute of Table (see book) it lacks, citing one representative work for each stream.
+- **Exercise 1.3** — Match each of Limitations L1--L5 to the chapters of Volume I that remove it, and explain in one sentence per limitation why the matched chapters are the right ones.
+- **Exercise 1.4** — Definition (see book) requires transformation to be *deliberate*.
+- **Exercise 1.5** — Without consulting the text, list the six canonical architectures with their symbols and their fundamental questions.
+- **Exercise 1.6** — Proposition (see book) has two premises.
+- **Exercise 1.7** — In the proof of Proposition (see book), identify precisely where the hypothesis $n \ge 2$ is used, and where the hypothesis that $\Xc$ contains a nonempty open set is used.
+- **Exercise 1.8 ★** — \ Strengthen Proposition (see book) as follows: show that for every continuous $v: \Xc \to \R$ (with $\Xc$ as hypothesized) and every value $c$ in the interior of the range of $v$ restricted to an open ball, the level set $\{\x : v(\x) = c\}$ meeting that ball is infinite.
+
+<h4 class='ex-part'>Part B — Mathematical exercises</h4>
+
+- **Exercise 1.9** — Select an enterprise you know well (employer, client, or a public company with adequate disclosure).
+- **Exercise 1.10** — For the enterprise of Exercise (see book), specify two genuinely different transformation programs and sketch, coordinate by coordinate, the qualitative trajectories each induces over a three-year horizon, in the manner of Examples (see book)--(see book).
+- **Exercise 1.11** — Using Meridian's state (see book), construct two explicit distinct states $\x, \x' \in \R^{8}$ and a plausible weighted scalar metric $v(\x) = \mathbf{w}^{\!\top}\x$ such that $v(\x) = v(\x')$ while $\x$ and $\x'$ differ materially in transformation-relevant ways; state which feasible transformations differ between them.
+- **Exercise 1.12** — Example (see book) noted that restructuring moves the state discontinuously.
+- **Exercise 1.13 ★** — \ Example (see book) argued the turnaround could be locally improving yet globally inferior because it degrades Meridian's *transformation capacity*.
+
+<h4 class='ex-part'>Part C — Computational exercises</h4>
+
+- **Exercise 1.14** — A skeptical colleague objects: "Enterprises are made of people; representing one as a vector is category error, and optimizing the vector will optimize the representation, not the enterprise.
+- **Exercise 1.15** — From your own professional or academic home discipline, identify the single concept most valuable to a theory of enterprise transformation that this chapter did *not* mention, and argue in two paragraphs where in the six-architecture scheme it belongs.
+- **Exercise 1.16** — After completing AXIOM-01: evaluate the claim of Section (see book) that computational laboratories supply "what derivation cannot.
+
+## Downloads
+
+| Resource | File | Seed |
+|---|---|---|
+| Lecture deck | `DCT_V1_Ch01_Slides.pptx` *(forthcoming)* | — |
+| Python notebook | `DCT_V1_Ch01_Lab.ipynb` *(forthcoming)* | `26101` |
+| Excel workbook | `DCT_V1_Ch01_Lab.xlsx` *(forthcoming)* | `26101` |
+
+::: {.callout-note appearance="simple"}
+All three companions consume the same seeded engine (`26101`), so their numbers
+agree by construction — the MFMF convention, carried forward.
+:::
