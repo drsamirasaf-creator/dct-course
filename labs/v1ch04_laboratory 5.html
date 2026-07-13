@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 16 · Synthesis, Future Directions, and Transition to Volume II – Dynamic Corporate Transformation</title>
+<title>DCT Laboratory — Volume I, Chapter 4 – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -92,11 +127,40 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles/custom.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -306,252 +370,20 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch16.html">Chapter 16 · Synthesis, Future Directions, and Transition to Volume II</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Volume I — Foundations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 1 · Introduction to Dynamic Corporate Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 2 · Enterprise Systems and Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 3 · Mathematical Foundations</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4 · Enterprise Modeling Principles</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5 · Enterprise State Representation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 6 · Enterprise Transformation Operators</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 7 · Dynamic Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8 · Stochastic Enterprise Dynamics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 9 · Enterprise State Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 10 · Enterprise Capital Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 11 · Enterprise Performance Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 13 · Unified Enterprise Transformation Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 14 · Mathematical Analysis of the Unified Enterprise Transformation Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 15 · Mathematical Formulation of Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch16.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Chapter 16 · Synthesis, Future Directions, and Transition to Volume II</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Volume II — Enterprise Optimization</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 1 · Introduction to Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 2 · The General Enterprise Optimization Problem Revisited</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 3 · Convex Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4 · Nonlinear Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5 · Dynamic Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 6 · Optimal Control of Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 7 · Dynamic Programming for Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8 · Hamilton–Jacobi–Bellman Enterprise Framework</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 9 · Stochastic Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 11 · Distributionally Robust Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 12 · Multi-Objective Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 13 · Machine Learning for Enterprise Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 14 · Artificial Intelligence for Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch16.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 16 · Enterprise Applications and Integrated Transformation Case Studies</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-outcome-statements" id="toc-learning-outcome-statements" class="nav-link active" data-scroll-target="#learning-outcome-statements">Learning Outcome Statements</a></li>
-  <li><a href="#reading-guide" id="toc-reading-guide" class="nav-link" data-scroll-target="#reading-guide">Reading Guide</a></li>
-  <li><a href="#axiom-laboratory" id="toc-axiom-laboratory" class="nav-link" data-scroll-target="#axiom-laboratory">AXIOM Laboratory</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
-  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
+  <li><a href="#enterprise-modeling-principles" id="toc-enterprise-modeling-principles" class="nav-link active" data-scroll-target="#enterprise-modeling-principles">Enterprise Modeling Principles</a></li>
+  <li><a href="#panel-1-the-validation-lesson" id="toc-panel-1-the-validation-lesson" class="nav-link" data-scroll-target="#panel-1-the-validation-lesson">Panel 1 — The validation lesson</a></li>
+  <li><a href="#panel-2-hierarchical-consistency" id="toc-panel-2-hierarchical-consistency" class="nav-link" data-scroll-target="#panel-2-hierarchical-consistency">Panel 2 — Hierarchical consistency</a></li>
+  <li><a href="#validation-agrees-with-dct_v1_ch04_lab.xlsx" id="toc-validation-agrees-with-dct_v1_ch04_lab.xlsx" class="nav-link" data-scroll-target="#validation-agrees-with-dct_v1_ch04_lab.xlsx">Validation — agrees with <code>DCT_V1_Ch04_Lab.xlsx</code></a></li>
   </ul>
 </nav>
     </div>
@@ -559,10 +391,9 @@ window.MathJax = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch16.html">Chapter 16 · Synthesis, Future Directions, and Transition to Volume II</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chapter 16 · Synthesis, Future Directions, and Transition to Volume II</h1>
-<p class="subtitle lead">Volume I · Integration and Transition · Week 7</p>
+<h1 class="title">DCT Laboratory — Volume I, Chapter 4</h1>
 </div>
 
 
@@ -579,125 +410,153 @@ window.MathJax = {
 </header>
 
 
-<div class="chapter-meta">
-<p><strong>Volume I, Chapter 16</strong> · Taught in <a href="../schedule.html#week-7">Week 7</a> · Lab seed <code>26116</code></p>
+<section id="enterprise-modeling-principles" class="level2">
+<h2 class="anchored" data-anchor-id="enterprise-modeling-principles">Enterprise Modeling Principles</h2>
+<p><strong>Seed <code>26104</code></strong> · Companion to the chapter and AXIOM Module <strong>AXIOM-04</strong></p>
+<p>Two of the chapter’s principles, made numerical: the <strong>representation bound</strong> — a richer model is not a better model once you leave the calibration window — and the <strong>Hierarchical Consistency Theorem</strong> — coarse dynamics are legitimate exactly when the fine rates agree. Mirrored in <code>DCT_V1_Ch04_Lab.xlsx</code>.</p>
+<div id="0f412239" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:15:27.736253Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:15:27.736078Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:15:28.355491Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:15:28.354303Z&quot;}}" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">'figure.dpi'</span>]<span class="op">=</span><span class="dv">110</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>SEED <span class="op">=</span> <span class="dv">26104</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> np.arange(<span class="fl">21.0</span>)                    <span class="co"># quarters 0..20</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>TRUE <span class="op">=</span> <span class="dv">50</span> <span class="op">+</span> <span class="dv">30</span><span class="op">/</span>(<span class="dv">1</span> <span class="op">+</span> np.exp(<span class="op">-</span><span class="fl">0.5</span><span class="op">*</span>(T <span class="op">-</span> <span class="dv">8</span>)))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(SEED)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>NOISE <span class="op">=</span> np.<span class="bu">round</span>(rng.normal(<span class="dv">0</span>, <span class="fl">1.2</span>, <span class="dv">21</span>), <span class="dv">4</span>)   <span class="co"># frozen measurement noise (shipped as constants)</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>OBS <span class="op">=</span> TRUE <span class="op">+</span> NOISE</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>CAL, HOLD <span class="op">=</span> <span class="bu">slice</span>(<span class="dv">0</span>, <span class="dv">13</span>), <span class="bu">slice</span>(<span class="dv">13</span>, <span class="dv">21</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fit_poly(deg):</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> np.polyfit(T[CAL], OBS[CAL], deg)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.<span class="bu">round</span>(c, <span class="dv">6</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>C_LIN <span class="op">=</span> fit_poly(<span class="dv">1</span>)     <span class="co"># the simple model</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>C_RICH <span class="op">=</span> fit_poly(<span class="dv">6</span>)    <span class="co"># the over-rich model</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> rmse(coeffs, window):</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> np.polyval(coeffs, T[window])</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">float</span>(np.sqrt(np.mean((OBS[window] <span class="op">-</span> pred)<span class="op">**</span><span class="dv">2</span>)))</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Hierarchical consistency: three subsystems x_i' = a_i x_i, coarse X = sum(x)</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>X0 <span class="op">=</span> np.array([<span class="fl">40.0</span>, <span class="fl">35.0</span>, <span class="fl">25.0</span>])</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> agg_paths(a, n<span class="op">=</span><span class="dv">20</span>, dt<span class="op">=</span><span class="fl">0.25</span>):</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    xs <span class="op">=</span> np.empty((n<span class="op">+</span><span class="dv">1</span>, <span class="dv">3</span>))<span class="op">;</span> xs[<span class="dv">0</span>] <span class="op">=</span> X0</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(n): xs[k<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> xs[k] <span class="op">+</span> dt<span class="op">*</span>a<span class="op">*</span>xs[k]</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    fine <span class="op">=</span> xs.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    a_bar <span class="op">=</span> <span class="bu">float</span>((a<span class="op">*</span>X0).<span class="bu">sum</span>()<span class="op">/</span>X0.<span class="bu">sum</span>())      <span class="co"># naive coarse rate</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    coarse <span class="op">=</span> np.empty(n<span class="op">+</span><span class="dv">1</span>)<span class="op">;</span> coarse[<span class="dv">0</span>] <span class="op">=</span> X0.<span class="bu">sum</span>()</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(n): coarse[k<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> coarse[k] <span class="op">+</span> dt<span class="op">*</span>a_bar<span class="op">*</span>coarse[k]</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> fine, coarse</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>A_EQ  <span class="op">=</span> np.array([<span class="fl">0.06</span>, <span class="fl">0.06</span>, <span class="fl">0.06</span>])          <span class="co"># fiber-invariant: coarse law exact</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>A_NEQ <span class="op">=</span> np.array([<span class="fl">0.12</span>, <span class="fl">0.02</span>, <span class="op">-</span><span class="fl">0.04</span>])         <span class="co"># not: coarse law drifts</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> reference_values():</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    fe, ce <span class="op">=</span> agg_paths(A_EQ)<span class="op">;</span> fn, cn <span class="op">=</span> agg_paths(A_NEQ)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        <span class="st">"rmse_simple_calib"</span>:  <span class="bu">round</span>(rmse(C_LIN, CAL), <span class="dv">4</span>),</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        <span class="st">"rmse_rich_calib"</span>:    <span class="bu">round</span>(rmse(C_RICH, CAL), <span class="dv">4</span>),</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>        <span class="st">"rmse_simple_holdout"</span>:<span class="bu">round</span>(rmse(C_LIN, HOLD), <span class="dv">4</span>),</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>        <span class="st">"rmse_rich_holdout"</span>:  <span class="bu">round</span>(rmse(C_RICH, HOLD), <span class="dv">4</span>),</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>        <span class="st">"agg_gap_equal_T"</span>:    <span class="bu">round</span>(<span class="bu">abs</span>(fe[<span class="op">-</span><span class="dv">1</span>]<span class="op">-</span>ce[<span class="op">-</span><span class="dv">1</span>]), <span class="dv">4</span>),</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>        <span class="st">"agg_gap_unequal_T"</span>:  <span class="bu">round</span>(<span class="bu">abs</span>(fn[<span class="op">-</span><span class="dv">1</span>]<span class="op">-</span>cn[<span class="op">-</span><span class="dv">1</span>]), <span class="dv">4</span>),</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>        <span class="st">"obs_calib_mean"</span>:     <span class="bu">round</span>(<span class="bu">float</span>(OBS[CAL].mean()), <span class="dv">4</span>),</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    [<span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>k<span class="sc">:22s}</span><span class="ss"> </span><span class="sc">{</span>v<span class="sc">}</span><span class="ss">"</span>) <span class="cf">for</span> k,v <span class="kw">in</span> reference_values().items()]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rmse_simple_calib      2.2016
+rmse_rich_calib        1.2348
+rmse_simple_holdout    6.4713
+rmse_rich_holdout      241.9653
+agg_gap_equal_T        0.0
+agg_gap_unequal_T      6.2884
+obs_calib_mean         60.9148</code></pre>
 </div>
-<section id="learning-outcome-statements" class="level2">
-<h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
-<p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Explain the complete Dynamic Corporate Transformation framework as one deductive structure.</li><li>Describe the relationships among the six foundational architectures and the contracts that bind them.</li><li>Summarize the General Enterprise Optimization Problem and its place as the volume's culmination.</li><li>Identify the framework's unresolved theoretical questions and state them precisely.</li><li>Explain the transition from enterprise architecture to enterprise optimization as a certified interface.</li><li>Distinguish the scope of Volume I from that of Volume II and route questions to the correct volume.</li><li>Identify research opportunities and formulate them as extensions of declared framework components.</li><li>Describe the computational roadmap for the framework, from laboratory to digital twin.</li><li>Understand the intended long-term evolution of the discipline, including its AI-assisted and autonomous horizons.</li><li>Appreciate the interdisciplinary significance of Dynamic Corporate Transformation and locate it among its parent fields.</li></ol>
+</div>
 </section>
-<section id="reading-guide" class="level2">
-<h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
-<p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
-<ol type="1">
-<li>The Arc of Volume I</li>
-<li>The Six Architectures in Review</li>
-<li>The Unified Enterprise Perspective</li>
-<li>The Integrated Mathematical Framework</li>
-<li>The Enterprise Transformation Lifecycle</li>
-<li>The GEOP Revisited</li>
-<li>The Enterprise Transformation Discipline</li>
-<li>Computational Enterprise Science</li>
-<li>Artificial Intelligence and Enterprise Transformation</li>
-<li>Enterprise Digital Twins</li>
-<li>Autonomous Enterprise Optimization</li>
-<li>Future Enterprise Systems and Research Directions</li>
-<li>Worked Examples</li>
-<li>Transition to Volume II</li>
-<li>Reader Preparation</li>
-<li>Final Remarks</li>
-<li>Chapter Summary</li>
-<li>Exercises</li>
-<li>Notes and Sources</li>
-</ol>
+<section id="panel-1-the-validation-lesson" class="level2">
+<h2 class="anchored" data-anchor-id="panel-1-the-validation-lesson">Panel 1 — The validation lesson</h2>
+<p>A logistic adoption curve observed with measurement noise. Two models fit on quarters 0–12: <strong>simple</strong> (linear) and <strong>rich</strong> (degree-6 polynomial). In-sample the rich model wins; on the holdout (quarters 13–20) it detonates. Validation on a declared record (Model Validation Theorem) is what catches this — in-sample fit never can.</p>
+<div id="45ca30af" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:15:28.358443Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:15:28.357629Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:15:28.647170Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:15:28.645593Z&quot;}}" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">8.4</span>,<span class="fl">4.4</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>tt <span class="op">=</span> np.linspace(<span class="dv">0</span>,<span class="dv">20</span>,<span class="dv">300</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>ax.scatter(T[CAL], OBS[CAL], c<span class="op">=</span><span class="st">"#0B3D2E"</span>, s<span class="op">=</span><span class="dv">28</span>, label<span class="op">=</span><span class="st">"calibration obs"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>ax.scatter(T[HOLD], OBS[HOLD], facecolors<span class="op">=</span><span class="st">"none"</span>, edgecolors<span class="op">=</span><span class="st">"#0B3D2E"</span>, s<span class="op">=</span><span class="dv">34</span>, label<span class="op">=</span><span class="st">"holdout obs"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ax.plot(tt, np.polyval(C_LIN, tt), c<span class="op">=</span><span class="st">"#C8A24B"</span>, lw<span class="op">=</span><span class="fl">2.2</span>, label<span class="op">=</span><span class="st">"simple (linear)"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>ax.plot(tt, np.polyval(C_RICH, tt), c<span class="op">=</span><span class="st">"#1B6B52"</span>, lw<span class="op">=</span><span class="fl">2.2</span>, ls<span class="op">=</span><span class="st">"--"</span>, label<span class="op">=</span><span class="st">"rich (degree 6)"</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">"quarter"</span>, ylabel<span class="op">=</span><span class="st">"enterprise output"</span>, ylim<span class="op">=</span>(<span class="dv">30</span>,<span class="dv">110</span>),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>       title<span class="op">=</span><span class="st">"The representation bound: richer ≠ better out of sample (seed 26104)"</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>ax.axvspan(<span class="fl">12.5</span>, <span class="fl">20.5</span>, color<span class="op">=</span><span class="st">"#C8A24B"</span>, alpha<span class="op">=</span><span class="fl">.08</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> ax.grid(alpha<span class="op">=</span><span class="fl">.25</span>)<span class="op">;</span> plt.tight_layout()<span class="op">;</span> plt.show()</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> nm,c <span class="kw">in</span> [(<span class="st">"simple"</span>,C_LIN),(<span class="st">"rich"</span>,C_RICH)]:</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>nm<span class="sc">:7s}</span><span class="ss"> RMSE  calib </span><span class="sc">{</span>rmse(c,CAL)<span class="sc">:8.4f}</span><span class="ss">   holdout </span><span class="sc">{</span>rmse(c,HOLD)<span class="sc">:10.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="v1ch04_laboratory_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>simple  RMSE  calib   2.2016   holdout     6.4713
+rich    RMSE  calib   1.2348   holdout   241.9653</code></pre>
+</div>
+</div>
 </section>
-<section id="axiom-laboratory" class="level2">
-<h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-16">AXIOM-16 →</a></p>
-<p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
+<section id="panel-2-hierarchical-consistency" class="level2">
+<h2 class="anchored" data-anchor-id="panel-2-hierarchical-consistency">Panel 2 — Hierarchical consistency</h2>
+<p>Three subsystems growing at rates <span class="math inline">\(a_i\)</span>; the coarse state is their sum with a naive averaged rate. <strong>Equal rates</strong> (fiber-invariant): the coarse law is exact, gap = 0. <strong>Unequal rates</strong>: the coarse law drifts as composition shifts — the aggregate is not a state (Hierarchical Consistency Theorem).</p>
+<div id="7bb8006b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:15:28.648970Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:15:28.648782Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:15:28.982802Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:15:28.981718Z&quot;}}" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.arange(<span class="dv">21</span>)<span class="op">*</span><span class="fl">0.25</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>,<span class="dv">2</span>, figsize<span class="op">=</span>(<span class="fl">9.6</span>,<span class="fl">3.9</span>), sharey<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax,(a,ttl) <span class="kw">in</span> <span class="bu">zip</span>(axes,[(A_EQ,<span class="st">"equal rates — exact"</span>),(A_NEQ,<span class="st">"unequal rates — drifting"</span>)]):</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    fine, coarse <span class="op">=</span> agg_paths(a)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    ax.plot(t, fine, c<span class="op">=</span><span class="st">"#0B3D2E"</span>, lw<span class="op">=</span><span class="fl">2.2</span>, label<span class="op">=</span><span class="st">"sum of fine states"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    ax.plot(t, coarse, c<span class="op">=</span><span class="st">"#C8A24B"</span>, lw<span class="op">=</span><span class="fl">2.2</span>, ls<span class="op">=</span><span class="st">"--"</span>, label<span class="op">=</span><span class="st">"coarse law"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    ax.<span class="bu">set</span>(title<span class="op">=</span>ttl, xlabel<span class="op">=</span><span class="st">"years"</span>)<span class="op">;</span> ax.legend(frameon<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> ax.grid(alpha<span class="op">=</span><span class="fl">.25</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>fe,ce <span class="op">=</span> agg_paths(A_EQ)<span class="op">;</span> fn,cn <span class="op">=</span> agg_paths(A_NEQ)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"terminal gap, equal rates  :"</span>, <span class="bu">round</span>(<span class="bu">abs</span>(fe[<span class="op">-</span><span class="dv">1</span>]<span class="op">-</span>ce[<span class="op">-</span><span class="dv">1</span>]),<span class="dv">4</span>))</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"terminal gap, unequal rates:"</span>, <span class="bu">round</span>(<span class="bu">abs</span>(fn[<span class="op">-</span><span class="dv">1</span>]<span class="op">-</span>cn[<span class="op">-</span><span class="dv">1</span>]),<span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="v1ch04_laboratory_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>terminal gap, equal rates  : 0.0
+terminal gap, unequal rates: 6.2884</code></pre>
+</div>
+</div>
 </section>
-<section id="exercises" class="level2">
-<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>19 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 16.</strong></p>
-<h4 class="ex-part anchored">
-Part A — Concept checks
-</h4>
-<ul>
-<li><strong>Exercise 16.1</strong> — Close the book and reproduce the canonical GEOP display with every symbol’s provenance; then check yourself against Table (see book) and Definition (see book), and list any symbol whose defining home you missed.</li>
-<li><strong>Exercise 16.2</strong> — For each of the six architectures, state in one sentence what it warrants to the rest of the framework and one honesty clause it carries (Table (see book)); identify which warrant your own organization would find hardest to sign.</li>
-<li><strong>Exercise 16.3</strong> — Walk the readiness chain (R1)–(R4) for a hypothetical enterprise, inventing a plausible failure at each gate; name the failure artifact and its remediation owner in each case.</li>
-<li><strong>Exercise 16.4</strong> — Summarize Proposition (see book) for two audiences in two paragraphs: one to an executive who believes AI makes the theory obsolete, one to an analyst who believes AI has no place in it.</li>
-<li><strong>Exercise 16.5</strong> — Classify the following questions as Volume I or Volume II questions, citing the interface row of Table (see book) that decides each: “is our plan feasible for the horizon?</li>
-</ul>
-<h4 class="ex-part anchored">
-Part B — Mathematical exercises
-</h4>
-<ul>
-<li><strong>Exercise 16.6</strong> — Prove that the dependency relation of Table (see book) is a strict partial order and that induction along it is valid (well-foundedness on the finite set); then state precisely what property of the volume’s proofs the induction step requires, per Theorem (see book)(i).</li>
-<li><strong>Exercise 16.7</strong> — Write out the model-theoretic consistency argument of Theorem (see book)(v) in full: define “requirement set,” “model,” and the inference from exhibition to consistency, and identify the exact list of Meridian verifications the proof cites.</li>
-<li><strong>Exercise 16.8</strong> — Make the classification argument of Theorem (see book) rigorous for a declaration you specify: list its declared quantities, assign each to one of the five classes or a coupling, and verify no residue remains.</li>
-<li><strong>Exercise 16.9 ★</strong> — Prove Theorem (see book)(ii) for one concrete substitution: replace the Chapter 12 risk-functional family by a coherent alternative satisfying the same contract, and verify, hypothesis by hypothesis, that Theorems (see book), (see book), and (see book) survive verbatim.</li>
-<li><strong>Exercise 16.10</strong> — Complete the necessity half of Theorem (see book): for each gate, construct an explicit minimal enterprise instance that passes all earlier gates, fails that one, and voids a named conclusion of Theorem (see book).</li>
-<li><strong>Exercise 16.11</strong> — Formalize the autonomy envelope of Definition (see book) as a constraint block of the GEOP: variables, admissible-set structure, and the multiplier interpretation of its boundaries; then state one theorem about envelopes you can prove with Volume I machinery and one you cannot, explaining what O5 lacks.</li>
-</ul>
-<h4 class="ex-part anchored">
-Part C — Computational exercises
-</h4>
-<ul>
-<li><strong>Exercise 16.12</strong> — (AXIOM-16) Run the GEOP formulation assistant’s readiness chain on the provided mid-market instance of Example (see book); reproduce the (R1) failure, repair it, and export the four certificates.</li>
-<li><strong>Exercise 16.13</strong> — (AXIOM-16) In the digital-twin demonstration, inject a drift into one declared gain and observe the divergence tripwire; attribute the violation using the three-way taxonomy and report the localization.</li>
-<li><strong>Exercise 16.14</strong> — (AXIOM-16) Use the dependency navigator to trace Theorem (see book) to its primitive ancestry; report the longest citation chain and the Part I primitive it terminates on.</li>
-</ul>
-<h4 class="ex-part anchored">
-Part D — Enterprise applications
-</h4>
-<ul>
-<li><strong>Exercise 16.15</strong> — Draft a two-page adoption memo for an enterprise you know: current position against the four gates, the first three declaration repairs, and the artifact each quarter of the first year should produce.</li>
-<li><strong>Exercise 16.16</strong> — Specify a minimum-viable digital twin for a single division per Definition (see book): the declaration subset, the data bindings with frequencies, the audit schedule, and the divergence monitor—with owners.</li>
-<li><strong>Exercise 16.17</strong> — Choose one row of Table (see book) and write a one-page research statement: the problem in the framework’s vocabulary, the extension point it uses, what it inherits, and the first theorem you would attempt.</li>
-<li><strong>Exercise 16.18</strong> — For O4 (inter-enterprise systems): propose the declaration of a two-enterprise ecosystem—shared skeleton components, cross-register entries, and the compatibility conditions you would require—and identify which Chapter 13 results extend unchanged and which fail.</li>
-<li><strong>Exercise 16.19 ★</strong> — Formulate an original DCT research project of your own design: an open question not in Table (see book), argued to be (a) expressible at a declared extension point, (b) not resolvable with Volume I machinery, and (c) valuable to a named enterprise audience.</li>
-</ul>
-</section>
-<section id="downloads" class="level2">
-<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Resource</th>
-<th>File</th>
-<th>Seed</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lecture deck</td>
-<td><a href="../downloads/DCT_V1_Ch16_Slides.pptx"><code>DCT_V1_Ch16_Slides.pptx</code></a></td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>Python laboratory</td>
-<td><a href="../labs/v1ch16_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V1_Ch16_Lab.ipynb"><code>DCT_V1_Ch16_Lab.ipynb</code></a></td>
-<td><code>26116</code></td>
-</tr>
-<tr class="odd">
-<td>Excel workbook</td>
-<td><a href="../downloads/DCT_V1_Ch16_Lab.xlsx"><code>DCT_V1_Ch16_Lab.xlsx</code></a></td>
-<td><code>26116</code></td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26116</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<section id="validation-agrees-with-dct_v1_ch04_lab.xlsx" class="level2">
+<h2 class="anchored" data-anchor-id="validation-agrees-with-dct_v1_ch04_lab.xlsx">Validation — agrees with <code>DCT_V1_Ch04_Lab.xlsx</code></h2>
+<div id="f89bba63" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:15:28.984617Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:15:28.984386Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:15:28.990909Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:15:28.989911Z&quot;}}" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>ref <span class="op">=</span> reference_values()</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>expected <span class="op">=</span> {<span class="st">"rmse_simple_calib"</span>:<span class="fl">2.2016</span>,<span class="st">"rmse_rich_calib"</span>:<span class="fl">1.2348</span>,<span class="st">"rmse_simple_holdout"</span>:<span class="fl">6.4713</span>,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a> <span class="st">"rmse_rich_holdout"</span>:<span class="fl">241.9653</span>,<span class="st">"agg_gap_equal_T"</span>:<span class="fl">0.0</span>,<span class="st">"agg_gap_unequal_T"</span>:<span class="fl">6.2884</span>,<span class="st">"obs_calib_mean"</span>:<span class="fl">60.9148</span>}</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k,v <span class="kw">in</span> expected.items():</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="bu">abs</span>(ref[k]<span class="op">-</span>v)<span class="op">&lt;</span><span class="fl">5e-4</span>, <span class="ss">f"MISMATCH </span><span class="sc">{</span>k<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>ref[k]<span class="sc">}</span><span class="ss"> vs </span><span class="sc">{</span>v<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"PASS  </span><span class="sc">{</span>k<span class="sc">:22s}</span><span class="ss"> </span><span class="sc">{</span>ref[k]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">All checkpoints agree — seed 26104."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>PASS  rmse_simple_calib      2.2016
+PASS  rmse_rich_calib        1.2348
+PASS  rmse_simple_holdout    6.4713
+PASS  rmse_rich_holdout      241.9653
+PASS  agg_gap_equal_T        0.0
+PASS  agg_gap_unequal_T      6.2884
+PASS  obs_calib_mean         60.9148
+
+All checkpoints agree — seed 26104.</code></pre>
 </div>
 </div>
-</div>
+<p><strong>Next</strong>: Exercises 4.9–4.12 (Part C); AXIOM-04’s model bench lets you slide the polynomial degree and watch the holdout error turn. Solutions: IM Ch. 4.</p>
 
 
 </section>
