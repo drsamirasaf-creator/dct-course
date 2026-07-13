@@ -78,7 +78,7 @@ advanced track. **Full solutions appear in the Instructor's Manual, Chapter 12.*
 | Resource | File | Seed |
 |---|---|---|
 | Lecture deck | `DCT_V2_Ch12_Slides.pptx` *(forthcoming)* | — |
-| Python notebook | `DCT_V2_Ch12_Lab.ipynb` *(forthcoming)* | `26212` |
+| Python laboratory | `DCT_V2_Ch12_Lab.ipynb` *(forthcoming)* | `26212` |
 | Excel workbook | `DCT_V2_Ch12_Lab.xlsx` *(forthcoming)* | `26212` |
 
 ::: {.callout-note appearance="simple"}

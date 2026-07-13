@@ -4,6 +4,7 @@ project:
   render:
     - "*.qmd"
     - "chapters/*.qmd"
+    - "labs/*.ipynb"
     - "!downloads/"
   resources:
     - "downloads/"

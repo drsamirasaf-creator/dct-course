@@ -37,6 +37,18 @@ def slug(v, c):
     return f"v{v}ch{c:02d}"
 
 
+
+def lab_link(v, n):
+    """Rendered laboratory page (MFAA structure) + raw notebook download."""
+    lab = f"v{v}ch{n:02d}_laboratory"
+    ipynb = f"DCT_V{v}_Ch{n:02d}_Lab.ipynb"
+    if os.path.exists(os.path.join(SITE, 'labs', lab + '.ipynb')):
+        page = f"[Open the laboratory page →](../labs/{lab}.html)"
+        raw = (f" · [`{ipynb}`](../downloads/{ipynb})"
+               if os.path.exists(os.path.join(SITE, 'downloads', ipynb)) else "")
+        return page + raw
+    return f"`{ipynb}` *(forthcoming)*"
+
 def dl(v, n, suffix):
     """Link a download if the file exists in SITE/downloads, else mark forthcoming."""
     fname = f"DCT_V{v}_Ch{n:02d}_{suffix}"
@@ -118,7 +130,7 @@ advanced track. **Full solutions appear in the Instructor's Manual, Chapter {n}.
 | Resource | File | Seed |
 |---|---|---|
 | Lecture deck | {dl(v,n,'Slides.pptx')} | — |
-| Python notebook | {dl(v,n,'Lab.ipynb')} | `{seed(v,n)}` |
+| Python laboratory | {lab_link(v,n)} | `{seed(v,n)}` |
 | Excel workbook | {dl(v,n,'Lab.xlsx')} | `{seed(v,n)}` |
 
 ::: {{.callout-note appearance="simple"}}
@@ -573,6 +585,7 @@ qyml = f"""project:
   render:
     - "*.qmd"
     - "chapters/*.qmd"
+    - "labs/*.ipynb"
     - "!downloads/"
   resources:
     - "downloads/"

@@ -83,7 +83,7 @@ advanced track. **Full solutions appear in the Instructor's Manual, Chapter 10.*
 | Resource | File | Seed |
 |---|---|---|
 | Lecture deck | `DCT_V1_Ch10_Slides.pptx` *(forthcoming)* | — |
-| Python notebook | `DCT_V1_Ch10_Lab.ipynb` *(forthcoming)* | `26110` |
+| Python laboratory | `DCT_V1_Ch10_Lab.ipynb` *(forthcoming)* | `26110` |
 | Excel workbook | `DCT_V1_Ch10_Lab.xlsx` *(forthcoming)* | `26110` |
 
 ::: {.callout-note appearance="simple"}
