@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 9 · Enterprise State Architecture – Dynamic Corporate Transformation</title>
+<title>DCT Laboratory — Volume I, Chapter 2 – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -125,7 +160,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles/custom.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -335,252 +370,21 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch09.html">Chapter 9 · Enterprise State Architecture</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Volume I — Foundations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 1 · Introduction to Dynamic Corporate Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 2 · Enterprise Systems and Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 3 · Mathematical Foundations</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4 · Enterprise Modeling Principles</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5 · Enterprise State Representation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 6 · Enterprise Transformation Operators</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 7 · Dynamic Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8 · Stochastic Enterprise Dynamics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch09.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Chapter 9 · Enterprise State Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 10 · Enterprise Capital Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 11 · Enterprise Performance Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 13 · Unified Enterprise Transformation Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 14 · Mathematical Analysis of the Unified Enterprise Transformation Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 15 · Mathematical Formulation of Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch16.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 16 · Synthesis, Future Directions, and Transition to Volume II</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Volume II — Enterprise Optimization</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 1 · Introduction to Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 2 · The General Enterprise Optimization Problem Revisited</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 3 · Convex Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4 · Nonlinear Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5 · Dynamic Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 6 · Optimal Control of Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 7 · Dynamic Programming for Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8 · Hamilton–Jacobi–Bellman Enterprise Framework</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 9 · Stochastic Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 11 · Distributionally Robust Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 12 · Multi-Objective Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 13 · Machine Learning for Enterprise Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 14 · Artificial Intelligence for Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch16.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 16 · Enterprise Applications and Integrated Transformation Case Studies</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-outcome-statements" id="toc-learning-outcome-statements" class="nav-link active" data-scroll-target="#learning-outcome-statements">Learning Outcome Statements</a></li>
-  <li><a href="#reading-guide" id="toc-reading-guide" class="nav-link" data-scroll-target="#reading-guide">Reading Guide</a></li>
-  <li><a href="#axiom-laboratory" id="toc-axiom-laboratory" class="nav-link" data-scroll-target="#axiom-laboratory">AXIOM Laboratory</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
-  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
+  <li><a href="#enterprise-systems-and-transformation" id="toc-enterprise-systems-and-transformation" class="nav-link active" data-scroll-target="#enterprise-systems-and-transformation">Enterprise Systems and Transformation</a></li>
+  <li><a href="#panel-1-open-loop-vs.-feedback" id="toc-panel-1-open-loop-vs.-feedback" class="nav-link" data-scroll-target="#panel-1-open-loop-vs.-feedback">Panel 1 — Open loop vs.&nbsp;feedback</a></li>
+  <li><a href="#panel-2-the-seeded-fan-under-disturbance" id="toc-panel-2-the-seeded-fan-under-disturbance" class="nav-link" data-scroll-target="#panel-2-the-seeded-fan-under-disturbance">Panel 2 — The seeded fan under disturbance</a></li>
+  <li><a href="#panel-3-the-boundary-is-a-modeling-decision" id="toc-panel-3-the-boundary-is-a-modeling-decision" class="nav-link" data-scroll-target="#panel-3-the-boundary-is-a-modeling-decision">Panel 3 — The boundary is a modeling decision</a></li>
+  <li><a href="#validation-agrees-with-dct_v1_ch02_lab.xlsx" id="toc-validation-agrees-with-dct_v1_ch02_lab.xlsx" class="nav-link" data-scroll-target="#validation-agrees-with-dct_v1_ch02_lab.xlsx">Validation — agrees with <code>DCT_V1_Ch02_Lab.xlsx</code></a></li>
   </ul>
 </nav>
     </div>
@@ -588,10 +392,9 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch09.html">Chapter 9 · Enterprise State Architecture</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chapter 9 · Enterprise State Architecture</h1>
-<p class="subtitle lead">Volume I · Enterprise Architectures · Week 5</p>
+<h1 class="title">DCT Laboratory — Volume I, Chapter 2</h1>
 </div>
 
 
@@ -608,119 +411,161 @@ window.Quarto = {
 </header>
 
 
-<div class="chapter-meta">
-<p><strong>Volume I, Chapter 9</strong> · Taught in <a href="../schedule.html#week-5">Week 5</a> · Lab seed <code>26109</code></p>
+<section id="enterprise-systems-and-transformation" class="level2">
+<h2 class="anchored" data-anchor-id="enterprise-systems-and-transformation">Enterprise Systems and Transformation</h2>
+<p><strong>Seed <code>26102</code></strong> · Companion to the chapter and AXIOM Module <strong>AXIOM-02</strong></p>
+<p>The chapter’s four formal moves, made computational: the enterprise as an <strong>open system</strong> <span class="math inline">\(S = (\mathcal{X}, \mathcal{U}, \mathcal{W}, \mathcal{Y}, f, g, \mathbf{x}_0)\)</span>, the <strong>boundary</strong> as a modeling decision, <strong>feedback</strong> (<span class="math inline">\(u_k = \varphi(x_k)\)</span>) against the environment’s pull, and transformation as a designed steering process. The deterministic core is mirrored in <code>DCT_V1_Ch02_Lab.xlsx</code>; validation at the end.</p>
+<div id="2765fd5e" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:00:43.972375Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:00:43.972191Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:00:44.427923Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:00:44.426737Z&quot;}}" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">'figure.dpi'</span>]<span class="op">=</span><span class="dv">110</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>SEED <span class="op">=</span> <span class="dv">26102</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>DT, N <span class="op">=</span> <span class="dv">1</span><span class="op">/</span><span class="dv">12</span>, <span class="dv">60</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>A_PULL, B_GAIN, K_FB <span class="op">=</span> <span class="fl">0.8</span>, <span class="fl">0.5</span>, <span class="fl">1.6</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>X0, X_ENV, X_STAR <span class="op">=</span> <span class="fl">68.0</span>, <span class="fl">60.0</span>, <span class="fl">75.0</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> simulate(feedback, x0<span class="op">=</span>X0, n<span class="op">=</span>N):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> np.empty(n<span class="op">+</span><span class="dv">1</span>)<span class="op">;</span> x[<span class="dv">0</span>] <span class="op">=</span> x0</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        u <span class="op">=</span> K_FB<span class="op">*</span>(X_STAR <span class="op">-</span> x[k]) <span class="cf">if</span> feedback <span class="cf">else</span> <span class="fl">0.0</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        x[k<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> x[k] <span class="op">+</span> DT<span class="op">*</span>(A_PULL<span class="op">*</span>(X_ENV <span class="op">-</span> x[k]) <span class="op">+</span> B_GAIN<span class="op">*</span>u)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mc_fan(n_paths<span class="op">=</span><span class="dv">200</span>, sigma<span class="op">=</span><span class="fl">0.9</span>):</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(SEED)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    out <span class="op">=</span> np.empty((n_paths, N<span class="op">+</span><span class="dv">1</span>))</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> p <span class="kw">in</span> <span class="bu">range</span>(n_paths):</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> X0</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        out[p,<span class="dv">0</span>] <span class="op">=</span> x</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(N):</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>            u <span class="op">=</span> K_FB<span class="op">*</span>(X_STAR <span class="op">-</span> x)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>            x <span class="op">=</span> x <span class="op">+</span> DT<span class="op">*</span>(A_PULL<span class="op">*</span>(X_ENV <span class="op">-</span> x) <span class="op">+</span> B_GAIN<span class="op">*</span>u) <span class="op">+</span> sigma<span class="op">*</span>np.sqrt(DT)<span class="op">*</span>rng.standard_normal()</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>            out[p,k<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> x</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> out</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Boundary panel: 4 subsystem efficiency states; two boundary choices = weights</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>SUBS <span class="op">=</span> np.array([<span class="fl">72.0</span>, <span class="fl">61.0</span>, <span class="fl">58.0</span>, <span class="fl">80.0</span>])   <span class="co"># Industrial, Digital, Shared-services, Ventures</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>W_B1 <span class="op">=</span> np.array([<span class="fl">0.45</span>, <span class="fl">0.30</span>, <span class="fl">0.25</span>, <span class="fl">0.00</span>])   <span class="co"># ventures outside the boundary</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>W_B2 <span class="op">=</span> np.array([<span class="fl">0.40</span>, <span class="fl">0.27</span>, <span class="fl">0.22</span>, <span class="fl">0.11</span>])   <span class="co"># ventures inside</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> reference_values():</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    op, cl <span class="op">=</span> simulate(<span class="va">False</span>), simulate(<span class="va">True</span>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        <span class="st">"open_loop_t5.0"</span>:  <span class="bu">round</span>(op[<span class="op">-</span><span class="dv">1</span>], <span class="dv">4</span>),</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">"closed_loop_t5.0"</span>:<span class="bu">round</span>(cl[<span class="op">-</span><span class="dv">1</span>], <span class="dv">4</span>),</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        <span class="st">"feedback_gap_t5.0"</span>: <span class="bu">round</span>(cl[<span class="op">-</span><span class="dv">1</span>]<span class="op">-</span>op[<span class="op">-</span><span class="dv">1</span>], <span class="dv">4</span>),</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        <span class="st">"closed_loop_t1.0"</span>: <span class="bu">round</span>(cl[<span class="dv">12</span>], <span class="dv">4</span>),</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        <span class="st">"aggregate_B1"</span>: <span class="bu">round</span>(<span class="bu">float</span>(W_B1 <span class="op">@</span> SUBS), <span class="dv">4</span>),</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        <span class="st">"aggregate_B2"</span>: <span class="bu">round</span>(<span class="bu">float</span>(W_B2 <span class="op">@</span> SUBS), <span class="dv">4</span>),</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>        <span class="st">"boundary_shift"</span>: <span class="bu">round</span>(<span class="bu">float</span>((W_B2<span class="op">-</span>W_B1) <span class="op">@</span> SUBS), <span class="dv">4</span>),</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    [<span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>k<span class="sc">:22s}</span><span class="ss"> </span><span class="sc">{</span>v<span class="sc">}</span><span class="ss">"</span>) <span class="cf">for</span> k,v <span class="kw">in</span> reference_values().items()]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>open_loop_t5.0         60.1274
+closed_loop_t5.0       67.5001
+feedback_gap_t5.0      7.3727
+closed_loop_t1.0       67.5898
+aggregate_B1           65.2
+aggregate_B2           66.83
+boundary_shift         1.63</code></pre>
 </div>
-<section id="learning-outcome-statements" class="level2">
-<h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
-<p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Define the Enterprise State Architecture mathematically as the triple $\AS = (\Xc, \mathcal{R}, \mathcal{C})$.</li><li>Construct enterprise state architectures for complex organizations: components, interfaces, wiring, and constraints, declared to contract standard.</li><li>Identify state hierarchies and state dependencies, including the intrinsic causal hierarchy every dependency structure owns.</li><li>Represent enterprise subsystems within a unified state architecture, and reassemble global behavior from wired components.</li><li>Analyze enterprise structural consistency: interface, constraint, and hierarchical consistency, and the exact role of cycles in defeating local checks.</li><li>Model interactions among enterprise states through the dependency graph, with propagation bounds along its paths.</li><li>Evaluate architectural completeness relative to declared question classes.</li><li>Interpret enterprise architectures graphically and mathematically, including the one-directional trust rule for aggregated dependency maps.</li><li>Assess enterprise structural complexity with graph measures, and know what such measures do not measure.</li><li>Prepare enterprise state architectures for the capital, performance, and risk architectures and their integration within UETA.</li></ol>
+</div>
 </section>
-<section id="reading-guide" class="level2">
-<h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
-<p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
-<ol type="1">
-<li>Motivation for Enterprise State Architecture</li>
-<li>Architecture versus Representation</li>
-<li>Enterprise Topology and State Dependencies</li>
-<li>Structural Dependency and Propagation</li>
-<li>Hierarchical Enterprise States</li>
-<li>Architectural Constraints and Consistency</li>
-<li>Architectural Completeness and Validation</li>
-<li>Architecture Metrics and Complexity</li>
-<li>Worked Examples</li>
-<li>Preparation for Enterprise Capital Architecture</li>
-<li>Chapter Summary</li>
-<li>Exercises</li>
-<li>Notes and Sources</li>
-</ol>
+<section id="panel-1-open-loop-vs.-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="panel-1-open-loop-vs.-feedback">Panel 1 — Open loop vs.&nbsp;feedback</h2>
+<p>Operational efficiency <span class="math inline">\(x_5\)</span> with the environment pulling toward <span class="math inline">\(x_e = 60\)</span>. Without control the enterprise drifts to its environment; the feedback law <span class="math inline">\(u_k = K(x^* - x_k)\)</span> (Definition: enterprise feedback) holds it near target. Feedback acts on <strong>inputs</strong>; adaptation (not simulated here) acts on the <strong>rule</strong>.</p>
+<div id="522ff590" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:00:44.430359Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:00:44.429558Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:00:44.714568Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:00:44.713590Z&quot;}}" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>op, cl <span class="op">=</span> simulate(<span class="va">False</span>), simulate(<span class="va">True</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.arange(N<span class="op">+</span><span class="dv">1</span>)<span class="op">/</span><span class="dv">12</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="fl">4.2</span>))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>ax.plot(t, op, color<span class="op">=</span><span class="st">"#8A8F8B"</span>, lw<span class="op">=</span><span class="fl">2.2</span>, label<span class="op">=</span><span class="st">"open loop (u = 0)"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ax.plot(t, cl, color<span class="op">=</span><span class="st">"#C8A24B"</span>, lw<span class="op">=</span><span class="fl">2.4</span>, label<span class="op">=</span><span class="st">"state feedback u = K(x* − x)"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>ax.axhline(X_ENV, ls<span class="op">=</span><span class="st">":"</span>, c<span class="op">=</span><span class="st">"#8A8F8B"</span>, lw<span class="op">=</span><span class="dv">1</span>)<span class="op">;</span> ax.axhline(X_STAR, ls<span class="op">=</span><span class="st">":"</span>, c<span class="op">=</span><span class="st">"#C8A24B"</span>, lw<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">"years"</span>, ylabel<span class="op">=</span><span class="st">"$x_5$ operational efficiency"</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>       title<span class="op">=</span><span class="st">"The open enterprise: environment pull vs. feedback (seed 26102)"</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> ax.grid(alpha<span class="op">=</span><span class="fl">.25</span>)<span class="op">;</span> plt.tight_layout()<span class="op">;</span> plt.show()</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"gap at t=5:"</span>, <span class="bu">round</span>(cl[<span class="op">-</span><span class="dv">1</span>]<span class="op">-</span>op[<span class="op">-</span><span class="dv">1</span>],<span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="v1ch02_laboratory_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>gap at t=5: 7.3727</code></pre>
+</div>
+</div>
 </section>
-<section id="axiom-laboratory" class="level2">
-<h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-09">AXIOM-09 →</a></p>
-<p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
+<section id="panel-2-the-seeded-fan-under-disturbance" class="level2">
+<h2 class="anchored" data-anchor-id="panel-2-the-seeded-fan-under-disturbance">Panel 2 — The seeded fan under disturbance</h2>
+<p>The environment channel <span class="math inline">\(\mathcal{W}\)</span> made stochastic: 200 disturbed closed-loop paths, seed <code>26102</code>. Feedback doesn’t remove uncertainty — it shapes where the distribution settles.</p>
+<div id="b7f14e93" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:00:44.717027Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:00:44.716363Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:00:45.414354Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:00:45.411509Z&quot;}}" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>paths <span class="op">=</span> mc_fan()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="fl">4.2</span>))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>ax.plot(t, paths.T, color<span class="op">=</span><span class="st">"#1B6B52"</span>, alpha<span class="op">=</span><span class="fl">.05</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>ax.plot(t, simulate(<span class="va">True</span>), color<span class="op">=</span><span class="st">"#0B3D2E"</span>, lw<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"deterministic core"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>q10,q90 <span class="op">=</span> np.quantile(paths,[<span class="fl">.1</span>,<span class="fl">.9</span>],axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>ax.plot(t,q10,<span class="st">"--"</span>,c<span class="op">=</span><span class="st">"#0B3D2E"</span>,lw<span class="op">=</span><span class="dv">1</span>)<span class="op">;</span> ax.plot(t,q90,<span class="st">"--"</span>,c<span class="op">=</span><span class="st">"#0B3D2E"</span>,lw<span class="op">=</span><span class="dv">1</span>,label<span class="op">=</span><span class="st">"10–90% band"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">"years"</span>, ylabel<span class="op">=</span><span class="st">"$x_5$"</span>, title<span class="op">=</span><span class="st">"Closed loop under disturbance (n=200)"</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> ax.grid(alpha<span class="op">=</span><span class="fl">.25</span>)<span class="op">;</span> plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="v1ch02_laboratory_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="exercises" class="level2">
-<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>19 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 9.</strong></p>
-<h4 class="ex-part anchored">
-Part A — Concept checks
-</h4>
-<ul>
-<li><strong>Exercise 9.1</strong> — Distinguish representation from architecture in two sentences, and give one enterprise question answerable from the representation alone and one requiring the architecture (the wiring), justifying each.</li>
-<li><strong>Exercise 9.2</strong> — For an enterprise you know, list six dependencies and classify each by Table (see book)’s types; identify one edge carrying multiple types and state which type each of two named analyses would read.</li>
-<li><strong>Exercise 9.3</strong> — Explain the terminological note in Definition (see book): what does “topology” mean here, what did it mean in Chapter 3, and what single idea do the usages share?</li>
-<li><strong>Exercise 9.4</strong> — Using Meridian (Example (see book)), explain in one paragraph how the intrinsic causal hierarchy can disagree with the organizational hierarchy and why the disagreement predicts coordination cost.</li>
-<li><strong>Exercise 9.5</strong> — State in plain language why three policies can be pairwise compatible and jointly infeasible, and name the graph property that makes this possible and the one that forbids it.</li>
-</ul>
-<h4 class="ex-part anchored">
-Part B — Mathematical exercises
-</h4>
-<ul>
-<li><strong>Exercise 9.6</strong> — Write out in full the proof that the condensation is acyclic (Proposition (see book)), including the composition-of- paths step, and exhibit a <span class="math inline">\(6\)</span>-node digraph with exactly two nontrivial SCCs whose condensation has depth <span class="math inline">\(3\)</span>.</li>
-<li><strong>Exercise 9.7</strong> — Re-prove the propagation bound (Theorem (see book)(ii)) with all induction details: state the induction hypothesis as a set equality of unaffected components, verify the in-neighbor distance inequality, and identify exactly where the proof uses that component updates read only in-neighbors.</li>
-<li><strong>Exercise 9.8 ★</strong> — &nbsp;Complete the activation splice of Theorem (see book)(iii): given a path <span class="math inline">\(u = w_0 \to \cdots \to w_m = v\)</span> with each edge’s dependence active at some state configuration, construct a single configuration and horizon at which perturbing <span class="math inline">\(u\)</span> alters <span class="math inline">\(v\)</span>, stating the additional hypothesis you need on the ability to steer intermediate blocks (and exhibiting a two-edge example where, without it, the influences cancel).</li>
-<li><strong>Exercise 9.9</strong> — For the spurious-path counterexample of Theorem (see book)(ii), determine the minimal conditions under which a coarse edge <span class="math inline">\(A \to B\)</span> does certify some fine edge: characterize the aggregates <span class="math inline">\(A\)</span> for which coarse paths through <span class="math inline">\(A\)</span> are never spurious (hint: internal connectivity from every in-interface node to every out-interface node).</li>
-<li><strong>Exercise 9.10</strong> — Complete Theorem (see book)(ii)’s induction as a formal leaf-elimination argument: define arc-consistency projection onto the parent, show projections of arc-consistent families remain arc-consistent on the reduced tree, and conclude by induction on <span class="math inline">\(\abs{V}\)</span>; then explain in one sentence why the same argument fails on a cycle.</li>
-<li><strong>Exercise 9.11</strong> — Construct a four-constraint family on a <span class="math inline">\(4\)</span>-cycle of scalar components, all constraints of the form <span class="math inline">\(x_i - x_j \le b_{ij}\)</span>, that is arc-consistent and globally infeasible; state the general infeasibility criterion for difference constraints on a cycle (sum of bounds around the cycle) and verify it on your instance.</li>
-<li><strong>Exercise 9.12</strong> — Prove that the projection of Theorem (see book)(i) is functorial for walks: concatenation of fine walks projects to concatenation of coarse walks, and lengths never increase; deduce <span class="math inline">\(d'([u], [v]) \le d(u, v)\)</span> formally.</li>
-<li><strong>Exercise 9.13 ★</strong> — &nbsp;Magnitude along paths (first synthesis with Part II): suppose each component update is <span class="math inline">\(L\)</span>-Lipschitz in each in-neighbor block and nonexpansive in its own.</li>
-</ul>
-<h4 class="ex-part anchored">
-Part C — Computational exercises
-</h4>
-<ul>
-<li><strong>Exercise 9.14</strong> — (With AXIOM-09 or the Chapter 9 notebook.</li>
-<li><strong>Exercise 9.15</strong> — (With AXIOM-09 or the Chapter 9 notebook.</li>
-<li><strong>Exercise 9.16</strong> — (With AXIOM-09 or the Chapter 9 notebook.</li>
-</ul>
-<h4 class="ex-part anchored">
-Part D — Enterprise applications
-</h4>
-<ul>
-<li><strong>Exercise 9.17</strong> — Write the one-page ESA declaration for an enterprise you know: <span class="math inline">\(6\)</span>–<span class="math inline">\(10\)</span> components with spaces and interfaces, the typed edge list with one witnessing scenario per edge, three scoped constraints, and the intrinsic layering; flag every non-edge you are least confident in as an invariance claim to test.</li>
-<li><strong>Exercise 9.18</strong> — Write a quarantine memo: for one shock source and one protected component in your Exercise (see book) architecture, list <em>all</em> directed paths between them, identify the smallest set of edges whose removal severs every path, and translate each removed edge into a managerial action with its cost in lost coordination (informal min-cut; the optimization is Volume II).</li>
-<li><strong>Exercise 9.19</strong> — Conduct a constraint audit in the style of Example (see book): draw <span class="math inline">\(G_{\mathcal{C}}\)</span> for eight or more real policies/obligations, compute <span class="math inline">\(\beta\)</span>, list the cycles, and propose the joint-review calendar the cycles require—one meeting per cycle, memberships attached.</li>
-</ul>
+<section id="panel-3-the-boundary-is-a-modeling-decision" class="level2">
+<h2 class="anchored" data-anchor-id="panel-3-the-boundary-is-a-modeling-decision">Panel 3 — The boundary is a modeling decision</h2>
+<p>Four subsystems; two defensible boundaries. <span class="math inline">\(B_1\)</span> leaves Ventures outside; <span class="math inline">\(B_2\)</span> brings it in. The <strong>same enterprise</strong> reports a different aggregate state under each — nothing is wrong, and the difference is exactly what the Boundary Consistency Theorem disciplines.</p>
+<div id="71ae8952" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:00:45.417486Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:00:45.417199Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:00:45.424059Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:00:45.423042Z&quot;}}" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>names<span class="op">=</span>[<span class="st">"Industrial"</span>,<span class="st">"Digital"</span>,<span class="st">"Shared services"</span>,<span class="st">"Ventures"</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> nm,s,w1,w2 <span class="kw">in</span> <span class="bu">zip</span>(names,SUBS,W_B1,W_B2):</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>nm<span class="sc">:16s}</span><span class="ss"> state=</span><span class="sc">{</span>s<span class="sc">:5.1f}</span><span class="ss">   weight B1=</span><span class="sc">{</span>w1<span class="sc">:.2f}</span><span class="ss">  B2=</span><span class="sc">{</span>w2<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">aggregate under B1:"</span>, <span class="bu">round</span>(<span class="bu">float</span>(W_B1<span class="op">@</span>SUBS),<span class="dv">4</span>))</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"aggregate under B2:"</span>, <span class="bu">round</span>(<span class="bu">float</span>(W_B2<span class="op">@</span>SUBS),<span class="dv">4</span>))</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"boundary shift    :"</span>, <span class="bu">round</span>(<span class="bu">float</span>((W_B2<span class="op">-</span>W_B1)<span class="op">@</span>SUBS),<span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Industrial       state= 72.0   weight B1=0.45  B2=0.40
+Digital          state= 61.0   weight B1=0.30  B2=0.27
+Shared services  state= 58.0   weight B1=0.25  B2=0.22
+Ventures         state= 80.0   weight B1=0.00  B2=0.11
+
+aggregate under B1: 65.2
+aggregate under B2: 66.83
+boundary shift    : 1.63</code></pre>
+</div>
+</div>
 </section>
-<section id="downloads" class="level2">
-<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Resource</th>
-<th>File</th>
-<th>Seed</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lecture deck</td>
-<td><a href="../downloads/DCT_V1_Ch09_Slides.pptx"><code>DCT_V1_Ch09_Slides.pptx</code></a></td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>Python laboratory</td>
-<td><a href="../labs/v1ch09_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V1_Ch09_Lab.ipynb"><code>DCT_V1_Ch09_Lab.ipynb</code></a></td>
-<td><code>26109</code></td>
-</tr>
-<tr class="odd">
-<td>Excel workbook</td>
-<td><a href="../downloads/DCT_V1_Ch09_Lab.xlsx"><code>DCT_V1_Ch09_Lab.xlsx</code></a></td>
-<td><code>26109</code></td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26109</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<section id="validation-agrees-with-dct_v1_ch02_lab.xlsx" class="level2">
+<h2 class="anchored" data-anchor-id="validation-agrees-with-dct_v1_ch02_lab.xlsx">Validation — agrees with <code>DCT_V1_Ch02_Lab.xlsx</code></h2>
+<div id="f4cee215" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:00:45.425872Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:00:45.425684Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:00:45.431741Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:00:45.430711Z&quot;}}" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>ref <span class="op">=</span> reference_values()</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>expected <span class="op">=</span> {<span class="st">"open_loop_t5.0"</span>:<span class="fl">60.1274</span>,<span class="st">"closed_loop_t5.0"</span>:<span class="fl">67.5001</span>,<span class="st">"feedback_gap_t5.0"</span>:<span class="fl">7.3727</span>,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a> <span class="st">"closed_loop_t1.0"</span>:<span class="fl">67.5898</span>,<span class="st">"aggregate_B1"</span>:<span class="fl">65.2</span>,<span class="st">"aggregate_B2"</span>:<span class="fl">66.83</span>,<span class="st">"boundary_shift"</span>:<span class="fl">1.63</span>}</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k,v <span class="kw">in</span> expected.items():</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="bu">abs</span>(ref[k]<span class="op">-</span>v)<span class="op">&lt;</span><span class="fl">5e-4</span>, <span class="ss">f"MISMATCH </span><span class="sc">{</span>k<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"PASS  </span><span class="sc">{</span>k<span class="sc">:22s}</span><span class="ss"> </span><span class="sc">{</span>ref[k]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">All checkpoints agree — seed 26102."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>PASS  open_loop_t5.0         60.1274
+PASS  closed_loop_t5.0       67.5001
+PASS  feedback_gap_t5.0      7.3727
+PASS  closed_loop_t1.0       67.5898
+PASS  aggregate_B1           65.2
+PASS  aggregate_B2           66.83
+PASS  boundary_shift         1.63
+
+All checkpoints agree — seed 26102.</code></pre>
 </div>
 </div>
-</div>
+<p><strong>Next</strong>: Exercises 2.9–2.12 (Part C) extend this laboratory; AXIOM-02’s boundary designer makes Panel 3 draggable. Solutions: IM Ch. 2.</p>
 
 
 </section>

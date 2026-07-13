@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 9 · Enterprise State Architecture – Dynamic Corporate Transformation</title>
+<title>Chapter 7 · Dynamic Enterprise Systems – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -340,7 +340,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch09.html">Chapter 9 · Enterprise State Architecture</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch07.html">Chapter 7 · Dynamic Enterprise Systems</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -399,7 +399,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch07.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/v1ch07.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Chapter 7 · Dynamic Enterprise Systems</span></a>
   </div>
 </li>
@@ -411,7 +411,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch09.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/v1ch09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapter 9 · Enterprise State Architecture</span></a>
   </div>
 </li>
@@ -588,10 +588,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch09.html">Chapter 9 · Enterprise State Architecture</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch07.html">Chapter 7 · Dynamic Enterprise Systems</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 9 · Enterprise State Architecture</h1>
-<p class="subtitle lead">Volume I · Enterprise Architectures · Week 5</p>
+<h1 class="title">Chapter 7 · Dynamic Enterprise Systems</h1>
+<p class="subtitle lead">Volume I · Mathematical Representation · Week 4</p>
 </div>
 
 
@@ -609,27 +609,26 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume I, Chapter 9</strong> · Taught in <a href="../schedule.html#week-5">Week 5</a> · Lab seed <code>26109</code></p>
+<p><strong>Volume I, Chapter 7</strong> · Taught in <a href="../schedule.html#week-4">Week 4</a> · Lab seed <code>26107</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Define the Enterprise State Architecture mathematically as the triple $\AS = (\Xc, \mathcal{R}, \mathcal{C})$.</li><li>Construct enterprise state architectures for complex organizations: components, interfaces, wiring, and constraints, declared to contract standard.</li><li>Identify state hierarchies and state dependencies, including the intrinsic causal hierarchy every dependency structure owns.</li><li>Represent enterprise subsystems within a unified state architecture, and reassemble global behavior from wired components.</li><li>Analyze enterprise structural consistency: interface, constraint, and hierarchical consistency, and the exact role of cycles in defeating local checks.</li><li>Model interactions among enterprise states through the dependency graph, with propagation bounds along its paths.</li><li>Evaluate architectural completeness relative to declared question classes.</li><li>Interpret enterprise architectures graphically and mathematically, including the one-directional trust rule for aggregated dependency maps.</li><li>Assess enterprise structural complexity with graph measures, and know what such measures do not measure.</li><li>Prepare enterprise state architectures for the capital, performance, and risk architectures and their integration within UETA.</li></ol>
+<ol class="los-list"><li>Define a Dynamic Enterprise System mathematically, as the integration of state representation (ESA) and transformation operators (ETA) under an explicit time semantics.</li><li>Formulate deterministic enterprise state equations in continuous and discrete time, with declared system class (autonomous, time-invariant, linear).</li><li>Model enterprise evolution through time, including the superposition of inherited momentum and program contribution in the linear regime.</li><li>Distinguish continuous-time and discrete-time enterprise systems, and convert between them exactly in the linear time-invariant case.</li><li>Analyze enterprise trajectories: existence, uniqueness, continuous dependence on initial conditions, and invariance of the feasible region.</li><li>Interpret equilibrium and steady-state behavior, including input-shifted equilibria and multiplicity.</li><li>Evaluate enterprise stability by the spectral tests and by Lyapunov's direct method.</li><li>Apply feedback within enterprise dynamics: gain design, constructive pole placement, and the overcorrection phenomenon.</li><li>Analyze enterprise responses to external inputs, and determine which internal states are reconstructible from observed outputs.</li><li>Prepare deterministic enterprise systems for the stochastic generalization of Chapter 8.</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>Motivation for Enterprise State Architecture</li>
-<li>Architecture versus Representation</li>
-<li>Enterprise Topology and State Dependencies</li>
-<li>Structural Dependency and Propagation</li>
-<li>Hierarchical Enterprise States</li>
-<li>Architectural Constraints and Consistency</li>
-<li>Architectural Completeness and Validation</li>
-<li>Architecture Metrics and Complexity</li>
+<li>Motivation for Dynamic Enterprise Systems</li>
+<li>Dynamic Enterprise Systems and Their Equations</li>
+<li>Continuous and Discrete Time</li>
+<li>The State Transition Structure</li>
+<li>Enterprise Equilibria</li>
+<li>Enterprise Stability</li>
+<li>Feedback in Enterprise Dynamics</li>
 <li>Worked Examples</li>
-<li>Preparation for Enterprise Capital Architecture</li>
+<li>Preparation for Stochastic Enterprise Dynamics</li>
 <li>Chapter Summary</li>
 <li>Exercises</li>
 <li>Notes and Sources</li>
@@ -637,55 +636,60 @@ window.Quarto = {
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-09">AXIOM-09 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-07">AXIOM-07 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>19 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 9.</strong></p>
+<p>19 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 7.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 9.1</strong> — Distinguish representation from architecture in two sentences, and give one enterprise question answerable from the representation alone and one requiring the architecture (the wiring), justifying each.</li>
-<li><strong>Exercise 9.2</strong> — For an enterprise you know, list six dependencies and classify each by Table (see book)’s types; identify one edge carrying multiple types and state which type each of two named analyses would read.</li>
-<li><strong>Exercise 9.3</strong> — Explain the terminological note in Definition (see book): what does “topology” mean here, what did it mean in Chapter 3, and what single idea do the usages share?</li>
-<li><strong>Exercise 9.4</strong> — Using Meridian (Example (see book)), explain in one paragraph how the intrinsic causal hierarchy can disagree with the organizational hierarchy and why the disagreement predicts coordination cost.</li>
-<li><strong>Exercise 9.5</strong> — State in plain language why three policies can be pairwise compatible and jointly infeasible, and name the graph property that makes this possible and the one that forbids it.</li>
+<li><strong>Exercise 7.1</strong> — Classify each of the following along all four axes of Table (see book), one line each: (a) a quarterly covenant-compliance model; (b) an intraday liquidity model; (c) a platform-adoption model with network effects; (d) a model of demand under an announced regulatory phase-in.</li>
+<li><strong>Exercise 7.2</strong> — For your own enterprise, name two decision inputs, two environment inputs, one delivered output, and two reported outputs; state which reported output is a <em>mixture</em> of state coordinates rather than a single coordinate, and why that matters for Theorem (see book)(iii).</li>
+<li><strong>Exercise 7.3</strong> — Distinguish “equilibrium of the autonomous dynamics” from “steady state under a held policy,” using (see book); give a Meridian instance where the two differ and explain which one a board target should reference.</li>
+<li><strong>Exercise 7.4</strong> — A colleague discretizes a continuous LTI treasury model by Euler’s method with <span class="math inline">\(\Delta\)</span> one quarter.</li>
+<li><strong>Exercise 7.5</strong> — Give one enterprise scenario for each row of Table (see book), distinct from the instances printed there, and state for each which test you would run.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 9.6</strong> — Write out in full the proof that the condensation is acyclic (Proposition (see book)), including the composition-of- paths step, and exhibit a <span class="math inline">\(6\)</span>-node digraph with exactly two nontrivial SCCs whose condensation has depth <span class="math inline">\(3\)</span>.</li>
-<li><strong>Exercise 9.7</strong> — Re-prove the propagation bound (Theorem (see book)(ii)) with all induction details: state the induction hypothesis as a set equality of unaffected components, verify the in-neighbor distance inequality, and identify exactly where the proof uses that component updates read only in-neighbors.</li>
-<li><strong>Exercise 9.8 ★</strong> — &nbsp;Complete the activation splice of Theorem (see book)(iii): given a path <span class="math inline">\(u = w_0 \to \cdots \to w_m = v\)</span> with each edge’s dependence active at some state configuration, construct a single configuration and horizon at which perturbing <span class="math inline">\(u\)</span> alters <span class="math inline">\(v\)</span>, stating the additional hypothesis you need on the ability to steer intermediate blocks (and exhibiting a two-edge example where, without it, the influences cancel).</li>
-<li><strong>Exercise 9.9</strong> — For the spurious-path counterexample of Theorem (see book)(ii), determine the minimal conditions under which a coarse edge <span class="math inline">\(A \to B\)</span> does certify some fine edge: characterize the aggregates <span class="math inline">\(A\)</span> for which coarse paths through <span class="math inline">\(A\)</span> are never spurious (hint: internal connectivity from every in-interface node to every out-interface node).</li>
-<li><strong>Exercise 9.10</strong> — Complete Theorem (see book)(ii)’s induction as a formal leaf-elimination argument: define arc-consistency projection onto the parent, show projections of arc-consistent families remain arc-consistent on the reduced tree, and conclude by induction on <span class="math inline">\(\abs{V}\)</span>; then explain in one sentence why the same argument fails on a cycle.</li>
-<li><strong>Exercise 9.11</strong> — Construct a four-constraint family on a <span class="math inline">\(4\)</span>-cycle of scalar components, all constraints of the form <span class="math inline">\(x_i - x_j \le b_{ij}\)</span>, that is arc-consistent and globally infeasible; state the general infeasibility criterion for difference constraints on a cycle (sum of bounds around the cycle) and verify it on your instance.</li>
-<li><strong>Exercise 9.12</strong> — Prove that the projection of Theorem (see book)(i) is functorial for walks: concatenation of fine walks projects to concatenation of coarse walks, and lengths never increase; deduce <span class="math inline">\(d'([u], [v]) \le d(u, v)\)</span> formally.</li>
-<li><strong>Exercise 9.13 ★</strong> — &nbsp;Magnitude along paths (first synthesis with Part II): suppose each component update is <span class="math inline">\(L\)</span>-Lipschitz in each in-neighbor block and nonexpansive in its own.</li>
+<li><strong>Exercise 7.6</strong> — From the continuous-dependence bound (see book), derive the forecastable-horizon formula <span class="math inline">\(t_{\max} \approx (1/L)\ln( \mathrm{tol}/\mathrm{err})\)</span> for tolerance <span class="math inline">\(\mathrm{tol}\)</span> and initial measurement error <span class="math inline">\(\mathrm{err}\)</span>; evaluate it for Meridian’s capability coordinate (<span class="math inline">\(\pm 5\)</span> points per Table 5.</li>
+<li><strong>Exercise 7.7</strong> — Prove the generalized Gr"onwall inequality with time-varying rate: if <span class="math inline">\(\varphi(t) \le c + \int_0^t \ell(s)\varphi(s)\, \mathrm{d}s\)</span> with <span class="math inline">\(\ell \ge 0\)</span> continuous, then <span class="math inline">\(\varphi(t) \le c\,\exp\bigl(\int_0^t \ell(s)\,\mathrm{d}s\bigr)\)</span>.</li>
+<li><strong>Exercise 7.8</strong> — Prove the diagonalizable case of Theorem (see book)(i) in full: for <span class="math inline">\(\mathbf{A} = \mathbf{V}\boldsymbol{\Lambda}\mathbf{V}^{-1}\)</span>, show <span class="math inline">\(\norm{\x_k} \le \kappa(\mathbf{V})\,\rho(\mathbf{A})^{k} \norm{\x_0}\)</span> with <span class="math inline">\(\kappa(\mathbf{V}) = \norm{\mathbf{V}} \norm{\mathbf{V}^{-1}}\)</span>, and explain the enterprise meaning of a large eigenbasis condition number (near-parallel modes: transient growth before decay).</li>
+<li><strong>Exercise 7.9 ★</strong> — &nbsp;For the planar rotation <span class="math inline">\(\mathbf{A} = \bigl[\begin{smallmatrix}\cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta\end{smallmatrix}\bigr]\)</span>, prove Lyapunov stability of the origin directly from Definition (see book) (exhibit <span class="math inline">\(\delta(\varepsilon)\)</span>), prove that asymptotic stability fails, and exhibit the Jordan pair at <span class="math inline">\(\rho = 1\)</span> whose instability completes the theorem’s “inconclusive” clause.</li>
+<li><strong>Exercise 7.10</strong> — Re-derive (see book) by splitting <span class="math inline">\(\x_k = \x_k^{\mathrm{free}} + \x_k^{\mathrm{forced}}\)</span> from the start: define the two sequences by their own recursions, prove each satisfies it, and prove the sum satisfies the original—superposition as three small inductions.</li>
+<li><strong>Exercise 7.11</strong> — A covenant package reports <span class="math inline">\(\mathbf{y}_k = \mathbf{C}\x_k\)</span> with <span class="math inline">\(\mathbf{C}\)</span> selecting (leverage, liquidity) from a four-coordinate state (liquidity, leverage, capability, technology) whose <span class="math inline">\(\mathbf{A}\)</span> couples capability into liquidity with a one-period lag but couples technology into nothing financial for two periods.</li>
+<li><strong>Exercise 7.12 ★</strong> — &nbsp;Carry out Theorem (see book)(iii) for <span class="math inline">\(n = 2\)</span> from scratch: take <span class="math inline">\(\mathbf{A} = \bigl[\begin{smallmatrix}0 &amp; 1 \\ -a_2 &amp; -a_1\end{smallmatrix} \bigr]\)</span>, <span class="math inline">\(\mathbf{B} = [0, 1]^{\!\top}\)</span>, desired eigenvalues <span class="math inline">\(\{0.5, 0.6\}\)</span>; compute <span class="math inline">\(\mathbf{K}\)</span>, verify the closed-loop characteristic polynomial by direct expansion, and then repeat with desired eigenvalues <span class="math inline">\(\{0.5 \pm 0.3i\}\)</span> to confirm complex placement.</li>
+<li><strong>Exercise 7.13</strong> — Derive the general overcorrection threshold for the scalar system with delay: <span class="math inline">\(x_{k+1} = a x_k + b u_{k-1}\)</span> (the decision acts one period late), under <span class="math inline">\(u_k = -k x_k\)</span>.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 9.14</strong> — (With AXIOM-09 or the Chapter 9 notebook.</li>
-<li><strong>Exercise 9.15</strong> — (With AXIOM-09 or the Chapter 9 notebook.</li>
-<li><strong>Exercise 9.16</strong> — (With AXIOM-09 or the Chapter 9 notebook.</li>
+<li><strong>Exercise 7.14</strong> — (With AXIOM-07 or the Chapter 7 notebook.</li>
+<li><strong>Exercise 7.15</strong> — (With AXIOM-07 or the Chapter 7 notebook.</li>
+<li><strong>Exercise 7.16</strong> — (With AXIOM-07 or the Chapter 7 notebook.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part D — Enterprise applications
 </h4>
 <ul>
-<li><strong>Exercise 9.17</strong> — Write the one-page ESA declaration for an enterprise you know: <span class="math inline">\(6\)</span>–<span class="math inline">\(10\)</span> components with spaces and interfaces, the typed edge list with one witnessing scenario per edge, three scoped constraints, and the intrinsic layering; flag every non-edge you are least confident in as an invariance claim to test.</li>
-<li><strong>Exercise 9.18</strong> — Write a quarantine memo: for one shock source and one protected component in your Exercise (see book) architecture, list <em>all</em> directed paths between them, identify the smallest set of edges whose removal severs every path, and translate each removed edge into a managerial action with its cost in lost coordination (informal min-cut; the optimization is Volume II).</li>
-<li><strong>Exercise 9.19</strong> — Conduct a constraint audit in the style of Example (see book): draw <span class="math inline">\(G_{\mathcal{C}}\)</span> for eight or more real policies/obligations, compute <span class="math inline">\(\beta\)</span>, list the cycles, and propose the joint-review calendar the cycles require—one meeting per cycle, memberships attached.</li>
+<li><strong>Exercise 7.17</strong> — Write the dynamic declaration (Table (see book) row memberships, with justification and expiry conditions) for the enterprise model you built in Exercises 4.</li>
+<li><strong>Exercise 7.18</strong> — Write a one-page gain audit of one management control loop you know (pricing, hiring, inventory, credit approval): the deviation variable, the instrument, the estimated <span class="math inline">\((a, b)\)</span>, the operating gain and its Table (see book) regime, the computed <span class="math inline">\(k_{\mathrm{crit}}\)</span>, and one observed episode reinterpreted through the chart.</li>
+<li><strong>Exercise 7.19</strong> — For a perimeter-changing transformation you know (divestiture, carve-out, acquisition), sketch the hybrid timeline of Example (see book): pre-dynamics, jump operator with feasibility check, post-dynamics, and the three-item discipline (jump feasibility, post-spectrum re-diagnosis, revalidation) with the evidence each item would require.</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
 <h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Resource</th>
@@ -696,18 +700,18 @@ Part D — Enterprise applications
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V1_Ch09_Slides.pptx"><code>DCT_V1_Ch09_Slides.pptx</code></a></td>
+<td><code>DCT_V1_Ch07_Slides.pptx</code> <em>(forthcoming)</em></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>Python laboratory</td>
-<td><a href="../labs/v1ch09_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V1_Ch09_Lab.ipynb"><code>DCT_V1_Ch09_Lab.ipynb</code></a></td>
-<td><code>26109</code></td>
+<td><code>DCT_V1_Ch07_Lab.ipynb</code> <em>(forthcoming)</em></td>
+<td><code>26107</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V1_Ch09_Lab.xlsx"><code>DCT_V1_Ch09_Lab.xlsx</code></a></td>
-<td><code>26109</code></td>
+<td><code>DCT_V1_Ch07_Lab.xlsx</code> <em>(forthcoming)</em></td>
+<td><code>26107</code></td>
 </tr>
 </tbody>
 </table>
@@ -717,7 +721,7 @@ Part D — Enterprise applications
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26109</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26107</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>
