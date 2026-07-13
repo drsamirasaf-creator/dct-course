@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 15 · Mathematical Formulation of Enterprise Optimization – Dynamic Corporate Transformation</title>
+<title>Chapter 6 · Enterprise Transformation Operators – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -340,7 +340,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch15.html">Chapter 15 · Mathematical Formulation of Enterprise Optimization</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch06.html">Chapter 6 · Enterprise Transformation Operators</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -393,7 +393,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch06.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/v1ch06.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Chapter 6 · Enterprise Transformation Operators</span></a>
   </div>
 </li>
@@ -447,7 +447,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch15.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/v1ch15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapter 15 · Mathematical Formulation of Enterprise Optimization</span></a>
   </div>
 </li>
@@ -588,10 +588,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch15.html">Chapter 15 · Mathematical Formulation of Enterprise Optimization</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch06.html">Chapter 6 · Enterprise Transformation Operators</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 15 · Mathematical Formulation of Enterprise Optimization</h1>
-<p class="subtitle lead">Volume I · Integration and Transition · Week 7</p>
+<h1 class="title">Chapter 6 · Enterprise Transformation Operators</h1>
+<p class="subtitle lead">Volume I · Mathematical Representation · Week 3</p>
 </div>
 
 
@@ -609,32 +609,26 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume I, Chapter 15</strong> · Taught in <a href="../schedule.html#week-7">Week 7</a> · Lab seed <code>26115</code></p>
+<p><strong>Volume I, Chapter 6</strong> · Taught in <a href="../schedule.html#week-3">Week 3</a> · Lab seed <code>26106</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Formulate the General Enterprise Optimization Problem in canonical form and instantiate it for a declared enterprise.</li><li>Identify enterprise decision variables and distinguish decisions from controls, policies, and programs.</li><li>Define enterprise objective functions and value functionals from the ledgers of Parts II--IV.</li><li>Construct enterprise constraint systems across the nine declared classes and audit their consistency.</li><li>Formulate multi-objective enterprise optimization problems and interpret their scalarizations.</li><li>Distinguish static, dynamic, multi-period, stochastic, robust, and adaptive formulations and know when each is the honest one.</li><li>Analyze feasible enterprise solution spaces, including their viability-honest cores.</li><li>Interpret Pareto-optimal enterprises and efficiency frontiers as governance objects.</li><li>Evaluate enterprise trade-offs through multipliers, shadow prices, and frontier slopes.</li><li>Prepare enterprise models for the solution methodologies of Volume II without committing to any of them.</li></ol>
+<ol class="los-list"><li>Define Enterprise Transformation Operators mathematically, as declared partial self-maps on the enterprise state space.</li><li>Distinguish deterministic from stochastic transformations by the single-valuedness of their event families, and know where each is treated.</li><li>Represent enterprise evolution using transformation mappings, including the equivalence between operator application and system transition (Theorem (see book)).</li><li>Analyze operator composition and sequencing, with the domain algebra that governs when programs chain.</li><li>Define transformation domains and codomains, and use domains as the mathematical carrier of preconditions.</li><li>Interpret transformation trajectories as orbits of operator words, and identify the sustainable core from which a playbook is indefinitely repeatable (Theorem (see book)).</li><li>Evaluate transformation feasibility, including mid-program feasibility and its failure modes.</li><li>Explain operator invertibility, and why irreversibility is the enterprise default.</li><li>Analyze transformation stability, including the propagation of implementation error through iterated and composed operators (Theorem (see book)).</li><li>Prepare transformation operators for the dynamic-systems integration of Chapter 7.</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>Why Enterprise Optimization?</li>
-<li>The Problem, Stated</li>
-<li>Decision Variables and Policies</li>
-<li>Enterprise Objective Functions</li>
-<li>Enterprise Constraint Systems</li>
-<li>Feasible Regions and Solution Spaces</li>
-<li>Enterprise Optimality Conditions</li>
-<li>Multi-Objective Optimization and the Pareto Frontier</li>
-<li>Dynamic and Multi-Period Optimization</li>
-<li>Stochastic, Robust, and Adaptive Formulations</li>
-<li>Enterprise Policy Design</li>
-<li>Architecture and the Unified Optimization Theorem</li>
-<li>Computational Architecture and AI-Assisted Optimization</li>
+<li>Motivation for Enterprise Transformation Operators</li>
+<li>Transformation as Mathematical Mapping</li>
+<li>Composition and the Operator Algebra</li>
+<li>Iteration, Invariance, and the Sustainable Core</li>
+<li>Feasible Transformations and Constraints</li>
+<li>Transformation Paths and Reachability</li>
+<li>Transformation Stability</li>
 <li>Worked Examples</li>
-<li>Transition to Volume II</li>
+<li>Preparation for Dynamic Enterprise Systems</li>
 <li>Chapter Summary</li>
 <li>Exercises</li>
 <li>Notes and Sources</li>
@@ -642,55 +636,50 @@ window.Quarto = {
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-15">AXIOM-15 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-06">AXIOM-06 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>24 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 15.</strong></p>
+<p>19 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 6.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 15.1</strong> — For each of the three inherited frameworks criticized in Section (see book) (portfolio selection, capacity planning, valuation maximization), state precisely which blocks of (see book)–(see book) it freezes, per Theorem (see book)(ii).</li>
-<li><strong>Exercise 15.2</strong> — Build the decision inventory of Table (see book) for an enterprise you know: three declared levers with owners and admissible bands, and one commonly assumed lever that fails the declaration test—say why.</li>
-<li><strong>Exercise 15.3</strong> — Take one KPI and write its four declarations per Table (see book) (objective component, constraint, policy input, monitor).</li>
-<li><strong>Exercise 15.4</strong> — Express the difference between the stochastic, robust, and adaptive GEOPs as three one-sentence promises to a board, and state for each the declaration object that backs the promise.</li>
-<li><strong>Exercise 15.5</strong> — A consultancy proposes to “optimize first and patch feasibility after.</li>
-<li><strong>Exercise 15.6</strong> — Explain, without formulas, why the holdable optimum of Theorem (see book)(iii) can be strictly worse on paper yet strictly better as a plan, and which two Chapter 14 certificates it is buying.</li>
+<li><strong>Exercise 6.1</strong> — Give two distinct enterprise actions sharing one transformation mapping (Definition (see book)), and one analysis for which the distinction matters and one for which it does not.</li>
+<li><strong>Exercise 6.2</strong> — For five real transformation actions from an enterprise you know, fill a row each of Table (see book): type, plausible mathematical form, and the domain condition practice would call “readiness.</li>
+<li><strong>Exercise 6.3</strong> — A program office claims its operating-model program “can reach any target configuration the board specifies.</li>
+<li><strong>Exercise 6.4</strong> — Why does the identity operator belong in every repertoire, and what role does it play in (a) the monoid structure, (b) program appraisal, (c) the reachable set <span class="math inline">\(R_k(\x_0)\)</span>?</li>
+<li><strong>Exercise 6.5</strong> — Classify each event family as deterministic or stochastic per Proposition (see book), one sentence each: (a) a price change with posted schedule; (b) a divestiture at auction; (c) a system migration with a tested cutover script; (d) a key-hire attempt; (e) a regulatory filing with discretionary review.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 15.7</strong> — Carry out the <span class="math inline">\(K = 1\)</span> and static-lift reductions of Theorem (see book)(ii) and Theorem (see book)(iii) in full for a two-period instance: exhibit the lifted variables, constraints, and the identification of the dynamics’ multipliers with the costates.</li>
-<li><strong>Exercise 15.8 ★</strong> — Prove the Farkas alternative used in Theorem (see book)(i) for polyhedral cones, and derive the KKT conditions (see book) from it under the Slater grade, including complementary slackness.</li>
-<li><strong>Exercise 15.9</strong> — Prove Theorem (see book)(iii) (the shadow-price derivative) from the perturbed value function’s concavity, and compute the covenant multiplier in a two-dimensional capital-allocation instance with explicit data.</li>
-<li><strong>Exercise 15.10</strong> — Prove both directions of Theorem (see book)(ii), including the supporting-hyperplane converse under convexity, and construct a three-point nonconvex attainable set whose middle frontier point no weighted sum finds.</li>
-<li><strong>Exercise 15.11</strong> — Prove Theorem (see book)(iii) and its weak converse (maximizers of <span class="math inline">\(\varepsilon\)</span>-constraint instances are weakly Pareto optimal; strengthen to Pareto optimal under uniqueness).</li>
-<li><strong>Exercise 15.12</strong> — Prove the maximum-theorem step of Theorem (see book)(i) in full for the finite horizon: upper hemicontinuity and compact-valuedness of the feasible decision correspondence, continuity of <span class="math inline">\(V_k\)</span>, and attainment.</li>
-<li><strong>Exercise 15.13 ★</strong> — For the coordination result of Theorem (see book)(ii): state and prove strong duality for the partially relaxed convex GEOP under the Slater grade, show the coordinated block optima at <span class="math inline">\(\boldsymbol{\lambda}_c^{*}\)</span> solve the unified problem, and bound the duality gap when convexity fails, relating it to the value of coordination.</li>
-<li><strong>Exercise 15.14</strong> — Prove Theorem (see book)(ii): the Bellman operator’s contraction, uniqueness of the fixed point, geometric convergence of value iteration with a priori and a posteriori bounds, and existence of an optimal stationary selection.</li>
+<li><strong>Exercise 6.6</strong> — Prove the domain-associativity formula of Proposition (see book) for words of arbitrary finite length <span class="math inline">\(K\)</span> by induction, expressing <span class="math inline">\(\operatorname{dom}(\Top_{K} \circ \cdots \circ \Top_1)\)</span> as <span class="math inline">\(K\)</span> nested membership conditions.</li>
+<li><strong>Exercise 6.7 ★</strong> — &nbsp;Complete Theorem (see book)(iii): show that a composite of continuous maps on closed domains is continuous on its (closed) chained domain, and construct an example with <span class="math inline">\(\operatorname{dom}\Top\)</span> open in which <span class="math inline">\(\Xc_{\infty}(\Top)\)</span> fails to be closed.</li>
+<li><strong>Exercise 6.8</strong> — Show the bound (see book) is sharp: for each <span class="math inline">\(L &gt; 0\)</span> and <span class="math inline">\(\varepsilon &gt; 0\)</span>, exhibit scalar operators <span class="math inline">\(\Top\x = L\x\)</span> and <span class="math inline">\(\Top'\x = L\x + \varepsilon\)</span> achieving equality at every <span class="math inline">\(k\)</span>.</li>
+<li><strong>Exercise 6.9</strong> — Rerun the proof of Theorem (see book)(iii) when only <span class="math inline">\(\Top\)</span> is assumed contractive and <span class="math inline">\(\Top'\)</span> merely has <em>some</em> fixed point <span class="math inline">\(\x'^{\ast}\)</span>: does the bound survive?</li>
+<li><strong>Exercise 6.10</strong> — Prove the minimality clause of Theorem (see book)(i) in detail, and show by example that <span class="math inline">\(R(\x_0)\)</span> can be strictly smaller than the set of states reachable when domain conditions are ignored—quantifying, on your example, the “feasibility gap.</li>
+<li><strong>Exercise 6.11 ★</strong> — &nbsp;Characterize the idempotent affine operators on <span class="math inline">\(\R^n\)</span>: derive the exact conditions on <span class="math inline">\((\mathbf{A}, \mathbf{b})\)</span> under which <span class="math inline">\(\Top\x = \mathbf{A}\x + \mathbf{b}\)</span> satisfies <span class="math inline">\(\Top \circ \Top = \Top\)</span>, describe the fixed-point set geometrically, and interpret idempotence as the “one-and-done” program of Table (see book): which enterprise actions plausibly have it, and which merely claim it?</li>
+<li><strong>Exercise 6.12</strong> — Formalize the tolerance repair of Theorem (see book)(iii): show that for the repertoire <span class="math inline">\(\Top\x = \x/2\)</span> on <span class="math inline">\([0, 1]\)</span>, the tolerance target <span class="math inline">\(\mathcal{G}_\varepsilon = [0, \varepsilon]\)</span> is attained in exactly <span class="math inline">\(\lceil \log_2(1/\varepsilon) \rceil\)</span> steps from <span class="math inline">\(\x_0 = 1\)</span>, and state the general principle relating tolerance to shortest-path length under a contraction.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 15.15</strong> — (AXIOM-15) Assemble the capital-allocation instance of Example (see book) in the GEOP builder; run both audits; report the binding set, all multipliers, and the…</li>
-<li><strong>Exercise 15.16</strong> — (AXIOM-15) Trace the growth–trough frontier by weight sweep and by <span class="math inline">\(\varepsilon\)</span>-constraint; locate the knee and the segment the weight sweep misses; report frontier slopes at three declared points and reconcile them with the instances’ multipliers.</li>
-<li><strong>Exercise 15.17</strong> — (AXIOM-15) Reproduce the turnaround comparison of Example (see book): certainty-equivalent, stochastic, and robust optima with their mutual gaps; then vary the ambiguity radius and plot the price of distrust.</li>
-<li><strong>Exercise 15.18</strong> — (AXIOM-15) Run the roadmap instance of Example (see book) with and without the terminal viability and holdability constraints; report the two value gaps and exhibit the corner-trap trajectory the unconstrained window recommends.</li>
+<li><strong>Exercise 6.13</strong> — (With AXIOM-06 or the Chapter 6 notebook.</li>
+<li><strong>Exercise 6.14</strong> — (With AXIOM-06 or the Chapter 6 notebook.</li>
+<li><strong>Exercise 6.15</strong> — (With AXIOM-06 or the Chapter 6 notebook.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part D — Enterprise applications
 </h4>
 <ul>
-<li><strong>Exercise 15.19</strong> — Draft the one-page “priced commitments” exhibit for a real or case enterprise: five plausibly binding constraints with owners, the multiplier each would carry, and the decision each price would inform.</li>
-<li><strong>Exercise 15.20</strong> — Prepare both ESG declarations of Example (see book) for a board: the ceiling form with its internal carbon price and the objective form with its frontier knee.</li>
-<li><strong>Exercise 15.21</strong> — Identify a coupling in an enterprise you know that is currently “coordinated” by negotiation.</li>
-<li><strong>Exercise 15.22</strong> — Design the measurement that would estimate the value of information for one dashboard upgrade: the two policy classes, the two GEOP instances, and the operational data needed to declare them honestly (Theorem (see book)(iii)).</li>
-<li><strong>Exercise 15.23</strong> — For a publicized turnaround or restructuring, reconstruct the instance qualitatively: decisions, objective, the three most plausible binding classes, and whether the observed plan shows corner-trap symptoms (per-window optimality with shrinking room).</li>
-<li><strong>Exercise 15.24 ★</strong> — Design a full multi-objective mandate for an enterprise of your choice: components with owners and units (Table (see book)), the chosen device of Table (see book) with justification, the frontier exhibit the board would see, and the governance protocol for moving along the frontier.</li>
+<li><strong>Exercise 6.16</strong> — Draft your enterprise’s repertoire table: five to eight operators with declared effects, domains (Table (see book) types), Lipschitz class where estimable, and reversibility premium (finite estimate or “infinite: commitment”).</li>
+<li><strong>Exercise 6.17</strong> — For a merger or major partnership you know (or a hypothetical for Meridian’s Digital Solutions), write the seam memo of Example (see book): the three-operator word, the two seam conditions <span class="math inline">\(\operatorname{ran}\Top_i \subseteq \operatorname{dom}\Top_{i+1}\)</span> spelled as checkable predicates, the environmentally-carried effects flagged per Theorem (see book)(ii), and the gate at which the reversibility premium becomes infinite.</li>
+<li><strong>Exercise 6.18</strong> — Apply Example (see book) to a three-year transformation you know: augment the state with a change budget, cost each operator, verify prefix-sum feasibility of the intended word, determine whether the plan is a strategy or a trade (core empty or not), and if a trade, specify the minimal regeneration operator that would convert it.</li>
+<li><strong>Exercise 6.19</strong> — For Example (see book) with <span class="math inline">\(\gamma = 0.8\)</span>, <span class="math inline">\(q_{\min} = 0.3\)</span>, <span class="math inline">\(\x_0 = (x_4, q) = (41, 0.9)\)</span>: iterate the closed-loop operator six periods, verify the trajectory respects the domain throughout, identify the operator’s Lipschitz class in each coordinate, and state which regime of Theorem (see book) governs its execution-error budget.</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
@@ -706,18 +695,18 @@ Part D — Enterprise applications
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V1_Ch15_Slides.pptx"><code>DCT_V1_Ch15_Slides.pptx</code></a></td>
+<td><a href="../downloads/DCT_V1_Ch06_Slides.pptx"><code>DCT_V1_Ch06_Slides.pptx</code></a></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>Python laboratory</td>
-<td><a href="../labs/v1ch15_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V1_Ch15_Lab.ipynb"><code>DCT_V1_Ch15_Lab.ipynb</code></a></td>
-<td><code>26115</code></td>
+<td><a href="../labs/v1ch06_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V1_Ch06_Lab.ipynb"><code>DCT_V1_Ch06_Lab.ipynb</code></a></td>
+<td><code>26106</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V1_Ch15_Lab.xlsx"><code>DCT_V1_Ch15_Lab.xlsx</code></a></td>
-<td><code>26115</code></td>
+<td><a href="../downloads/DCT_V1_Ch06_Lab.xlsx"><code>DCT_V1_Ch06_Lab.xlsx</code></a></td>
+<td><code>26106</code></td>
 </tr>
 </tbody>
 </table>
@@ -727,7 +716,7 @@ Part D — Enterprise applications
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26115</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26106</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>

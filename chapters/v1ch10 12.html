@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 15 · Mathematical Formulation of Enterprise Optimization – Dynamic Corporate Transformation</title>
+<title>Chapter 10 · Enterprise Capital Architecture – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -340,7 +340,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch15.html">Chapter 15 · Mathematical Formulation of Enterprise Optimization</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch10.html">Chapter 10 · Enterprise Capital Architecture</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -417,7 +417,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch10.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/v1ch10.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Chapter 10 · Enterprise Capital Architecture</span></a>
   </div>
 </li>
@@ -447,7 +447,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch15.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/v1ch15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapter 15 · Mathematical Formulation of Enterprise Optimization</span></a>
   </div>
 </li>
@@ -588,10 +588,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch15.html">Chapter 15 · Mathematical Formulation of Enterprise Optimization</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v1ch01.html">Volume I — Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/v1ch10.html">Chapter 10 · Enterprise Capital Architecture</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 15 · Mathematical Formulation of Enterprise Optimization</h1>
-<p class="subtitle lead">Volume I · Integration and Transition · Week 7</p>
+<h1 class="title">Chapter 10 · Enterprise Capital Architecture</h1>
+<p class="subtitle lead">Volume I · Enterprise Architectures · Week 5</p>
 </div>
 
 
@@ -609,32 +609,27 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume I, Chapter 15</strong> · Taught in <a href="../schedule.html#week-7">Week 7</a> · Lab seed <code>26115</code></p>
+<p><strong>Volume I, Chapter 10</strong> · Taught in <a href="../schedule.html#week-5">Week 5</a> · Lab seed <code>26110</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Formulate the General Enterprise Optimization Problem in canonical form and instantiate it for a declared enterprise.</li><li>Identify enterprise decision variables and distinguish decisions from controls, policies, and programs.</li><li>Define enterprise objective functions and value functionals from the ledgers of Parts II--IV.</li><li>Construct enterprise constraint systems across the nine declared classes and audit their consistency.</li><li>Formulate multi-objective enterprise optimization problems and interpret their scalarizations.</li><li>Distinguish static, dynamic, multi-period, stochastic, robust, and adaptive formulations and know when each is the honest one.</li><li>Analyze feasible enterprise solution spaces, including their viability-honest cores.</li><li>Interpret Pareto-optimal enterprises and efficiency frontiers as governance objects.</li><li>Evaluate enterprise trade-offs through multipliers, shadow prices, and frontier slopes.</li><li>Prepare enterprise models for the solution methodologies of Volume II without committing to any of them.</li></ol>
+<ol class="los-list"><li>Define enterprise capital mathematically: durable, accumulable, depreciable, productive stocks carried on the state architecture.</li><li>Distinguish among the forms of enterprise capital by their formal characteristics---depreciation, build time, tradability, separability---not by label alone.</li><li>Construct enterprise capital vectors as declared measurements on the ESA, with carriers, units, and indicators.</li><li>Analyze capital interactions: conversion channels with efficiencies, and complementarities with their bottleneck and supermodularity consequences.</li><li>Evaluate capital dependencies through the capital dependency graph, inheriting the propagation discipline of Chapter 9.</li><li>Measure the capital architecture: stocks, flows, productivity, and the conservation audit that detects undeclared channels.</li><li>Explain capital accumulation exactly: geometric dynamics, the sustaining-investment identity, and time-to-build floors.</li><li>Explain capital depletion and its asymmetry with accumulation---fast to burn, slow to rebuild---and its effect on the executable operator set.</li><li>Interpret enterprise capital dynamics as Part II dynamics on a distinguished sub-state, with allocation as the control.</li><li>Prepare capital representations for performance attribution (Chapter 11), risk (Chapter 12), and optimization (Chapter 15 and Volume II).</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>Why Enterprise Optimization?</li>
-<li>The Problem, Stated</li>
-<li>Decision Variables and Policies</li>
-<li>Enterprise Objective Functions</li>
-<li>Enterprise Constraint Systems</li>
-<li>Feasible Regions and Solution Spaces</li>
-<li>Enterprise Optimality Conditions</li>
-<li>Multi-Objective Optimization and the Pareto Frontier</li>
-<li>Dynamic and Multi-Period Optimization</li>
-<li>Stochastic, Robust, and Adaptive Formulations</li>
-<li>Enterprise Policy Design</li>
-<li>Architecture and the Unified Optimization Theorem</li>
-<li>Computational Architecture and AI-Assisted Optimization</li>
+<li>Motivation for Enterprise Capital Architecture</li>
+<li>Capital Beyond Finance</li>
+<li>The Enterprise Capital Architecture</li>
+<li>The Forms of Enterprise Capital</li>
+<li>Capital Dependencies</li>
+<li>Capital Accumulation and Depletion</li>
+<li>Capital Allocation and Productivity</li>
+<li>Architecture Consistency and Capital Dynamics</li>
 <li>Worked Examples</li>
-<li>Transition to Volume II</li>
+<li>Preparation for Enterprise Performance Architecture</li>
 <li>Chapter Summary</li>
 <li>Exercises</li>
 <li>Notes and Sources</li>
@@ -642,55 +637,50 @@ window.Quarto = {
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-15">AXIOM-15 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-09">AXIOM-09 →</a> · <a href="https://axiom-webapp.example/modules/axiom-10">AXIOM-10 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>24 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 15.</strong></p>
+<p>19 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 10.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 15.1</strong> — For each of the three inherited frameworks criticized in Section (see book) (portfolio selection, capacity planning, valuation maximization), state precisely which blocks of (see book)–(see book) it freezes, per Theorem (see book)(ii).</li>
-<li><strong>Exercise 15.2</strong> — Build the decision inventory of Table (see book) for an enterprise you know: three declared levers with owners and admissible bands, and one commonly assumed lever that fails the declaration test—say why.</li>
-<li><strong>Exercise 15.3</strong> — Take one KPI and write its four declarations per Table (see book) (objective component, constraint, policy input, monitor).</li>
-<li><strong>Exercise 15.4</strong> — Express the difference between the stochastic, robust, and adaptive GEOPs as three one-sentence promises to a board, and state for each the declaration object that backs the promise.</li>
-<li><strong>Exercise 15.5</strong> — A consultancy proposes to “optimize first and patch feasibility after.</li>
-<li><strong>Exercise 15.6</strong> — Explain, without formulas, why the holdable optimum of Theorem (see book)(iii) can be strictly worse on paper yet strictly better as a plan, and which two Chapter 14 certificates it is buying.</li>
+<li><strong>Exercise 10.1</strong> — State the four stock-semantics properties of Definition (see book) and test each against three candidate “capitals”: a brand, a quarterly revenue figure, and an exclusive license; classify each as capital, flow, or neither, with one sentence per test.</li>
+<li><strong>Exercise 10.2</strong> — Using Table (see book), explain why organizational capital’s profile (untradable, non-separable, low <span class="math inline">\(\delta\)</span>, long build) makes it simultaneously the most defensible and the most dangerous form to deplete.</li>
+<li><strong>Exercise 10.3</strong> — Give one enterprise situation each for the bottleneck regime and the complementarity regime of Theorem (see book), and name the observable that would tell you which regime you are in.</li>
+<li><strong>Exercise 10.4</strong> — Explain “capital is a rental” to a budget committee in four sentences, including the identity <span class="math inline">\(I = \delta C^{\ast}\)</span> and one concrete consequence of a one-year rent holiday.</li>
+<li><strong>Exercise 10.5</strong> — What is the plug of Theorem (see book)(iii), why is a persistent plug informative rather than embarrassing, and what two failures does a nonzero plug disambiguate between?</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 15.7</strong> — Carry out the <span class="math inline">\(K = 1\)</span> and static-lift reductions of Theorem (see book)(ii) and Theorem (see book)(iii) in full for a two-period instance: exhibit the lifted variables, constraints, and the identification of the dynamics’ multipliers with the costates.</li>
-<li><strong>Exercise 15.8 ★</strong> — Prove the Farkas alternative used in Theorem (see book)(i) for polyhedral cones, and derive the KKT conditions (see book) from it under the Slater grade, including complementary slackness.</li>
-<li><strong>Exercise 15.9</strong> — Prove Theorem (see book)(iii) (the shadow-price derivative) from the perturbed value function’s concavity, and compute the covenant multiplier in a two-dimensional capital-allocation instance with explicit data.</li>
-<li><strong>Exercise 15.10</strong> — Prove both directions of Theorem (see book)(ii), including the supporting-hyperplane converse under convexity, and construct a three-point nonconvex attainable set whose middle frontier point no weighted sum finds.</li>
-<li><strong>Exercise 15.11</strong> — Prove Theorem (see book)(iii) and its weak converse (maximizers of <span class="math inline">\(\varepsilon\)</span>-constraint instances are weakly Pareto optimal; strengthen to Pareto optimal under uniqueness).</li>
-<li><strong>Exercise 15.12</strong> — Prove the maximum-theorem step of Theorem (see book)(i) in full for the finite horizon: upper hemicontinuity and compact-valuedness of the feasible decision correspondence, continuity of <span class="math inline">\(V_k\)</span>, and attainment.</li>
-<li><strong>Exercise 15.13 ★</strong> — For the coordination result of Theorem (see book)(ii): state and prove strong duality for the partially relaxed convex GEOP under the Slater grade, show the coordinated block optima at <span class="math inline">\(\boldsymbol{\lambda}_c^{*}\)</span> solve the unified problem, and bound the duality gap when convexity fails, relating it to the value of coordination.</li>
-<li><strong>Exercise 15.14</strong> — Prove Theorem (see book)(ii): the Bellman operator’s contraction, uniqueness of the fixed point, geometric convergence of value iteration with a priori and a posteriori bounds, and existence of an optimal stationary selection.</li>
+<li><strong>Exercise 10.6</strong> — Prove Theorem (see book)(i) by direct induction, then re-derive it as a corollary of Theorem 7.</li>
+<li><strong>Exercise 10.7</strong> — Derive the time-to-build floor in full: from the gap recursion <span class="math inline">\(\bar C - C_{k+1} \ge (1-\delta)(\bar C - C_k)\)</span>, prove no admissible policy exceeds the full-throttle path at any date, and compute <span class="math inline">\(k_{0.1}\)</span> for <span class="math inline">\(\delta \in \{0.05, 0.15, 0.30\}\)</span>.</li>
+<li><strong>Exercise 10.8</strong> — Extend Theorem (see book)(ii) to chains: for a conversion path <span class="math inline">\(1 \to 2 \to \cdots \to m\)</span> executed sequentially, show the end-to-end efficiency is <span class="math inline">\(\prod \eta_{i,i+1}\)</span> and the total leak of converting amount <span class="math inline">\(T\)</span> is <span class="math inline">\(T(1 - \prod \eta)\)</span>; relate the product form to Theorem 6.</li>
+<li><strong>Exercise 10.9 ★</strong> — &nbsp;State and prove the equalization conditions of Theorem (see book)(i) as the KKT conditions of the concave program <span class="math inline">\(\max F(\Cvec + \mathbf{a})\)</span> s.</li>
+<li><strong>Exercise 10.10</strong> — For <span class="math inline">\(F = \min(C_1/1,\ C_2/2)\)</span> with <span class="math inline">\(\Cvec_0 = (10, 30)\)</span> and budget <span class="math inline">\(B = 20\)</span>: compute the optimal allocation, the capacity path as a function of budget spent, and the kink point where the bottleneck rotates; sketch capacity versus budget.</li>
+<li><strong>Exercise 10.11 ★</strong> — &nbsp;For <span class="math inline">\(F(C_1, C_2) = C_1^{\alpha} C_2^{\beta}\)</span> with <span class="math inline">\(\alpha, \beta &gt; 0\)</span>, <span class="math inline">\(\alpha + \beta &lt; 1\)</span>: verify strict complementarity (compute the cross-partial), solve the equalization conditions explicitly for the optimal split of budget <span class="math inline">\(B\)</span>, and show the funded ratio <span class="math inline">\(a_1/a_2\)</span> depends on the existing stocks—one-sided histories tilt optimal funding toward the neglected complement.</li>
+<li><strong>Exercise 10.12</strong> — Formalize the asymmetry of Proposition (see book): for a stock at floor <span class="math inline">\(c\)</span> suffering a write-off of size <span class="math inline">\(w\)</span>, show the mandatory repurchase period is <span class="math inline">\(k(w) \ge \ln\bigl((\bar C - c + w)/(\bar C - c)\bigr) / \ln(1/(1-\delta))\)</span> and expand for small <span class="math inline">\(w\)</span> to obtain the marginal repurchase time <span class="math inline">\(w / (\delta(\bar C - c))\)</span> periods per unit written off.</li>
+<li><strong>Exercise 10.13</strong> — Prove the localization claim of Theorem (see book)(iii): if exactly one channel is undeclared, show <span class="math inline">\(\pi_{i,k}\)</span> equals that channel’s flow (with sign determined by its direction), and explain how the correlation of <span class="math inline">\(\pi\)</span> with candidate drivers identifies the channel.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 15.15</strong> — (AXIOM-15) Assemble the capital-allocation instance of Example (see book) in the GEOP builder; run both audits; report the binding set, all multipliers, and the…</li>
-<li><strong>Exercise 15.16</strong> — (AXIOM-15) Trace the growth–trough frontier by weight sweep and by <span class="math inline">\(\varepsilon\)</span>-constraint; locate the knee and the segment the weight sweep misses; report frontier slopes at three declared points and reconcile them with the instances’ multipliers.</li>
-<li><strong>Exercise 15.17</strong> — (AXIOM-15) Reproduce the turnaround comparison of Example (see book): certainty-equivalent, stochastic, and robust optima with their mutual gaps; then vary the ambiguity radius and plot the price of distrust.</li>
-<li><strong>Exercise 15.18</strong> — (AXIOM-15) Run the roadmap instance of Example (see book) with and without the terminal viability and holdability constraints; report the two value gaps and exhibit the corner-trap trajectory the unconstrained window recommends.</li>
+<li><strong>Exercise 10.14</strong> — (With AXIOM-10 or the Chapter 10 notebook.</li>
+<li><strong>Exercise 10.15</strong> — (With AXIOM-10 or the Chapter 10 notebook.</li>
+<li><strong>Exercise 10.16</strong> — (With AXIOM-10 or the Chapter 10 notebook.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part D — Enterprise applications
 </h4>
 <ul>
-<li><strong>Exercise 15.19</strong> — Draft the one-page “priced commitments” exhibit for a real or case enterprise: five plausibly binding constraints with owners, the multiplier each would carry, and the decision each price would inform.</li>
-<li><strong>Exercise 15.20</strong> — Prepare both ESG declarations of Example (see book) for a board: the ceiling form with its internal carbon price and the objective form with its frontier knee.</li>
-<li><strong>Exercise 15.21</strong> — Identify a coupling in an enterprise you know that is currently “coordinated” by negotiation.</li>
-<li><strong>Exercise 15.22</strong> — Design the measurement that would estimate the value of information for one dashboard upgrade: the two policy classes, the two GEOP instances, and the operational data needed to declare them honestly (Theorem (see book)(iii)).</li>
-<li><strong>Exercise 15.23</strong> — For a publicized turnaround or restructuring, reconstruct the instance qualitatively: decisions, objective, the three most plausible binding classes, and whether the observed plan shows corner-trap symptoms (per-window optimality with shrinking room).</li>
-<li><strong>Exercise 15.24 ★</strong> — Design a full multi-objective mandate for an enterprise of your choice: components with owners and units (Table (see book)), the chosen device of Table (see book) with justification, the frontier exhibit the board would see, and the governance protocol for moving along the frontier.</li>
+<li><strong>Exercise 10.17</strong> — Construct the capital vector for an enterprise you know: seven or more forms with carriers, units, two indicators each (Table (see book) style), estimated <span class="math inline">\(\delta\)</span> with one sentence of evidence, and error bars—then flag the form whose measurement you trust least and why it matters most.</li>
+<li><strong>Exercise 10.18</strong> — Write the sustaining-investment memo: for three stocks from Exercise (see book), compute the rent <span class="math inline">\(\delta C^{\ast}\)</span>, compare against actual maintenance flows, and state which stocks are being silently liquidated—one page, ending with the single reallocation you would propose.</li>
+<li><strong>Exercise 10.19</strong> — Audit one past or planned transformation as capital conversion: declare its channels (<span class="math inline">\(I\)</span>, <span class="math inline">\(O\)</span>, <span class="math inline">\(T\)</span> with <span class="math inline">\(\eta\)</span> estimates), compute the conversion bill, run the plug logic on the slow stocks (<span class="math inline">\(C_O\)</span>, <span class="math inline">\(C_R\)</span>), and price the repurchase liability of Proposition (see book)—the pro-forma line the original business case omitted.</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
@@ -706,18 +696,18 @@ Part D — Enterprise applications
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V1_Ch15_Slides.pptx"><code>DCT_V1_Ch15_Slides.pptx</code></a></td>
+<td><a href="../downloads/DCT_V1_Ch10_Slides.pptx"><code>DCT_V1_Ch10_Slides.pptx</code></a></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>Python laboratory</td>
-<td><a href="../labs/v1ch15_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V1_Ch15_Lab.ipynb"><code>DCT_V1_Ch15_Lab.ipynb</code></a></td>
-<td><code>26115</code></td>
+<td><a href="../labs/v1ch10_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V1_Ch10_Lab.ipynb"><code>DCT_V1_Ch10_Lab.ipynb</code></a></td>
+<td><code>26110</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V1_Ch15_Lab.xlsx"><code>DCT_V1_Ch15_Lab.xlsx</code></a></td>
-<td><code>26115</code></td>
+<td><a href="../downloads/DCT_V1_Ch10_Lab.xlsx"><code>DCT_V1_Ch10_Lab.xlsx</code></a></td>
+<td><code>26110</code></td>
 </tr>
 </tbody>
 </table>
@@ -727,7 +717,7 @@ Part D — Enterprise applications
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26115</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26110</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>
