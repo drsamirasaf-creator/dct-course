@@ -364,8 +364,12 @@ Downloads table links its own three files.
 
 | Volume | Chapters | Status |
 |---|---|---|
-| I | 1–16 | In production |
-| II | 1–16 | In production |
+| I | 1–16 | Complete — all assets live (slides, notebooks, workbooks) |
+| II | 1–16 | Complete — all assets live (slides, notebooks, workbooks) |
+
+All 32 chapters are released: 64 laboratory notebooks and workbooks, 32 slide
+decks, and 339 validation checkpoints — every checkpoint green, seeds
+26101–26216.
 """
 open(os.path.join(SITE, 'labs.qmd'), 'w').write(labs)
 
