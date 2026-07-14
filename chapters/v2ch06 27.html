@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation – Dynamic Corporate Transformation</title>
+<title>Chapter 6 · Optimal Control of Enterprise Systems – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -340,7 +340,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch15.html">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch06.html">Chapter 6 · Optimal Control of Enterprise Systems</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -500,7 +500,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch06.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/v2ch06.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Chapter 6 · Optimal Control of Enterprise Systems</span></a>
   </div>
 </li>
@@ -554,7 +554,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch15.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/v2ch15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</span></a>
   </div>
 </li>
@@ -588,10 +588,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch15.html">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch06.html">Chapter 6 · Optimal Control of Enterprise Systems</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</h1>
-<p class="subtitle lead">Volume II · Multi-Objective and Intelligent Enterprise Optimization · Week 14</p>
+<h1 class="title">Chapter 6 · Optimal Control of Enterprise Systems</h1>
+<p class="subtitle lead">Volume II · Dynamic Enterprise Optimization · Week 10</p>
 </div>
 
 
@@ -609,29 +609,28 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume II, Chapter 15</strong> · Taught in <a href="../schedule.html#week-14">Week 14</a> · Lab seed <code>26215</code></p>
+<p><strong>Volume II, Chapter 6</strong> · Taught in <a href="../schedule.html#week-10">Week 10</a> · Lab seed <code>26206</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Explain the principles of Enterprise Digital Twins.</li><li>Distinguish Enterprise Digital Twins from traditional asset twins.</li><li>Construct enterprise digital twin architectures on the UETA state.</li><li>Integrate optimization, AI, simulation, and enterprise architectures in one loop.</li><li>Develop continuously synchronized enterprise models by Bayesian filtering.</li><li>Design autonomous enterprise decision systems with provable stability.</li><li>Apply real-time enterprise optimization with simulation-consistency guarantees.</li><li>Implement enterprise digital twins computationally.</li><li>Evaluate enterprise transformation scenarios inside the twin.</li><li>Design intelligent autonomous enterprise ecosystems under governance.</li></ol>
+<ol class="los-list"><li>Explain the principles of optimal control as the solution doctrine for the DEO problems of Chapter 5.</li><li>Formulate enterprise optimal control problems with declared states, controls, dynamics, and value.</li><li>Construct enterprise state equations and verify their control-system credentials.</li><li>Define enterprise control variables with their declared constraint sets and information structures.</li><li>Formulate Hamiltonian functions and read their components economically.</li><li>Derive adjoint equations and interpret costates as running shadow prices of enterprise states.</li><li>Apply Pontryagin's Maximum Principle to derive candidate optimal enterprise policies.</li><li>Interpret transversality conditions as horizon pricing.</li><li>Analyze optimal enterprise trajectories, including bang-bang and singular structures, and certify optimality where concavity permits.</li><li>Implement continuous-time enterprise control models with indirect and direct numerical methods.</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>Introduction to Enterprise Digital Twins</li>
-<li>Evolution of Digital Twin Technology</li>
-<li>Enterprise Digital Twin Architecture</li>
-<li>Real-Time Enterprise State Estimation</li>
-<li>Enterprise Data Fusion</li>
-<li>Simulation-Based Enterprise Optimization</li>
-<li>AI-Augmented Enterprise Decision Making</li>
-<li>Autonomous Enterprise Transformation</li>
-<li>Enterprise Digital Twin Governance</li>
-<li>Cybersecurity and Trust</li>
-<li>Industrial and Financial Applications</li>
-<li>Future Autonomous Enterprises</li>
+<li>Introduction to Optimal Control</li>
+<li>Enterprise Control Systems</li>
+<li>State Equations</li>
+<li>Control Variables</li>
+<li>Hamiltonian Formulation</li>
+<li>Adjoint Variables</li>
+<li>Pontryagin’s Maximum Principle</li>
+<li>Transversality Conditions</li>
+<li>Enterprise Applications</li>
+<li>Numerical Solution Methods</li>
+<li>Preparation for Dynamic Programming</li>
 <li>Chapter Summary</li>
 <li>Worked Examples</li>
 <li>Exercises</li>
@@ -640,43 +639,43 @@ window.Quarto = {
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-15">AXIOM-15 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-04">AXIOM-04 →</a> · <a href="https://axiom-webapp.example/modules/axiom-06">AXIOM-06 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 15.</strong></p>
+<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 6.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 15.1</strong> — For each row of Table (see book), explain what breaks if an asset-twin practice is transplanted unmodified to the enterprise twin, and which section of this chapter supplies the repair.</li>
-<li><strong>Exercise 15.2</strong> — Draft the graduated-autonomy protocol of (see book) for the treasury loop of Example (see book): the evidence thresholds (stability margins, coverage, false alerts, regret history) that expand the perimeter, and the breaches that contract it.</li>
+<li><strong>Exercise 6.1</strong> — Explain, using Table (see book), why maximizing <span class="math inline">\(H\)</span> rather than <span class="math inline">\(L\)</span> repairs the myopia of Proposition 5.</li>
+<li><strong>Exercise 6.2</strong> — Read each condition of Table (see book) as a governance audit: what plan defect does each residual detect, and on which worked example would it fire?</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 15.3</strong> — Derive the fusion identity of (see book) from the Kalman update with stacked observations, and quantify the precision overstatement when two “independent” sensors share a common upstream source with correlation <span class="math inline">\(\rho\)</span>.</li>
-<li><strong>Exercise 15.4</strong> — Verify the scalar Riccati fixed point of Example (see book) analytically (solve <span class="math inline">\(\phi(P) = P\)</span>), confirm <span class="math inline">\(P_{\infty} = 0.0695\)</span> and <span class="math inline">\(K = 0.278\)</span>, and compute the sensitivity <span class="math inline">\(\partial P_{\infty} / \partial r\)</span>—the value of a better sensor.</li>
-<li><strong>Exercise 15.5</strong> — Extend Theorem (see book) to time-varying gains <span class="math inline">\(K_t \to K\)</span>: show the error dynamics remain geometrically stable once <span class="math inline">\(\rho(A - AK_tC) \le \bar{\rho} &lt; 1\)</span> for all large <span class="math inline">\(t\)</span>.</li>
-<li><strong>Exercise 15.6</strong> — In Proposition (see book)’s setting, derive the optimal confidence <span class="math inline">\(z^{*}\)</span> trading false-alert cost <span class="math inline">\(c_{\mathrm{FA}}\)</span> against per-period breach cost <span class="math inline">\(c_{\mathrm{B}}\)</span>, and evaluate it on the bank instance of Example (see book).</li>
+<li><strong>Exercise 6.3</strong> — Derive the current-value costate equation <span class="math inline">\(\dot{\mathbf{m}} = \rho\mathbf{m} - \nabla_\x \tilde H\)</span> from (see book) by the substitution <span class="math inline">\(\mathbf{m} = e^{\rho t}\lam\)</span>, and re-derive the closed form <span class="math inline">\(m(t)\)</span> of Example (see book).</li>
+<li><strong>Exercise 6.4</strong> — Verify by direct differentiation that the switching time <span class="math inline">\(t_s = 6.165\)</span> of Example (see book) satisfies <span class="math inline">\(m(t_s) = 3\)</span>, and compute <span class="math inline">\(dt_s/dc\)</span>: how does the switch respond to the unit cost of R&amp;D?</li>
+<li><strong>Exercise 6.5</strong> — For Example (see book), derive <span class="math inline">\(g_0 = 2.4/(e^{0.8} - 1)\)</span> from the budget equality, verify the discounted cost <span class="math inline">\(2.937\)</span>, and confirm <span class="math inline">\(\mu = 0.196\)</span> equals the constant discounted marginal <span class="math inline">\(e^{-\rho t}c'(e^{*}(t))\)</span>.</li>
+<li><strong>Exercise 6.6</strong> — In the innovation-commitment witness of Proposition (see book), complete the parameter declaration: exhibit <span class="math inline">\((\ell, c, \bar u, \rho, \delta, T)\)</span> for which both the abstention and a commitment extremal satisfy (see book), and compute both values.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 15.7</strong> — Prove the multivariable extension of Theorem (see book)(iii): under detectability of <span class="math inline">\((A, C)\)</span> and stabilizability of <span class="math inline">\((A, Q^{1/2})\)</span>, the Riccati iteration converges to the unique positive-semidefinite stabilizing fixed point (follow the monotone-operator route; cite Volume I where needed).</li>
-<li><strong>Exercise 15.8</strong> — Prove that Theorem (see book) fails without separation structure: exhibit a nonlinear (or multiplicative-noise) loop where estimation and control are each stable in isolation but the interconnection is unstable, and identify which proof step breaks.</li>
+<li><strong>Exercise 6.7</strong> — Prove the variational-equation claim used in Proposition (see book) and Theorem (see book): under <span class="math inline">\(C^1\)</span> dynamics, the flow is differentiable in the initial state with derivative solving <span class="math inline">\(\dot V = \nabla_\x f\, V\)</span>, <span class="math inline">\(V(t_0) = I\)</span>, and <span class="math inline">\(V(t)\)</span> is invertible.</li>
+<li><strong>Exercise 6.8</strong> — Extend Theorem (see book) to the terminal- manifold problem: with affine <span class="math inline">\(\mathbf{g}\)</span> and the transversality of Theorem (see book)(ii), prove Mangasarian sufficiency for mandate-constrained instances.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part D — Enterprise applications
 </h4>
 <ul>
-<li><strong>Exercise 15.9</strong> — Reproduce Example (see book); then sweep the manual cadence from <span class="math inline">\(1\)</span> to <span class="math inline">\(8\)</span> periods and plot cost against cadence, locating where human-cycle latency costs one, five, and ten percent of value.</li>
-<li><strong>Exercise 15.10</strong> — Implement a particle-filter twin for a regime-switching demand state (calm/stress), compare its tracking against the Kalman twin through a regime break, and report when the Gaussian mirror is honestly wrong.</li>
-<li><strong>Exercise 15.11</strong> — Meridian twin, end to end: on the AXIOM-15 module’s Meridian instance, stand up the mirror (streams, fusion, filter), certify the separation pair for the working-capital loop, run one Proposition (see book) improvement cycle, and deliver the board pack: state bands, error budget per Theorem (see book), autonomy perimeter, and the governance register.</li>
-<li><strong>Exercise 15.12 ★</strong> — Develop distributionally robust twin control: replace the certainty-equivalent policy of Theorem (see book) with a Chapter 11 worst-case policy over an ambiguity ball around the posterior <span class="math inline">\(\pi_t\)</span>.</li>
+<li><strong>Exercise 6.9</strong> — Reproduce Example (see book)’s shooting solve: bracket <span class="math inline">\(\lambda(0)\)</span>, locate the switch, verify <span class="math inline">\(J^{*} = 12.85\)</span> and the pointwise maximum condition on a time grid; then re-solve by direct transcription (<span class="math inline">\(N = 48\)</span> mesh) and reconcile the KKT multipliers with <span class="math inline">\(\lambda(t)\)</span>.</li>
+<li><strong>Exercise 6.10</strong> — Implement the Riccati solve of Example (see book); reproduce <span class="math inline">\(K(0) = (0.406, 1.090)\)</span> and the penalty <span class="math inline">\(335\)</span>, then sweep the control weight <span class="math inline">\(R \in [0.1, 2]\)</span> and plot the tracking–effort frontier.</li>
+<li><strong>Exercise 6.11</strong> — Formulate Meridian’s covenant-management block as an EOCP (leverage state, amortization dynamics, covenant band as a state constraint) and derive the unconstrai…</li>
+<li><strong>Exercise 6.12 ★</strong> — Develop the constrained maximum principle for corridor- managed enterprises: state the multiplier-measure form for <span class="math inline">\(s(\x, t) \le 0\)</span>, prove the costate jump conditions at junctions in the first-order state-constraint case, and implement an arc-structured shooting method on the restructuring funnel of Example 5.</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
@@ -692,18 +691,18 @@ Part D — Enterprise applications
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V2_Ch15_Slides.pptx"><code>DCT_V2_Ch15_Slides.pptx</code></a></td>
+<td><a href="../downloads/DCT_V2_Ch06_Slides.pptx"><code>DCT_V2_Ch06_Slides.pptx</code></a></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>Python laboratory</td>
-<td><a href="../labs/v2ch15_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch15_Lab.ipynb"><code>DCT_V2_Ch15_Lab.ipynb</code></a></td>
-<td><code>26215</code></td>
+<td><a href="../labs/v2ch06_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch06_Lab.ipynb"><code>DCT_V2_Ch06_Lab.ipynb</code></a></td>
+<td><code>26206</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V2_Ch15_Lab.xlsx"><code>DCT_V2_Ch15_Lab.xlsx</code></a></td>
-<td><code>26215</code></td>
+<td><a href="../downloads/DCT_V2_Ch06_Lab.xlsx"><code>DCT_V2_Ch06_Lab.xlsx</code></a></td>
+<td><code>26206</code></td>
 </tr>
 </tbody>
 </table>
@@ -713,7 +712,7 @@ Part D — Enterprise applications
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26215</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26206</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>

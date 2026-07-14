@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation – Dynamic Corporate Transformation</title>
+<title>Chapter 16 · Synthesis, Future Directions, and Transition to Volume II – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -92,40 +92,11 @@ window.MathJax = {
 };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles/custom.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -335,241 +306,10 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch15.html">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Volume I — Foundations</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 1 · Introduction to Dynamic Corporate Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 2 · Enterprise Systems and Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 3 · Mathematical Foundations</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4 · Enterprise Modeling Principles</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5 · Enterprise State Representation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 6 · Enterprise Transformation Operators</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 7 · Dynamic Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8 · Stochastic Enterprise Dynamics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 9 · Enterprise State Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 10 · Enterprise Capital Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 11 · Enterprise Performance Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 13 · Unified Enterprise Transformation Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 14 · Mathematical Analysis of the Unified Enterprise Transformation Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 15 · Mathematical Formulation of Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch16.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 16 · Synthesis, Future Directions, and Transition to Volume II</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Volume II — Enterprise Optimization</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 1 · Introduction to Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 2 · The General Enterprise Optimization Problem Revisited</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 3 · Convex Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4 · Nonlinear Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5 · Dynamic Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 6 · Optimal Control of Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 7 · Dynamic Programming for Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8 · Hamilton–Jacobi–Bellman Enterprise Framework</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 9 · Stochastic Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 11 · Distributionally Robust Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 12 · Multi-Objective Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 13 · Machine Learning for Enterprise Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 14 · Artificial Intelligence for Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch15.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch16.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 16 · Enterprise Applications and Integrated Transformation Case Studies</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -588,10 +328,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch15.html">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</h1>
-<p class="subtitle lead">Volume II · Multi-Objective and Intelligent Enterprise Optimization · Week 14</p>
+<h1 class="title">Chapter 16 · Synthesis, Future Directions, and Transition to Volume II</h1>
+<p class="subtitle lead">Volume I · Integration and Transition · Week 7</p>
 </div>
 
 
@@ -609,74 +349,84 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume II, Chapter 15</strong> · Taught in <a href="../schedule.html#week-14">Week 14</a> · Lab seed <code>26215</code></p>
+<p><strong>Volume I, Chapter 16</strong> · Taught in <a href="../schedule.html#week-7">Week 7</a> · Lab seed <code>26116</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Explain the principles of Enterprise Digital Twins.</li><li>Distinguish Enterprise Digital Twins from traditional asset twins.</li><li>Construct enterprise digital twin architectures on the UETA state.</li><li>Integrate optimization, AI, simulation, and enterprise architectures in one loop.</li><li>Develop continuously synchronized enterprise models by Bayesian filtering.</li><li>Design autonomous enterprise decision systems with provable stability.</li><li>Apply real-time enterprise optimization with simulation-consistency guarantees.</li><li>Implement enterprise digital twins computationally.</li><li>Evaluate enterprise transformation scenarios inside the twin.</li><li>Design intelligent autonomous enterprise ecosystems under governance.</li></ol>
+<ol class="los-list"><li>Explain the complete Dynamic Corporate Transformation framework as one deductive structure.</li><li>Describe the relationships among the six foundational architectures and the contracts that bind them.</li><li>Summarize the General Enterprise Optimization Problem and its place as the volume's culmination.</li><li>Identify the framework's unresolved theoretical questions and state them precisely.</li><li>Explain the transition from enterprise architecture to enterprise optimization as a certified interface.</li><li>Distinguish the scope of Volume I from that of Volume II and route questions to the correct volume.</li><li>Identify research opportunities and formulate them as extensions of declared framework components.</li><li>Describe the computational roadmap for the framework, from laboratory to digital twin.</li><li>Understand the intended long-term evolution of the discipline, including its AI-assisted and autonomous horizons.</li><li>Appreciate the interdisciplinary significance of Dynamic Corporate Transformation and locate it among its parent fields.</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>Introduction to Enterprise Digital Twins</li>
-<li>Evolution of Digital Twin Technology</li>
-<li>Enterprise Digital Twin Architecture</li>
-<li>Real-Time Enterprise State Estimation</li>
-<li>Enterprise Data Fusion</li>
-<li>Simulation-Based Enterprise Optimization</li>
-<li>AI-Augmented Enterprise Decision Making</li>
-<li>Autonomous Enterprise Transformation</li>
-<li>Enterprise Digital Twin Governance</li>
-<li>Cybersecurity and Trust</li>
-<li>Industrial and Financial Applications</li>
-<li>Future Autonomous Enterprises</li>
-<li>Chapter Summary</li>
+<li>The Arc of Volume I</li>
+<li>The Six Architectures in Review</li>
+<li>The Unified Enterprise Perspective</li>
+<li>The Integrated Mathematical Framework</li>
+<li>The Enterprise Transformation Lifecycle</li>
+<li>The GEOP Revisited</li>
+<li>The Enterprise Transformation Discipline</li>
+<li>Computational Enterprise Science</li>
+<li>Artificial Intelligence and Enterprise Transformation</li>
+<li>Enterprise Digital Twins</li>
+<li>Autonomous Enterprise Optimization</li>
+<li>Future Enterprise Systems and Research Directions</li>
 <li>Worked Examples</li>
+<li>Transition to Volume II</li>
+<li>Reader Preparation</li>
+<li>Final Remarks</li>
+<li>Chapter Summary</li>
 <li>Exercises</li>
 <li>Notes and Sources</li>
 </ol>
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-15">AXIOM-15 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-16">AXIOM-16 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 15.</strong></p>
+<p>19 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 16.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 15.1</strong> — For each row of Table (see book), explain what breaks if an asset-twin practice is transplanted unmodified to the enterprise twin, and which section of this chapter supplies the repair.</li>
-<li><strong>Exercise 15.2</strong> — Draft the graduated-autonomy protocol of (see book) for the treasury loop of Example (see book): the evidence thresholds (stability margins, coverage, false alerts, regret history) that expand the perimeter, and the breaches that contract it.</li>
+<li><strong>Exercise 16.1</strong> — Close the book and reproduce the canonical GEOP display with every symbol’s provenance; then check yourself against Table (see book) and Definition (see book), and list any symbol whose defining home you missed.</li>
+<li><strong>Exercise 16.2</strong> — For each of the six architectures, state in one sentence what it warrants to the rest of the framework and one honesty clause it carries (Table (see book)); identify which warrant your own organization would find hardest to sign.</li>
+<li><strong>Exercise 16.3</strong> — Walk the readiness chain (R1)–(R4) for a hypothetical enterprise, inventing a plausible failure at each gate; name the failure artifact and its remediation owner in each case.</li>
+<li><strong>Exercise 16.4</strong> — Summarize Proposition (see book) for two audiences in two paragraphs: one to an executive who believes AI makes the theory obsolete, one to an analyst who believes AI has no place in it.</li>
+<li><strong>Exercise 16.5</strong> — Classify the following questions as Volume I or Volume II questions, citing the interface row of Table (see book) that decides each: “is our plan feasible for the horizon?</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 15.3</strong> — Derive the fusion identity of (see book) from the Kalman update with stacked observations, and quantify the precision overstatement when two “independent” sensors share a common upstream source with correlation <span class="math inline">\(\rho\)</span>.</li>
-<li><strong>Exercise 15.4</strong> — Verify the scalar Riccati fixed point of Example (see book) analytically (solve <span class="math inline">\(\phi(P) = P\)</span>), confirm <span class="math inline">\(P_{\infty} = 0.0695\)</span> and <span class="math inline">\(K = 0.278\)</span>, and compute the sensitivity <span class="math inline">\(\partial P_{\infty} / \partial r\)</span>—the value of a better sensor.</li>
-<li><strong>Exercise 15.5</strong> — Extend Theorem (see book) to time-varying gains <span class="math inline">\(K_t \to K\)</span>: show the error dynamics remain geometrically stable once <span class="math inline">\(\rho(A - AK_tC) \le \bar{\rho} &lt; 1\)</span> for all large <span class="math inline">\(t\)</span>.</li>
-<li><strong>Exercise 15.6</strong> — In Proposition (see book)’s setting, derive the optimal confidence <span class="math inline">\(z^{*}\)</span> trading false-alert cost <span class="math inline">\(c_{\mathrm{FA}}\)</span> against per-period breach cost <span class="math inline">\(c_{\mathrm{B}}\)</span>, and evaluate it on the bank instance of Example (see book).</li>
+<li><strong>Exercise 16.6</strong> — Prove that the dependency relation of Table (see book) is a strict partial order and that induction along it is valid (well-foundedness on the finite set); then state precisely what property of the volume’s proofs the induction step requires, per Theorem (see book)(i).</li>
+<li><strong>Exercise 16.7</strong> — Write out the model-theoretic consistency argument of Theorem (see book)(v) in full: define “requirement set,” “model,” and the inference from exhibition to consistency, and identify the exact list of Meridian verifications the proof cites.</li>
+<li><strong>Exercise 16.8</strong> — Make the classification argument of Theorem (see book) rigorous for a declaration you specify: list its declared quantities, assign each to one of the five classes or a coupling, and verify no residue remains.</li>
+<li><strong>Exercise 16.9 ★</strong> — Prove Theorem (see book)(ii) for one concrete substitution: replace the Chapter 12 risk-functional family by a coherent alternative satisfying the same contract, and verify, hypothesis by hypothesis, that Theorems (see book), (see book), and (see book) survive verbatim.</li>
+<li><strong>Exercise 16.10</strong> — Complete the necessity half of Theorem (see book): for each gate, construct an explicit minimal enterprise instance that passes all earlier gates, fails that one, and voids a named conclusion of Theorem (see book).</li>
+<li><strong>Exercise 16.11</strong> — Formalize the autonomy envelope of Definition (see book) as a constraint block of the GEOP: variables, admissible-set structure, and the multiplier interpretation of its boundaries; then state one theorem about envelopes you can prove with Volume I machinery and one you cannot, explaining what O5 lacks.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 15.7</strong> — Prove the multivariable extension of Theorem (see book)(iii): under detectability of <span class="math inline">\((A, C)\)</span> and stabilizability of <span class="math inline">\((A, Q^{1/2})\)</span>, the Riccati iteration converges to the unique positive-semidefinite stabilizing fixed point (follow the monotone-operator route; cite Volume I where needed).</li>
-<li><strong>Exercise 15.8</strong> — Prove that Theorem (see book) fails without separation structure: exhibit a nonlinear (or multiplicative-noise) loop where estimation and control are each stable in isolation but the interconnection is unstable, and identify which proof step breaks.</li>
+<li><strong>Exercise 16.12</strong> — (AXIOM-16) Run the GEOP formulation assistant’s readiness chain on the provided mid-market instance of Example (see book); reproduce the (R1) failure, repair it, and export the four certificates.</li>
+<li><strong>Exercise 16.13</strong> — (AXIOM-16) In the digital-twin demonstration, inject a drift into one declared gain and observe the divergence tripwire; attribute the violation using the three-way taxonomy and report the localization.</li>
+<li><strong>Exercise 16.14</strong> — (AXIOM-16) Use the dependency navigator to trace Theorem (see book) to its primitive ancestry; report the longest citation chain and the Part I primitive it terminates on.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part D — Enterprise applications
 </h4>
 <ul>
-<li><strong>Exercise 15.9</strong> — Reproduce Example (see book); then sweep the manual cadence from <span class="math inline">\(1\)</span> to <span class="math inline">\(8\)</span> periods and plot cost against cadence, locating where human-cycle latency costs one, five, and ten percent of value.</li>
-<li><strong>Exercise 15.10</strong> — Implement a particle-filter twin for a regime-switching demand state (calm/stress), compare its tracking against the Kalman twin through a regime break, and report when the Gaussian mirror is honestly wrong.</li>
-<li><strong>Exercise 15.11</strong> — Meridian twin, end to end: on the AXIOM-15 module’s Meridian instance, stand up the mirror (streams, fusion, filter), certify the separation pair for the working-capital loop, run one Proposition (see book) improvement cycle, and deliver the board pack: state bands, error budget per Theorem (see book), autonomy perimeter, and the governance register.</li>
-<li><strong>Exercise 15.12 ★</strong> — Develop distributionally robust twin control: replace the certainty-equivalent policy of Theorem (see book) with a Chapter 11 worst-case policy over an ambiguity ball around the posterior <span class="math inline">\(\pi_t\)</span>.</li>
+<li><strong>Exercise 16.15</strong> — Draft a two-page adoption memo for an enterprise you know: current position against the four gates, the first three declaration repairs, and the artifact each quarter of the first year should produce.</li>
+<li><strong>Exercise 16.16</strong> — Specify a minimum-viable digital twin for a single division per Definition (see book): the declaration subset, the data bindings with frequencies, the audit schedule, and the divergence monitor—with owners.</li>
+<li><strong>Exercise 16.17</strong> — Choose one row of Table (see book) and write a one-page research statement: the problem in the framework’s vocabulary, the extension point it uses, what it inherits, and the first theorem you would attempt.</li>
+<li><strong>Exercise 16.18</strong> — For O4 (inter-enterprise systems): propose the declaration of a two-enterprise ecosystem—shared skeleton components, cross-register entries, and the compatibility conditions you would require—and identify which Chapter 13 results extend unchanged and which fail.</li>
+<li><strong>Exercise 16.19 ★</strong> — Formulate an original DCT research project of your own design: an open question not in Table (see book), argued to be (a) expressible at a declared extension point, (b) not resolvable with Volume I machinery, and (c) valuable to a named enterprise audience.</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
@@ -692,18 +442,18 @@ Part D — Enterprise applications
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V2_Ch15_Slides.pptx"><code>DCT_V2_Ch15_Slides.pptx</code></a></td>
+<td><code>DCT_V1_Ch16_Slides.pptx</code> <em>(forthcoming)</em></td>
 <td>—</td>
 </tr>
 <tr class="even">
-<td>Python laboratory</td>
-<td><a href="../labs/v2ch15_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch15_Lab.ipynb"><code>DCT_V2_Ch15_Lab.ipynb</code></a></td>
-<td><code>26215</code></td>
+<td>Python notebook</td>
+<td><code>DCT_V1_Ch16_Lab.ipynb</code> <em>(forthcoming)</em></td>
+<td><code>26116</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V2_Ch15_Lab.xlsx"><code>DCT_V2_Ch15_Lab.xlsx</code></a></td>
-<td><code>26215</code></td>
+<td><code>DCT_V1_Ch16_Lab.xlsx</code> <em>(forthcoming)</em></td>
+<td><code>26116</code></td>
 </tr>
 </tbody>
 </table>
@@ -713,7 +463,7 @@ Part D — Enterprise applications
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26215</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26116</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>

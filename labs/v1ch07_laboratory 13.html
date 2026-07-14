@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation – Dynamic Corporate Transformation</title>
+<title>DCT Laboratory — Volume I, Chapter 7 – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -125,7 +160,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles/custom.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -335,252 +370,21 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch15.html">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Volume I — Foundations</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 1 · Introduction to Dynamic Corporate Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 2 · Enterprise Systems and Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 3 · Mathematical Foundations</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4 · Enterprise Modeling Principles</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5 · Enterprise State Representation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 6 · Enterprise Transformation Operators</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 7 · Dynamic Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8 · Stochastic Enterprise Dynamics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 9 · Enterprise State Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 10 · Enterprise Capital Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 11 · Enterprise Performance Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 13 · Unified Enterprise Transformation Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 14 · Mathematical Analysis of the Unified Enterprise Transformation Architecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 15 · Mathematical Formulation of Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v1ch16.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 16 · Synthesis, Future Directions, and Transition to Volume II</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Volume II — Enterprise Optimization</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 1 · Introduction to Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 2 · The General Enterprise Optimization Problem Revisited</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 3 · Convex Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4 · Nonlinear Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5 · Dynamic Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 6 · Optimal Control of Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 7 · Dynamic Programming for Enterprise Systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8 · Hamilton–Jacobi–Bellman Enterprise Framework</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 9 · Stochastic Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 11 · Distributionally Robust Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 12 · Multi-Objective Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 13 · Machine Learning for Enterprise Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 14 · Artificial Intelligence for Enterprise Optimization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch15.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch16.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 16 · Enterprise Applications and Integrated Transformation Case Studies</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-outcome-statements" id="toc-learning-outcome-statements" class="nav-link active" data-scroll-target="#learning-outcome-statements">Learning Outcome Statements</a></li>
-  <li><a href="#reading-guide" id="toc-reading-guide" class="nav-link" data-scroll-target="#reading-guide">Reading Guide</a></li>
-  <li><a href="#axiom-laboratory" id="toc-axiom-laboratory" class="nav-link" data-scroll-target="#axiom-laboratory">AXIOM Laboratory</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
-  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
+  <li><a href="#dynamic-enterprise-systems" id="toc-dynamic-enterprise-systems" class="nav-link active" data-scroll-target="#dynamic-enterprise-systems">Dynamic Enterprise Systems</a></li>
+  <li><a href="#panel-1-stability-is-spectral" id="toc-panel-1-stability-is-spectral" class="nav-link" data-scroll-target="#panel-1-stability-is-spectral">Panel 1 — Stability is spectral</a></li>
+  <li><a href="#panel-2-the-time-semantics-bench" id="toc-panel-2-the-time-semantics-bench" class="nav-link" data-scroll-target="#panel-2-the-time-semantics-bench">Panel 2 — The time-semantics bench</a></li>
+  <li><a href="#panel-3-feedback-places-the-poles" id="toc-panel-3-feedback-places-the-poles" class="nav-link" data-scroll-target="#panel-3-feedback-places-the-poles">Panel 3 — Feedback places the poles</a></li>
+  <li><a href="#validation-agrees-with-dct_v1_ch07_lab.xlsx" id="toc-validation-agrees-with-dct_v1_ch07_lab.xlsx" class="nav-link" data-scroll-target="#validation-agrees-with-dct_v1_ch07_lab.xlsx">Validation — agrees with <code>DCT_V1_Ch07_Lab.xlsx</code></a></li>
   </ul>
 </nav>
     </div>
@@ -588,10 +392,9 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch15.html">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</h1>
-<p class="subtitle lead">Volume II · Multi-Objective and Intelligent Enterprise Optimization · Week 14</p>
+<h1 class="title">DCT Laboratory — Volume I, Chapter 7</h1>
 </div>
 
 
@@ -608,115 +411,168 @@ window.Quarto = {
 </header>
 
 
-<div class="chapter-meta">
-<p><strong>Volume II, Chapter 15</strong> · Taught in <a href="../schedule.html#week-14">Week 14</a> · Lab seed <code>26215</code></p>
+<section id="dynamic-enterprise-systems" class="level2">
+<h2 class="anchored" data-anchor-id="dynamic-enterprise-systems">Dynamic Enterprise Systems</h2>
+<p><strong>Seed <code>26107</code></strong> · Companion to the chapter and AXIOM Module <strong>AXIOM-07</strong></p>
+<p>Three of AXIOM-07’s benches, in notebook form: the <strong>stability spiral</strong> of a planar system (spectral radius decides), the <strong>time-semantics bench</strong> — exact discretization against Euler’s drift (Prop.: Exact Discretization) — and <strong>feedback pole placement</strong>, Exercise 7.12’s system with the gains computed in closed form. Mirrored in <code>DCT_V1_Ch07_Lab.xlsx</code>.</p>
+<div id="1f173201" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:27:05.112372Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:27:05.111323Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:27:05.572428Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:27:05.571179Z&quot;}}" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">'figure.dpi'</span>]<span class="op">=</span><span class="dv">110</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>SEED <span class="op">=</span> <span class="dv">26107</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Planar open-loop system x_{k+1} = A x_k : complex pair, stable spiral</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.array([[<span class="fl">0.60</span>, <span class="fl">0.30</span>],[<span class="op">-</span><span class="fl">0.20</span>, <span class="fl">0.90</span>]])</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>X0 <span class="op">=</span> np.array([<span class="fl">10.0</span>, <span class="fl">0.0</span>])</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> spectral_radius(M): <span class="cf">return</span> <span class="bu">float</span>(<span class="bu">max</span>(<span class="bu">abs</span>(np.linalg.eigvals(M))))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> simulate(M<span class="op">=</span>A, n<span class="op">=</span><span class="dv">24</span>, x0<span class="op">=</span>X0):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    xs<span class="op">=</span>np.empty((n<span class="op">+</span><span class="dv">1</span>,<span class="dv">2</span>))<span class="op">;</span> xs[<span class="dv">0</span>]<span class="op">=</span>x0</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(n): xs[k<span class="op">+</span><span class="dv">1</span>]<span class="op">=</span>M<span class="op">@</span>xs[k]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> xs</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Exact vs Euler: dx/dt = lam x, sampled at DT over 5 years</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>LAM, DT, N <span class="op">=</span> <span class="op">-</span><span class="fl">0.8</span>, <span class="fl">0.25</span>, <span class="dv">20</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> exact_path(x0<span class="op">=</span><span class="fl">1.0</span>):</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x0<span class="op">*</span>np.exp(LAM<span class="op">*</span>DT)<span class="op">**</span>np.arange(N<span class="op">+</span><span class="dv">1</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> euler_path(x0<span class="op">=</span><span class="fl">1.0</span>):</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x0<span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>LAM<span class="op">*</span>DT)<span class="op">**</span>np.arange(N<span class="op">+</span><span class="dv">1</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Pole placement (Ex 7.12 structure): A_c=[[0,1],[-a2,-a1]], B=[0,1]^T</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>a1, a2 <span class="op">=</span> <span class="fl">1.0</span>, <span class="fl">0.5</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>p1, p0 <span class="op">=</span> <span class="op">-</span><span class="fl">1.1</span>, <span class="fl">0.30</span>            <span class="co"># desired char poly z^2 + p1 z + p0  (roots 0.5, 0.6)</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>k2 <span class="op">=</span> p1 <span class="op">-</span> a1                   <span class="co"># = -2.1</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>k1 <span class="op">=</span> p0 <span class="op">-</span> a2                   <span class="co"># = -0.2</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>AC <span class="op">=</span> np.array([[<span class="fl">0.0</span>,<span class="fl">1.0</span>],[<span class="op">-</span>a2,<span class="op">-</span>a1]])</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>BC <span class="op">=</span> np.array([[<span class="fl">0.0</span>],[<span class="fl">1.0</span>]])</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>K  <span class="op">=</span> np.array([[k1,k2]])</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>ACL <span class="op">=</span> AC <span class="op">-</span> BC<span class="op">@</span>K</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> reference_values():</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    ex, eu <span class="op">=</span> exact_path(), euler_path()</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>        <span class="st">"rho_open"</span>: <span class="bu">round</span>(spectral_radius(A),<span class="dv">4</span>),</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        <span class="st">"x_t6_norm"</span>: <span class="bu">round</span>(<span class="bu">float</span>(np.linalg.norm(simulate(n<span class="op">=</span><span class="dv">24</span>)[<span class="dv">24</span>])),<span class="dv">4</span>),</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">"exact_t5"</span>: <span class="bu">round</span>(<span class="bu">float</span>(ex[<span class="op">-</span><span class="dv">1</span>]),<span class="dv">4</span>),</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        <span class="st">"euler_t5"</span>: <span class="bu">round</span>(<span class="bu">float</span>(eu[<span class="op">-</span><span class="dv">1</span>]),<span class="dv">4</span>),</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        <span class="st">"euler_drift_t5"</span>: <span class="bu">round</span>(<span class="bu">float</span>(<span class="bu">abs</span>(ex[<span class="op">-</span><span class="dv">1</span>]<span class="op">-</span>eu[<span class="op">-</span><span class="dv">1</span>])),<span class="dv">4</span>),</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        <span class="st">"k1"</span>: <span class="bu">round</span>(k1,<span class="dv">4</span>), <span class="st">"k2"</span>: <span class="bu">round</span>(k2,<span class="dv">4</span>),</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        <span class="st">"rho_closed"</span>: <span class="bu">round</span>(spectral_radius(ACL),<span class="dv">4</span>),</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    [<span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>k<span class="sc">:18s}</span><span class="ss"> </span><span class="sc">{</span>v<span class="sc">}</span><span class="ss">"</span>) <span class="cf">for</span> k,v <span class="kw">in</span> reference_values().items()]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rho_open           0.7746
+x_t6_norm          0.0254
+exact_t5           0.0183
+euler_t5           0.0115
+euler_drift_t5     0.0068
+k1                 -0.2
+k2                 -2.1
+rho_closed         0.6</code></pre>
 </div>
-<section id="learning-outcome-statements" class="level2">
-<h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
-<p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Explain the principles of Enterprise Digital Twins.</li><li>Distinguish Enterprise Digital Twins from traditional asset twins.</li><li>Construct enterprise digital twin architectures on the UETA state.</li><li>Integrate optimization, AI, simulation, and enterprise architectures in one loop.</li><li>Develop continuously synchronized enterprise models by Bayesian filtering.</li><li>Design autonomous enterprise decision systems with provable stability.</li><li>Apply real-time enterprise optimization with simulation-consistency guarantees.</li><li>Implement enterprise digital twins computationally.</li><li>Evaluate enterprise transformation scenarios inside the twin.</li><li>Design intelligent autonomous enterprise ecosystems under governance.</li></ol>
+</div>
 </section>
-<section id="reading-guide" class="level2">
-<h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
-<p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
-<ol type="1">
-<li>Introduction to Enterprise Digital Twins</li>
-<li>Evolution of Digital Twin Technology</li>
-<li>Enterprise Digital Twin Architecture</li>
-<li>Real-Time Enterprise State Estimation</li>
-<li>Enterprise Data Fusion</li>
-<li>Simulation-Based Enterprise Optimization</li>
-<li>AI-Augmented Enterprise Decision Making</li>
-<li>Autonomous Enterprise Transformation</li>
-<li>Enterprise Digital Twin Governance</li>
-<li>Cybersecurity and Trust</li>
-<li>Industrial and Financial Applications</li>
-<li>Future Autonomous Enterprises</li>
-<li>Chapter Summary</li>
-<li>Worked Examples</li>
-<li>Exercises</li>
-<li>Notes and Sources</li>
-</ol>
+<section id="panel-1-stability-is-spectral" class="level2">
+<h2 class="anchored" data-anchor-id="panel-1-stability-is-spectral">Panel 1 — Stability is spectral</h2>
+<p><span class="math inline">\(x_{k+1} = A x_k\)</span> with a complex eigenvalue pair, <span class="math inline">\(\rho(A) = 0.7746 &lt; 1\)</span>: the trajectory spirals to the equilibrium at the origin. The Enterprise Stability Theorem in one picture — the spectrum decides, the trajectory obeys.</p>
+<div id="cbc05196" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:27:05.574405Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:27:05.574072Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:27:05.849807Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:27:05.848814Z&quot;}}" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>xs <span class="op">=</span> simulate(n<span class="op">=</span><span class="dv">24</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.2</span>,<span class="fl">5.2</span>))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>ax.plot(xs[:,<span class="dv">0</span>], xs[:,<span class="dv">1</span>], <span class="st">"o-"</span>, c<span class="op">=</span><span class="st">"#C8A24B"</span>, lw<span class="op">=</span><span class="fl">1.8</span>, ms<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>ax.scatter([<span class="dv">0</span>],[<span class="dv">0</span>], c<span class="op">=</span><span class="st">"#0B3D2E"</span>, s<span class="op">=</span><span class="dv">80</span>, zorder<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">"equilibrium"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ax.annotate(<span class="st">"$x_0$"</span>, xs[<span class="dv">0</span>], textcoords<span class="op">=</span><span class="st">"offset points"</span>, xytext<span class="op">=</span>(<span class="dv">8</span>,<span class="op">-</span><span class="dv">4</span>))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">"$x_1$"</span>, ylabel<span class="op">=</span><span class="st">"$x_2$"</span>, title<span class="op">=</span><span class="ss">f"Stable spiral: ρ(A) = </span><span class="sc">{</span>spectral_radius(A)<span class="sc">:.4f}</span><span class="ss"> &lt; 1"</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> ax.grid(alpha<span class="op">=</span><span class="fl">.25</span>)<span class="op">;</span> ax.set_aspect(<span class="st">"equal"</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"‖x‖ at k=24:"</span>, <span class="bu">round</span>(<span class="bu">float</span>(np.linalg.norm(xs[<span class="dv">24</span>])),<span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="v1ch07_laboratory_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>‖x‖ at k=24: 0.0254</code></pre>
+</div>
+</div>
 </section>
-<section id="axiom-laboratory" class="level2">
-<h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-15">AXIOM-15 →</a></p>
-<p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
+<section id="panel-2-the-time-semantics-bench" class="level2">
+<h2 class="anchored" data-anchor-id="panel-2-the-time-semantics-bench">Panel 2 — The time-semantics bench</h2>
+<p><span class="math inline">\(\dot{x} = \lambda x\)</span> sampled at <span class="math inline">\(\Delta = 0.25\)</span>. Exact discretization multiplies by <span class="math inline">\(e^{\lambda\Delta}\)</span> each step and is <strong>exact at the sample times</strong>; Euler multiplies by <span class="math inline">\((1+\lambda\Delta)\)</span> and drifts <span class="math inline">\(O(\Delta^2)\)</span> per step. At <span class="math inline">\(t=5\)</span> the Euler path carries a 37% relative error — discretization is a modeling choice with a named cost.</p>
+<div id="f04af52c" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:27:05.851732Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:27:05.851542Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:27:06.039177Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:27:06.037983Z&quot;}}" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.arange(N<span class="op">+</span><span class="dv">1</span>)<span class="op">*</span>DT</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>ex, eu <span class="op">=</span> exact_path(), euler_path()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="fl">4.2</span>))</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>ax.plot(t, ex, c<span class="op">=</span><span class="st">"#0B3D2E"</span>, lw<span class="op">=</span><span class="fl">2.4</span>, label<span class="op">=</span><span class="st">"exact discretization  $e^{</span><span class="ch">\\</span><span class="st">lambda</span><span class="ch">\\</span><span class="st">Delta}$"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>ax.plot(t, eu, c<span class="op">=</span><span class="st">"#C8A24B"</span>, lw<span class="op">=</span><span class="fl">2.2</span>, ls<span class="op">=</span><span class="st">"--"</span>, label<span class="op">=</span><span class="st">"Euler  $(1+</span><span class="ch">\\</span><span class="st">lambda</span><span class="ch">\\</span><span class="st">Delta)$"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">"years"</span>, ylabel<span class="op">=</span><span class="st">"x"</span>, title<span class="op">=</span><span class="st">"Same continuous law, two discrete semantics (seed 26107)"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> ax.grid(alpha<span class="op">=</span><span class="fl">.25</span>)<span class="op">;</span> plt.tight_layout()<span class="op">;</span> plt.show()</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"exact t=5: </span><span class="sc">{</span>ex[<span class="op">-</span><span class="dv">1</span>]<span class="sc">:.4f}</span><span class="ss">   euler t=5: </span><span class="sc">{</span>eu[<span class="op">-</span><span class="dv">1</span>]<span class="sc">:.4f}</span><span class="ss">   drift: </span><span class="sc">{</span><span class="bu">abs</span>(ex[<span class="op">-</span><span class="dv">1</span>]<span class="op">-</span>eu[<span class="op">-</span><span class="dv">1</span>])<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="v1ch07_laboratory_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>exact t=5: 0.0183   euler t=5: 0.0115   drift: 0.0068</code></pre>
+</div>
+</div>
 </section>
-<section id="exercises" class="level2">
-<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 15.</strong></p>
-<h4 class="ex-part anchored">
-Part A — Concept checks
-</h4>
-<ul>
-<li><strong>Exercise 15.1</strong> — For each row of Table (see book), explain what breaks if an asset-twin practice is transplanted unmodified to the enterprise twin, and which section of this chapter supplies the repair.</li>
-<li><strong>Exercise 15.2</strong> — Draft the graduated-autonomy protocol of (see book) for the treasury loop of Example (see book): the evidence thresholds (stability margins, coverage, false alerts, regret history) that expand the perimeter, and the breaches that contract it.</li>
-</ul>
-<h4 class="ex-part anchored">
-Part B — Mathematical exercises
-</h4>
-<ul>
-<li><strong>Exercise 15.3</strong> — Derive the fusion identity of (see book) from the Kalman update with stacked observations, and quantify the precision overstatement when two “independent” sensors share a common upstream source with correlation <span class="math inline">\(\rho\)</span>.</li>
-<li><strong>Exercise 15.4</strong> — Verify the scalar Riccati fixed point of Example (see book) analytically (solve <span class="math inline">\(\phi(P) = P\)</span>), confirm <span class="math inline">\(P_{\infty} = 0.0695\)</span> and <span class="math inline">\(K = 0.278\)</span>, and compute the sensitivity <span class="math inline">\(\partial P_{\infty} / \partial r\)</span>—the value of a better sensor.</li>
-<li><strong>Exercise 15.5</strong> — Extend Theorem (see book) to time-varying gains <span class="math inline">\(K_t \to K\)</span>: show the error dynamics remain geometrically stable once <span class="math inline">\(\rho(A - AK_tC) \le \bar{\rho} &lt; 1\)</span> for all large <span class="math inline">\(t\)</span>.</li>
-<li><strong>Exercise 15.6</strong> — In Proposition (see book)’s setting, derive the optimal confidence <span class="math inline">\(z^{*}\)</span> trading false-alert cost <span class="math inline">\(c_{\mathrm{FA}}\)</span> against per-period breach cost <span class="math inline">\(c_{\mathrm{B}}\)</span>, and evaluate it on the bank instance of Example (see book).</li>
-</ul>
-<h4 class="ex-part anchored">
-Part C — Computational exercises
-</h4>
-<ul>
-<li><strong>Exercise 15.7</strong> — Prove the multivariable extension of Theorem (see book)(iii): under detectability of <span class="math inline">\((A, C)\)</span> and stabilizability of <span class="math inline">\((A, Q^{1/2})\)</span>, the Riccati iteration converges to the unique positive-semidefinite stabilizing fixed point (follow the monotone-operator route; cite Volume I where needed).</li>
-<li><strong>Exercise 15.8</strong> — Prove that Theorem (see book) fails without separation structure: exhibit a nonlinear (or multiplicative-noise) loop where estimation and control are each stable in isolation but the interconnection is unstable, and identify which proof step breaks.</li>
-</ul>
-<h4 class="ex-part anchored">
-Part D — Enterprise applications
-</h4>
-<ul>
-<li><strong>Exercise 15.9</strong> — Reproduce Example (see book); then sweep the manual cadence from <span class="math inline">\(1\)</span> to <span class="math inline">\(8\)</span> periods and plot cost against cadence, locating where human-cycle latency costs one, five, and ten percent of value.</li>
-<li><strong>Exercise 15.10</strong> — Implement a particle-filter twin for a regime-switching demand state (calm/stress), compare its tracking against the Kalman twin through a regime break, and report when the Gaussian mirror is honestly wrong.</li>
-<li><strong>Exercise 15.11</strong> — Meridian twin, end to end: on the AXIOM-15 module’s Meridian instance, stand up the mirror (streams, fusion, filter), certify the separation pair for the working-capital loop, run one Proposition (see book) improvement cycle, and deliver the board pack: state bands, error budget per Theorem (see book), autonomy perimeter, and the governance register.</li>
-<li><strong>Exercise 15.12 ★</strong> — Develop distributionally robust twin control: replace the certainty-equivalent policy of Theorem (see book) with a Chapter 11 worst-case policy over an ambiguity ball around the posterior <span class="math inline">\(\pi_t\)</span>.</li>
-</ul>
+<section id="panel-3-feedback-places-the-poles" class="level2">
+<h2 class="anchored" data-anchor-id="panel-3-feedback-places-the-poles">Panel 3 — Feedback places the poles</h2>
+<p>Exercise 7.12’s system: <span class="math inline">\(A_c = \begin{bmatrix}0&amp;1\\-a_2&amp;-a_1\end{bmatrix}\)</span>, <span class="math inline">\(B = [0,1]^\top\)</span>. Desired eigenvalues <span class="math inline">\(\{0.5, 0.6\}\)</span>; in controllable canonical form the gains read off the characteristic coefficients: <span class="math inline">\(k_1 = p_0 - a_2\)</span>, <span class="math inline">\(k_2 = p_1 - a_1\)</span>. The Feedback Stability Theorem, constructively.</p>
+<div id="af6510fd" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:27:06.041089Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:27:06.040907Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:27:06.282503Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:27:06.281203Z&quot;}}" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"K ="</span>, K.ravel(), <span class="st">"  closed-loop eigenvalues:"</span>, np.<span class="bu">round</span>(np.linalg.eigvals(ACL),<span class="dv">4</span>))</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"ρ(A−BK) ="</span>, <span class="bu">round</span>(spectral_radius(ACL),<span class="dv">4</span>))</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>xs_o <span class="op">=</span> simulate(AC, <span class="dv">20</span>, np.array([<span class="fl">1.0</span>,<span class="fl">0.0</span>]))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>xs_c <span class="op">=</span> simulate(ACL, <span class="dv">20</span>, np.array([<span class="fl">1.0</span>,<span class="fl">0.0</span>]))</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="fl">4.0</span>))</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>ax.plot(np.linalg.norm(xs_o,axis<span class="op">=</span><span class="dv">1</span>), c<span class="op">=</span><span class="st">"#8A8F8B"</span>, lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">"open loop ‖x‖"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>ax.plot(np.linalg.norm(xs_c,axis<span class="op">=</span><span class="dv">1</span>), c<span class="op">=</span><span class="st">"#C8A24B"</span>, lw<span class="op">=</span><span class="fl">2.3</span>, label<span class="op">=</span><span class="st">"closed loop ‖x‖ (poles at 0.5, 0.6)"</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">"k"</span>, ylabel<span class="op">=</span><span class="st">"‖x‖"</span>, title<span class="op">=</span><span class="st">"Feedback modifies trajectories — and their decay rate"</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> ax.grid(alpha<span class="op">=</span><span class="fl">.25</span>)<span class="op">;</span> plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>K = [-0.2 -2.1]   closed-loop eigenvalues: [0.5 0.6]
+ρ(A−BK) = 0.6</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="v1ch07_laboratory_files/figure-html/cell-5-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="downloads" class="level2">
-<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Resource</th>
-<th>File</th>
-<th>Seed</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lecture deck</td>
-<td><a href="../downloads/DCT_V2_Ch15_Slides.pptx"><code>DCT_V2_Ch15_Slides.pptx</code></a></td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>Python laboratory</td>
-<td><a href="../labs/v2ch15_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch15_Lab.ipynb"><code>DCT_V2_Ch15_Lab.ipynb</code></a></td>
-<td><code>26215</code></td>
-</tr>
-<tr class="odd">
-<td>Excel workbook</td>
-<td><a href="../downloads/DCT_V2_Ch15_Lab.xlsx"><code>DCT_V2_Ch15_Lab.xlsx</code></a></td>
-<td><code>26215</code></td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26215</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<section id="validation-agrees-with-dct_v1_ch07_lab.xlsx" class="level2">
+<h2 class="anchored" data-anchor-id="validation-agrees-with-dct_v1_ch07_lab.xlsx">Validation — agrees with <code>DCT_V1_Ch07_Lab.xlsx</code></h2>
+<div id="a529be3f" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-07-13T22:27:06.284635Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-07-13T22:27:06.284446Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-07-13T22:27:06.291503Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-07-13T22:27:06.290314Z&quot;}}" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ref <span class="op">=</span> reference_values()</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>expected <span class="op">=</span> {<span class="st">"rho_open"</span>:<span class="fl">0.7746</span>,<span class="st">"x_t6_norm"</span>:<span class="fl">0.0254</span>,<span class="st">"exact_t5"</span>:<span class="fl">0.0183</span>,<span class="st">"euler_t5"</span>:<span class="fl">0.0115</span>,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a> <span class="st">"euler_drift_t5"</span>:<span class="fl">0.0068</span>,<span class="st">"k1"</span>:<span class="op">-</span><span class="fl">0.2</span>,<span class="st">"k2"</span>:<span class="op">-</span><span class="fl">2.1</span>,<span class="st">"rho_closed"</span>:<span class="fl">0.6</span>}</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k,v <span class="kw">in</span> expected.items():</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="bu">abs</span>(ref[k]<span class="op">-</span>v)<span class="op">&lt;</span><span class="fl">5e-4</span>, <span class="ss">f"MISMATCH </span><span class="sc">{</span>k<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"PASS  </span><span class="sc">{</span>k<span class="sc">:18s}</span><span class="ss"> </span><span class="sc">{</span>ref[k]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">All checkpoints agree — seed 26107."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>PASS  rho_open           0.7746
+PASS  x_t6_norm          0.0254
+PASS  exact_t5           0.0183
+PASS  euler_t5           0.0115
+PASS  euler_drift_t5     0.0068
+PASS  k1                 -0.2
+PASS  k2                 -2.1
+PASS  rho_closed         0.6
+
+All checkpoints agree — seed 26107.</code></pre>
 </div>
 </div>
-</div>
+<p><strong>Next</strong>: Exercises 7.9–7.12 (★ exercises live here — the rotation matrix and the pole placement); AXIOM-07’s cobweb theater and time-semantics bench extend the panels. Solutions: IM Ch. 7.</p>
 
 
 </section>
