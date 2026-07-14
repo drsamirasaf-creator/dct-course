@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Labs &amp; Downloads – Dynamic Corporate Transformation</title>
+<title>Chapter 14 · Artificial Intelligence for Enterprise Optimization – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,27 +26,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-fc91faa41c3d6977612dff5ad21b1209.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-fc91faa41c3d6977612dff5ad21b1209.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,11 +92,40 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles/custom.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/custom.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -265,7 +294,7 @@ window.MathJax = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Dynamic Corporate Transformation</span>
     </a>
   </div>
@@ -276,27 +305,27 @@ window.MathJax = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./axiom.html"> 
+    <a class="nav-link" href="../axiom.html"> 
 <span class="menu-text">AXIOM Lab</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./labs.html" aria-current="page"> 
+    <a class="nav-link" href="../labs.html"> 
 <span class="menu-text">Labs &amp; Downloads</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./instructor.html"> 
+    <a class="nav-link" href="../instructor.html"> 
 <span class="menu-text">Instructors</span></a>
   </li>  
 </ul>
@@ -306,22 +335,263 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch14.html">Chapter 14 · Artificial Intelligence for Enterprise Optimization</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Volume I — Foundations</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 1 · Introduction to Dynamic Corporate Transformation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 2 · Enterprise Systems and Transformation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 3 · Mathematical Foundations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 4 · Enterprise Modeling Principles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 5 · Enterprise State Representation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 6 · Enterprise Transformation Operators</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 7 · Dynamic Enterprise Systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 8 · Stochastic Enterprise Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 9 · Enterprise State Architecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 10 · Enterprise Capital Architecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 11 · Enterprise Performance Architecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 12 · Enterprise Risk, Resilience, and Robustness Architecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 13 · Unified Enterprise Transformation Architecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 14 · Mathematical Analysis of the Unified Enterprise Transformation Architecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 15 · Mathematical Formulation of Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v1ch16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 16 · Synthesis, Future Directions, and Transition to Volume II</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Volume II — Enterprise Optimization</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 1 · Introduction to Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 2 · The General Enterprise Optimization Problem Revisited</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 3 · Convex Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 4 · Nonlinear Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 5 · Dynamic Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 6 · Optimal Control of Enterprise Systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 7 · Dynamic Programming for Enterprise Systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 8 · Hamilton–Jacobi–Bellman Enterprise Framework</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 9 · Stochastic Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 11 · Distributionally Robust Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 12 · Multi-Objective Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 13 · Machine Learning for Enterprise Transformation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch14.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Chapter 14 · Artificial Intelligence for Enterprise Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 15 · Enterprise Digital Twins and Autonomous Enterprise Transformation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/v2ch16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 16 · Enterprise Applications and Integrated Transformation Case Studies</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcome-statements" id="toc-learning-outcome-statements" class="nav-link active" data-scroll-target="#learning-outcome-statements">Learning Outcome Statements</a></li>
+  <li><a href="#reading-guide" id="toc-reading-guide" class="nav-link" data-scroll-target="#reading-guide">Reading Guide</a></li>
+  <li><a href="#axiom-laboratory" id="toc-axiom-laboratory" class="nav-link" data-scroll-target="#axiom-laboratory">AXIOM Laboratory</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch14.html">Chapter 14 · Artificial Intelligence for Enterprise Optimization</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Labs &amp; Downloads</h1>
-<p class="subtitle lead">One deck, one notebook, one workbook per chapter — 96 files, one seed scheme</p>
+<h1 class="title">Chapter 14 · Artificial Intelligence for Enterprise Optimization</h1>
+<p class="subtitle lead">Volume II · Multi-Objective and Intelligent Enterprise Optimization · Week 14</p>
 </div>
 
 
@@ -338,37 +608,118 @@ window.MathJax = {
 </header>
 
 
-<p>Every chapter ships three companions on the seed <code>26VCC</code> (V = volume, CC = chapter): the lecture deck, the Python notebook, and the Excel workbook. Notebook and workbook consume the same seeded engine, so their numbers agree by construction; panel-level seeds append two digits (<code>26208·01</code>).</p>
-<p>Files are posted here chapter-by-chapter as they are released; each chapter page’s Downloads table links its own three files.</p>
+<div class="chapter-meta">
+<p><strong>Volume II, Chapter 14</strong> · Taught in <a href="../schedule.html#week-14">Week 14</a> · Lab seed <code>26214</code></p>
+</div>
+<section id="learning-outcome-statements" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
+<p>After completing this chapter, the reader should be able to:</p>
+<ol class="los-list"><li>Explain the role of artificial intelligence in enterprise optimization, and distinguish it from machine learning.</li><li>Formulate AI-assisted enterprise optimization as a Markov decision process.</li><li>Construct enterprise knowledge graphs and ontologies.</li><li>Apply dynamic programming, value iteration, and policy iteration to enterprise MDPs.</li><li>Apply reinforcement learning (Q-learning, policy gradients, actor--critic) to enterprise decisions.</li><li>Develop intelligent and multi-agent enterprise systems.</li><li>Integrate generative AI into enterprise planning with retrieval and verification.</li><li>Design hybrid AI--optimization architectures with certified outputs.</li><li>Evaluate explainable AI for enterprise governance.</li><li>Prepare enterprise systems for autonomous transformation.</li></ol>
+</section>
+<section id="reading-guide" class="level2">
+<h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
+<p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
+<ol type="1">
+<li>Artificial Intelligence in Enterprise Transformation</li>
+<li>Enterprise Knowledge Representation</li>
+<li>Knowledge Graphs and Enterprise Ontologies</li>
+<li>Expert Systems and Rule-Based Enterprise Decision Making</li>
+<li>Reinforcement Learning</li>
+<li>Deep Reinforcement Learning</li>
+<li>Generative Artificial Intelligence</li>
+<li>Multi-Agent Enterprise Systems</li>
+<li>Hybrid AI–Optimization Architectures</li>
+<li>Enterprise Applications</li>
+<li>Computational Implementation</li>
+<li>Preparation for Enterprise Digital Twins</li>
+<li>Chapter Summary</li>
+<li>Worked Examples</li>
+<li>Exercises</li>
+<li>Notes and Sources</li>
+</ol>
+</section>
+<section id="axiom-laboratory" class="level2">
+<h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-14">AXIOM-14 →</a></p>
+<p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
+</section>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 14.</strong></p>
+<h4 class="ex-part anchored">
+Part A — Concept checks
+</h4>
+<ul>
+<li><strong>Exercise 14.1</strong> — Using Table (see book), classify six enterprise tasks as optimization, learning, or AI problems, and for each AI task name the state, action, reward, and why a single-shot predictor or static optimizer is insufficient.</li>
+<li><strong>Exercise 14.2</strong> — Explain, via Theorem (see book), why placing a learned policy inside a certified optimizer’s envelope is the correct governance pattern for autonomous enterprise action, and what specifically the certificate does and does not guarantee about the AI component.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part B — Mathematical exercises
+</h4>
+<ul>
+<li><strong>Exercise 14.3</strong> — Prove the Bellman optimality operator is a <span class="math inline">\(\gamma\)</span>-contraction directly from the max-of-affine structure, and compute the exact iteration count to <span class="math inline">\(10^{-6}\)</span> for the Example (see book) MDP; compare with the observed count.</li>
+<li><strong>Exercise 14.4</strong> — Derive the policy-gradient theorem <span class="math inline">\(\nabla_\theta J = \E[\nabla_\theta \log \pol_\theta(a\mid s)\, Q^{\pol}(s,a)]\)</span> from the definition of <span class="math inline">\(J\)</span>, and explain why the value baseline in actor–critic reduces variance without introducing bias.</li>
+<li><strong>Exercise 14.5</strong> — For the Example (see book) knowledge graph, compute the personalized PageRank in closed form as <span class="math inline">\((I - d M^{\top})^{-1}(1-d)\mathbf{p}\)</span>, verify the reported top four, and show how the ranking shifts as the damping <span class="math inline">\(d\)</span> and the affinity seed <span class="math inline">\(\mathbf{p}\)</span> vary.</li>
+<li><strong>Exercise 14.6</strong> — Prove that policy iteration terminates in at most <span class="math inline">\(\abs{\Ac}^{\abs{\Sc}}\)</span> steps and that each non-terminal step strictly increases value at some state; exhibit the Example (see book) trajectory.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part C — Computational exercises
+</h4>
+<ul>
+<li><strong>Exercise 14.7</strong> — Prove the Q-learning convergence theorem’s martingale-difference and bounded-variance claims in full for a finite MDP with bounded rewards, reducing the result to the stochastic-approximation theorem for sup-norm contractions; state precisely where infinite visitation is used.</li>
+<li><strong>Exercise 14.8</strong> — Prove Theorem (see book)(ii) for exact branch-and-bound: the certified optimal value is independent of branching and variable-selection order, and valid inequalities derived by any (learned or classical) separator preserve the optimum.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part D — Enterprise applications
+</h4>
+<ul>
+<li><strong>Exercise 14.9</strong> — Reproduce Examples (see book) and (see book): implement value iteration and tabular Q-learning on the liquidity MDP, plot convergence, and study the sensitivity of Q-learning’s success to exploration schedule and step-size annealing (violate Robbins–Monro deliberately and report the failure).</li>
+<li><strong>Exercise 14.10</strong> — Reproduce Example (see book): measure warm-start savings across a grid of prior qualities and discount factors <span class="math inline">\(\gamma\)</span>, and verify the Theorem (see book) iteration-count formula against observation.</li>
+<li><strong>Exercise 14.11</strong> — Meridian autonomous treasury: using the AXIOM-14 module, build the full Definition (see book) loop for cash and liquidity management—MDP from the Chapter 5 state, RL policy with certified value-iteration baseline, knowledge- graph constraints as the verified envelope, and a governance report documenting the certificate, the envelope, and the monitoring plan for unattended operation.</li>
+<li><strong>Exercise 14.12 ★</strong> — Develop distributionally robust reinforcement learning for the enterprise MDP: replace the transition law by a Chapter 11 ambiguity set per state–action, derive the robust Bellman operator, prove it remains a <span class="math inline">\(\gamma\)</span>-contraction, and quantify on Example (see book) how the robust policy grows more conservative as the per-transition Wasserstein radius widens—connecting AIEO to the uncertainty trilogy.</li>
+</ul>
+</section>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Volume</th>
-<th>Chapters</th>
-<th>Status</th>
+<th>Resource</th>
+<th>File</th>
+<th>Seed</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>I</td>
-<td>1–16</td>
-<td>Complete — all assets live (slides, notebooks, workbooks)</td>
+<td>Lecture deck</td>
+<td><a href="../downloads/DCT_V2_Ch14_Slides.pptx"><code>DCT_V2_Ch14_Slides.pptx</code></a></td>
+<td>—</td>
 </tr>
 <tr class="even">
-<td>II</td>
-<td>1–16</td>
-<td>Complete — all assets live (slides, notebooks, workbooks)</td>
+<td>Python laboratory</td>
+<td><a href="../labs/v2ch14_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch14_Lab.ipynb"><code>DCT_V2_Ch14_Lab.ipynb</code></a></td>
+<td><code>26214</code></td>
+</tr>
+<tr class="odd">
+<td>Excel workbook</td>
+<td><a href="../downloads/DCT_V2_Ch14_Lab.xlsx"><code>DCT_V2_Ch14_Lab.xlsx</code></a></td>
+<td><code>26214</code></td>
 </tr>
 </tbody>
 </table>
-<p>All 32 chapters are released: 64 laboratory notebooks and workbooks, 32 slide decks, and 339 validation checkpoints — every checkpoint green, seeds 26101–26216.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>All three companions consume the same seeded engine (<code>26214</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

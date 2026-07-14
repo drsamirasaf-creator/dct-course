@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Labs &amp; Downloads – Dynamic Corporate Transformation</title>
+<title>Chapter 16 · Enterprise Applications and Integrated Transformation Case Studies – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,27 +26,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-fc91faa41c3d6977612dff5ad21b1209.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-fc91faa41c3d6977612dff5ad21b1209.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,8 +92,37 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles/custom.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/custom.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -265,7 +294,7 @@ window.MathJax = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Dynamic Corporate Transformation</span>
     </a>
   </div>
@@ -276,27 +305,27 @@ window.MathJax = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./axiom.html"> 
+    <a class="nav-link" href="../axiom.html"> 
 <span class="menu-text">AXIOM Lab</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./labs.html" aria-current="page"> 
+    <a class="nav-link" href="../labs.html"> 
 <span class="menu-text">Labs &amp; Downloads</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./instructor.html"> 
+    <a class="nav-link" href="../instructor.html"> 
 <span class="menu-text">Instructors</span></a>
   </li>  
 </ul>
@@ -311,8 +340,18 @@ window.MathJax = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcome-statements" id="toc-learning-outcome-statements" class="nav-link active" data-scroll-target="#learning-outcome-statements">Learning Outcome Statements</a></li>
+  <li><a href="#reading-guide" id="toc-reading-guide" class="nav-link" data-scroll-target="#reading-guide">Reading Guide</a></li>
+  <li><a href="#axiom-laboratory" id="toc-axiom-laboratory" class="nav-link" data-scroll-target="#axiom-laboratory">AXIOM Laboratory</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -320,8 +359,8 @@ window.MathJax = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Labs &amp; Downloads</h1>
-<p class="subtitle lead">One deck, one notebook, one workbook per chapter — 96 files, one seed scheme</p>
+<h1 class="title">Chapter 16 · Enterprise Applications and Integrated Transformation Case Studies</h1>
+<p class="subtitle lead">Volume II · Applications and Synthesis · Week 14</p>
 </div>
 
 
@@ -338,37 +377,117 @@ window.MathJax = {
 </header>
 
 
-<p>Every chapter ships three companions on the seed <code>26VCC</code> (V = volume, CC = chapter): the lecture deck, the Python notebook, and the Excel workbook. Notebook and workbook consume the same seeded engine, so their numbers agree by construction; panel-level seeds append two digits (<code>26208·01</code>).</p>
-<p>Files are posted here chapter-by-chapter as they are released; each chapter page’s Downloads table links its own three files.</p>
+<div class="chapter-meta">
+<p><strong>Volume II, Chapter 16</strong> · Taught in <a href="../schedule.html#week-14">Week 14</a> · Lab seed <code>26216</code></p>
+</div>
+<section id="learning-outcome-statements" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
+<p>After completing this chapter, the reader should be able to:</p>
+<ol class="los-list"><li>Integrate all DCT enterprise architectures into a unified solution.</li><li>Formulate enterprise transformation problems as GEOP instances.</li><li>Apply the appropriate optimization methodology to each case's structure.</li><li>Select suitable AI and machine learning methods for decision support.</li><li>Construct Enterprise Digital Twin solutions.</li><li>Evaluate enterprise transformation alternatives on computed evidence.</li><li>Balance financial and non-financial objectives.</li><li>Develop enterprise implementation roadmaps.</li><li>Communicate optimization recommendations to executive stakeholders.</li><li>Critically evaluate transformation outcomes.</li></ol>
+</section>
+<section id="reading-guide" class="level2">
+<h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
+<p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
+<ol type="1">
+<li>Integrated Enterprise Transformation Methodology</li>
+<li>Case Study Methodology</li>
+<li>Manufacturing Enterprise</li>
+<li>Financial Services Enterprise</li>
+<li>Healthcare Enterprise</li>
+<li>Energy and Infrastructure Enterprise</li>
+<li>Technology Enterprise</li>
+<li>Government and Public Sector Enterprise</li>
+<li>Private Equity and Venture Capital Enterprise</li>
+<li>Cross-Case Comparative Analysis</li>
+<li>Lessons Learned</li>
+<li>Future Enterprise Transformation</li>
+<li>Chapter Summary</li>
+<li>Exercises</li>
+<li>Notes and Sources</li>
+</ol>
+</section>
+<section id="axiom-laboratory" class="level2">
+<h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-16">AXIOM-16 →</a></p>
+<p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
+</section>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 16.</strong></p>
+<h4 class="ex-part anchored">
+Part A — Concept checks
+</h4>
+<ul>
+<li><strong>Exercise 16.1</strong> — For each case study, name the binding structure, its dual price’s managerial meaning, and the convention the optimized answer displaced.</li>
+<li><strong>Exercise 16.2</strong> — The energy case found expectation and worst case agreeing; construct a plausible parameter change (capex, carbon distribution) under which they disagree, and explain which Chapter 9–11 doctrine then governs the build.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part B — Mathematical exercises
+</h4>
+<ul>
+<li><strong>Exercise 16.3</strong> — Derive the water-filling solution of the government case from the KKT conditions, including the threshold condition under which an area receives zero, and verify <span class="math inline">\((28.5, 18.0, 3.5, 0)\)</span> analytically.</li>
+<li><strong>Exercise 16.4</strong> — Derive <span class="math inline">\(t^{*} = (g - \rho)/d\)</span> for the private-equity case, extend to a stochastic <span class="math inline">\(g\)</span> learned by the NAV twin (replace <span class="math inline">\(g\)</span> by the posterior mean), and quantify …</li>
+</ul>
+<h4 class="ex-part anchored">
+Part C — Computational exercises
+</h4>
+<ul>
+<li><strong>Exercise 16.5</strong> — Prove that in the bank LP any optimum exhausts the risk budget whenever every line’s return is positive, and that the optimal allocation is monotone in the risk budget (parametric LP argument); interpret both facts for capital committees.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part D — Enterprise applications
+</h4>
+<ul>
+<li><strong>Exercise 16.6</strong> — Reproduce the manufacturing case; then sweep the ESG intensity ceiling from <span class="math inline">\(80\)</span> to <span class="math inline">\(110\)</span> and plot NPV and <span class="math inline">\(g^{*}\)</span> against it, locating the ceiling at which green investment becomes voluntary.</li>
+<li><strong>Exercise 16.7</strong> — Reproduce the technology portfolio; then let an agentic scanner (Ch.</li>
+<li><strong>Exercise 16.8</strong> — Prepare the healthcare case’s executive presentation: one page of formulation in clinical language, the computed mix with the binding ratio explained, the twin’s resilience numbers, and the three questions a chief medical officer will ask with your answers.</li>
+<li><strong>Exercise 16.9</strong> — Design the government case’s public disclosure: publish the welfare model, weights, saturations, and KKT price in a form a legislature can debate, and defend the program-4 corner against the equity objection.</li>
+<li><strong>Exercise 16.10 ★</strong> — Formulate the seven cases as a federated ecosystem (Definition 15.</li>
+<li><strong>Exercise 16.11</strong> — Full-stack engagement: select any real or synthetic enterprise, execute the complete Figure (see book) workflow—architectures, GEOP, learning, AI augmentation, twin, roadmap—and deliver the executive pack plus the AXIOM-16 laboratory instance, with every headline number computed and every binding structure named.</li>
+<li><strong>Exercise 16.12</strong> — Post-transformation audit: for a completed transformation (yours from Exercise (see book) or a published case), reconstruct what the DCT stack would have recommended, measure realized against recommended decisions, attribute the gap across the Theorem 15.</li>
+</ul>
+</section>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Volume</th>
-<th>Chapters</th>
-<th>Status</th>
+<th>Resource</th>
+<th>File</th>
+<th>Seed</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>I</td>
-<td>1–16</td>
-<td>Complete — all assets live (slides, notebooks, workbooks)</td>
+<td>Lecture deck</td>
+<td><code>DCT_V2_Ch16_Slides.pptx</code> <em>(forthcoming)</em></td>
+<td>—</td>
 </tr>
 <tr class="even">
-<td>II</td>
-<td>1–16</td>
-<td>Complete — all assets live (slides, notebooks, workbooks)</td>
+<td>Python notebook</td>
+<td><code>DCT_V2_Ch16_Lab.ipynb</code> <em>(forthcoming)</em></td>
+<td><code>26216</code></td>
+</tr>
+<tr class="odd">
+<td>Excel workbook</td>
+<td><code>DCT_V2_Ch16_Lab.xlsx</code> <em>(forthcoming)</em></td>
+<td><code>26216</code></td>
 </tr>
 </tbody>
 </table>
-<p>All 32 chapters are released: 64 laboratory notebooks and workbooks, 32 slide decks, and 339 validation checkpoints — every checkpoint green, seeds 26101–26216.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>All three companions consume the same seeded engine (<code>26216</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

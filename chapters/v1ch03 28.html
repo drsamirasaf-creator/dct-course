@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Labs &amp; Downloads – Dynamic Corporate Transformation</title>
+<title>Chapter 3 · Mathematical Foundations – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,27 +26,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-fc91faa41c3d6977612dff5ad21b1209.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-fc91faa41c3d6977612dff5ad21b1209.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,8 +92,37 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles/custom.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/custom.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -265,7 +294,7 @@ window.MathJax = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Dynamic Corporate Transformation</span>
     </a>
   </div>
@@ -276,27 +305,27 @@ window.MathJax = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./axiom.html"> 
+    <a class="nav-link" href="../axiom.html"> 
 <span class="menu-text">AXIOM Lab</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./labs.html" aria-current="page"> 
+    <a class="nav-link" href="../labs.html"> 
 <span class="menu-text">Labs &amp; Downloads</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./instructor.html"> 
+    <a class="nav-link" href="../instructor.html"> 
 <span class="menu-text">Instructors</span></a>
   </li>  
 </ul>
@@ -311,8 +340,18 @@ window.MathJax = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcome-statements" id="toc-learning-outcome-statements" class="nav-link active" data-scroll-target="#learning-outcome-statements">Learning Outcome Statements</a></li>
+  <li><a href="#reading-guide" id="toc-reading-guide" class="nav-link" data-scroll-target="#reading-guide">Reading Guide</a></li>
+  <li><a href="#axiom-laboratory" id="toc-axiom-laboratory" class="nav-link" data-scroll-target="#axiom-laboratory">AXIOM Laboratory</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -320,8 +359,8 @@ window.MathJax = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Labs &amp; Downloads</h1>
-<p class="subtitle lead">One deck, one notebook, one workbook per chapter — 96 files, one seed scheme</p>
+<h1 class="title">Chapter 3 · Mathematical Foundations</h1>
+<p class="subtitle lead">Volume I · Foundations · Week 2</p>
 </div>
 
 
@@ -338,37 +377,116 @@ window.MathJax = {
 </header>
 
 
-<p>Every chapter ships three companions on the seed <code>26VCC</code> (V = volume, CC = chapter): the lecture deck, the Python notebook, and the Excel workbook. Notebook and workbook consume the same seeded engine, so their numbers agree by construction; panel-level seeds append two digits (<code>26208·01</code>).</p>
-<p>Files are posted here chapter-by-chapter as they are released; each chapter page’s Downloads table links its own three files.</p>
+<div class="chapter-meta">
+<p><strong>Volume I, Chapter 3</strong> · Taught in <a href="../schedule.html#week-2">Week 2</a> · Lab seed <code>26103</code></p>
+</div>
+<section id="learning-outcome-statements" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
+<p>After completing this chapter, the reader should be able to:</p>
+<ol class="los-list"><li>Apply vector and matrix notation to enterprise models, including coordinates, bases, units, and the scaling transformations that relate alternative representations of the same enterprise state.</li><li>Define enterprise state spaces formally, as constrained subsets of finite products of attribute spaces, and construct them for enterprises with mixed continuous, ordinal, and categorical attributes.</li><li>Distinguish deterministic from stochastic enterprise representations, and identify the modeling circumstances under which each is adequate.</li><li>Interpret mappings and operators---domains, ranges, injectivity, composition, invertibility, and the Lipschitz property---as the mathematical carriers of enterprise transformation.</li><li>Apply the DCT notation constitution consistently, and state which mathematical conclusions are invariant to representational choices (bases, units, norms) and which are not.</li></ol>
+</section>
+<section id="reading-guide" class="level2">
+<h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
+<p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
+<ol type="1">
+<li>Mathematical Language</li>
+<li>Sets and Mappings</li>
+<li>Vector Spaces and Enterprise Vectors</li>
+<li>Matrices and Linear Operators</li>
+<li>Metrics, Norms, and Distances</li>
+<li>Enterprise State Spaces</li>
+<li>Deterministic and Stochastic Models</li>
+<li>Chapter Summary</li>
+<li>Exercises</li>
+<li>Notes and Sources</li>
+</ol>
+</section>
+<section id="axiom-laboratory" class="level2">
+<h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-03">AXIOM-03 →</a></p>
+<p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
+</section>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<p>16 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 3.</strong></p>
+<h4 class="ex-part anchored">
+Part A — Concept checks
+</h4>
+<ul>
+<li><strong>Exercise 3.1</strong> — Type-check each expression against the notation hierarchy, marking it well-formed or ill-formed and correcting the ill-formed: (a) <span class="math inline">\(\mathbf{A}\x + \uc\)</span>; (b) <span class="math inline">\(\x + \mathbf{A}\)</span>; (c) <span class="math inline">\(\x^{\!\top}\mathbf{A}\x\)</span>; (d) <span class="math inline">\(\Top \le \Xc\)</span>; (e) <span class="math inline">\(d(\x, \Top\x')\)</span>; (f) <span class="math inline">\(\rank(\x)\)</span>.</li>
+<li><strong>Exercise 3.2</strong> — Give one enterprise mapping that is injective but not surjective, one surjective but not injective, and one bijective, drawing all three from reporting, transformation, or diagnosis contexts, and state in one sentence each what the property means for its context.</li>
+<li><strong>Exercise 3.3</strong> — Explain, with two concrete operators, why transformation operators are defined with explicit domains rather than as total maps, and what modeling error the total-map convention would smuggle in.</li>
+<li><strong>Exercise 3.4</strong> — For each situation, argue in two or three sentences whether a deterministic or stochastic model is the appropriate regime (Table (see book)): (a) capacity planning one quarter ahead in a utility; (b) sizing a liquidity buffer against funding shocks; (c) sequencing the workstreams of an ERP migration; (d) pricing a multi-year technology bet.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part B — Mathematical exercises
+</h4>
+<ul>
+<li><strong>Exercise 3.5</strong> — Prove: for any mapping <span class="math inline">\(f: \mathcal{A} \to \mathcal{B}\)</span> and subsets <span class="math inline">\(\mathcal{T}_1, \mathcal{T}_2 \subseteq \mathcal{B}\)</span>, <span class="math inline">\(f^{-1}(\mathcal{T}_1 \cap \mathcal{T}_2) = f^{-1}(\mathcal{T}_1) \cap f^{-1}(\mathcal{T}_2)\)</span>, and show by counterexample that the analogous identity for images, <span class="math inline">\(f(\mathcal{S}_1 \cap \mathcal{S}_2) = f(\mathcal{S}_1) \cap f(\mathcal{S}_2)\)</span>, can fail.</li>
+<li><strong>Exercise 3.6</strong> — Verify the monoid axioms of Theorem (see book)(i) in detail for total operators, and exhibit a natural enterprise operator that is not injective, explaining which distinct states it merges and why the merger is economically irreversible.</li>
+<li><strong>Exercise 3.7</strong> — Show that the bound <span class="math inline">\(L_2 L_1\)</span> of Theorem (see book)(ii) is tight for linear operators (equality for suitable <span class="math inline">\(\Top_1\)</span>, <span class="math inline">\(\Top_2\)</span>) and strict for a pair of your construction.</li>
+<li><strong>Exercise 3.8</strong> — Establish the sharp sandwich constants between <span class="math inline">\(\norm{\cdot}_1\)</span> and <span class="math inline">\(\norm{\cdot}_\infty\)</span> on <span class="math inline">\(\R^n\)</span>: <span class="math inline">\(\norm{\x}_\infty \le \norm{\x}_1 \le n \norm{\x}_\infty\)</span>, identifying the vectors attaining each bound.</li>
+<li><strong>Exercise 3.9</strong> — Complete the proof of Proposition (see book): verify each metric axiom for <span class="math inline">\(d_{\mathbf{W}}\)</span> line by line, and determine whether <span class="math inline">\(d_{\mathbf{W}}\)</span> remains a metric when <span class="math inline">\(\mathbf{W}\)</span> is (a) diagonal with one zero entry, (b) a general invertible matrix.</li>
+<li><strong>Exercise 3.10 ★</strong> — &nbsp;For affine operators <span class="math inline">\(\Top_i\x = \mathbf{A}_i\x + \mathbf{b}_i\)</span> (<span class="math inline">\(i = 1, 2\)</span>) on <span class="math inline">\(\R^n\)</span>, derive the exact condition under which <span class="math inline">\(\Top_1 \circ \Top_2 = \Top_2 \circ \Top_1\)</span>, separating a matrix condition from a vector condition.</li>
+<li><strong>Exercise 3.11 ★</strong> — &nbsp;For Example (see book): verify the stated eigenvalues, compute <span class="math inline">\(\rho(\mathbf{A})\)</span>, and determine the steady state <span class="math inline">\(\bar{\x}\)</span> under constant investment <span class="math inline">\(u_k \equiv \bar{u} = 10\)</span> by solving <span class="math inline">\(\bar{\x} = \mathbf{A}\bar{\x} + \mathbf{B}\bar{u}\)</span>.</li>
+<li><strong>Exercise 3.12</strong> — In Theorem (see book), replace the one-hot embedding of a categorical attribute with an arbitrary injective assignment of distinct real numbers to categories.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part C — Computational exercises
+</h4>
+<ul>
+<li><strong>Exercise 3.13</strong> — (With AXIOM-03 or the Chapter 3 notebook.</li>
+<li><strong>Exercise 3.14</strong> — (With AXIOM-03 or the Chapter 3 notebook.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part D — Enterprise applications
+</h4>
+<ul>
+<li><strong>Exercise 3.15</strong> — Extend your enterprise state vector from Exercise 2.</li>
+<li><strong>Exercise 3.16 ★</strong> — &nbsp;Model a merger of two enterprises with state spaces <span class="math inline">\(\Xc^{A} \subseteq \R^{n_A}\)</span> and <span class="math inline">\(\Xc^{B} \subseteq \R^{n_B}\)</span> as a transformation operator on the product space <span class="math inline">\(\Xc^{A} \times \Xc^{B}\)</span> into a combined space <span class="math inline">\(\Xc^{AB}\)</span>.</li>
+</ul>
+</section>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Volume</th>
-<th>Chapters</th>
-<th>Status</th>
+<th>Resource</th>
+<th>File</th>
+<th>Seed</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>I</td>
-<td>1–16</td>
-<td>Complete — all assets live (slides, notebooks, workbooks)</td>
+<td>Lecture deck</td>
+<td><code>DCT_V1_Ch03_Slides.pptx</code> <em>(forthcoming)</em></td>
+<td>—</td>
 </tr>
 <tr class="even">
-<td>II</td>
-<td>1–16</td>
-<td>Complete — all assets live (slides, notebooks, workbooks)</td>
+<td>Python notebook</td>
+<td><code>DCT_V1_Ch03_Lab.ipynb</code> <em>(forthcoming)</em></td>
+<td><code>26103</code></td>
+</tr>
+<tr class="odd">
+<td>Excel workbook</td>
+<td><code>DCT_V1_Ch03_Lab.xlsx</code> <em>(forthcoming)</em></td>
+<td><code>26103</code></td>
 </tr>
 </tbody>
 </table>
-<p>All 32 chapters are released: 64 laboratory notebooks and workbooks, 32 slide decks, and 339 validation checkpoints — every checkpoint green, seeds 26101–26216.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>All three companions consume the same seeded engine (<code>26103</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

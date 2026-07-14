@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Labs &amp; Downloads – Dynamic Corporate Transformation</title>
+<title>Chapter 9 · Stochastic Enterprise Optimization – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,27 +26,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-fc91faa41c3d6977612dff5ad21b1209.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-fc91faa41c3d6977612dff5ad21b1209.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-6d1c26333ac9ec60fe563b649a1f0191.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,8 +92,37 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles/custom.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/custom.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -265,7 +294,7 @@ window.MathJax = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Dynamic Corporate Transformation</span>
     </a>
   </div>
@@ -276,27 +305,27 @@ window.MathJax = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./axiom.html"> 
+    <a class="nav-link" href="../axiom.html"> 
 <span class="menu-text">AXIOM Lab</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./labs.html" aria-current="page"> 
+    <a class="nav-link" href="../labs.html"> 
 <span class="menu-text">Labs &amp; Downloads</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./instructor.html"> 
+    <a class="nav-link" href="../instructor.html"> 
 <span class="menu-text">Instructors</span></a>
   </li>  
 </ul>
@@ -311,8 +340,18 @@ window.MathJax = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcome-statements" id="toc-learning-outcome-statements" class="nav-link active" data-scroll-target="#learning-outcome-statements">Learning Outcome Statements</a></li>
+  <li><a href="#reading-guide" id="toc-reading-guide" class="nav-link" data-scroll-target="#reading-guide">Reading Guide</a></li>
+  <li><a href="#axiom-laboratory" id="toc-axiom-laboratory" class="nav-link" data-scroll-target="#axiom-laboratory">AXIOM Laboratory</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -320,8 +359,8 @@ window.MathJax = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Labs &amp; Downloads</h1>
-<p class="subtitle lead">One deck, one notebook, one workbook per chapter — 96 files, one seed scheme</p>
+<h1 class="title">Chapter 9 · Stochastic Enterprise Optimization</h1>
+<p class="subtitle lead">Volume II · Enterprise Optimization Under Uncertainty · Week 11</p>
 </div>
 
 
@@ -338,37 +377,117 @@ window.MathJax = {
 </header>
 
 
-<p>Every chapter ships three companions on the seed <code>26VCC</code> (V = volume, CC = chapter): the lecture deck, the Python notebook, and the Excel workbook. Notebook and workbook consume the same seeded engine, so their numbers agree by construction; panel-level seeds append two digits (<code>26208·01</code>).</p>
-<p>Files are posted here chapter-by-chapter as they are released; each chapter page’s Downloads table links its own three files.</p>
+<div class="chapter-meta">
+<p><strong>Volume II, Chapter 9</strong> · Taught in <a href="../schedule.html#week-11">Week 11</a> · Lab seed <code>26209</code></p>
+</div>
+<section id="learning-outcome-statements" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
+<p>After completing this chapter, the reader should be able to:</p>
+<ol class="los-list"><li>Explain enterprise optimization under uncertainty and its departures from the deterministic doctrine.</li><li>Formulate stochastic enterprise optimization problems on filtered probability spaces.</li><li>Construct stochastic enterprise state equations as It\^o diffusions.</li><li>Model enterprise uncertainty using stochastic processes matched to its sources.</li><li>Develop expectation-based enterprise objective functionals.</li><li>Formulate stochastic control policies and distinguish adapted from anticipative rules.</li><li>Interpret stochastic enterprise trajectories through moments, bands, and laws.</li><li>Analyze enterprise optimization under probabilistic constraints.</li><li>Implement stochastic optimization models computationally, with both error sources controlled.</li><li>Prepare enterprise models for robust optimization under ambiguity.</li></ol>
+</section>
+<section id="reading-guide" class="level2">
+<h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
+<p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
+<ol type="1">
+<li>Motivation for Stochastic Enterprise Optimization</li>
+<li>Enterprise Uncertainty</li>
+<li>Stochastic Enterprise State Equations</li>
+<li>Stochastic Objective Functionals</li>
+<li>Stochastic Dynamic Programming</li>
+<li>Stochastic Optimal Control</li>
+<li>Risk-Neutral and Risk-Averse Enterprise Policies</li>
+<li>Chance-Constrained Enterprise Optimization</li>
+<li>Computational Methods</li>
+<li>Enterprise Applications</li>
+<li>Preparation for Robust Optimization</li>
+<li>Chapter Summary</li>
+<li>Worked Examples</li>
+<li>Exercises</li>
+<li>Notes and Sources</li>
+</ol>
+</section>
+<section id="axiom-laboratory" class="level2">
+<h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-09">AXIOM-09 →</a></p>
+<p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
+</section>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 9.</strong></p>
+<h4 class="ex-part anchored">
+Part A — Concept checks
+</h4>
+<ul>
+<li><strong>Exercise 9.1</strong> — For each row of Table (see book), propose the process model from Table (see book), defend the choice, and state one observable that would falsify it.</li>
+<li><strong>Exercise 9.2</strong> — Explain why certainty equivalence (Proposition (see book)(i)) is a property of the LQ structure and not of small noise: exhibit qualitatively how each departure—state-dependent <span class="math inline">\(\sigma\)</span>, non-quadratic cost, risk aversion—breaks it, citing where the chapter proves each.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part B — Mathematical exercises
+</h4>
+<ul>
+<li><strong>Exercise 9.3</strong> — Derive the stationary variance <span class="math inline">\(\sigma^{2}/(2\kappa)\)</span> of the closed-loop OU process by applying It^o’s formula to <span class="math inline">\(X^{2}\)</span> and taking stationary expectations; recompute the Example (see book) thresholds.</li>
+<li><strong>Exercise 9.4</strong> — Solve the Lyapunov equation of Example (see book) for <span class="math inline">\(\Sigma_{\infty}\)</span> and size the <span class="math inline">\(\pm 2\)</span>-sigma workforce corridors; compare with the deterministic Chapter 6 corridors.</li>
+<li><strong>Exercise 9.5</strong> — Establish sharpness of the threshold in Proposition (see book): exhibit, for <span class="math inline">\(\bar\sigma^{2}\)</span> above it, a sequence of admissible policies along which the objective diverges to <span class="math inline">\(-\infty\)</span> slower than any quadratic bound, and conclude no quadratic verified value exists.</li>
+<li><strong>Exercise 9.6</strong> — Derive the weak-error expansion <span class="math inline">\(\E[g(X^{\Delta}_T)] - \E[g(X_T)] = c_1\Delta + O(\Delta^{2})\)</span> for Euler–Maruyama on the OU instance with quadratic <span class="math inline">\(g\)</span> by explicit computation of both sides, identifying <span class="math inline">\(c_1\)</span>; reconcile with the measured bias ladder of Example (see book).</li>
+</ul>
+<h4 class="ex-part anchored">
+Part C — Computational exercises
+</h4>
+<ul>
+<li><strong>Exercise 9.7</strong> — Prove the multidimensional certainty-equivalence and drag statement: for <span class="math inline">\(dX = (AX + Bu)dt + \Sigma\,dW\)</span> with quadratic cost, the optimal gain equals the deterministic CARE gain and the stationary value drag is <span class="math inline">\(\mathrm{tr}(\Sigma\Sigma^{\top}P)/(2\rho)\)</span>, via the matrix completion-of-squares in the stochastic HJB equation.</li>
+<li><strong>Exercise 9.8</strong> — Prove the entropic–robust duality used in (see book): <span class="math inline">\(-\tfrac1\theta\log\E_{\Prob} [e^{-\theta J}] = \min_{\mathbb{Q}}\{\E_{\mathbb{Q}}[J] + \tfrac1\theta\,\mathrm{KL}(\mathbb{Q}\,\Vert\,\Prob)\}\)</span>, with the minimizing tilt identified.</li>
+</ul>
+<h4 class="ex-part anchored">
+Part D — Enterprise applications
+</h4>
+<ul>
+<li><strong>Exercise 9.9</strong> — Reproduce Example (see book); add a control variate built from the deterministic value and report the variance-reduction factor; then add antithetic pairs and compare.</li>
+<li><strong>Exercise 9.10</strong> — Solve the stationary stochastic HJB equation for Example (see book) on a grid with the diffusion term included exactly (rather than the variance-penalty proxy), using a monotone centered/upwind hybrid; compare the computed policy with the closed-form proxy and quantify the proxy’s error in gain and intercept.</li>
+<li><strong>Exercise 9.11</strong> — Meridian treasury mandate: combine Examples (see book) and (see book) into a two-constraint design—stationary breach $ $-1.</li>
+<li><strong>Exercise 9.12 ★</strong> — Extend the chapter’s framework to jump–diffusion enterprise states <span class="math inline">\(dX = f\,dt + \sigma\,dW + \gamma\,dN\)</span> (compensated Poisson <span class="math inline">\(N\)</span>): derive the integro-diffe…</li>
+</ul>
+</section>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Volume</th>
-<th>Chapters</th>
-<th>Status</th>
+<th>Resource</th>
+<th>File</th>
+<th>Seed</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>I</td>
-<td>1–16</td>
-<td>Complete — all assets live (slides, notebooks, workbooks)</td>
+<td>Lecture deck</td>
+<td><code>DCT_V2_Ch09_Slides.pptx</code> <em>(forthcoming)</em></td>
+<td>—</td>
 </tr>
 <tr class="even">
-<td>II</td>
-<td>1–16</td>
-<td>Complete — all assets live (slides, notebooks, workbooks)</td>
+<td>Python notebook</td>
+<td><code>DCT_V2_Ch09_Lab.ipynb</code> <em>(forthcoming)</em></td>
+<td><code>26209</code></td>
+</tr>
+<tr class="odd">
+<td>Excel workbook</td>
+<td><code>DCT_V2_Ch09_Lab.xlsx</code> <em>(forthcoming)</em></td>
+<td><code>26209</code></td>
 </tr>
 </tbody>
 </table>
-<p>All 32 chapters are released: 64 laboratory notebooks and workbooks, 32 slide decks, and 339 validation checkpoints — every checkpoint green, seeds 26101–26216.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>All three companions consume the same seeded engine (<code>26209</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
