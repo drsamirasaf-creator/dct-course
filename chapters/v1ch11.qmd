@@ -37,7 +37,7 @@ examples are in the book — this page indexes them and does not replace them.
 
 ## AXIOM Laboratory
 
-This chapter is instrumented by: [AXIOM-11 →](https://axiomdynamics.app/?module=axiom-11)
+<img src="../assets/axiom-logo-small.png" alt="AXIOM" class="axiom-logo-inline"/> This chapter is instrumented by: [AXIOM-11 →](https://axiomdynamics.app/?module=axiom-11)
 
 Launch the module, load the chapter model, modify inputs, run the optimization,
 and compare against the worked examples in the book.

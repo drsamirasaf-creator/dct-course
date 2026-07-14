@@ -113,7 +113,7 @@ examples are in the book — this page indexes them and does not replace them.
 
 ## AXIOM Laboratory
 
-This chapter is instrumented by: {axiom_links}
+<img src="../assets/axiom-logo-small.png" alt="AXIOM" class="axiom-logo-inline"/> This chapter is instrumented by: {axiom_links}
 
 Launch the module, load the chapter model, modify inputs, run the optimization,
 and compare against the worked examples in the book.
@@ -329,6 +329,8 @@ title: "AXIOM Laboratory"
 subtitle: "The computational companion to both volumes"
 ---
 
+<img src="assets/axiom-logo.png" alt="AXIOM — Dynamic Corporate Transformation" class="axiom-logo-hero"/>
+
 AXIOM is the enterprise-optimization laboratory of the DCT ecosystem. Every chapter is
 instrumented by one or more AXIOM modules; the chapter page links its modules directly.
 
@@ -459,6 +461,8 @@ body.quarto-dark .stat-strip .stat { color: #EDE9DC; }
 '''
 
 css_custom = """/* ---------- global type ---------- */
+.axiom-logo-hero { display: block; max-width: 420px; width: 60%; margin: 0.25rem 0 1.25rem 0; }
+.axiom-logo-inline { height: 1.15em; vertical-align: -0.18em; margin-right: 0.35em; }
 h1, h2, h3, h4 { font-family: "STIX Two Text", Georgia, serif; letter-spacing: 0; }
 h1 { font-weight: 700; }
 h2 { font-weight: 600; border-bottom: none; position: relative; padding-bottom: .4rem; margin-top: 2.2rem; }

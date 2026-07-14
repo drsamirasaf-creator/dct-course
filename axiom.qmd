@@ -3,6 +3,8 @@ title: "AXIOM Laboratory"
 subtitle: "The computational companion to both volumes"
 ---
 
+<img src="assets/axiom-logo.png" alt="AXIOM — Dynamic Corporate Transformation" class="axiom-logo-hero"/>
+
 AXIOM is the enterprise-optimization laboratory of the DCT ecosystem. Every chapter is
 instrumented by one or more AXIOM modules; the chapter page links its modules directly.
 
