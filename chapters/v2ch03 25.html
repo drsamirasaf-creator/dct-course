@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization – Dynamic Corporate Transformation</title>
+<title>Chapter 3 · Convex Enterprise Optimization – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -340,7 +340,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch10.html">Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch03.html">Chapter 3 · Convex Enterprise Optimization</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -482,7 +482,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch03.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/v2ch03.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Chapter 3 · Convex Enterprise Optimization</span></a>
   </div>
 </li>
@@ -524,7 +524,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch10.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/v2ch10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization</span></a>
   </div>
 </li>
@@ -588,10 +588,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch10.html">Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch03.html">Chapter 3 · Convex Enterprise Optimization</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 10 · Neuro-Fuzzy Robust Enterprise Optimization</h1>
-<p class="subtitle lead">Volume II · Enterprise Optimization Under Uncertainty · Week 12</p>
+<h1 class="title">Chapter 3 · Convex Enterprise Optimization</h1>
+<p class="subtitle lead">Volume II · Enterprise Optimization Foundations · Week 9</p>
 </div>
 
 
@@ -609,74 +609,74 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume II, Chapter 10</strong> · Taught in <a href="../schedule.html#week-12">Week 12</a> · Lab seed <code>26210</code></p>
+<p><strong>Volume II, Chapter 3</strong> · Taught in <a href="../schedule.html#week-9">Week 9</a> · Lab seed <code>26203</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Distinguish probabilistic uncertainty from fuzzy (graded, linguistic) uncertainty.</li><li>Formulate fuzzy enterprise optimization models.</li><li>Construct fuzzy membership functions matched to managerial semantics.</li><li>Define linguistic enterprise variables and their term sets.</li><li>Build enterprise fuzzy rule bases.</li><li>Explain the five-layer ANFIS architecture.</li><li>Train ANFIS enterprise models by hybrid learning.</li><li>Integrate learned fuzzy structure into robust optimization.</li><li>Formulate neuro-fuzzy enterprise policies with possibility-level guarantees.</li><li>Apply NF-REO to enterprise transformation problems.</li></ol>
+<ol class="los-list"><li>Define convex sets and convex functions precisely, and verify convexity of declared enterprise objects from first principles and from the preservation calculus.</li><li>Distinguish convex from non-convex enterprise optimization problems, and state exactly which guarantees are gained or lost at that boundary.</li><li>Formulate convex enterprise optimization models in the canonical form $\min f$ subject to convex inequalities and affine equalities, starting from a declared GEOP instance.</li><li>Analyze convex feasible regions: verify convexity blockwise, exploit closure under intersection, and read the geometry of binding constraints.</li><li>Apply first-order and second-order convexity conditions to test declared objectives and constraints, with and without differentiability.</li><li>Explain why local optimality implies global optimality in convex problems, and what this promise is worth in enterprise governance.</li><li>Interpret Lagrangian duality within enterprise optimization: dual variables as shadow prices, weak duality as an audit bound, and strong duality as a certificate of optimality.</li><li>Analyze convex enterprise resource allocation problems and derive the equal-marginal-value principle from the KKT conditions.</li><li>Implement convex enterprise models computationally, using disciplined convex programming and modern solvers, and audit the returned certificates.</li><li>Prepare enterprise optimization models for nonlinear generalization: identify which convex structures survive locally and which guarantees must be renegotiated.</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>Limitations of Classical Robust Optimization</li>
-<li>Enterprise Ambiguity</li>
-<li>Fuzzy Enterprise Variables</li>
-<li>Membership Functions</li>
-<li>Enterprise Linguistic Variables</li>
-<li>Fuzzy Enterprise Constraints</li>
-<li>Adaptive Neuro-Fuzzy Inference Systems (ANFIS)</li>
-<li>Neuro-Fuzzy Enterprise Optimization</li>
-<li>Learning Enterprise Decision Rules</li>
+<li>Motivation for Convex Enterprise Optimization</li>
+<li>Convex Sets</li>
+<li>Convex Functions</li>
+<li>Convex Constraint Systems</li>
+<li>Convex Enterprise Decision Spaces</li>
+<li>Optimality Conditions</li>
+<li>Duality Theory</li>
+<li>Computational Solution Methods</li>
 <li>Enterprise Applications</li>
-<li>Computational Implementation</li>
-<li>Transition to Distributionally Robust Optimization</li>
-<li>Chapter Summary</li>
+<li>Preparation for Nonlinear Optimization</li>
+<li>Computational Considerations</li>
 <li>Worked Examples</li>
+<li>Chapter Summary</li>
 <li>Exercises</li>
 <li>Notes and Sources</li>
 </ol>
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-10">AXIOM-10 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-03">AXIOM-03 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 10.</strong></p>
+<p>13 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 3.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 10.1</strong> — Classify each of the following as risk, ambiguity, or vagueness, and name the governing chapter: next quarter’s demand draw; the correctness of the demand model; “healthy pipeline”; counterparty default; “excellent management”; the volatility parameter’s true value.</li>
-<li><strong>Exercise 10.2</strong> — Explain why coverage and parsimony pull against each other in granulation, and how hedges partially reconcile them; give a liquidity term set violating each principle and the resulting optimization pathology.</li>
+<li><strong>Exercise 3.1</strong> — State the four clauses of the convex contract of Section (see book) and, for each, name one enterprise governance question it retires.</li>
+<li><strong>Exercise 3.2</strong> — The equal-marginal principle appeared three times (Examples (see book), (see book), (see book)).</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 10.3</strong> — Prove that a fuzzy set on <span class="math inline">\(\R\)</span> is a fuzzy number (quasi-concave, u.</li>
-<li><strong>Exercise 10.4</strong> — Show that the four operators of Table (see book) are ordered pointwise ({}ukasiewicz <span class="math inline">\(\le\)</span> product <span class="math inline">\(\le\)</span> min on <span class="math inline">\([0,1]^{2}\)</span>), that each is a <span class="math inline">\(t\)</span>-norm or a mean, and determine which preserve the LP structure of Lemma (see book).</li>
-<li><strong>Exercise 10.5</strong> — Derive the interval-arithmetic rules for addition and scalar multiplication of fuzzy numbers via <span class="math inline">\(\alpha\)</span>-cuts, and compute the fuzzy NPV of a two-period projec…</li>
-<li><strong>Exercise 10.6</strong> — In Example (see book), derive the closed form of the frontier <span class="math inline">\(v(\lambda)\)</span> and verify the marked coincidence $v(0.5) = $ the <span class="math inline">\(\Gamma = 1\)</span> value; characterize instances where the fuzzy dial and the Bertsimas–Sim budget disagree at every interior point.</li>
+<li><strong>Exercise 3.3</strong> — Prove the first-order characterization of Table (see book): differentiable <span class="math inline">\(f\)</span> is convex on open convex <span class="math inline">\(C\)</span> iff the tangent-underestimation inequality (see book) holds.</li>
+<li><strong>Exercise 3.4</strong> — Prove the second-order characterization of Table (see book): twice-differentiable <span class="math inline">\(f\)</span> is convex on open convex <span class="math inline">\(C\)</span> iff <span class="math inline">\(\nabla^2 f \succeq 0\)</span> on <span class="math inline">\(C\)</span>, and <span class="math inline">\(f\)</span> is <span class="math inline">\(m\)</span>-strongly convex iff <span class="math inline">\(\nabla^2 f \succeq mI\)</span>.</li>
+<li><strong>Exercise 3.5</strong> — Prove the monotone composition rule (<span class="math inline">\(h\)</span> convex nondecreasing, <span class="math inline">\(g\)</span> convex <span class="math inline">\(\Rightarrow h \circ g\)</span> convex) and exhibit convex <span class="math inline">\(h, g\)</span> with <span class="math inline">\(h \circ g\)</span> non-convex when monotonicity fails.</li>
+<li><strong>Exercise 3.6</strong> — Prove that sublevel sets of convex functions are convex, and that the function <span class="math inline">\(f(\x) = \norm{\x}_2 / (1 + \norm{\x}_2)\)</span> has all sublevel sets convex without being convex (quasiconvexity).</li>
+<li><strong>Exercise 3.7</strong> — Establish the properties of Euclidean projection onto a nonempty closed convex set <span class="math inline">\(\feas\)</span>: existence, uniqueness, the variational characterization <span class="math inline">\((\x - P_{\feas}(\x))^{\top}(\mathbf{y} - P_{\feas}(\x)) \le 0\)</span> for all <span class="math inline">\(\mathbf{y} \in \feas\)</span>, and nonexpansiveness <span class="math inline">\(\norm{P_{\feas}(\x) - P_{\feas}(\mathbf{y})} \le \norm{\x - \mathbf{y}}\)</span>.</li>
+<li><strong>Exercise 3.8</strong> — Complete the coercivity bootstrap in the proof of Proposition (see book)(i): show directly from (see book) with a fixed anchor that <span class="math inline">\(f(\x) \to \infty\)</span> as <span class="math inline">\(\norm{\x} \to \infty\)</span> on <span class="math inline">\(\feas\)</span>, and conclude boundedness of sublevel sets.</li>
+<li><strong>Exercise 3.9</strong> — Verify the convex-set fact used in Theorem (see book), Step 2: if <span class="math inline">\(C\)</span> is convex and <span class="math inline">\(\x_0 \in \partial C\)</span>, then <span class="math inline">\(\x_0\)</span> is not an interior point of <span class="math inline">\(\operatorname{cl} C\)</span>.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 10.7</strong> — Extend Theorem (see book) to first-order TSK systems (affine consequents) and to generalized-bell memberships, indicating exactly where the Gaussian product-closure argument must be replaced and by what.</li>
-<li><strong>Exercise 10.8</strong> — Prove the possibility–probability consistency bound behind (see book): if <span class="math inline">\(\Prob\)</span> is any probability measure with <span class="math inline">\(\Prob([\fz{U}]_{\alpha}) \ge 1 - \alpha\)</span> for all <span class="math inline">\(\alpha\)</span>, then for every event <span class="math inline">\(E\)</span>, $(E) (E) + $ (the gap vanishing as the cut family refines), and exhibit the extremal <span class="math inline">\(\Prob\)</span>.</li>
+<li><strong>Exercise 3.10</strong> — Prove the subgradient existence claim of Section (see book): a convex <span class="math inline">\(f : \R^n \to \R\)</span> has <span class="math inline">\(\partial f(\x) \neq \emptyset\)</span> at every point.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part D — Enterprise applications
 </h4>
 <ul>
-<li><strong>Exercise 10.9</strong> — Reproduce Example (see book); then coarsen to <span class="math inline">\(2 \times 2\)</span> and refine to <span class="math inline">\(5 \times 5\)</span> rules, reporting the RMSE–parsimony trade and the rule-usage histograms; prune dead rules and retrain.</li>
-<li><strong>Exercise 10.10</strong> — Implement the <span class="math inline">\(\lambda\)</span>-frontier tracer for Example (see book) with all three memberships steerable; produce the three-way sensitivity report of <span class="math inline">\(\lambda^{*}\)</span> to core/support shifts.</li>
-<li><strong>Exercise 10.11</strong> — Meridian credit underwriting: design a three-input linguistic scorecard (coverage-checked term sets), train its ANFIS on the synthetic default data of the AXIOM-10 module, assemble the NF-REO approval policy with a fuzzy loss-tolerance goal, and present the explainability dashboard a regulator would receive: rule sentences, decision surface, and the <span class="math inline">\(\lambda\)</span>-frontier.</li>
-<li><strong>Exercise 10.12 ★</strong> — Develop type-2 fuzzy NF-REO: memberships whose grades are themselves fuzzy (uncertainty about semantics).</li>
+<li><strong>Exercise 3.11</strong> — Declare Example (see book) in CVXPY, confirm DCP verification passes, solve, and reconcile the returned budget multiplier with <span class="math inline">\(\lambda^{*} = 1.0\)</span> to solver tolerance.</li>
+<li><strong>Exercise 3.12</strong> — Rewrite Meridian’s covenant requirement (interest cover within a declared band, standing price $0.9 a CEO block, and use (see book) to bound the value impact of…</li>
+<li><strong>Exercise 3.13 ★</strong> — Study the statistical stability of shadow prices: if declared data are estimated with sampling error, derive distributional statements for <span class="math inline">\(\boldsymbol{\lambda}^{*}\)</span> under strong convexity and a stable binding pattern, and connect to the resolve-threshold policy of Section (see book).</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
@@ -692,18 +692,18 @@ Part D — Enterprise applications
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V2_Ch10_Slides.pptx"><code>DCT_V2_Ch10_Slides.pptx</code></a></td>
+<td><a href="../downloads/DCT_V2_Ch03_Slides.pptx"><code>DCT_V2_Ch03_Slides.pptx</code></a></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>Python laboratory</td>
-<td><a href="../labs/v2ch10_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch10_Lab.ipynb"><code>DCT_V2_Ch10_Lab.ipynb</code></a></td>
-<td><code>26210</code></td>
+<td><a href="../labs/v2ch03_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch03_Lab.ipynb"><code>DCT_V2_Ch03_Lab.ipynb</code></a></td>
+<td><code>26203</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V2_Ch10_Lab.xlsx"><code>DCT_V2_Ch10_Lab.xlsx</code></a></td>
-<td><code>26210</code></td>
+<td><a href="../downloads/DCT_V2_Ch03_Lab.xlsx"><code>DCT_V2_Ch03_Lab.xlsx</code></a></td>
+<td><code>26203</code></td>
 </tr>
 </tbody>
 </table>
@@ -713,7 +713,7 @@ Part D — Enterprise applications
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26210</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26203</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>
