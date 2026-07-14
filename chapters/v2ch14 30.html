@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 11 · Distributionally Robust Enterprise Optimization – Dynamic Corporate Transformation</title>
+<title>Chapter 14 · Artificial Intelligence for Enterprise Optimization – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -340,7 +340,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch11.html">Chapter 11 · Distributionally Robust Enterprise Optimization</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch14.html">Chapter 14 · Artificial Intelligence for Enterprise Optimization</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -530,7 +530,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch11.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/v2ch11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapter 11 · Distributionally Robust Enterprise Optimization</span></a>
   </div>
 </li>
@@ -548,7 +548,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch14.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/v2ch14.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Chapter 14 · Artificial Intelligence for Enterprise Optimization</span></a>
   </div>
 </li>
@@ -588,10 +588,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch11.html">Chapter 11 · Distributionally Robust Enterprise Optimization</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch14.html">Chapter 14 · Artificial Intelligence for Enterprise Optimization</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 11 · Distributionally Robust Enterprise Optimization</h1>
-<p class="subtitle lead">Volume II · Enterprise Optimization Under Uncertainty · Week 12</p>
+<h1 class="title">Chapter 14 · Artificial Intelligence for Enterprise Optimization</h1>
+<p class="subtitle lead">Volume II · Multi-Objective and Intelligent Enterprise Optimization · Week 14</p>
 </div>
 
 
@@ -609,29 +609,29 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume II, Chapter 11</strong> · Taught in <a href="../schedule.html#week-12">Week 12</a> · Lab seed <code>26211</code></p>
+<p><strong>Volume II, Chapter 14</strong> · Taught in <a href="../schedule.html#week-14">Week 14</a> · Lab seed <code>26214</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Distinguish stochastic, robust, neuro-fuzzy robust, and distributionally robust optimization.</li><li>Define ambiguity sets for enterprise uncertainty.</li><li>Formulate distributionally robust enterprise optimization problems.</li><li>Construct moment-based ambiguity sets.</li><li>Construct Wasserstein ambiguity sets.</li><li>Construct $\varphi$-divergence ambiguity sets.</li><li>Interpret worst-case probability distributions.</li><li>Analyze enterprise decisions under distributional ambiguity.</li><li>Implement DREO computationally with calibrated radii and honest certificates.</li><li>Prepare enterprise models for multi-objective optimization.</li></ol>
+<ol class="los-list"><li>Explain the role of artificial intelligence in enterprise optimization, and distinguish it from machine learning.</li><li>Formulate AI-assisted enterprise optimization as a Markov decision process.</li><li>Construct enterprise knowledge graphs and ontologies.</li><li>Apply dynamic programming, value iteration, and policy iteration to enterprise MDPs.</li><li>Apply reinforcement learning (Q-learning, policy gradients, actor--critic) to enterprise decisions.</li><li>Develop intelligent and multi-agent enterprise systems.</li><li>Integrate generative AI into enterprise planning with retrieval and verification.</li><li>Design hybrid AI--optimization architectures with certified outputs.</li><li>Evaluate explainable AI for enterprise governance.</li><li>Prepare enterprise systems for autonomous transformation.</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>Motivation for Distributionally Robust Enterprise Optimization</li>
-<li>Enterprise Distributional Ambiguity</li>
-<li>Ambiguity Sets</li>
-<li>Moment-Based Ambiguity Sets</li>
-<li>Wasserstein Ambiguity Sets</li>
-<li>\texorpdfstring{<span class="math inline">\(\varphi\)</span></li>
-<li>Worst-Case Distribution Theory</li>
-<li>Distributionally Robust Enterprise Policies</li>
-<li>Computational Algorithms</li>
+<li>Artificial Intelligence in Enterprise Transformation</li>
+<li>Enterprise Knowledge Representation</li>
+<li>Knowledge Graphs and Enterprise Ontologies</li>
+<li>Expert Systems and Rule-Based Enterprise Decision Making</li>
+<li>Reinforcement Learning</li>
+<li>Deep Reinforcement Learning</li>
+<li>Generative Artificial Intelligence</li>
+<li>Multi-Agent Enterprise Systems</li>
+<li>Hybrid AI–Optimization Architectures</li>
 <li>Enterprise Applications</li>
-<li>Comparison with NF-REO</li>
-<li>Preparation for Multi-Objective Enterprise Optimization</li>
+<li>Computational Implementation</li>
+<li>Preparation for Enterprise Digital Twins</li>
 <li>Chapter Summary</li>
 <li>Worked Examples</li>
 <li>Exercises</li>
@@ -640,48 +640,53 @@ window.Quarto = {
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-11">AXIOM-11 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-14">AXIOM-14 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 11.</strong></p>
+<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 14.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 11.1</strong> — For each source row of Table (see book), justify the recommended set-design response and exhibit an enterprise decision where the <em>wrong</em> family (e.</li>
-<li><strong>Exercise 11.2</strong> — Explain, using the saddle point of Theorem (see book), why publishing the worst-case distribution alongside a DR decision is the correct governance disclosure, and what a board should do when that law is (a) absurd, (b) plausible.</li>
+<li><strong>Exercise 14.1</strong> — Using Table (see book), classify six enterprise tasks as optimization, learning, or AI problems, and for each AI task name the state, action, reward, and why a single-shot predictor or static optimizer is insufficient.</li>
+<li><strong>Exercise 14.2</strong> — Explain, via Theorem (see book), why placing a learned policy inside a certified optimizer’s envelope is the correct governance pattern for autonomous enterprise action, and what specifically the certificate does and does not guarantee about the AI component.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 11.3</strong> — Derive Scarf’s bound of Example (see book) from the dual (see book) with <span class="math inline">\(\psi = (\xi, \xi^{2})\)</span>: exhibit the optimal quadratic majorant of <span class="math inline">\((\xi - d)^{+}\)</span> and the two-point worst-case law, verifying Theorem (see book)’s <span class="math inline">\(k + 1 = 3\)</span> bound is not tight here.</li>
-<li><strong>Exercise 11.4</strong> — Prove the KL closed form (see book) on finite support: Lagrangian, exponential-tilt stationarity, and the one-dimensional dual; verify the Example (see book) weights.</li>
-<li><strong>Exercise 11.5</strong> — Prove the <span class="math inline">\(d = 1\)</span> concentration inequality behind Proposition (see book) using <span class="math inline">\(\Wass(P, Q) = \int\abs{F_P - F_Q}\)</span> and Dvoretzky–Kiefer–Wolfowitz; calibrate <span class="math inline">\(c_1, c_2\)</span> explicitly for compactly supported laws.</li>
-<li><strong>Exercise 11.6</strong> — Show the worst-case expectation of Definition (see book) is a coherent risk measure, and identify the ambiguity sets representing (a) CVaR<span class="math inline">\(_{\alpha}\)</span>, (b) mean plus <span class="math inline">\(\theta \times\)</span> standard deviation (state precisely when the latter fails coherence).</li>
+<li><strong>Exercise 14.3</strong> — Prove the Bellman optimality operator is a <span class="math inline">\(\gamma\)</span>-contraction directly from the max-of-affine structure, and compute the exact iteration count to <span class="math inline">\(10^{-6}\)</span> for the Example (see book) MDP; compare with the observed count.</li>
+<li><strong>Exercise 14.4</strong> — Derive the policy-gradient theorem <span class="math inline">\(\nabla_\theta J = \E[\nabla_\theta \log \pol_\theta(a\mid s)\, Q^{\pol}(s,a)]\)</span> from the definition of <span class="math inline">\(J\)</span>, and explain why the value baseline in actor–critic reduces variance without introducing bias.</li>
+<li><strong>Exercise 14.5</strong> — For the Example (see book) knowledge graph, compute the personalized PageRank in closed form as <span class="math inline">\((I - d M^{\top})^{-1}(1-d)\mathbf{p}\)</span>, verify the reported top four, and show how the ranking shifts as the damping <span class="math inline">\(d\)</span> and the affinity seed <span class="math inline">\(\mathbf{p}\)</span> vary.</li>
+<li><strong>Exercise 14.6</strong> — Prove that policy iteration terminates in at most <span class="math inline">\(\abs{\Ac}^{\abs{\Sc}}\)</span> steps and that each non-terminal step strictly increases value at some state; exhibit the Example (see book) trajectory.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 11.7</strong> — Prove strong duality in Theorem (see book) directly for finite <span class="math inline">\(\Xi\)</span> via LP duality, and exhibit a two-point <span class="math inline">\(\Xi\)</span> instance with the Slater condition violated where a duality gap opens.</li>
-<li><strong>Exercise 11.8</strong> — Prove that for <span class="math inline">\(\varepsilon &gt; 0\)</span> fixed and <span class="math inline">\(N \to \infty\)</span>, the Wasserstein DREO decision converges to the <span class="math inline">\(\varepsilon\)</span>-robust decision around <span class="math inline">\(P_{\mathrm{true}}\)</span>, and combine with Proposition (see book) to obtain the full consistency diagram of data-driven DREO.</li>
+<li><strong>Exercise 14.7</strong> — Prove the Q-learning convergence theorem’s martingale-difference and bounded-variance claims in full for a finite MDP with bounded rewards, reducing the result to the stochastic-approximation theorem for sup-norm contractions; state precisely where infinite visitation is used.</li>
+<li><strong>Exercise 14.8</strong> — Prove Theorem (see book)(ii) for exact branch-and-bound: the certified optimal value is independent of branching and variable-selection order, and valid inequalities derived by any (learned or classical) separator preserve the optimum.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part D — Enterprise applications
 </h4>
 <ul>
-<li><strong>Exercise 11.9</strong> — Reproduce Example (see book); then implement the Wasserstein-DR newsvendor on support <span class="math inline">\([0, \infty)\)</span> via Theorem (see book)(ii) and report whether transport-based sets repair the disappointment gap at matched regret.</li>
-<li><strong>Exercise 11.10</strong> — Build the cyber layer schedule of Example (see book) across retentions <span class="math inline">\(d \in [3, 10]\)</span> under (a) Scarf, (b) Scarf plus unimodality (Gauss-type bound; Notes), (c) fitted lognormal; plot the three curves and locate where structure assumptions matter most.</li>
-<li><strong>Exercise 11.11</strong> — Meridian growth-market entry: quarterly demand history (<span class="math inline">\(N = 16\)</span>, provided in the AXIOM-11 module) with suspected survivorship bias.</li>
-<li><strong>Exercise 11.12 ★</strong> — Develop dynamic DREO for the Chapter 9 controlled diffusion: define rectangular Wasserstein ambiguity per time step, derive the distributionally robust HJB equation, prove a verification theorem, and quantify on the liquidity instance how the Chapter 9 gain stiffens with the per-step radius; discuss time-consistency failures for non-rectangular sets.</li>
+<li><strong>Exercise 14.9</strong> — Reproduce Examples (see book) and (see book): implement value iteration and tabular Q-learning on the liquidity MDP, plot convergence, and study the sensitivity of Q-learning’s success to exploration schedule and step-size annealing (violate Robbins–Monro deliberately and report the failure).</li>
+<li><strong>Exercise 14.10</strong> — Reproduce Example (see book): measure warm-start savings across a grid of prior qualities and discount factors <span class="math inline">\(\gamma\)</span>, and verify the Theorem (see book) iteration-count formula against observation.</li>
+<li><strong>Exercise 14.11</strong> — Meridian autonomous treasury: using the AXIOM-14 module, build the full Definition (see book) loop for cash and liquidity management—MDP from the Chapter 5 state, RL policy with certified value-iteration baseline, knowledge- graph constraints as the verified envelope, and a governance report documenting the certificate, the envelope, and the monitoring plan for unattended operation.</li>
+<li><strong>Exercise 14.12 ★</strong> — Develop distributionally robust reinforcement learning for the enterprise MDP: replace the transition law by a Chapter 11 ambiguity set per state–action, derive the robust Bellman operator, prove it remains a <span class="math inline">\(\gamma\)</span>-contraction, and quantify on Example (see book) how the robust policy grows more conservative as the per-transition Wasserstein radius widens—connecting AIEO to the uncertainty trilogy.</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
 <h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Resource</th>
@@ -692,18 +697,18 @@ Part D — Enterprise applications
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V2_Ch11_Slides.pptx"><code>DCT_V2_Ch11_Slides.pptx</code></a></td>
+<td><code>DCT_V2_Ch14_Slides.pptx</code> <em>(forthcoming)</em></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>Python laboratory</td>
-<td><a href="../labs/v2ch11_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch11_Lab.ipynb"><code>DCT_V2_Ch11_Lab.ipynb</code></a></td>
-<td><code>26211</code></td>
+<td><code>DCT_V2_Ch14_Lab.ipynb</code> <em>(forthcoming)</em></td>
+<td><code>26214</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V2_Ch11_Lab.xlsx"><code>DCT_V2_Ch11_Lab.xlsx</code></a></td>
-<td><code>26211</code></td>
+<td><code>DCT_V2_Ch14_Lab.xlsx</code> <em>(forthcoming)</em></td>
+<td><code>26214</code></td>
 </tr>
 </tbody>
 </table>
@@ -713,7 +718,7 @@ Part D — Enterprise applications
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26211</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26214</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>
