@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 13 · Machine Learning for Enterprise Transformation – Dynamic Corporate Transformation</title>
+<title>Chapter 2 · The General Enterprise Optimization Problem Revisited – Dynamic Corporate Transformation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -340,7 +340,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch13.html">Chapter 13 · Machine Learning for Enterprise Transformation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch02.html">Chapter 2 · The General Enterprise Optimization Problem Revisited</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -476,7 +476,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch02.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/v2ch02.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Chapter 2 · The General Enterprise Optimization Problem Revisited</span></a>
   </div>
 </li>
@@ -542,7 +542,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/v2ch13.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/v2ch13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapter 13 · Machine Learning for Enterprise Transformation</span></a>
   </div>
 </li>
@@ -588,10 +588,10 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch13.html">Chapter 13 · Machine Learning for Enterprise Transformation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/v2ch01.html">Volume II — Enterprise Optimization</a></li><li class="breadcrumb-item"><a href="../chapters/v2ch02.html">Chapter 2 · The General Enterprise Optimization Problem Revisited</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 13 · Machine Learning for Enterprise Transformation</h1>
-<p class="subtitle lead">Volume II · Multi-Objective and Intelligent Enterprise Optimization · Week 13</p>
+<h1 class="title">Chapter 2 · The General Enterprise Optimization Problem Revisited</h1>
+<p class="subtitle lead">Volume II · Enterprise Optimization Foundations · Week 8</p>
 </div>
 
 
@@ -609,74 +609,73 @@ window.Quarto = {
 
 
 <div class="chapter-meta">
-<p><strong>Volume II, Chapter 13</strong> · Taught in <a href="../schedule.html#week-13">Week 13</a> · Lab seed <code>26213</code></p>
+<p><strong>Volume II, Chapter 2</strong> · Taught in <a href="../schedule.html#week-8">Week 8</a> · Lab seed <code>26202</code></p>
 </div>
 <section id="learning-outcome-statements" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcome-statements">Learning Outcome Statements</h2>
 <p>After completing this chapter, the reader should be able to:</p>
-<ol class="los-list"><li>Explain the role of machine learning in enterprise transformation.</li><li>Distinguish supervised, unsupervised, semi-supervised, and reinforcement learning.</li><li>Construct predictive enterprise models by regularized empirical risk minimization.</li><li>Select and engineer enterprise features, and prove why feature quality bounds model quality.</li><li>Evaluate model performance with statistically honest metrics and validation protocols.</li><li>Detect enterprise patterns through clustering.</li><li>Apply dimensionality reduction with the PCA optimality guarantee.</li><li>Integrate predictive models into enterprise optimization with quantified decision regret.</li><li>Interpret models through axiomatic Shapley explanations.</li><li>Prepare enterprise systems for artificial intelligence.</li></ol>
+<ol class="los-list"><li>Formulate the General Enterprise Optimization Problem in its canonical five-block form, discrete- and continuous-time.</li><li>Distinguish objective functions from enterprise performance measures, and state what promotion from measure to objective adds and obliges.</li><li>Identify enterprise decision variables and state variables, and keep the chosen/induced boundary exact.</li><li>Construct enterprise constraint systems across the five mathematical forms and six architectural provenances.</li><li>Differentiate equality and inequality constraints, and path, boundary, and decision-set constraints, with the multiplier previews each carries.</li><li>Define enterprise feasibility for policies and trajectories, and certify it rather than assume it.</li><li>Interpret enterprise solution spaces: feasible sets, optimal sets, and the value order that ranks only inside feasibility.</li><li>Explain enterprise optimization architectures: the five-layer computational stack from declaration to implementation.</li><li>Recognize the classes of enterprise optimization problems and place classical formulations as GEOP special cases.</li><li>Prepare GEOP formulations for computational solution: standard forms, scaling, sparsity, and export.</li></ol>
 </section>
 <section id="reading-guide" class="level2">
 <h2 class="anchored" data-anchor-id="reading-guide">Reading Guide</h2>
 <p>Work through the chapter in section order; the full development, proofs, and worked examples are in the book — this page indexes them and does not replace them.</p>
 <ol type="1">
-<li>Introduction to Enterprise Machine Learning</li>
-<li>Enterprise Data Architecture</li>
-<li>Feature Engineering</li>
-<li>Supervised Learning</li>
-<li>Unsupervised Learning</li>
-<li>Ensemble Learning</li>
-<li>Explainable Artificial Intelligence (XAI)</li>
-<li>Enterprise Prediction Systems</li>
-<li>Machine Learning within GEOP</li>
-<li>Enterprise Applications</li>
-<li>Computational Implementation</li>
-<li>Preparation for Artificial Intelligence</li>
-<li>Chapter Summary</li>
+<li>Review of GEOP from Volume I</li>
+<li>Enterprise Decision Variables</li>
+<li>Enterprise State Variables</li>
+<li>Objective Functions</li>
+<li>Constraint Systems</li>
+<li>Enterprise Feasible Regions</li>
+<li>Enterprise Optimization Architectures</li>
+<li>Classes of Enterprise Optimization Problems</li>
+<li>Canonical GEOP Formulation</li>
+<li>Computational Preparation</li>
+<li>Transition to Convex Optimization</li>
 <li>Worked Examples</li>
+<li>Chapter Summary</li>
 <li>Exercises</li>
 <li>Notes and Sources</li>
 </ol>
 </section>
 <section id="axiom-laboratory" class="level2">
 <h2 class="anchored" data-anchor-id="axiom-laboratory">AXIOM Laboratory</h2>
-<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-13">AXIOM-13 →</a></p>
+<p>This chapter is instrumented by: <a href="https://axiom-webapp.example/modules/axiom-02">AXIOM-02 →</a></p>
 <p>Launch the module, load the chapter model, modify inputs, run the optimization, and compare against the worked examples in the book.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 13.</strong></p>
+<p>12 exercises, grouped <strong>A</strong> concept checks · <strong>B</strong> mathematical · <strong>C</strong> computational · <strong>D</strong> enterprise applications. Starred (★) exercises are on the advanced track. <strong>Full solutions appear in the Instructor’s Manual, Chapter 2.</strong></p>
 <h4 class="ex-part anchored">
 Part A — Concept checks
 </h4>
 <ul>
-<li><strong>Exercise 13.1</strong> — Classify each enterprise task as supervised, unsupervised, semi-supervised, or reinforcement, and name the target and loss where applicable: churn scoring, supplier taxonomy, rare-defect detection with ten labeled cases, dynamic pricing, covenant-breach forecasting, log-anomaly triage.</li>
-<li><strong>Exercise 13.2</strong> — A business unit reports a validation AUC of <span class="math inline">\(0.94\)</span> achieved after evaluating <span class="math inline">\(400\)</span> model variants on the same holdout.</li>
+<li><strong>Exercise 2.1</strong> — Name the five constraint blocks of the canonical GEOP and give one Meridian instance of each, citing the block’s architectural provenance.</li>
+<li><strong>Exercise 2.2</strong> — Explain why the Bolza/Mayer/Lagrange choice is representational while the <span class="math inline">\(L\)</span>-versus-<span class="math inline">\(\Phi_T\)</span> <em>content</em> split is governance, citing Theorem (see book) and the window doctrine.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part B — Mathematical exercises
 </h4>
 <ul>
-<li><strong>Exercise 13.3</strong> — Prove the bias–variance decomposition in full, including the vanishing of both cross terms, and exhibit an enterprise estimator pair (deep tree vs stump) whose test errors order oppositely at two sample sizes.</li>
-<li><strong>Exercise 13.4</strong> — Derive the ensemble variance identity of (see book) and fit its two parameters <span class="math inline">\((\rho, \sigma^{2})\)</span> to the forest curve of Figure (see book); report the impli…</li>
-<li><strong>Exercise 13.5</strong> — Show that <span class="math inline">\(k\)</span>-means alternation monotonically decreases its objective and terminates finitely, and construct a two-cluster enterprise instance where it converges to a strictly suboptimal partition.</li>
-<li><strong>Exercise 13.6</strong> — Prove the kernel form of Theorem (see book): the best rank-<span class="math inline">\(r\)</span> reconstruction of centered data in feature space is given by the top eigenvectors of the Gram matrix, and relate retained variance to Gram eigenvalues.</li>
+<li><strong>Exercise 2.3</strong> — Write Example (see book)’s instance fully in the notation of Table (see book): every block, every symbol bound, empty blocks declared empty.</li>
+<li><strong>Exercise 2.4</strong> — Carry out Mayer-to-Lagrange for <span class="math inline">\(\Phi_T(\x) = \mathbf{c}^{\top} \x\)</span> on linear dynamics: compute the induced running term <span class="math inline">\(\ell_k\)</span> explicitly and identify the policy-independent constant.</li>
+<li><strong>Exercise 2.5</strong> — Show that exponential discounting is a declared weight inside <span class="math inline">\(L\)</span> (define <span class="math inline">\(L_k = \beta^k \ell(\x_k, \uc_k)\)</span>), and that re-expressing it as an augmented-state multiplicative factor yields the same optimal set; where does Theorem (see book)(iii) enter?</li>
+<li><strong>Exercise 2.6</strong> — Show that rescaling constraint <span class="math inline">\(g_i \mapsto \gamma_i g_i\)</span> (<span class="math inline">\(\gamma_i &gt; 0\)</span>) and variables <span class="math inline">\(\uc \mapsto \mathbf{D}\uc\)</span> (diagonal, positive) preserves feasible and optimal sets; identify what the rescaling changes (conditioning, multiplier units) and record the multiplier transformation rule.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part C — Computational exercises
 </h4>
 <ul>
-<li><strong>Exercise 13.7</strong> — Extend Theorem (see book)(i) to countable classes via a weighted union bound (prior <span class="math inline">\(\pi\)</span> on <span class="math inline">\(\Hc\)</span>, penalty <span class="math inline">\(\log(1/\pi(f))\)</span>), and interpret the result as a generalization guarantee for regularized ERM (see book).</li>
-<li><strong>Exercise 13.8</strong> — Prove that the Shapley value is the <em>only</em> attribution satisfying efficiency, symmetry, null, and linearity that is also given by an expectation over feature orderings; then show that dropping linearity admits alternative attributions and exhibit one.</li>
+<li><strong>Exercise 2.7</strong> — Prove Proposition (see book)’s open-loop clause in detail: the constant-rule subclass is a declared policy class, its induced problem has the same data as the sequence-decision problem, and feasible/optimal correspondences are bijections.</li>
+<li><strong>Exercise 2.8</strong> — Prove that minimal infeasible subsystems need not be unique: construct an instance with two distinct minimal subsystems and show a repair relaxing a constraint in their intersection fixes both, while one outside some subsystem fixes neither.</li>
 </ul>
 <h4 class="ex-part anchored">
 Part D — Enterprise applications
 </h4>
 <ul>
-<li><strong>Exercise 13.9</strong> — Reproduce Example (see book); then inject a leakage feature (next-quarter collections) and demonstrate the validation–deployment gap it creates under random versus time-ordered splits.</li>
-<li><strong>Exercise 13.10</strong> — Reproduce Example (see book); then retrain the forecaster with an asymmetric (pinball) loss matched to <span class="math inline">\(c_u : c_o\)</span> and report whether decision-aware training beats estimate-then-optimize regret at <span class="math inline">\(N = 150\)</span>, connecting the outcome to Theorem (see book)’s final clause.</li>
-<li><strong>Exercise 13.11</strong> — Meridian learning architecture: for the working-capital GEOP of the AXIOM-13 module, design the full Definition (see book) object—estimated components, pipelines with as-of-date features, evaluation and Shapley ledgers, drift triggers—and deliver the board pack: accuracy, calibration, decision-regret history, and the two model changes the ledgers recommend.</li>
-<li><strong>Exercise 13.12 ★</strong> — Develop distributionally robust learning-augmented optimization: replace the point prediction in Theorem (see book) with a Chapter 11 ambiguity set centered at the estimate with radius from the generalization bound.</li>
+<li><strong>Exercise 2.9</strong> — (With AXIOM-02 or the Chapter 2 notebook.</li>
+<li><strong>Exercise 2.10</strong> — (With AXIOM-02 or the Chapter 2 notebook.</li>
+<li><strong>Exercise 2.11</strong> — Write one live decision of an enterprise you know in the full five-block template, empty blocks declared empty, every symbol of Table (see book) bound or explicitly unused.</li>
+<li><strong>Exercise 2.12 ★</strong> — &nbsp;Minimal infeasible subsystems can be exponentially numerous.</li>
 </ul>
 </section>
 <section id="downloads" class="level2">
@@ -692,18 +691,18 @@ Part D — Enterprise applications
 <tbody>
 <tr class="odd">
 <td>Lecture deck</td>
-<td><a href="../downloads/DCT_V2_Ch13_Slides.pptx"><code>DCT_V2_Ch13_Slides.pptx</code></a></td>
+<td><a href="../downloads/DCT_V2_Ch02_Slides.pptx"><code>DCT_V2_Ch02_Slides.pptx</code></a></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>Python laboratory</td>
-<td><a href="../labs/v2ch13_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch13_Lab.ipynb"><code>DCT_V2_Ch13_Lab.ipynb</code></a></td>
-<td><code>26213</code></td>
+<td><a href="../labs/v2ch02_laboratory.html">Open the laboratory page →</a> · <a href="../downloads/DCT_V2_Ch02_Lab.ipynb"><code>DCT_V2_Ch02_Lab.ipynb</code></a></td>
+<td><code>26202</code></td>
 </tr>
 <tr class="odd">
 <td>Excel workbook</td>
-<td><a href="../downloads/DCT_V2_Ch13_Lab.xlsx"><code>DCT_V2_Ch13_Lab.xlsx</code></a></td>
-<td><code>26213</code></td>
+<td><a href="../downloads/DCT_V2_Ch02_Lab.xlsx"><code>DCT_V2_Ch02_Lab.xlsx</code></a></td>
+<td><code>26202</code></td>
 </tr>
 </tbody>
 </table>
@@ -713,7 +712,7 @@ Part D — Enterprise applications
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All three companions consume the same seeded engine (<code>26213</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
+<p>All three companions consume the same seeded engine (<code>26202</code>), so their numbers agree by construction — the MFMF convention, carried forward.</p>
 </div>
 </div>
 </div>
