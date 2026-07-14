@@ -71,7 +71,7 @@ for c in CH:
     v, n = c['vol'], c['ch']
     wk = WEEK_OF[(v, n)]
     axiom_links = ' · '.join(
-        f"[{m} →](https://axiom-webapp.example/modules/{m.lower()})" for m in c['axiom_modules'])
+        f"[{m} →](https://axiomdynamics.app/?module={m.lower()})" for m in c['axiom_modules'])
     los_md = '<ol class="los-list">' + ''.join(f"<li>{l['text']}</li>" for l in c['los']) + '</ol>'
     secs_md = '\n'.join(f"{i+1}. {s}" for i, s in enumerate(c['sections']))
     ex_md = []
@@ -337,7 +337,7 @@ The canonical workflow, for every chapter:
 **Launch AXIOM → Load Chapter Model → Modify Inputs → Run Optimization → Visualize
 Results → Download Report**
 
-[Open the AXIOM WebApp →](https://axiom-webapp.example){.btn-hero}
+[Open the AXIOM WebApp →](https://axiomdynamics.app){.btn-hero}
 
 | Module | Instruments | Chapters |
 |---|---|---|

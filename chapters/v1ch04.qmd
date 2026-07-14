@@ -32,7 +32,7 @@ examples are in the book — this page indexes them and does not replace them.
 
 ## AXIOM Laboratory
 
-This chapter is instrumented by: [AXIOM-04 →](https://axiom-webapp.example/modules/axiom-04)
+This chapter is instrumented by: [AXIOM-04 →](https://axiomdynamics.app/?module=axiom-04)
 
 Launch the module, load the chapter model, modify inputs, run the optimization,
 and compare against the worked examples in the book.

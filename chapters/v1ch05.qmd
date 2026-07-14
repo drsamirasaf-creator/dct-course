@@ -36,7 +36,7 @@ examples are in the book — this page indexes them and does not replace them.
 
 ## AXIOM Laboratory
 
-This chapter is instrumented by: [AXIOM-01 →](https://axiom-webapp.example/modules/axiom-01) · [AXIOM-05 →](https://axiom-webapp.example/modules/axiom-05)
+This chapter is instrumented by: [AXIOM-01 →](https://axiomdynamics.app/?module=axiom-01) · [AXIOM-05 →](https://axiomdynamics.app/?module=axiom-05)
 
 Launch the module, load the chapter model, modify inputs, run the optimization,
 and compare against the worked examples in the book.

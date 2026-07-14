@@ -11,7 +11,7 @@ The canonical workflow, for every chapter:
 **Launch AXIOM → Load Chapter Model → Modify Inputs → Run Optimization → Visualize
 Results → Download Report**
 
-[Open the AXIOM WebApp →](https://axiom-webapp.example){.btn-hero}
+[Open the AXIOM WebApp →](https://axiomdynamics.app){.btn-hero}
 
 | Module | Instruments | Chapters |
 |---|---|---|
