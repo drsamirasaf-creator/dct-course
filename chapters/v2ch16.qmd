@@ -77,9 +77,9 @@ advanced track. **Full solutions appear in the Instructor's Manual, Chapter 16.*
 
 | Resource | File | Seed |
 |---|---|---|
-| Lecture deck | `DCT_V2_Ch16_Slides.pptx` *(forthcoming)* | — |
-| Python laboratory | `DCT_V2_Ch16_Lab.ipynb` *(forthcoming)* | `26216` |
-| Excel workbook | `DCT_V2_Ch16_Lab.xlsx` *(forthcoming)* | `26216` |
+| Lecture deck | [`DCT_V2_Ch16_Slides.pptx`](../downloads/DCT_V2_Ch16_Slides.pptx) | — |
+| Python laboratory | [Open the laboratory page →](../labs/v2ch16_laboratory.html) · [`DCT_V2_Ch16_Lab.ipynb`](../downloads/DCT_V2_Ch16_Lab.ipynb) | `26216` |
+| Excel workbook | [`DCT_V2_Ch16_Lab.xlsx`](../downloads/DCT_V2_Ch16_Lab.xlsx) | `26216` |
 
 ::: {.callout-note appearance="simple"}
 All three companions consume the same seeded engine (`26216`), so their numbers
