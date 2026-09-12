@@ -3,69 +3,167 @@
   "subtitle": "Dynamic Corporate Transformation as a dynamic system: state, operators, architectures, and the General Enterprise Optimization Problem.",
   "copyright": "© 2026 Samir Asaf · Dynamic Corporate Transformation · All rights reserved",
   "definition": "DCT is the mathematical discipline that represents the enterprise as a dynamic system: an evolving enterprise state x(t) ∈ X, governed by transformation operators, resourced by a multidimensional capital architecture, measured by a performance architecture, exposed through a risk, resilience and robustness architecture, integrated in a unified architecture, and optimized through the General Enterprise Optimization Problem.",
-
   "layout": {
-    "viewBox": [0, 0, 2780, 1560],
+    "viewBox": [
+      0,
+      0,
+      2780,
+      1200
+    ],
     "colX0": 180,
     "colPitch": 336,
-    "nodeW": 264,
-    "nodeH": 92,
-    "nodeGap": 20,
-    "flowCenterY": 660,
-    "bandLabelY": 214,
-    "spine": { "y": 74, "h": 62, "x0": 180, "w": 2420 },
-    "rail": { "y": 1300, "x0": 196, "pitch": 246, "w": 206, "h": 86 }
+    "nodeW": 280,
+    "nodeH": 108,
+    "nodeGap": 14,
+    "flowCenterY": 596,
+    "bandLabelY": 136,
+    "spine": {
+      "y": 16,
+      "h": 54,
+      "x0": 180,
+      "w": 2420
+    },
+    "rail": {
+      "y": 1024,
+      "x0": 176,
+      "pitch": 248,
+      "w": 236,
+      "h": 104
+    }
   },
-
   "stages": [
-    { "id": "represent", "verb": "Represent", "gloss": "Put the enterprise into state, control, disturbance and operator form." },
-    { "id": "analyze", "verb": "Analyze", "gloss": "Resolve the state into five architectures and study their structure." },
-    { "id": "certify", "verb": "Certify", "gloss": "Establish feasibility, viability, stability and cross-layer consistency." },
-    { "id": "optimize", "verb": "Optimize", "gloss": "Pose and solve the General Enterprise Optimization Problem." },
-    { "id": "execute", "verb": "Execute", "gloss": "Turn optimal policies into intelligent, closed-loop managerial action." },
-    { "id": "monitor", "verb": "Monitor", "gloss": "Synchronize the digital twin and watch the enterprise against its plan." },
-    { "id": "adapt", "verb": "Adapt", "gloss": "Re-solve as the state, environment and constraints move." }
+    {
+      "id": "represent",
+      "verb": "Represent",
+      "gloss": "Put the enterprise into state, control, disturbance and operator form."
+    },
+    {
+      "id": "analyze",
+      "verb": "Analyze",
+      "gloss": "Resolve the state into five architectures and study their structure."
+    },
+    {
+      "id": "certify",
+      "verb": "Certify",
+      "gloss": "Establish feasibility, viability, stability and cross-layer consistency."
+    },
+    {
+      "id": "optimize",
+      "verb": "Optimize",
+      "gloss": "Pose and solve the General Enterprise Optimization Problem."
+    },
+    {
+      "id": "execute",
+      "verb": "Execute",
+      "gloss": "Turn optimal policies into intelligent, closed-loop managerial action."
+    },
+    {
+      "id": "monitor",
+      "verb": "Monitor",
+      "gloss": "Synchronize the digital twin and watch the enterprise against its plan."
+    },
+    {
+      "id": "adapt",
+      "verb": "Adapt",
+      "gloss": "Re-solve as the state, environment and constraints move."
+    }
   ],
-
   "bands": [
-    { "col": 1, "title": "Foundations", "where": "Vol. I · Part 1 · Ch. 1–4" },
-    { "col": 2, "title": "Mathematical representation", "where": "Vol. I · Part 2 · Ch. 5–8" },
-    { "col": 3, "title": "Enterprise architectures", "where": "Vol. I · Part 3 · Ch. 6, 9–12" },
-    { "col": 4, "title": "Integration", "where": "Vol. I · Part 4 · Ch. 13" },
-    { "col": 5, "title": "Analysis of UETA", "where": "Vol. I · Part 4 · Ch. 14" },
-    { "col": 6, "title": "The optimization problem", "where": "Vol. I · Part 4 · Ch. 15–16" },
-    { "col": 7, "title": "Solution methods", "where": "Vol. II · Ch. 1–15" },
-    { "col": 8, "title": "Outputs and applications", "where": "Vol. II · Ch. 16" }
+    {
+      "col": 1,
+      "title": "Foundations",
+      "where": "Vol. I · Part 1 · Ch. 1–4"
+    },
+    {
+      "col": 2,
+      "title": "Mathematical representation",
+      "where": "Vol. I · Part 2 · Ch. 5–8"
+    },
+    {
+      "col": 3,
+      "title": "Enterprise architectures",
+      "where": "Vol. I · Part 3 · Ch. 6, 9–12"
+    },
+    {
+      "col": 4,
+      "title": "Integration",
+      "where": "Vol. I · Part 4 · Ch. 13"
+    },
+    {
+      "col": 5,
+      "title": "Analysis of UETA",
+      "where": "Vol. I · Part 4 · Ch. 14"
+    },
+    {
+      "col": 6,
+      "title": "The optimization problem",
+      "where": "Vol. I · Part 4 · Ch. 15–16"
+    },
+    {
+      "col": 7,
+      "title": "Solution methods",
+      "where": "Vol. II · Ch. 1–15"
+    },
+    {
+      "col": 8,
+      "title": "Outputs and applications",
+      "where": "Vol. II · Ch. 16"
+    }
   ],
-
   "railNote": "Point-set topology (Hausdorff, metric, manifold) enriches the mathematical foundation. DCT's Enterprise Topology is a separate graph-theoretic construct — see the Enterprise State Architecture.",
-
   "nodes": [
     {
-      "id": "f-question", "label": "The transformation question", "col": 1, "order": 1, "stage": "represent",
-      "chapter": "Vol. I, Ch. 1", "href": "chapters/v1ch01.html", "axiom": "AXIOM-01", "depth": "full",
+      "id": "f-question",
+      "label": "The transformation question",
+      "col": 1,
+      "order": 1,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 1",
+      "href": "chapters/v1ch01.html",
+      "axiom": "AXIOM-01",
+      "depth": "full",
       "blurb": "How and why do enterprises transform? DCT takes the question as a mathematical one rather than a narrative one: transformation is a trajectory of an enterprise state under chosen controls, not a story told after the fact.",
       "detail": [
         "Transformation is treated as a controlled trajectory, not an episode.",
         "Every later object in the map answers some part of this question.",
         "Sets the burden of proof the framework must discharge: state, dynamics, control, optimization."
       ],
-      "feeds": ["f-openadaptive", "f-limitations"]
+      "feeds": [
+        "f-openadaptive",
+        "f-limitations"
+      ]
     },
     {
-      "id": "f-openadaptive", "label": "Enterprise as open adaptive system", "col": 1, "order": 2, "stage": "represent",
-      "chapter": "Vol. I, Ch. 2", "href": "chapters/v1ch02.html", "axiom": "AXIOM-02", "depth": "full",
+      "id": "f-openadaptive",
+      "label": "Enterprise as open adaptive system",
+      "col": 1,
+      "order": 2,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 2",
+      "href": "chapters/v1ch02.html",
+      "axiom": "AXIOM-02",
+      "depth": "full",
       "blurb": "The enterprise exchanges resources and information with its environment, learns, and evolves. Openness is what forces an exogenous disturbance term into the model; adaptation is what forces feedback rather than an open-loop plan.",
       "detail": [
         "Open: environment enters the dynamics as w(t), not as an assumption.",
         "Adaptive: policies are functions of state, so control is closed-loop.",
         "Consequence: static snapshots of an open adaptive system cannot be steered."
       ],
-      "feeds": ["f-need", "r-dist"]
+      "feeds": [
+        "f-need",
+        "r-dist"
+      ]
     },
     {
-      "id": "f-limitations", "label": "Limits of existing frameworks", "col": 1, "order": 3, "stage": "represent",
-      "chapter": "Vol. I, Ch. 1", "href": "chapters/v1ch01.html", "axiom": "AXIOM-01", "depth": "full",
+      "id": "f-limitations",
+      "label": "Limits of existing frameworks",
+      "col": 1,
+      "order": 3,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 1",
+      "href": "chapters/v1ch01.html",
+      "axiom": "AXIOM-01",
+      "depth": "full",
       "blurb": "Conventional strategy frameworks are static, fragmented, and unoptimizable. They describe positions rather than motion, and they compress a multidimensional enterprise into a handful of scalars.",
       "detail": [
         "DCT removes: the absent state — no x(t) to move.",
@@ -73,11 +171,20 @@
         "DCT removes: scalar compression — many dimensions collapsed into one score.",
         "DCT removes: the absent optimization formulation — no objective, no constraints, no solution concept."
       ],
-      "feeds": ["f-need"]
+      "feeds": [
+        "f-need"
+      ]
     },
     {
-      "id": "f-need", "label": "Need for state, dynamics, control, optimization", "col": 1, "order": 4, "stage": "represent",
-      "chapter": "Vol. I, Ch. 2", "href": "chapters/v1ch02.html", "axiom": "AXIOM-02", "depth": "full",
+      "id": "f-need",
+      "label": "Need for state, dynamics, control, optimization",
+      "col": 1,
+      "order": 4,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 2",
+      "href": "chapters/v1ch02.html",
+      "axiom": "AXIOM-02",
+      "depth": "full",
       "blurb": "What is required is a representation that is dynamic, controllable and optimizable at once. Drop any one of the four and the framework collapses back into description.",
       "detail": [
         "State: where the enterprise is, in enough dimensions to matter.",
@@ -85,34 +192,63 @@
         "Control: what management may choose, and within what limits.",
         "Optimization: which admissible choice is best, and by what criterion."
       ],
-      "feeds": ["f-language", "r-state"]
+      "feeds": [
+        "f-language",
+        "r-state"
+      ]
     },
     {
-      "id": "f-language", "label": "Mathematical language", "col": 1, "order": 5, "stage": "represent",
-      "chapter": "Vol. I, Ch. 3", "href": "chapters/v1ch03.html", "axiom": "AXIOM-03", "depth": "full",
+      "id": "f-language",
+      "label": "Mathematical language",
+      "col": 1,
+      "order": 5,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 3",
+      "href": "chapters/v1ch03.html",
+      "axiom": "AXIOM-03",
+      "depth": "full",
       "blurb": "Sets, mappings, vectors, matrices, metrics and norms — the minimum vocabulary in which the four requirements can be written down precisely.",
       "detail": [
         "Sets and mappings give feasibility and composition.",
         "Vectors and matrices give multidimensionality and coupling.",
         "Metrics and norms give distance-to-target and magnitude of change."
       ],
-      "feeds": ["f-modeling", "r-state"]
+      "feeds": [
+        "f-modeling",
+        "r-state"
+      ]
     },
     {
-      "id": "f-modeling", "label": "Modeling principles", "col": 1, "order": 6, "stage": "represent",
-      "chapter": "Vol. I, Ch. 4", "href": "chapters/v1ch04.html", "axiom": "AXIOM-04", "depth": "full",
+      "id": "f-modeling",
+      "label": "Modeling principles",
+      "col": 1,
+      "order": 6,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 4",
+      "href": "chapters/v1ch04.html",
+      "axiom": "AXIOM-04",
+      "depth": "full",
       "blurb": "Abstraction, decomposition, aggregation, validation and verification: the discipline that keeps an enterprise model both tractable and answerable to evidence.",
       "detail": [
         "Abstraction and decomposition control dimension.",
         "Aggregation rules must preserve the meaning of what was aggregated.",
         "Validation and verification are what later become certificates and audits."
       ],
-      "feeds": ["r-operator", "a-esa"]
+      "feeds": [
+        "r-operator",
+        "a-esa"
+      ]
     },
-
     {
-      "id": "r-state", "label": "Enterprise state", "col": 2, "order": 1, "stage": "represent",
-      "chapter": "Vol. I, Ch. 5", "href": "chapters/v1ch05.html", "axiom": "AXIOM-05", "depth": "full",
+      "id": "r-state",
+      "label": "Enterprise state",
+      "col": 2,
+      "order": 1,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 5",
+      "href": "chapters/v1ch05.html",
+      "axiom": "AXIOM-05",
+      "depth": "full",
       "mathHtml": "<i>x</i>(<i>t</i>) = (<i>x</i><sub>1</sub>(<i>t</i>), …, <i>x<sub>n</sub></i>(<i>t</i>))<sup>⊤</sup> ∈ <i>X</i>",
       "blurb": "An n-dimensional evolving state vector in a state space X. This is the object that every other part of DCT acts on, measures, constrains or steers.",
       "detail": [
@@ -120,25 +256,60 @@
         "X carries structure — metric, norm, sometimes inner product — inherited from the mathematical stack.",
         "x(0) = x₀ is the initial condition of every transformation programme."
       ],
-      "feeds": ["r-operator", "r-dyn", "a-esa"]
+      "feeds": [
+        "r-operator",
+        "r-dyn",
+        "a-esa"
+      ],
+      "svgMath": [
+        "x(t) = (x_1(t), …, x_n(t))^⊤ ∈ X"
+      ]
     },
     {
-      "id": "r-control", "label": "Management controls", "col": 2, "order": 2, "stage": "represent",
-      "chapter": "Vol. I, Ch. 5", "href": "chapters/v1ch05.html", "axiom": "AXIOM-05", "depth": "outline",
+      "id": "r-control",
+      "label": "Management controls",
+      "col": 2,
+      "order": 2,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 5",
+      "href": "chapters/v1ch05.html",
+      "axiom": "AXIOM-05",
+      "depth": "outline",
       "mathHtml": "<i>u</i>(<i>t</i>) ∈ <i>U</i>",
       "blurb": "Managerial policies and actions, drawn from the admissible control space U. Choosing u(·) well is the entire content of the optimization problem.",
-      "feeds": ["r-operator", "r-dyn"]
+      "feeds": [
+        "r-operator",
+        "r-dyn"
+      ]
     },
     {
-      "id": "r-dist", "label": "Environment and disturbance", "col": 2, "order": 3, "stage": "represent",
-      "chapter": "Vol. I, Ch. 8", "href": "chapters/v1ch08.html", "axiom": "AXIOM-08", "depth": "outline",
+      "id": "r-dist",
+      "label": "Environment and disturbance",
+      "col": 2,
+      "order": 3,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 8",
+      "href": "chapters/v1ch08.html",
+      "axiom": "AXIOM-08",
+      "depth": "outline",
       "mathHtml": "<i>w</i>(<i>t</i>) ∈ <i>W</i>",
       "blurb": "Exogenous shocks and uncertainty. The enterprise does not choose w(·); it must remain viable across the plausible range of it.",
-      "feeds": ["r-operator", "r-stoch", "a-erra"]
+      "feeds": [
+        "r-operator",
+        "r-stoch",
+        "a-erra"
+      ]
     },
     {
-      "id": "r-operator", "label": "Transformation operator", "col": 2, "order": 4, "stage": "represent",
-      "chapter": "Vol. I, Ch. 6", "href": "chapters/v1ch06.html", "axiom": "AXIOM-06", "depth": "full",
+      "id": "r-operator",
+      "label": "Transformation operator",
+      "col": 2,
+      "order": 4,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 6",
+      "href": "chapters/v1ch06.html",
+      "axiom": "AXIOM-06",
+      "depth": "full",
       "mathHtml": "<i>T</i> : <i>X</i> × <i>U</i> × <i>W</i> → <i>X</i>",
       "blurb": "A mapping that carries one enterprise state to another under a chosen action and a realized environment. Its algebra — composition, feasibility, irreversibility — is what makes transformation programmes analyzable.",
       "detail": [
@@ -146,11 +317,21 @@
         "Feasibility: not every operator applies in every state.",
         "Irreversibility: some operators have no inverse, which is why sequencing is a decision."
       ],
-      "feeds": ["r-dyn", "a-eta"]
+      "feeds": [
+        "r-dyn",
+        "a-eta"
+      ]
     },
     {
-      "id": "r-dyn", "label": "Dynamic enterprise systems", "col": 2, "order": 5, "stage": "represent",
-      "chapter": "Vol. I, Ch. 7", "href": "chapters/v1ch07.html", "axiom": "AXIOM-07", "depth": "full",
+      "id": "r-dyn",
+      "label": "Dynamic enterprise systems",
+      "col": 2,
+      "order": 5,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 7",
+      "href": "chapters/v1ch07.html",
+      "axiom": "AXIOM-07",
+      "depth": "full",
       "mathHtml": "<i>x</i><sub><i>t</i>+1</sub> = <i>f</i>(<i>x<sub>t</sub></i>, <i>u<sub>t</sub></i>, <i>w<sub>t</sub></i>; θ) &nbsp;·&nbsp; <i>ẋ</i>(<i>t</i>) = <i>F</i>(<i>x</i>(<i>t</i>), <i>u</i>(<i>t</i>), <i>w</i>(<i>t</i>); θ)",
       "blurb": "The operator written as a law of motion, in discrete or continuous time, parameterized by θ. This is the constraint that every optimization in Volume II is solved subject to.",
       "detail": [
@@ -158,11 +339,25 @@
         "θ is where estimation, calibration and identification enter.",
         "Existence, uniqueness and continuous dependence are prerequisites, not formalities."
       ],
-      "feeds": ["r-stoch", "a-eta", "ueta"]
+      "feeds": [
+        "r-stoch",
+        "a-eta",
+        "ueta"
+      ],
+      "svgMath": [
+        "x_{t+1} = f(x_t, u_t, w_t)"
+      ]
     },
     {
-      "id": "r-stoch", "label": "Stochastic enterprise dynamics", "col": 2, "order": 6, "stage": "represent",
-      "chapter": "Vol. I, Ch. 8", "href": "chapters/v1ch08.html", "axiom": "AXIOM-08", "depth": "full",
+      "id": "r-stoch",
+      "label": "Stochastic enterprise dynamics",
+      "col": 2,
+      "order": 6,
+      "stage": "represent",
+      "chapter": "Vol. I, Ch. 8",
+      "href": "chapters/v1ch08.html",
+      "axiom": "AXIOM-08",
+      "depth": "full",
       "mathHtml": "(Ω, ℱ, ℙ), &nbsp; ℱ<sub><i>t</i></sub>-adapted &nbsp; <i>x</i>(<i>t</i>)",
       "blurb": "The dynamics on a probability space with a filtration: transition kernels, the Markov property, Brownian motion, Poisson and jump processes, and Monte Carlo evaluation.",
       "detail": [
@@ -170,53 +365,128 @@
         "Jumps model discontinuous transformation events; diffusion models drift and noise.",
         "Monte Carlo is the bridge from these objects to the computational laboratory."
       ],
-      "feeds": ["a-erra", "ueta", "m-c"]
+      "feeds": [
+        "a-erra",
+        "ueta",
+        "m-c"
+      ],
+      "svgMath": [
+        "(Ω, ℱ, ℙ),  ℱ_t-adapted"
+      ]
     },
-
     {
-      "id": "a-esa", "label": "A\u209B · Enterprise State Architecture", "col": 3, "order": 1, "stage": "analyze",
-      "chapter": "Vol. I, Ch. 9", "href": "chapters/v1ch09.html", "axiom": "AXIOM-09", "depth": "full",
+      "id": "a-esa",
+      "label": "A_S · Enterprise State Architecture",
+      "col": 3,
+      "order": 1,
+      "stage": "analyze",
+      "chapter": "Vol. I, Ch. 9",
+      "href": "chapters/v1ch09.html",
+      "axiom": "AXIOM-09",
+      "depth": "full",
       "blurb": "The state space given structure: dimensions grouped into a hierarchy, with dependencies and constraints made explicit, and an Enterprise Topology — a graph-theoretic dependency structure over the state, distinct from the point-set topology in the mathematical stack.",
       "detail": [
         "Structured state space rather than a flat vector.",
         "Dependencies, hierarchy and admissibility constraints.",
         "Enterprise Topology: which dimensions can move only if others move first."
       ],
-      "feeds": ["ueta"]
+      "feeds": [
+        "ueta"
+      ]
     },
     {
-      "id": "a-eta", "label": "A\u209C · Enterprise Transformation Architecture", "col": 3, "order": 2, "stage": "analyze",
-      "chapter": "Vol. I, Ch. 6", "href": "chapters/v1ch06.html", "axiom": "AXIOM-06", "depth": "outline",
+      "id": "a-eta",
+      "label": "A_T · Enterprise Transformation Architecture",
+      "col": 3,
+      "order": 2,
+      "stage": "analyze",
+      "chapter": "Vol. I, Ch. 6",
+      "href": "chapters/v1ch06.html",
+      "axiom": "AXIOM-06",
+      "depth": "outline",
       "blurb": "The operator family organized into programmes: sequencing, transformation pathways, reachability of target states, and stability of the resulting motion.",
-      "detail": ["Operator family and admissible compositions.", "Programmes and sequencing.", "Reachability and stability."],
-      "feeds": ["ueta"]
+      "detail": [
+        "Operator family and admissible compositions.",
+        "Programmes and sequencing.",
+        "Reachability and stability."
+      ],
+      "feeds": [
+        "ueta"
+      ]
     },
     {
-      "id": "a-eca", "label": "A_C · Enterprise Capital Architecture", "col": 3, "order": 3, "stage": "analyze",
-      "chapter": "Vol. I, Ch. 10", "href": "chapters/v1ch10.html", "axiom": "AXIOM-10", "depth": "outline",
+      "id": "a-eca",
+      "label": "A_C · Enterprise Capital Architecture",
+      "col": 3,
+      "order": 3,
+      "stage": "analyze",
+      "chapter": "Vol. I, Ch. 10",
+      "href": "chapters/v1ch10.html",
+      "axiom": "AXIOM-10",
+      "depth": "outline",
       "blurb": "What resources transformation consumes: financial, human, technological, innovation, governance, relational and strategic capital — each a dimension, none a scalar.",
-      "detail": ["Seven capital dimensions carried in the state.", "Capital constrains which operators are feasible.", "Allocation across capitals becomes a control."],
-      "feeds": ["ueta"]
+      "detail": [
+        "Seven capital dimensions carried in the state.",
+        "Capital constrains which operators are feasible.",
+        "Allocation across capitals becomes a control."
+      ],
+      "feeds": [
+        "ueta"
+      ]
     },
     {
-      "id": "a-epa", "label": "A_P · Enterprise Performance Architecture", "col": 3, "order": 4, "stage": "analyze",
-      "chapter": "Vol. I, Ch. 11", "href": "chapters/v1ch11.html", "axiom": "AXIOM-11", "depth": "outline",
+      "id": "a-epa",
+      "label": "A_P · Enterprise Performance Architecture",
+      "col": 3,
+      "order": 4,
+      "stage": "analyze",
+      "chapter": "Vol. I, Ch. 11",
+      "href": "chapters/v1ch11.html",
+      "axiom": "AXIOM-11",
+      "depth": "outline",
       "blurb": "How the enterprise is measured: financial, operational, innovation, governance and ESG performance — the layer that supplies the objective functional its terms.",
-      "detail": ["Five performance dimensions.", "Measurement maps state to observable outcomes.", "Feeds the running cost and terminal value in GEOP."],
-      "feeds": ["ueta"]
+      "detail": [
+        "Five performance dimensions.",
+        "Measurement maps state to observable outcomes.",
+        "Feeds the running cost and terminal value in GEOP."
+      ],
+      "feeds": [
+        "ueta"
+      ]
     },
     {
-      "id": "a-erra", "label": "A_R · Risk, Resilience, Robustness", "col": 3, "order": 5, "stage": "analyze",
-      "chapter": "Vol. I, Ch. 12", "href": "chapters/v1ch12.html", "axiom": "AXIOM-12", "depth": "outline",
+      "id": "a-erra",
+      "label": "A_R · Risk, Resilience, Robustness",
+      "col": 3,
+      "order": 5,
+      "stage": "analyze",
+      "chapter": "Vol. I, Ch. 12",
+      "href": "chapters/v1ch12.html",
+      "axiom": "AXIOM-12",
+      "depth": "outline",
       "blurb": "Exposure and endurance: financial, operational, strategic, cyber, governance and environmental risk, together with resilience, robustness, stress and uncertainty treatment.",
-      "detail": ["Six risk dimensions.", "Resilience: recovery after a shock. Robustness: performance across shocks.", "Supplies the constraints and ambiguity sets used in Volume II."],
-      "feeds": ["ueta", "m-c"]
+      "detail": [
+        "Six risk dimensions.",
+        "Resilience: recovery after a shock. Robustness: performance across shocks.",
+        "Supplies the constraints and ambiguity sets used in Volume II."
+      ],
+      "feeds": [
+        "ueta",
+        "m-c"
+      ]
     },
-
     {
-      "id": "ueta", "label": "U_E · Unified Enterprise Transformation Architecture", "col": 4, "order": 1, "stage": "analyze",
-      "w": 288, "h": 236,
-      "chapter": "Vol. I, Ch. 13", "href": "chapters/v1ch13.html", "axiom": "AXIOM-13", "depth": "full",
+      "id": "ueta",
+      "label": "U_E · Unified Enterprise Transformation Architecture",
+      "col": 4,
+      "order": 1,
+      "stage": "analyze",
+      "w": 300,
+      "h": 240,
+      "chapter": "Vol. I, Ch. 13",
+      "href": "chapters/v1ch13.html",
+      "axiom": "AXIOM-13",
+      "depth": "full",
       "blurb": "One enterprise under five descriptions. The coupling register M records how each architecture moves the others, and the unified dynamics replace five separate models with one law of motion that is consistent across layers.",
       "detail": [
         "One enterprise, five descriptions — not five models.",
@@ -224,19 +494,39 @@
         "Unified dynamics and cross-layer consistency.",
         "This is the object Volume I, Part 4 analyzes and Volume II optimizes."
       ],
-      "feeds": ["an-feasible", "an-jacobian", "an-certificates"]
+      "feeds": [
+        "an-feasible",
+        "an-jacobian",
+        "an-certificates"
+      ]
     },
-
     {
-      "id": "an-feasible", "label": "Feasible region", "col": 5, "order": 1, "stage": "certify",
-      "chapter": "Vol. I, Ch. 14", "href": "chapters/v1ch14.html", "axiom": "AXIOM-14", "depth": "outline",
+      "id": "an-feasible",
+      "label": "Feasible region",
+      "col": 5,
+      "order": 1,
+      "stage": "certify",
+      "chapter": "Vol. I, Ch. 14",
+      "href": "chapters/v1ch14.html",
+      "axiom": "AXIOM-14",
+      "depth": "outline",
       "mathHtml": "Ω ⊆ <i>X</i>",
       "blurb": "The set of states the enterprise is permitted to occupy, once architecture constraints, resources and policy limits are all imposed.",
-      "feeds": ["an-viability", "geop"]
+      "feeds": [
+        "an-viability",
+        "geop"
+      ]
     },
     {
-      "id": "an-viability", "label": "Viability kernel", "col": 5, "order": 2, "stage": "certify",
-      "chapter": "Vol. I, Ch. 14", "href": "chapters/v1ch14.html", "axiom": "AXIOM-14", "depth": "full",
+      "id": "an-viability",
+      "label": "Viability kernel",
+      "col": 5,
+      "order": 2,
+      "stage": "certify",
+      "chapter": "Vol. I, Ch. 14",
+      "href": "chapters/v1ch14.html",
+      "axiom": "AXIOM-14",
+      "depth": "full",
       "mathHtml": "Viab(Ω)",
       "blurb": "The subset of the feasible region from which the enterprise can remain feasible forever under some admissible control. Being feasible today is not the same as being sustainable.",
       "detail": [
@@ -244,11 +534,20 @@
         "The kernel is the honest definition of 'sustainable state'.",
         "Optimization is meaningful only over the kernel."
       ],
-      "feeds": ["geop"]
+      "feeds": [
+        "geop"
+      ]
     },
     {
-      "id": "an-jacobian", "label": "Architectural Jacobian and spectral radius", "col": 5, "order": 3, "stage": "certify",
-      "chapter": "Vol. I, Ch. 14", "href": "chapters/v1ch14.html", "axiom": "AXIOM-14", "depth": "full",
+      "id": "an-jacobian",
+      "label": "Architectural Jacobian",
+      "col": 5,
+      "order": 3,
+      "stage": "certify",
+      "chapter": "Vol. I, Ch. 14",
+      "href": "chapters/v1ch14.html",
+      "axiom": "AXIOM-14",
+      "depth": "full",
       "mathHtml": "<i>A</i> = ∂<i>f</i>/∂<i>x</i>, &nbsp; ρ(<i>A</i>)",
       "blurb": "Differentiate the unified dynamics and the coupling register becomes a matrix. Its spectral radius is the stability indicator: whether a disturbance in one architecture damps out or amplifies around the loop.",
       "detail": [
@@ -256,28 +555,79 @@
         "ρ(A) ≥ 1: the architectures amplify each other and the programme is unstable.",
         "This is the single most diagnostic number in Volume I."
       ],
-      "feeds": ["an-neumann", "an-certificates"]
+      "feeds": [
+        "an-neumann",
+        "an-certificates"
+      ],
+      "svgMath": [
+        "A = ∂f/∂x,  ρ(A)"
+      ]
     },
     {
-      "id": "an-neumann", "label": "Neumann multiplier", "col": 5, "order": 4, "stage": "certify",
-      "chapter": "Vol. I, Ch. 14", "href": "chapters/v1ch14.html", "axiom": "AXIOM-14", "depth": "outline",
+      "id": "an-neumann",
+      "label": "Neumann multiplier",
+      "col": 5,
+      "order": 4,
+      "stage": "certify",
+      "chapter": "Vol. I, Ch. 14",
+      "href": "chapters/v1ch14.html",
+      "axiom": "AXIOM-14",
+      "depth": "outline",
       "mathHtml": "<i>S</i> = (<i>I</i> − <i>A</i>)<sup>−1</sup><i>B</i>",
       "blurb": "The long-run impact of an intervention once it has propagated around every coupling. Converges precisely when the spectral radius condition holds.",
-      "detail": ["Total, not first-round, effect of a decision.", "Exists as a convergent Neumann series when ρ(A) < 1.", "Turns coupling into an allocation argument."],
-      "feeds": ["geop"]
+      "detail": [
+        "Total, not first-round, effect of a decision.",
+        "Exists as a convergent Neumann series when ρ(A) < 1.",
+        "Turns coupling into an allocation argument."
+      ],
+      "feeds": [
+        "geop"
+      ],
+      "svgMath": [
+        "S = (I − A)^{−1}B"
+      ]
     },
     {
-      "id": "an-certificates", "label": "Certificates, audits, readiness chain", "col": 5, "order": 5, "stage": "certify",
-      "chapter": "Vol. I, Ch. 14", "href": "chapters/v1ch14.html", "axiom": "AXIOM-14", "depth": "outline",
+      "id": "an-certificates",
+      "label": "Certificates, audits, readiness chain",
+      "col": 5,
+      "order": 5,
+      "stage": "certify",
+      "chapter": "Vol. I, Ch. 14",
+      "href": "chapters/v1ch14.html",
+      "axiom": "AXIOM-14",
+      "depth": "outline",
       "blurb": "Stability and Lyapunov arguments, propagation sensitivity, consistency checks — assembled into an auditable chain that says whether a transformation programme is fit to run.",
-      "detail": ["Lyapunov and stability certificates.", "Propagation sensitivity and cross-layer consistency.", "A readiness chain a board or regulator can inspect."],
-      "feeds": ["geop", "out-case"]
+      "detail": [
+        "Lyapunov and stability certificates.",
+        "Propagation sensitivity and cross-layer consistency.",
+        "A readiness chain a board or regulator can inspect."
+      ],
+      "feeds": [
+        "geop",
+        "out-case"
+      ]
     },
-
     {
-      "id": "geop", "label": "GEOP · General Enterprise Optimization Problem", "col": 6, "order": 1, "stage": "optimize",
-      "w": 300, "h": 300,
-      "chapter": "Vol. I, Ch. 15–16", "href": "chapters/v1ch15.html", "axiom": "AXIOM-15", "depth": "full",
+      "id": "geop",
+      "label": "GEOP · General Enterprise Optimization Problem",
+      "col": 6,
+      "order": 1,
+      "stage": "optimize",
+      "w": 340,
+      "h": 340,
+      "chapter": "Vol. I, Ch. 15–16",
+      "href": "chapters/v1ch15.html",
+      "axiom": "AXIOM-15",
+      "depth": "full",
+      "svgMath": [
+        "max J[u] over u(·)",
+        "J = Φ(x(T)) + ∫_0^T L dt",
+        "ẋ = F(x, u, t; θ)",
+        "x(0) = x_0",
+        "g_i(x, u, t) ≤ 0",
+        "h_j(x, u, t) = 0"
+      ],
       "mathHtml": "max<sub><i>u</i>(·)</sub> <i>J</i>[<i>u</i>] = Φ(<i>x</i>(<i>T</i>)) + ∫<sub>0</sub><sup><i>T</i></sup> <i>L</i>(<i>x</i>(<i>t</i>), <i>u</i>(<i>t</i>), <i>t</i>) d<i>t</i><br>s.t. <i>ẋ</i>(<i>t</i>) = <i>F</i>(<i>x</i>, <i>u</i>, <i>t</i>; θ), &nbsp; <i>x</i>(0) = <i>x</i><sub>0</sub><br><i>g<sub>i</sub></i>(<i>x</i>, <i>u</i>, <i>t</i>) ≤ 0, &nbsp; <i>h<sub>j</sub></i>(<i>x</i>, <i>u</i>, <i>t</i>) = 0",
       "blurb": "The hinge of the whole framework: find optimal transformation policies subject to dynamics, constraints, risk and architectural consistency, so as to create sustainable long-term enterprise value. Volume I poses it; Volume II solves it.",
       "detail": [
@@ -286,126 +636,373 @@
         "Constraints: dynamics, path constraints, terminal conditions, viability.",
         "Solution objects: policies π, value functions V, multipliers λ, costates p."
       ],
-      "feeds": ["m-a", "m-b", "m-c", "m-d", "m-e", "m-f"]
+      "feeds": [
+        "m-a",
+        "m-b",
+        "m-c",
+        "m-d",
+        "m-e",
+        "m-f"
+      ]
     },
-
     {
-      "id": "m-a", "label": "A · Deterministic and static methods", "col": 7, "order": 1, "stage": "optimize",
-      "chapter": "Vol. II, Ch. 3–4", "href": "chapters/v2ch03.html", "axiom": "AXIOM-03", "depth": "outline",
+      "id": "m-a",
+      "label": "A · Deterministic and static methods",
+      "col": 7,
+      "order": 1,
+      "stage": "optimize",
+      "chapter": "Vol. II, Ch. 3–4",
+      "href": "chapters/v2ch03.html",
+      "axiom": "AXIOM-03",
+      "depth": "outline",
       "blurb": "Convex and nonlinear optimization, KKT conditions, duality and sensitivity — the case where time and uncertainty are set aside so structure can be seen.",
-      "feeds": ["out-capital"]
+      "feeds": [
+        "out-capital"
+      ]
     },
     {
-      "id": "m-b", "label": "B · Dynamic methods", "col": 7, "order": 2, "stage": "optimize",
-      "chapter": "Vol. II, Ch. 5–8", "href": "chapters/v2ch05.html", "axiom": "AXIOM-05", "depth": "outline",
+      "id": "m-b",
+      "label": "B · Dynamic methods",
+      "col": 7,
+      "order": 2,
+      "stage": "optimize",
+      "chapter": "Vol. II, Ch. 5–8",
+      "href": "chapters/v2ch05.html",
+      "axiom": "AXIOM-05",
+      "depth": "outline",
       "blurb": "Dynamic optimization and optimal control: the Pontryagin maximum principle, dynamic programming, Bellman equations and the Hamilton–Jacobi–Bellman framework.",
-      "feeds": ["out-roadmap"]
+      "feeds": [
+        "out-roadmap"
+      ]
     },
     {
-      "id": "m-c", "label": "C · Uncertainty methods", "col": 7, "order": 3, "stage": "optimize",
-      "chapter": "Vol. II, Ch. 9–11", "href": "chapters/v2ch09.html", "axiom": "AXIOM-09", "depth": "outline",
+      "id": "m-c",
+      "label": "C · Uncertainty methods",
+      "col": 7,
+      "order": 3,
+      "stage": "optimize",
+      "chapter": "Vol. II, Ch. 9–11",
+      "href": "chapters/v2ch09.html",
+      "axiom": "AXIOM-09",
+      "depth": "outline",
       "blurb": "Stochastic, robust and distributionally robust optimization over Wasserstein ambiguity sets, plus neuro-fuzzy robust methods.",
-      "feeds": ["out-capital"]
+      "feeds": [
+        "out-capital"
+      ]
     },
     {
-      "id": "m-d", "label": "D · Multi-criteria and decomposition", "col": 7, "order": 4, "stage": "optimize",
-      "chapter": "Vol. II, Ch. 12", "href": "chapters/v2ch12.html", "axiom": "AXIOM-12", "depth": "outline",
+      "id": "m-d",
+      "label": "D · Multi-criteria and decomposition",
+      "col": 7,
+      "order": 4,
+      "stage": "optimize",
+      "chapter": "Vol. II, Ch. 12",
+      "href": "chapters/v2ch12.html",
+      "axiom": "AXIOM-12",
+      "depth": "outline",
       "blurb": "Multi-objective optimization, Pareto frontiers, and decomposition and coordination across architectures and business units.",
-      "feeds": ["out-roadmap"]
+      "feeds": [
+        "out-roadmap"
+      ]
     },
     {
-      "id": "m-e", "label": "E · Intelligence layer", "col": 7, "order": 5, "stage": "execute",
-      "chapter": "Vol. II, Ch. 13–14", "href": "chapters/v2ch13.html", "axiom": "AXIOM-13", "depth": "outline",
+      "id": "m-e",
+      "label": "E · Intelligence layer",
+      "col": 7,
+      "order": 5,
+      "stage": "execute",
+      "chapter": "Vol. II, Ch. 13–14",
+      "href": "chapters/v2ch13.html",
+      "axiom": "AXIOM-13",
+      "depth": "outline",
       "blurb": "Machine learning, Markov decision processes, reinforcement learning, explainable AI and hybrid AI–optimization schemes.",
-      "feeds": ["out-twin"]
+      "feeds": [
+        "out-twin"
+      ]
     },
     {
-      "id": "m-f", "label": "F · Digital twin and autonomy", "col": 7, "order": 6, "stage": "execute",
-      "chapter": "Vol. II, Ch. 15", "href": "chapters/v2ch15.html", "axiom": "AXIOM-15", "depth": "outline",
+      "id": "m-f",
+      "label": "F · Digital twin and autonomy",
+      "col": 7,
+      "order": 6,
+      "stage": "execute",
+      "chapter": "Vol. II, Ch. 15",
+      "href": "chapters/v2ch15.html",
+      "axiom": "AXIOM-15",
+      "depth": "outline",
       "blurb": "The enterprise digital twin: synchronization with the live enterprise, scenario simulation, MPC and closed-loop adaptation, and an explicit autonomy envelope.",
-      "feeds": ["out-twin", "out-case"]
+      "feeds": [
+        "out-twin",
+        "out-case"
+      ]
     },
-
     {
-      "id": "out-roadmap", "label": "Roadmaps and policy design", "col": 8, "order": 1, "stage": "adapt",
-      "chapter": "Vol. II, Ch. 16", "href": "chapters/v2ch16.html", "axiom": "AXIOM-16", "depth": "outline",
+      "id": "out-roadmap",
+      "label": "Roadmaps and policy design",
+      "col": 8,
+      "order": 1,
+      "stage": "adapt",
+      "chapter": "Vol. II, Ch. 16",
+      "href": "chapters/v2ch16.html",
+      "axiom": "AXIOM-16",
+      "depth": "outline",
       "blurb": "Transformation roadmaps, sequencing decisions and policy design that follow from a solved GEOP rather than from workshop consensus."
     },
     {
-      "id": "out-capital", "label": "Capital allocation and risk-adjusted strategy", "col": 8, "order": 2, "stage": "adapt",
-      "chapter": "Vol. II, Ch. 16", "href": "chapters/v2ch16.html", "axiom": "AXIOM-16", "depth": "outline",
+      "id": "out-capital",
+      "label": "Capital allocation and risk-adjusted strategy",
+      "col": 8,
+      "order": 2,
+      "stage": "adapt",
+      "chapter": "Vol. II, Ch. 16",
+      "href": "chapters/v2ch16.html",
+      "axiom": "AXIOM-16",
+      "depth": "outline",
       "blurb": "Allocation across the seven capitals, scenario analysis, and strategy stated with its risk adjustment attached."
     },
     {
-      "id": "out-twin", "label": "Digital twin execution and AI/ML laboratory", "col": 8, "order": 3, "stage": "monitor",
-      "chapter": "Vol. II, Ch. 15–16", "href": "axiom.html", "axiom": "AXIOM-15", "depth": "outline",
+      "id": "out-twin",
+      "label": "Digital twin execution and AI/ML laboratory",
+      "col": 8,
+      "order": 3,
+      "stage": "monitor",
+      "chapter": "Vol. II, Ch. 15–16",
+      "href": "axiom.html",
+      "axiom": "AXIOM-15",
+      "depth": "outline",
       "blurb": "Running the twin against the live enterprise, with the AXIOM computational laboratory as the teaching and experimentation surface."
     },
     {
-      "id": "out-case", "label": "Certified decisions and case studies", "col": 8, "order": 4, "stage": "monitor",
-      "chapter": "Vol. II, Ch. 16", "href": "chapters/v2ch16.html", "axiom": "AXIOM-16", "depth": "outline",
+      "id": "out-case",
+      "label": "Certified decisions and case studies",
+      "col": 8,
+      "order": 4,
+      "stage": "monitor",
+      "chapter": "Vol. II, Ch. 16",
+      "href": "chapters/v2ch16.html",
+      "axiom": "AXIOM-16",
+      "depth": "outline",
       "blurb": "Managerial decisions that carry their certificates with them, worked through the Meridiam Industrial Group integrated case."
     },
-
-    { "id": "s-set", "rail": true, "order": 1, "label": "Set theory", "sub": "Sets, relations, mappings", "depth": "outline",
-      "chapter": "Vol. I, Ch. 3", "href": "chapters/v1ch03.html",
+    {
+      "id": "s-set",
+      "rail": true,
+      "order": 1,
+      "label": "Set theory",
+      "sub": "Sets, mappings",
+      "depth": "outline",
+      "chapter": "Vol. I, Ch. 3",
+      "href": "chapters/v1ch03.html",
       "blurb": "Sets, relations and mappings: the vocabulary in which state spaces, admissible controls and operators are defined at all.",
-      "feeds": ["s-topological", "r-state"] },
-    { "id": "s-topological", "rail": true, "order": 2, "label": "Topological spaces", "sub": "Neighbourhoods, continuity, convergence", "depth": "outline",
-      "chapter": "Vol. I, Ch. 3", "href": "chapters/v1ch03.html",
+      "feeds": [
+        "s-topological",
+        "r-state"
+      ]
+    },
+    {
+      "id": "s-topological",
+      "rail": true,
+      "order": 2,
+      "label": "Topological spaces",
+      "sub": "Continuity",
+      "depth": "outline",
+      "chapter": "Vol. I, Ch. 3",
+      "href": "chapters/v1ch03.html",
       "blurb": "Neighbourhoods, continuity and convergence — what it means for a transformation operator to be continuous and for a trajectory to converge.",
-      "feeds": ["s-hausdorff", "s-metric", "r-operator"] },
-    { "id": "s-hausdorff", "rail": true, "order": 3, "label": "Hausdorff spaces", "sub": "Separation, uniqueness of limits", "depth": "outline",
-      "chapter": "Vol. I, Ch. 3", "href": "chapters/v1ch03.html",
+      "feeds": [
+        "s-hausdorff",
+        "s-metric",
+        "r-operator"
+      ]
+    },
+    {
+      "id": "s-hausdorff",
+      "rail": true,
+      "order": 3,
+      "label": "Hausdorff spaces",
+      "sub": "Unique limits",
+      "depth": "outline",
+      "chapter": "Vol. I, Ch. 3",
+      "href": "chapters/v1ch03.html",
       "blurb": "Separation axioms give uniqueness of limits: an enterprise trajectory cannot converge to two different states.",
-      "feeds": ["s-metric"] },
-    { "id": "s-metric", "rail": true, "order": 4, "label": "Metric spaces", "sub": "Distance and metrics", "depth": "outline",
-      "chapter": "Vol. I, Ch. 3", "href": "chapters/v1ch03.html",
+      "feeds": [
+        "s-metric"
+      ]
+    },
+    {
+      "id": "s-metric",
+      "rail": true,
+      "order": 4,
+      "label": "Metric spaces",
+      "sub": "Distance",
+      "depth": "outline",
+      "chapter": "Vol. I, Ch. 3",
+      "href": "chapters/v1ch03.html",
       "blurb": "Distance between enterprise states — how far x(t) is from a target x*, and whether it is getting closer.",
-      "feeds": ["s-normed", "f-language"] },
-    { "id": "s-normed", "rail": true, "order": 5, "label": "Normed spaces", "sub": "Norms and magnitude", "depth": "outline",
-      "chapter": "Vol. I, Ch. 3", "href": "chapters/v1ch03.html",
+      "feeds": [
+        "s-normed",
+        "f-language"
+      ]
+    },
+    {
+      "id": "s-normed",
+      "rail": true,
+      "order": 5,
+      "label": "Normed spaces",
+      "sub": "Magnitude",
+      "depth": "outline",
+      "chapter": "Vol. I, Ch. 3",
+      "href": "chapters/v1ch03.html",
       "blurb": "Norms give magnitude: the size of a state change, a control effort, or a deviation from plan.",
-      "feeds": ["s-banach", "r-state"] },
-    { "id": "s-banach", "rail": true, "order": 6, "label": "Banach and Hilbert spaces", "sub": "Completeness, inner product", "depth": "outline",
-      "chapter": "Vol. I, Ch. 3", "href": "chapters/v1ch03.html",
+      "feeds": [
+        "s-banach",
+        "r-state"
+      ]
+    },
+    {
+      "id": "s-banach",
+      "rail": true,
+      "order": 6,
+      "label": "Banach / Hilbert spaces",
+      "sub": "Completeness",
+      "depth": "outline",
+      "chapter": "Vol. I, Ch. 3",
+      "href": "chapters/v1ch03.html",
       "blurb": "Completeness makes limits of approximating sequences exist; the inner product makes projection, orthogonality and least-squares estimation available.",
-      "feeds": ["s-manifolds", "r-dyn", "an-neumann"] },
-    { "id": "s-manifolds", "rail": true, "order": 7, "label": "Manifolds", "sub": "Local coordinates", "depth": "outline",
-      "chapter": "Vol. I, Ch. 3", "href": "chapters/v1ch03.html",
+      "feeds": [
+        "s-manifolds",
+        "r-dyn",
+        "an-neumann"
+      ]
+    },
+    {
+      "id": "s-manifolds",
+      "rail": true,
+      "order": 7,
+      "label": "Manifolds",
+      "sub": "Coordinates",
+      "depth": "outline",
+      "chapter": "Vol. I, Ch. 3",
+      "href": "chapters/v1ch03.html",
       "blurb": "Local coordinates on a curved state space — useful where constraints make X something other than a flat vector space.",
-      "feeds": ["a-esa"] },
-    { "id": "s-measure", "rail": true, "order": 8, "label": "Measure and probability", "sub": "Uncertainty and filtration", "depth": "outline",
-      "chapter": "Vol. I, Ch. 8", "href": "chapters/v1ch08.html",
+      "feeds": [
+        "a-esa"
+      ]
+    },
+    {
+      "id": "s-measure",
+      "rail": true,
+      "order": 8,
+      "label": "Measure, probability",
+      "sub": "Filtration",
+      "depth": "outline",
+      "chapter": "Vol. I, Ch. 8",
+      "href": "chapters/v1ch08.html",
       "blurb": "Measure-theoretic probability and filtrations: the only precise way to say what the enterprise knows, and when.",
-      "feeds": ["s-processes", "r-dist", "r-stoch"] },
-    { "id": "s-processes", "rail": true, "order": 9, "label": "Stochastic processes", "sub": "Brownian motion, Poisson, Markov", "depth": "outline",
-      "chapter": "Vol. I, Ch. 8", "href": "chapters/v1ch08.html",
+      "feeds": [
+        "s-processes",
+        "r-dist",
+        "r-stoch"
+      ]
+    },
+    {
+      "id": "s-processes",
+      "rail": true,
+      "order": 9,
+      "label": "Stochastic processes",
+      "sub": "Brownian, jumps",
+      "depth": "outline",
+      "chapter": "Vol. I, Ch. 8",
+      "href": "chapters/v1ch08.html",
       "blurb": "Brownian motion, Poisson and jump processes, and Markov chains — the concrete disturbance models the dynamics are driven by.",
-      "feeds": ["r-stoch"] },
-    { "id": "s-optcontrol", "rail": true, "order": 10, "label": "Optimization and control", "sub": "Objectives, multipliers, policies", "depth": "outline",
-      "chapter": "Vol. II, Ch. 1–2", "href": "chapters/v2ch01.html",
+      "feeds": [
+        "r-stoch"
+      ]
+    },
+    {
+      "id": "s-optcontrol",
+      "rail": true,
+      "order": 10,
+      "label": "Optimization, control",
+      "sub": "Multipliers",
+      "depth": "outline",
+      "chapter": "Vol. II, Ch. 1–2",
+      "href": "chapters/v2ch01.html",
       "blurb": "Objectives, constraints, multipliers and policies: the apparatus that turns the unified dynamics into a solvable problem.",
-      "feeds": ["geop", "m-b"] }
+      "feeds": [
+        "geop",
+        "m-b"
+      ]
+    }
   ],
-
   "legend": [
-    { "sym": "x(t)", "def": "enterprise state vector" },
-    { "sym": "X", "def": "state space" },
-    { "sym": "u(t)", "def": "management controls and decisions" },
-    { "sym": "U", "def": "admissible control space" },
-    { "sym": "w(t)", "def": "environment and disturbance" },
-    { "sym": "W", "def": "disturbance space" },
-    { "sym": "T", "def": "transformation operator" },
-    { "sym": "θ", "def": "model parameters" },
-    { "sym": "J[u]", "def": "objective functional" },
-    { "sym": "Ω", "def": "feasible region" },
-    { "sym": "Viab(Ω)", "def": "viability kernel" },
-    { "sym": "A", "def": "architectural Jacobian" },
-    { "sym": "ρ(A)", "def": "spectral radius, stability indicator" },
-    { "sym": "S", "def": "Neumann multiplier, long-run impact" },
-    { "sym": "V", "def": "value function" },
-    { "sym": "λ, p", "def": "multipliers and costates" },
-    { "sym": "A\u209B, A\u209C, A_C, A_P, A_R, U_E", "def": "architecture objects" }
+    {
+      "sym": "x(t)",
+      "def": "enterprise state vector"
+    },
+    {
+      "sym": "X",
+      "def": "state space"
+    },
+    {
+      "sym": "u(t)",
+      "def": "management controls and decisions"
+    },
+    {
+      "sym": "U",
+      "def": "admissible control space"
+    },
+    {
+      "sym": "w(t)",
+      "def": "environment and disturbance"
+    },
+    {
+      "sym": "W",
+      "def": "disturbance space"
+    },
+    {
+      "sym": "T",
+      "def": "transformation operator"
+    },
+    {
+      "sym": "θ",
+      "def": "model parameters"
+    },
+    {
+      "sym": "J[u]",
+      "def": "objective functional"
+    },
+    {
+      "sym": "Ω",
+      "def": "feasible region"
+    },
+    {
+      "sym": "Viab(Ω)",
+      "def": "viability kernel"
+    },
+    {
+      "sym": "A",
+      "def": "architectural Jacobian"
+    },
+    {
+      "sym": "ρ(A)",
+      "def": "spectral radius, stability indicator"
+    },
+    {
+      "sym": "S",
+      "def": "Neumann multiplier, long-run impact"
+    },
+    {
+      "sym": "V",
+      "def": "value function"
+    },
+    {
+      "sym": "λ, p",
+      "def": "multipliers and costates"
+    },
+    {
+      "sym": "A_S, A_T, A_C, A_P, A_R, U_E",
+      "def": "architecture objects"
+    }
   ]
 }

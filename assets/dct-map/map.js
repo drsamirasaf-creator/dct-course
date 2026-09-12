@@ -24,17 +24,48 @@
   }
   function clamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
   function stripTags(s) {
-    return String(s || "").replace(/<br\s*\/?>/gi, "  ·  ").replace(/<[^>]+>/g, "");
+    return String(s || "").replace(/<br\s*\/?>/gi, "  ·  ").replace(/<[^>]+>/g, "")
+      .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">").replace(/\s+/g, " ").trim();
+  }
+  function plain(s) {
+    return String(s || "")
+      .replace(/[_^]\{([^}]*)\}/g, "$1")
+      .replace(/([_^])(\S)/g, "$2");
   }
   function wrap(text, maxChars) {
     var words = String(text).split(/\s+/), lines = [], cur = "";
     for (var i = 0; i < words.length; i++) {
       var probe = cur ? cur + " " + words[i] : words[i];
-      if (probe.length > maxChars && cur) { lines.push(cur); cur = words[i]; }
+      if (plain(probe).length > maxChars && cur) { lines.push(cur); cur = words[i]; }
       else { cur = probe; }
     }
     if (cur) lines.push(cur);
     return lines;
+  }
+  /* Renders _x, _{xyz}, ^x, ^{xyz} as real SVG sub/superscripts. */
+  function notate(target, str, size) {
+    var s = String(str), re = /([_^])(?:\{([^}]*)\}|(\S))/g, last = 0, m;
+    while ((m = re.exec(s)) !== null) {
+      if (m.index > last) target.appendChild(document.createTextNode(s.slice(last, m.index)));
+      var shift = (m[1] === "_" ? 0.26 : -0.38) * size;
+      var t = el("tspan", { "font-size": Math.round(size * 0.68) + "px", dy: shift });
+      t.textContent = m[2] != null ? m[2] : m[3];
+      target.appendChild(t);
+      var back = el("tspan", { dy: -shift });
+      back.textContent = "\u200b";
+      target.appendChild(back);
+      last = re.lastIndex;
+    }
+    if (last < s.length) target.appendChild(document.createTextNode(s.slice(last)));
+    return target;
+  }
+  function notateHTML(str) {
+    function tag(k, v) { return k === "_" ? "<sub>" + v + "</sub>" : "<sup>" + v + "</sup>"; }
+    return String(str || "")
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/([_^])\{([^}]*)\}/g, function (_, k, v) { return tag(k, v); })
+      .replace(/([_^])(\S)/g, function (_, k, v) { return tag(k, v); });
   }
 
   function boot(root) {
@@ -142,7 +173,7 @@
       var g = el("g", { "class": "spine-seg", tabindex: "0", role: "button",
                         "aria-label": "Stage: " + st.verb + ". " + st.gloss });
       g.appendChild(el("rect", { "class": "spine-box", x: x, y: L.spine.y, width: segW, height: L.spine.h }));
-      g.appendChild(el("text", { "class": "spine-verb", x: x + segW / 2, y: L.spine.y + L.spine.h / 2 + 7,
+      g.appendChild(el("text", { "class": "spine-verb", x: x + segW / 2, y: L.spine.y + L.spine.h / 2 + 10,
                                  "text-anchor": "middle" }, st.verb));
       gChrome.appendChild(g);
       if (i < data.stages.length - 1) {
@@ -156,7 +187,7 @@
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleStage(st.id); }
       });
     });
-    var glossText = el("text", { "class": "spine-gloss", x: L.spine.x0, y: L.spine.y + L.spine.h + 34 },
+    var glossText = el("text", { "class": "spine-gloss", x: L.spine.x0, y: L.spine.y + L.spine.h + 26 },
       "Seven moves, left to right: the order in which DCT is taught and the order in which it is used.");
     gChrome.appendChild(glossText);
 
@@ -165,19 +196,22 @@
       var list = (mainCols[b.col] || []);
       if (!list.length) return;
       var half = L.nodeW / 2;
-      gChrome.appendChild(el("text", { "class": "band-title", x: cx - half, y: L.bandLabelY }, b.title));
-      gChrome.appendChild(el("text", { "class": "band-where", x: cx - half, y: L.bandLabelY + 24 }, b.where));
+      wrap(b.title, 17).forEach(function (line, i) {
+        gChrome.appendChild(el("text", { "class": "band-title", x: cx - half,
+          y: L.bandLabelY + i * 32 }, line));
+      });
+      gChrome.appendChild(el("text", { "class": "band-where", x: cx - half, y: L.bandLabelY + 62 }, b.where));
       gChrome.appendChild(el("line", { "class": "band-rule",
-        x1: cx - half, y1: L.bandLabelY + 44, x2: cx + half, y2: L.bandLabelY + 44 }));
+        x1: cx - half, y1: L.bandLabelY + 80, x2: cx + half, y2: L.bandLabelY + 80 }));
     });
 
     var railTop = L.rail.y - 52;
     gChrome.appendChild(el("rect", { "class": "rail-band", x: 120, y: railTop,
-      width: vbW - 240, height: 212, rx: 2 }));
-    gChrome.appendChild(el("text", { "class": "rail-title", x: L.rail.x0, y: railTop + 32 },
+      width: vbW - 240, height: 200, rx: 2 }));
+    gChrome.appendChild(el("text", { "class": "rail-title", x: L.rail.x0, y: railTop + 38 },
       "Mathematical stack — what each object above is built out of"));
-    wrap(data.railNote, 150).forEach(function (line, i) {
-      gChrome.appendChild(el("text", { "class": "rail-note", x: L.rail.x0, y: L.rail.y + L.rail.h + 34 + i * 20 }, line));
+    wrap(data.railNote, 230).forEach(function (line, i) {
+      gChrome.appendChild(el("text", { "class": "rail-note", x: L.rail.x0, y: L.rail.y + L.rail.h + 36 + i * 24 }, line));
     });
 
     /* ---------- edges ---------- */
@@ -219,39 +253,61 @@
       var g = el("g", {
         "class": "node" + (n.rail ? " is-rail" : "") + (hinge ? " is-hinge" : ""),
         tabindex: "0", role: "button",
-        "aria-label": n.label + ". " + (n.chapter ? n.chapter + ". " : "") + (n.blurb || "")
+        "aria-label": plain(n.label) + ". " + (n.chapter ? n.chapter + ". " : "") + (n.blurb || "")
       });
       g.appendChild(el("rect", { "class": "node-box", x: n.cx - n.w / 2, y: n.cy - n.h / 2,
         width: n.w, height: n.h, rx: 2 }));
 
       var inner = n.w - 28;
-      var labelSize = hinge ? 23 : 17;
+      var labelSize = hinge ? 30 : 24;
       var labelLines = wrap(n.label, Math.floor(inner / (labelSize * 0.50)));
       if (!hinge && labelLines.length > 3) labelLines = labelLines.slice(0, 3);
-      var lh = hinge ? 27 : 20;
+      var lh = hinge ? 34 : 28;
 
-      var mathTxt = n.mathHtml ? stripTags(n.mathHtml) : (n.sub || "");
-      var mathLines = mathTxt ? wrap(mathTxt, Math.floor(inner / 7.6)) : [];
-      if (!hinge) mathLines = mathLines.slice(0, 1);
-      else mathLines = mathLines.slice(0, 5);
-
-      var blockH = labelLines.length * lh + (mathLines.length ? mathLines.length * 19 + 8 : 0);
-      var y0 = hinge ? (n.cy - n.h / 2 + 40) : (n.cy - blockH / 2 + lh - 5);
-
-      labelLines.forEach(function (line, i) {
-        g.appendChild(el("text", { "class": "node-label", x: n.cx, y: y0 + i * lh, "text-anchor": "middle" }, line));
-      });
-      var my = y0 + labelLines.length * lh + 12;
-      mathLines.forEach(function (line, i) {
-        g.appendChild(el("text", {
-          "class": n.mathHtml ? "node-math" : "node-sub",
-          x: n.cx, y: my + i * 19, "text-anchor": "middle"
-        }, line));
-      });
-      if (n.chapter) {
-        g.appendChild(el("text", { "class": "node-detail", x: n.cx, y: n.cy + n.h / 2 - 11,
-          "text-anchor": "middle" }, n.chapter + (n.axiom ? "  ·  " + n.axiom : "")));
+      var mathSize = hinge ? 19 : 20;
+      var mathLines;
+      if (n.svgMath) {
+        mathLines = [];
+        [].concat(n.svgMath).forEach(function (line) {
+          mathLines = mathLines.concat(wrap(line, Math.floor(inner / (mathSize * 0.60))));
+        });
+        if (!hinge) mathLines = mathLines.slice(0, 1);
+      } else {
+        var mathTxt = n.mathHtml ? stripTags(n.mathHtml) : (n.sub || "");
+        mathLines = mathTxt ? wrap(mathTxt, Math.floor(inner / (mathSize * 0.60))) : [];
+        mathLines = mathLines.slice(0, hinge ? 7 : 1);
       }
+
+      var mlh = mathSize + 5;
+      var mathCls = (n.mathHtml || n.svgMath) ? "node-math" : "node-sub";
+      var mathNSize = mathCls === "node-math" ? mathSize : 17;
+      var chapTxt = n.chapter ? (n.chapter + (n.axiom ? "  ·  " + n.axiom : "")) : "";
+
+      /* Label, notation and the zoom-revealed chapter line all go into one
+         measured stack, so no two rows can ever be placed on top of one
+         another. Measure, drop from the bottom until it fits, then place. */
+      var rows = [];
+      labelLines.forEach(function (line) {
+        rows.push({ t: line, cls: "node-label", s: labelSize, lh: lh, gap: 0 });
+      });
+      mathLines.forEach(function (line, i) {
+        rows.push({ t: line, cls: mathCls, s: mathNSize, lh: mlh, gap: i === 0 ? 10 : 0 });
+      });
+      if (chapTxt) rows.push({ t: chapTxt, cls: "node-detail", s: 15, lh: 18, gap: 5 });
+
+      function stackH() {
+        return rows.reduce(function (a, r) { return a + r.lh + r.gap; }, 0);
+      }
+      while (stackH() > n.h - 10 && rows.length > 1) rows.pop();
+
+      var y = hinge ? (n.cy - n.h / 2 + 44) : (n.cy - stackH() / 2 + labelSize * 0.78);
+      rows.forEach(function (r) {
+        y += r.gap;
+        g.appendChild(notate(el("text", { "class": r.cls, x: n.cx, y: y,
+          "text-anchor": "middle" }), r.t, r.s));
+        y += r.lh;
+      });
+
 
       gNodes.appendChild(g);
       nodeEls[n.id] = g;
@@ -418,7 +474,8 @@
       drawer.innerHTML = "";
       var head = h("div", "dctmap__drawer-head");
       var titleWrap = h("div");
-      var t = h("h2", "dctmap__drawer-title", n.label);
+      var t = h("h2", "dctmap__drawer-title");
+      t.innerHTML = notateHTML(n.label);
       titleWrap.appendChild(t);
       var stage = (data.stages.filter(function (s) { return s.id === n.stage; })[0] || {}).verb;
       var meta = [n.chapter, n.axiom, stage].filter(Boolean).join("  ·  ");
@@ -475,7 +532,8 @@
       ids.forEach(function (id) {
         var n = byId[id];
         if (!n) return;
-        var b = h("button", "dctmap__chip dctmap__chip--" + kind, n.label);
+        var b = h("button", "dctmap__chip dctmap__chip--" + kind);
+        b.innerHTML = notateHTML(n.label);
         b.addEventListener("click", function () {
           select(id);
           easeTo(fitTo(boxOf([n]), 300), 420);
@@ -602,7 +660,8 @@
     var legend = h("div", "dctmap__legend");
     data.legend.forEach(function (item) {
       var row = h("div");
-      var d = h("dfn", null, item.sym);
+      var d = h("dfn");
+      d.innerHTML = notateHTML(item.sym);
       row.appendChild(d);
       row.appendChild(document.createTextNode(item.def));
       legend.appendChild(row);
@@ -629,7 +688,7 @@
     function listItem(n) {
       var d = document.createElement("details");
       var s = document.createElement("summary");
-      s.textContent = n.label;
+      s.innerHTML = notateHTML(n.label);
       d.appendChild(s);
       var body = h("div", "dctmap__list-body");
       if (n.mathHtml) {
