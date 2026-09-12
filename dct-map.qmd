@@ -1,0 +1,34 @@
+---
+title: "The DCT Map"
+subtitle: "One page: state, operators, architectures, and the problem they exist to pose."
+sidebar: false
+format:
+  html:
+    page-layout: full
+    toc: false
+    css:
+      - styles/custom.css
+      - assets/dct-map/map.css
+    include-after-body:
+      text: |
+        <script src="assets/dct-map/map.js" defer></script>
+---
+
+Dynamic Corporate Transformation represents the enterprise as a dynamic system: an
+evolving state $x(t) \in X$, governed by transformation operators, resourced by a
+capital architecture, measured by a performance architecture, exposed through a risk,
+resilience and robustness architecture, integrated into one unified architecture, and
+steered by the General Enterprise Optimization Problem.
+
+The map below is that sentence, drawn. It runs left to right in dependency order, from
+the founding question to certified managerial action, over a rail of mathematical
+prerequisites. Click any box to see what it depends on and what it feeds; the rest of
+the map dims so the chain stands alone. Press *Play the seven moves* to walk the
+sequence the course itself follows.
+
+```{=html}
+<div id="dct-map" data-dct-map="true" data-src="assets/dct-map/map.json"></div>
+```
+
+*Every box links to the chapter that develops it and to its AXIOM module. Boxes marked
+as outline entries are placeholders whose commentary is still being written.*
