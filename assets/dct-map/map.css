@@ -1,0 +1,441 @@
+/* ---------------------------------------------------------------
+   The DCT Map — screen layout
+   Scoped to .dctmap so nothing here can leak into the rest of the
+   Quarto site. Tokens follow the established DCT design system.
+   --------------------------------------------------------------- */
+
+.dctmap {
+  --ink: #0F1E3D;
+  --parchment: #F7F4ED;
+  --brass: #B4884A;
+  --slate: #5A6B82;
+
+  --surface: var(--parchment);
+  --panel: #FFFFFF;
+  --node-fill: #FFFFFF;
+  --node-stroke: #C9CFDA;
+  --text: var(--ink);
+  --text-dim: var(--slate);
+  --edge: #B9C2D0;
+  --edge-strong: var(--brass);
+  --rail-fill: #EFEADF;
+  --up: #2F6F6B;      /* prerequisites, upstream */
+  --down: var(--brass); /* consequences, downstream */
+  --focus: #1F4FD8;
+
+  --ff-display: Spectral, Georgia, "Times New Roman", serif;
+  --ff-text: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ff-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  color: var(--text);
+  font-family: var(--ff-text);
+  position: relative;
+}
+
+body.quarto-dark .dctmap {
+  --surface: #0B1526;
+  --panel: #101E35;
+  --node-fill: #14243D;
+  --node-stroke: #2C3F5E;
+  --text: #E8ECF4;
+  --text-dim: #9AA9BF;
+  --edge: #33456A;
+  --rail-fill: #0E1B30;
+  --up: #62B7AF;
+}
+
+/* ---------- frame ---------- */
+
+.dctmap__frame {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--node-stroke);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.dctmap__stage {
+  display: block;
+  width: 100%;
+  height: min(76vh, 780px);
+  touch-action: none;
+  cursor: grab;
+}
+.dctmap__stage.is-dragging { cursor: grabbing; }
+
+/* ---------- controls ---------- */
+
+.dctmap__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--node-stroke);
+  background: var(--panel);
+}
+
+.dctmap__bar-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dctmap__bar-group + .dctmap__bar-group {
+  padding-left: 10px;
+  border-left: 1px solid var(--node-stroke);
+}
+
+.dctmap__btn {
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+  padding: 7px 11px;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--node-stroke);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.dctmap__btn:hover { border-color: var(--brass); }
+.dctmap__btn[aria-pressed="true"],
+.dctmap__btn.is-on {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--parchment);
+}
+body.quarto-dark .dctmap__btn[aria-pressed="true"],
+body.quarto-dark .dctmap__btn.is-on {
+  background: var(--brass);
+  border-color: var(--brass);
+  color: #10203A;
+}
+.dctmap__btn--play {
+  font-family: var(--ff-display);
+  font-size: 14px;
+  padding: 7px 14px;
+}
+.dctmap__hint {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.dctmap :focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ---------- svg scene ---------- */
+
+.dctmap text { font-family: var(--ff-text); }
+
+.dctmap .band-title {
+  font-family: var(--ff-display);
+  font-size: 21px;
+  fill: var(--text);
+}
+.dctmap .band-where {
+  font-size: 13px;
+  fill: var(--text-dim);
+  letter-spacing: .01em;
+}
+.dctmap .band-rule { stroke: var(--node-stroke); stroke-width: 1; }
+
+.dctmap .spine-seg { cursor: pointer; }
+.dctmap .spine-box {
+  fill: var(--panel);
+  stroke: var(--node-stroke);
+  stroke-width: 1;
+}
+.dctmap .spine-verb {
+  font-family: var(--ff-display);
+  font-size: 19px;
+  fill: var(--text);
+  pointer-events: none;
+}
+.dctmap .spine-seg:hover .spine-box { stroke: var(--brass); }
+.dctmap .spine-seg.is-active .spine-box { fill: var(--brass); stroke: var(--brass); }
+.dctmap .spine-seg.is-active .spine-verb { fill: #12203A; }
+.dctmap .spine-arrow { fill: var(--text-dim); }
+.dctmap .spine-gloss {
+  font-size: 14px;
+  fill: var(--text-dim);
+}
+
+.dctmap .edge {
+  fill: none;
+  stroke: var(--edge);
+  stroke-width: 1.4;
+  transition: stroke .18s, stroke-width .18s, opacity .18s;
+}
+.dctmap .edge.is-rail { stroke-dasharray: 3 4; }
+.dctmap .edge.is-up { stroke: var(--up); stroke-width: 2.4; }
+.dctmap .edge.is-down { stroke: var(--down); stroke-width: 2.4; }
+.dctmap .edge.is-mute { opacity: .12; }
+
+.dctmap .node { cursor: pointer; }
+.dctmap .node-box {
+  fill: var(--node-fill);
+  stroke: var(--node-stroke);
+  stroke-width: 1.2;
+  transition: stroke .18s, stroke-width .18s;
+}
+.dctmap .node.is-rail .node-box { fill: var(--rail-fill); }
+.dctmap .node.is-hinge .node-box { stroke: var(--brass); stroke-width: 2.4; }
+.dctmap .node:hover .node-box { stroke: var(--brass); stroke-width: 2; }
+.dctmap .node.is-selected .node-box { stroke: var(--ink); stroke-width: 3; }
+body.quarto-dark .dctmap .node.is-selected .node-box { stroke: var(--parchment); }
+.dctmap .node.is-up .node-box { stroke: var(--up); stroke-width: 2.4; }
+.dctmap .node.is-down .node-box { stroke: var(--down); stroke-width: 2.4; }
+
+.dctmap .node-label {
+  font-size: 17px;
+  font-weight: 500;
+  fill: var(--text);
+  pointer-events: none;
+}
+.dctmap .node.is-hinge .node-label {
+  font-family: var(--ff-display);
+  font-size: 23px;
+}
+.dctmap .node-math {
+  font-family: var(--ff-mono);
+  font-size: 14px;
+  fill: var(--brass);
+  pointer-events: none;
+}
+.dctmap .node-sub {
+  font-size: 13px;
+  fill: var(--text-dim);
+  pointer-events: none;
+}
+.dctmap .node-detail {
+  font-size: 13px;
+  fill: var(--text-dim);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.dctmap.is-zoomed .node-detail { opacity: 1; }
+.dctmap .node-chapter {
+  font-family: var(--ff-mono);
+  font-size: 11px;
+  fill: var(--text-dim);
+  pointer-events: none;
+}
+
+.dctmap .node.is-mute { opacity: .16; }
+.dctmap .node { transition: opacity .18s; }
+
+.dctmap .rail-band {
+  fill: var(--rail-fill);
+  stroke: var(--node-stroke);
+  stroke-width: 1;
+}
+body.quarto-dark .dctmap .rail-band { fill: #0C1729; }
+.dctmap .rail-title {
+  font-family: var(--ff-display);
+  font-size: 19px;
+  fill: var(--text);
+}
+.dctmap .rail-note {
+  font-size: 13px;
+  fill: var(--text-dim);
+}
+
+/* ---------- tooltip ---------- */
+
+.dctmap__tip {
+  position: absolute;
+  z-index: 5;
+  max-width: 320px;
+  padding: 9px 11px;
+  background: var(--ink);
+  color: var(--parchment);
+  font-size: 13px;
+  line-height: 1.45;
+  border-radius: 2px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity .14s, transform .14s;
+}
+.dctmap__tip.is-on { opacity: 1; transform: translateY(0); }
+.dctmap__tip strong {
+  display: block;
+  font-family: var(--ff-display);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+/* ---------- drawer ---------- */
+
+.dctmap__drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(420px, 92%);
+  height: 100%;
+  background: var(--panel);
+  border-left: 1px solid var(--node-stroke);
+  box-shadow: -14px 0 28px rgba(15, 30, 61, .10);
+  transform: translateX(101%);
+  transition: transform .26s cubic-bezier(.22, .61, .36, 1);
+  display: flex;
+  flex-direction: column;
+  z-index: 6;
+}
+.dctmap__drawer.is-open { transform: translateX(0); }
+
+.dctmap__drawer-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px 20px 12px;
+  border-bottom: 1px solid var(--node-stroke);
+}
+.dctmap__drawer-title {
+  font-family: var(--ff-display);
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0;
+}
+.dctmap__drawer-close {
+  margin-left: auto;
+  flex: none;
+  font: inherit;
+  font-size: 20px;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.dctmap__drawer-close:hover { color: var(--text); border-color: var(--node-stroke); }
+
+.dctmap__drawer-body {
+  padding: 16px 20px 24px;
+  overflow-y: auto;
+  font-size: 15px;
+  line-height: 1.62;
+}
+.dctmap__drawer-body p { margin: 0 0 14px; max-width: 62ch; }
+.dctmap__drawer-body ul { margin: 0 0 16px; padding-left: 18px; }
+.dctmap__drawer-body li { margin-bottom: 6px; }
+.dctmap__drawer-body h3 {
+  font-family: var(--ff-text);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin: 22px 0 8px;
+}
+
+.dctmap__meta {
+  font-family: var(--ff-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+.dctmap__math {
+  font-family: var(--ff-mono);
+  font-size: 15px;
+  line-height: 1.9;
+  padding: 12px 14px;
+  margin: 0 0 16px;
+  background: var(--surface);
+  border-left: 2px solid var(--brass);
+  overflow-x: auto;
+}
+.dctmap__links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.dctmap__links a {
+  font-size: 13px;
+  padding: 7px 11px;
+  border: 1px solid var(--node-stroke);
+  border-radius: 2px;
+  text-decoration: none;
+  color: var(--text);
+}
+.dctmap__links a:hover { border-color: var(--brass); }
+
+.dctmap__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.dctmap__chip {
+  font: inherit;
+  font-size: 13px;
+  padding: 5px 9px;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--node-stroke);
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: left;
+}
+.dctmap__chip:hover { border-color: var(--brass); }
+.dctmap__chip--up { border-left: 3px solid var(--up); }
+.dctmap__chip--down { border-left: 3px solid var(--down); }
+
+/* ---------- legend under the map ---------- */
+
+.dctmap__legend {
+  margin-top: 22px;
+  columns: 260px 4;
+  column-gap: 28px;
+  font-size: 14px;
+}
+.dctmap__legend div {
+  break-inside: avoid;
+  padding: 3px 0;
+  border-bottom: 1px solid var(--node-stroke);
+}
+.dctmap__legend dfn {
+  font-family: var(--ff-mono);
+  font-style: normal;
+  color: var(--brass);
+  margin-right: 8px;
+}
+
+/* ---------- mobile: list view instead of canvas ---------- */
+
+.dctmap__list { display: none; }
+
+@media (max-width: 760px) {
+  .dctmap__frame, .dctmap__bar { display: none; }
+  .dctmap__list { display: block; }
+}
+
+.dctmap__list details {
+  border-bottom: 1px solid var(--node-stroke);
+  padding: 2px 0;
+}
+.dctmap__list summary {
+  padding: 11px 2px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+.dctmap__list summary::marker { color: var(--brass); }
+.dctmap__list .dctmap__list-band {
+  font-family: var(--ff-display);
+  font-size: 19px;
+  margin: 26px 0 2px;
+}
+.dctmap__list .dctmap__list-where {
+  font-family: var(--ff-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.dctmap__list .dctmap__list-body {
+  padding: 0 2px 14px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dctmap *, .dctmap__drawer { transition-duration: .001ms !important; }
+}
