@@ -1,0 +1,25 @@
+---
+title: "Lectures"
+subtitle: "Two lectures · one per volume · the whole course in four hours"
+---
+
+The course is delivered in two lectures, one per volume. Volume I poses the
+General Enterprise Optimization Problem; Volume II solves it. Each lecture is
+chapter-aligned — every slide carries its theorem numbers, so you can move
+between the lecture, the chapter pages, and the text without losing your place.
+
+## Lecture 1 — Volume I · Foundations and Mathematical Framework
+
+{{< video https://www.youtube.com/embed/Ucch8cXkId4 title="DCT Lecture 1 — Volume I: Foundations and Mathematical Framework" >}}
+
+Builds the enterprise as a dynamic system: states, transformation operators,
+deterministic and stochastic dynamics, and the four enterprise architectures —
+culminating in the General Enterprise Optimization Problem.
+
+## Lecture 2 — Volume II · Enterprise Optimization
+
+{{< video https://www.youtube.com/embed/wf3J4T9S11Q title="DCT Lecture 2 — Volume II: Enterprise Optimization" >}}
+
+Works down the ladder of concessions — convexity, nonlinear conditions,
+Pontryagin, dynamic programming, Hamilton–Jacobi–Bellman, and distributionally
+robust optimisation — asking of each rung what it buys and what it charges.

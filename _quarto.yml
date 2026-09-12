@@ -8,6 +8,7 @@ project:
     - "!downloads/"
   resources:
     - "downloads/"
+    - "assets/dct-map/"
 
 website:
   title: "Dynamic Corporate Transformation"
@@ -22,6 +23,10 @@ website:
         text: Syllabus
       - href: schedule.qmd
         text: Schedule
+      - href: lectures.qmd
+        text: Lectures
+      - href: dct-map.qmd
+        text: The Map
       - href: axiom.qmd
         text: AXIOM Lab
       - href: labs.qmd
