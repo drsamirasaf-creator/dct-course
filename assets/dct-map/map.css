@@ -439,3 +439,28 @@ body.quarto-dark .dctmap .rail-band { fill: #0C1729; }
 @media (prefers-reduced-motion: reduce) {
   .dctmap *, .dctmap__drawer { transition-duration: .001ms !important; }
 }
+
+
+/* ---------- screen sizing overrides ---------- */
+
+.dctmap__stage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2780 / 1200;
+  max-height: 88vh;
+}
+
+.dctmap .node-label { font-size: 24px; }
+.dctmap .node.is-hinge .node-label { font-size: 30px; }
+.dctmap .node-math { font-size: 20px; }
+.dctmap .node.is-hinge .node-math { font-size: 21px; }
+.dctmap .node-sub { font-size: 18px; }
+.dctmap .node-chapter, .dctmap .node-detail { font-size: 16px; }
+.dctmap .band-title { font-size: 30px; }
+.dctmap .band-where { font-size: 19px; }
+.dctmap .spine-verb { font-size: 28px; }
+.dctmap .spine-gloss { font-size: 20px; }
+.dctmap .rail-title { font-size: 27px; }
+.dctmap .rail-note { font-size: 19px; }
+.dctmap__tip { max-width: 380px; font-size: 14px; }
+.dctmap__tip strong { font-size: 16px; }
