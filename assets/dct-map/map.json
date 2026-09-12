@@ -1,1008 +1,1742 @@
 {
-  "title": "The DCT Map",
-  "subtitle": "Dynamic Corporate Transformation as a dynamic system: state, operators, architectures, and the General Enterprise Optimization Problem.",
-  "copyright": "© 2026 Samir Asaf · Dynamic Corporate Transformation · All rights reserved",
-  "definition": "DCT is the mathematical discipline that represents the enterprise as a dynamic system: an evolving enterprise state x(t) ∈ X, governed by transformation operators, resourced by a multidimensional capital architecture, measured by a performance architecture, exposed through a risk, resilience and robustness architecture, integrated in a unified architecture, and optimized through the General Enterprise Optimization Problem.",
-  "layout": {
-    "viewBox": [
-      0,
-      0,
-      2780,
-      1200
-    ],
-    "colX0": 180,
-    "colPitch": 336,
-    "nodeW": 280,
-    "nodeH": 108,
-    "nodeGap": 14,
-    "flowCenterY": 596,
-    "bandLabelY": 136,
-    "spine": {
-      "y": 16,
-      "h": 54,
-      "x0": 180,
-      "w": 2420
-    },
-    "rail": {
-      "y": 1024,
-      "x0": 176,
-      "pitch": 248,
-      "w": 236,
-      "h": 104
-    }
+ "title": "The DCT Map",
+ "subtitle": "Dynamic Corporate Transformation as a dynamic system: state, operators, architectures, and the General Enterprise Optimization Problem.",
+ "copyright": "© 2026 Samir Asaf · Dynamic Corporate Transformation · All rights reserved",
+ "definition": "DCT is the mathematical discipline that represents the enterprise as a dynamic system: an evolving enterprise state x(t) ∈ X, governed by transformation operators, resourced by a multidimensional capital architecture, measured by a performance architecture, exposed through a risk, resilience and robustness architecture, integrated in a unified architecture, and optimized through the General Enterprise Optimization Problem.",
+ "layout": {
+  "viewBox": [
+   0,
+   0,
+   2454,
+   1360
+  ],
+  "colX0": 156,
+  "colPitch": 288,
+  "nodeW": 252,
+  "nodeH": 120,
+  "nodeGap": 14,
+  "flowCenterY": 677,
+  "bandLabelY": 166,
+  "bandLine": 40,
+  "bandWhere": 76,
+  "bandRule": 94,
+  "spine": {
+   "y": 18,
+   "h": 62,
+   "x0": 156,
+   "w": 2142
   },
-  "stages": [
-    {
-      "id": "represent",
-      "verb": "Represent",
-      "gloss": "Put the enterprise into state, control, disturbance and operator form."
-    },
-    {
-      "id": "analyze",
-      "verb": "Analyze",
-      "gloss": "Resolve the state into five architectures and study their structure."
-    },
-    {
-      "id": "certify",
-      "verb": "Certify",
-      "gloss": "Establish feasibility, viability, stability and cross-layer consistency."
-    },
-    {
-      "id": "optimize",
-      "verb": "Optimize",
-      "gloss": "Pose and solve the General Enterprise Optimization Problem."
-    },
-    {
-      "id": "execute",
-      "verb": "Execute",
-      "gloss": "Turn optimal policies into intelligent, closed-loop managerial action."
-    },
-    {
-      "id": "monitor",
-      "verb": "Monitor",
-      "gloss": "Synchronize the digital twin and watch the enterprise against its plan."
-    },
-    {
-      "id": "adapt",
-      "verb": "Adapt",
-      "gloss": "Re-solve as the state, environment and constraints move."
-    }
-  ],
-  "bands": [
-    {
-      "col": 1,
-      "title": "Foundations",
-      "where": "Vol. I · Part 1 · Ch. 1–4"
-    },
-    {
-      "col": 2,
-      "title": "Mathematical representation",
-      "where": "Vol. I · Part 2 · Ch. 5–8"
-    },
-    {
-      "col": 3,
-      "title": "Enterprise architectures",
-      "where": "Vol. I · Part 3 · Ch. 6, 9–12"
-    },
-    {
-      "col": 4,
-      "title": "Integration",
-      "where": "Vol. I · Part 4 · Ch. 13"
-    },
-    {
-      "col": 5,
-      "title": "Analysis of UETA",
-      "where": "Vol. I · Part 4 · Ch. 14"
-    },
-    {
-      "col": 6,
-      "title": "The optimization problem",
-      "where": "Vol. I · Part 4 · Ch. 15–16"
-    },
-    {
-      "col": 7,
-      "title": "Solution methods",
-      "where": "Vol. II · Ch. 1–15"
-    },
-    {
-      "col": 8,
-      "title": "Outputs and applications",
-      "where": "Vol. II · Ch. 16"
-    }
-  ],
-  "railNote": "Point-set topology (Hausdorff, metric, manifold) enriches the mathematical foundation. DCT's Enterprise Topology is a separate graph-theoretic construct — see the Enterprise State Architecture.",
-  "nodes": [
-    {
-      "id": "f-question",
-      "label": "The transformation question",
-      "col": 1,
-      "order": 1,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 1",
-      "href": "chapters/v1ch01.html",
-      "axiom": "AXIOM-01",
-      "depth": "full",
-      "blurb": "How and why do enterprises transform? DCT takes the question as a mathematical one rather than a narrative one: transformation is a trajectory of an enterprise state under chosen controls, not a story told after the fact.",
-      "detail": [
-        "Transformation is treated as a controlled trajectory, not an episode.",
-        "Every later object in the map answers some part of this question.",
-        "Sets the burden of proof the framework must discharge: state, dynamics, control, optimization."
-      ],
-      "feeds": [
-        "f-openadaptive",
-        "f-limitations"
-      ]
-    },
-    {
-      "id": "f-openadaptive",
-      "label": "Enterprise as open adaptive system",
-      "col": 1,
-      "order": 2,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 2",
-      "href": "chapters/v1ch02.html",
-      "axiom": "AXIOM-02",
-      "depth": "full",
-      "blurb": "The enterprise exchanges resources and information with its environment, learns, and evolves. Openness is what forces an exogenous disturbance term into the model; adaptation is what forces feedback rather than an open-loop plan.",
-      "detail": [
-        "Open: environment enters the dynamics as w(t), not as an assumption.",
-        "Adaptive: policies are functions of state, so control is closed-loop.",
-        "Consequence: static snapshots of an open adaptive system cannot be steered."
-      ],
-      "feeds": [
-        "f-need",
-        "r-dist"
-      ]
-    },
-    {
-      "id": "f-limitations",
-      "label": "Limits of existing frameworks",
-      "col": 1,
-      "order": 3,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 1",
-      "href": "chapters/v1ch01.html",
-      "axiom": "AXIOM-01",
-      "depth": "full",
-      "blurb": "Conventional strategy frameworks are static, fragmented, and unoptimizable. They describe positions rather than motion, and they compress a multidimensional enterprise into a handful of scalars.",
-      "detail": [
-        "DCT removes: the absent state — no x(t) to move.",
-        "DCT removes: the absent dynamics — no law of motion.",
-        "DCT removes: scalar compression — many dimensions collapsed into one score.",
-        "DCT removes: the absent optimization formulation — no objective, no constraints, no solution concept."
-      ],
-      "feeds": [
-        "f-need"
-      ]
-    },
-    {
-      "id": "f-need",
-      "label": "Need for state, dynamics, control, optimization",
-      "col": 1,
-      "order": 4,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 2",
-      "href": "chapters/v1ch02.html",
-      "axiom": "AXIOM-02",
-      "depth": "full",
-      "blurb": "What is required is a representation that is dynamic, controllable and optimizable at once. Drop any one of the four and the framework collapses back into description.",
-      "detail": [
-        "State: where the enterprise is, in enough dimensions to matter.",
-        "Dynamics: how it moves when acted upon.",
-        "Control: what management may choose, and within what limits.",
-        "Optimization: which admissible choice is best, and by what criterion."
-      ],
-      "feeds": [
-        "f-language",
-        "r-state"
-      ]
-    },
-    {
-      "id": "f-language",
-      "label": "Mathematical language",
-      "col": 1,
-      "order": 5,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 3",
-      "href": "chapters/v1ch03.html",
-      "axiom": "AXIOM-03",
-      "depth": "full",
-      "blurb": "Sets, mappings, vectors, matrices, metrics and norms — the minimum vocabulary in which the four requirements can be written down precisely.",
-      "detail": [
-        "Sets and mappings give feasibility and composition.",
-        "Vectors and matrices give multidimensionality and coupling.",
-        "Metrics and norms give distance-to-target and magnitude of change."
-      ],
-      "feeds": [
-        "f-modeling",
-        "r-state"
-      ]
-    },
-    {
-      "id": "f-modeling",
-      "label": "Modeling principles",
-      "col": 1,
-      "order": 6,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 4",
-      "href": "chapters/v1ch04.html",
-      "axiom": "AXIOM-04",
-      "depth": "full",
-      "blurb": "Abstraction, decomposition, aggregation, validation and verification: the discipline that keeps an enterprise model both tractable and answerable to evidence.",
-      "detail": [
-        "Abstraction and decomposition control dimension.",
-        "Aggregation rules must preserve the meaning of what was aggregated.",
-        "Validation and verification are what later become certificates and audits."
-      ],
-      "feeds": [
-        "r-operator",
-        "a-esa"
-      ]
-    },
-    {
-      "id": "r-state",
-      "label": "Enterprise state",
-      "col": 2,
-      "order": 1,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 5",
-      "href": "chapters/v1ch05.html",
-      "axiom": "AXIOM-05",
-      "depth": "full",
-      "mathHtml": "<i>x</i>(<i>t</i>) = (<i>x</i><sub>1</sub>(<i>t</i>), …, <i>x<sub>n</sub></i>(<i>t</i>))<sup>⊤</sup> ∈ <i>X</i>",
-      "blurb": "An n-dimensional evolving state vector in a state space X. This is the object that every other part of DCT acts on, measures, constrains or steers.",
-      "detail": [
-        "n is chosen by decomposition, not convenience.",
-        "X carries structure — metric, norm, sometimes inner product — inherited from the mathematical stack.",
-        "x(0) = x₀ is the initial condition of every transformation programme."
-      ],
-      "feeds": [
-        "r-operator",
-        "r-dyn",
-        "a-esa"
-      ],
-      "svgMath": [
-        "x(t) = (x_1(t), …, x_n(t))^⊤ ∈ X"
-      ]
-    },
-    {
-      "id": "r-control",
-      "label": "Management controls",
-      "col": 2,
-      "order": 2,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 5",
-      "href": "chapters/v1ch05.html",
-      "axiom": "AXIOM-05",
-      "depth": "outline",
-      "mathHtml": "<i>u</i>(<i>t</i>) ∈ <i>U</i>",
-      "blurb": "Managerial policies and actions, drawn from the admissible control space U. Choosing u(·) well is the entire content of the optimization problem.",
-      "feeds": [
-        "r-operator",
-        "r-dyn"
-      ]
-    },
-    {
-      "id": "r-dist",
-      "label": "Environment and disturbance",
-      "col": 2,
-      "order": 3,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 8",
-      "href": "chapters/v1ch08.html",
-      "axiom": "AXIOM-08",
-      "depth": "outline",
-      "mathHtml": "<i>w</i>(<i>t</i>) ∈ <i>W</i>",
-      "blurb": "Exogenous shocks and uncertainty. The enterprise does not choose w(·); it must remain viable across the plausible range of it.",
-      "feeds": [
-        "r-operator",
-        "r-stoch",
-        "a-erra"
-      ]
-    },
-    {
-      "id": "r-operator",
-      "label": "Transformation operator",
-      "col": 2,
-      "order": 4,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 6",
-      "href": "chapters/v1ch06.html",
-      "axiom": "AXIOM-06",
-      "depth": "full",
-      "mathHtml": "<i>T</i> : <i>X</i> × <i>U</i> × <i>W</i> → <i>X</i>",
-      "blurb": "A mapping that carries one enterprise state to another under a chosen action and a realized environment. Its algebra — composition, feasibility, irreversibility — is what makes transformation programmes analyzable.",
-      "detail": [
-        "Composition: programmes are products of operators, and order matters.",
-        "Feasibility: not every operator applies in every state.",
-        "Irreversibility: some operators have no inverse, which is why sequencing is a decision."
-      ],
-      "feeds": [
-        "r-dyn",
-        "a-eta"
-      ]
-    },
-    {
-      "id": "r-dyn",
-      "label": "Dynamic enterprise systems",
-      "col": 2,
-      "order": 5,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 7",
-      "href": "chapters/v1ch07.html",
-      "axiom": "AXIOM-07",
-      "depth": "full",
-      "mathHtml": "<i>x</i><sub><i>t</i>+1</sub> = <i>f</i>(<i>x<sub>t</sub></i>, <i>u<sub>t</sub></i>, <i>w<sub>t</sub></i>; θ) &nbsp;·&nbsp; <i>ẋ</i>(<i>t</i>) = <i>F</i>(<i>x</i>(<i>t</i>), <i>u</i>(<i>t</i>), <i>w</i>(<i>t</i>); θ)",
-      "blurb": "The operator written as a law of motion, in discrete or continuous time, parameterized by θ. This is the constraint that every optimization in Volume II is solved subject to.",
-      "detail": [
-        "Discrete time for decision cycles; continuous time for analysis and control.",
-        "θ is where estimation, calibration and identification enter.",
-        "Existence, uniqueness and continuous dependence are prerequisites, not formalities."
-      ],
-      "feeds": [
-        "r-stoch",
-        "a-eta",
-        "ueta"
-      ],
-      "svgMath": [
-        "x_{t+1} = f(x_t, u_t, w_t)"
-      ]
-    },
-    {
-      "id": "r-stoch",
-      "label": "Stochastic enterprise dynamics",
-      "col": 2,
-      "order": 6,
-      "stage": "represent",
-      "chapter": "Vol. I, Ch. 8",
-      "href": "chapters/v1ch08.html",
-      "axiom": "AXIOM-08",
-      "depth": "full",
-      "mathHtml": "(Ω, ℱ, ℙ), &nbsp; ℱ<sub><i>t</i></sub>-adapted &nbsp; <i>x</i>(<i>t</i>)",
-      "blurb": "The dynamics on a probability space with a filtration: transition kernels, the Markov property, Brownian motion, Poisson and jump processes, and Monte Carlo evaluation.",
-      "detail": [
-        "The filtration is what makes 'information available at time t' precise.",
-        "Jumps model discontinuous transformation events; diffusion models drift and noise.",
-        "Monte Carlo is the bridge from these objects to the computational laboratory."
-      ],
-      "feeds": [
-        "a-erra",
-        "ueta",
-        "m-c"
-      ],
-      "svgMath": [
-        "(Ω, ℱ, ℙ),  ℱ_t-adapted"
-      ]
-    },
-    {
-      "id": "a-esa",
-      "label": "A_S · Enterprise State Architecture",
-      "col": 3,
-      "order": 1,
-      "stage": "analyze",
-      "chapter": "Vol. I, Ch. 9",
-      "href": "chapters/v1ch09.html",
-      "axiom": "AXIOM-09",
-      "depth": "full",
-      "blurb": "The state space given structure: dimensions grouped into a hierarchy, with dependencies and constraints made explicit, and an Enterprise Topology — a graph-theoretic dependency structure over the state, distinct from the point-set topology in the mathematical stack.",
-      "detail": [
-        "Structured state space rather than a flat vector.",
-        "Dependencies, hierarchy and admissibility constraints.",
-        "Enterprise Topology: which dimensions can move only if others move first."
-      ],
-      "feeds": [
-        "ueta"
-      ]
-    },
-    {
-      "id": "a-eta",
-      "label": "A_T · Enterprise Transformation Architecture",
-      "col": 3,
-      "order": 2,
-      "stage": "analyze",
-      "chapter": "Vol. I, Ch. 6",
-      "href": "chapters/v1ch06.html",
-      "axiom": "AXIOM-06",
-      "depth": "outline",
-      "blurb": "The operator family organized into programmes: sequencing, transformation pathways, reachability of target states, and stability of the resulting motion.",
-      "detail": [
-        "Operator family and admissible compositions.",
-        "Programmes and sequencing.",
-        "Reachability and stability."
-      ],
-      "feeds": [
-        "ueta"
-      ]
-    },
-    {
-      "id": "a-eca",
-      "label": "A_C · Enterprise Capital Architecture",
-      "col": 3,
-      "order": 3,
-      "stage": "analyze",
-      "chapter": "Vol. I, Ch. 10",
-      "href": "chapters/v1ch10.html",
-      "axiom": "AXIOM-10",
-      "depth": "outline",
-      "blurb": "What resources transformation consumes: financial, human, technological, innovation, governance, relational and strategic capital — each a dimension, none a scalar.",
-      "detail": [
-        "Seven capital dimensions carried in the state.",
-        "Capital constrains which operators are feasible.",
-        "Allocation across capitals becomes a control."
-      ],
-      "feeds": [
-        "ueta"
-      ]
-    },
-    {
-      "id": "a-epa",
-      "label": "A_P · Enterprise Performance Architecture",
-      "col": 3,
-      "order": 4,
-      "stage": "analyze",
-      "chapter": "Vol. I, Ch. 11",
-      "href": "chapters/v1ch11.html",
-      "axiom": "AXIOM-11",
-      "depth": "outline",
-      "blurb": "How the enterprise is measured: financial, operational, innovation, governance and ESG performance — the layer that supplies the objective functional its terms.",
-      "detail": [
-        "Five performance dimensions.",
-        "Measurement maps state to observable outcomes.",
-        "Feeds the running cost and terminal value in GEOP."
-      ],
-      "feeds": [
-        "ueta"
-      ]
-    },
-    {
-      "id": "a-erra",
-      "label": "A_R · Risk, Resilience, Robustness",
-      "col": 3,
-      "order": 5,
-      "stage": "analyze",
-      "chapter": "Vol. I, Ch. 12",
-      "href": "chapters/v1ch12.html",
-      "axiom": "AXIOM-12",
-      "depth": "outline",
-      "blurb": "Exposure and endurance: financial, operational, strategic, cyber, governance and environmental risk, together with resilience, robustness, stress and uncertainty treatment.",
-      "detail": [
-        "Six risk dimensions.",
-        "Resilience: recovery after a shock. Robustness: performance across shocks.",
-        "Supplies the constraints and ambiguity sets used in Volume II."
-      ],
-      "feeds": [
-        "ueta",
-        "m-c"
-      ]
-    },
-    {
-      "id": "ueta",
-      "label": "U_E · Unified Enterprise Transformation Architecture",
-      "col": 4,
-      "order": 1,
-      "stage": "analyze",
-      "w": 300,
-      "h": 240,
-      "chapter": "Vol. I, Ch. 13",
-      "href": "chapters/v1ch13.html",
-      "axiom": "AXIOM-13",
-      "depth": "full",
-      "blurb": "One enterprise under five descriptions. The coupling register M records how each architecture moves the others, and the unified dynamics replace five separate models with one law of motion that is consistent across layers.",
-      "detail": [
-        "One enterprise, five descriptions — not five models.",
-        "Coupling register M: who moves whom, and by how much.",
-        "Unified dynamics and cross-layer consistency.",
-        "This is the object Volume I, Part 4 analyzes and Volume II optimizes."
-      ],
-      "feeds": [
-        "an-feasible",
-        "an-jacobian",
-        "an-certificates"
-      ]
-    },
-    {
-      "id": "an-feasible",
-      "label": "Feasible region",
-      "col": 5,
-      "order": 1,
-      "stage": "certify",
-      "chapter": "Vol. I, Ch. 14",
-      "href": "chapters/v1ch14.html",
-      "axiom": "AXIOM-14",
-      "depth": "outline",
-      "mathHtml": "Ω ⊆ <i>X</i>",
-      "blurb": "The set of states the enterprise is permitted to occupy, once architecture constraints, resources and policy limits are all imposed.",
-      "feeds": [
-        "an-viability",
-        "geop"
-      ]
-    },
-    {
-      "id": "an-viability",
-      "label": "Viability kernel",
-      "col": 5,
-      "order": 2,
-      "stage": "certify",
-      "chapter": "Vol. I, Ch. 14",
-      "href": "chapters/v1ch14.html",
-      "axiom": "AXIOM-14",
-      "depth": "full",
-      "mathHtml": "Viab(Ω)",
-      "blurb": "The subset of the feasible region from which the enterprise can remain feasible forever under some admissible control. Being feasible today is not the same as being sustainable.",
-      "detail": [
-        "Outside Viab(Ω), every admissible policy eventually violates a constraint.",
-        "The kernel is the honest definition of 'sustainable state'.",
-        "Optimization is meaningful only over the kernel."
-      ],
-      "feeds": [
-        "geop"
-      ]
-    },
-    {
-      "id": "an-jacobian",
-      "label": "Architectural Jacobian",
-      "col": 5,
-      "order": 3,
-      "stage": "certify",
-      "chapter": "Vol. I, Ch. 14",
-      "href": "chapters/v1ch14.html",
-      "axiom": "AXIOM-14",
-      "depth": "full",
-      "mathHtml": "<i>A</i> = ∂<i>f</i>/∂<i>x</i>, &nbsp; ρ(<i>A</i>)",
-      "blurb": "Differentiate the unified dynamics and the coupling register becomes a matrix. Its spectral radius is the stability indicator: whether a disturbance in one architecture damps out or amplifies around the loop.",
-      "detail": [
-        "ρ(A) < 1 in discrete time: cross-layer feedback damps.",
-        "ρ(A) ≥ 1: the architectures amplify each other and the programme is unstable.",
-        "This is the single most diagnostic number in Volume I."
-      ],
-      "feeds": [
-        "an-neumann",
-        "an-certificates"
-      ],
-      "svgMath": [
-        "A = ∂f/∂x,  ρ(A)"
-      ]
-    },
-    {
-      "id": "an-neumann",
-      "label": "Neumann multiplier",
-      "col": 5,
-      "order": 4,
-      "stage": "certify",
-      "chapter": "Vol. I, Ch. 14",
-      "href": "chapters/v1ch14.html",
-      "axiom": "AXIOM-14",
-      "depth": "outline",
-      "mathHtml": "<i>S</i> = (<i>I</i> − <i>A</i>)<sup>−1</sup><i>B</i>",
-      "blurb": "The long-run impact of an intervention once it has propagated around every coupling. Converges precisely when the spectral radius condition holds.",
-      "detail": [
-        "Total, not first-round, effect of a decision.",
-        "Exists as a convergent Neumann series when ρ(A) < 1.",
-        "Turns coupling into an allocation argument."
-      ],
-      "feeds": [
-        "geop"
-      ],
-      "svgMath": [
-        "S = (I − A)^{−1}B"
-      ]
-    },
-    {
-      "id": "an-certificates",
-      "label": "Certificates, audits, readiness chain",
-      "col": 5,
-      "order": 5,
-      "stage": "certify",
-      "chapter": "Vol. I, Ch. 14",
-      "href": "chapters/v1ch14.html",
-      "axiom": "AXIOM-14",
-      "depth": "outline",
-      "blurb": "Stability and Lyapunov arguments, propagation sensitivity, consistency checks — assembled into an auditable chain that says whether a transformation programme is fit to run.",
-      "detail": [
-        "Lyapunov and stability certificates.",
-        "Propagation sensitivity and cross-layer consistency.",
-        "A readiness chain a board or regulator can inspect."
-      ],
-      "feeds": [
-        "geop",
-        "out-case"
-      ]
-    },
-    {
-      "id": "geop",
-      "label": "GEOP · General Enterprise Optimization Problem",
-      "col": 6,
-      "order": 1,
-      "stage": "optimize",
-      "w": 340,
-      "h": 340,
-      "chapter": "Vol. I, Ch. 15–16",
-      "href": "chapters/v1ch15.html",
-      "axiom": "AXIOM-15",
-      "depth": "full",
-      "svgMath": [
-        "max J[u] over u(·)",
-        "J = Φ(x(T)) + ∫_0^T L dt",
-        "ẋ = F(x, u, t; θ)",
-        "x(0) = x_0",
-        "g_i(x, u, t) ≤ 0",
-        "h_j(x, u, t) = 0"
-      ],
-      "mathHtml": "max<sub><i>u</i>(·)</sub> <i>J</i>[<i>u</i>] = Φ(<i>x</i>(<i>T</i>)) + ∫<sub>0</sub><sup><i>T</i></sup> <i>L</i>(<i>x</i>(<i>t</i>), <i>u</i>(<i>t</i>), <i>t</i>) d<i>t</i><br>s.t. <i>ẋ</i>(<i>t</i>) = <i>F</i>(<i>x</i>, <i>u</i>, <i>t</i>; θ), &nbsp; <i>x</i>(0) = <i>x</i><sub>0</sub><br><i>g<sub>i</sub></i>(<i>x</i>, <i>u</i>, <i>t</i>) ≤ 0, &nbsp; <i>h<sub>j</sub></i>(<i>x</i>, <i>u</i>, <i>t</i>) = 0",
-      "blurb": "The hinge of the whole framework: find optimal transformation policies subject to dynamics, constraints, risk and architectural consistency, so as to create sustainable long-term enterprise value. Volume I poses it; Volume II solves it.",
-      "detail": [
-        "Decision object: the trajectory u(·), not a single choice.",
-        "Objective functional J: terminal value Φ plus running value L.",
-        "Constraints: dynamics, path constraints, terminal conditions, viability.",
-        "Solution objects: policies π, value functions V, multipliers λ, costates p."
-      ],
-      "feeds": [
-        "m-a",
-        "m-b",
-        "m-c",
-        "m-d",
-        "m-e",
-        "m-f"
-      ]
-    },
-    {
-      "id": "m-a",
-      "label": "A · Deterministic and static methods",
-      "col": 7,
-      "order": 1,
-      "stage": "optimize",
-      "chapter": "Vol. II, Ch. 3–4",
-      "href": "chapters/v2ch03.html",
-      "axiom": "AXIOM-03",
-      "depth": "outline",
-      "blurb": "Convex and nonlinear optimization, KKT conditions, duality and sensitivity — the case where time and uncertainty are set aside so structure can be seen.",
-      "feeds": [
-        "out-capital"
-      ]
-    },
-    {
-      "id": "m-b",
-      "label": "B · Dynamic methods",
-      "col": 7,
-      "order": 2,
-      "stage": "optimize",
-      "chapter": "Vol. II, Ch. 5–8",
-      "href": "chapters/v2ch05.html",
-      "axiom": "AXIOM-05",
-      "depth": "outline",
-      "blurb": "Dynamic optimization and optimal control: the Pontryagin maximum principle, dynamic programming, Bellman equations and the Hamilton–Jacobi–Bellman framework.",
-      "feeds": [
-        "out-roadmap"
-      ]
-    },
-    {
-      "id": "m-c",
-      "label": "C · Uncertainty methods",
-      "col": 7,
-      "order": 3,
-      "stage": "optimize",
-      "chapter": "Vol. II, Ch. 9–11",
-      "href": "chapters/v2ch09.html",
-      "axiom": "AXIOM-09",
-      "depth": "outline",
-      "blurb": "Stochastic, robust and distributionally robust optimization over Wasserstein ambiguity sets, plus neuro-fuzzy robust methods.",
-      "feeds": [
-        "out-capital"
-      ]
-    },
-    {
-      "id": "m-d",
-      "label": "D · Multi-criteria and decomposition",
-      "col": 7,
-      "order": 4,
-      "stage": "optimize",
-      "chapter": "Vol. II, Ch. 12",
-      "href": "chapters/v2ch12.html",
-      "axiom": "AXIOM-12",
-      "depth": "outline",
-      "blurb": "Multi-objective optimization, Pareto frontiers, and decomposition and coordination across architectures and business units.",
-      "feeds": [
-        "out-roadmap"
-      ]
-    },
-    {
-      "id": "m-e",
-      "label": "E · Intelligence layer",
-      "col": 7,
-      "order": 5,
-      "stage": "execute",
-      "chapter": "Vol. II, Ch. 13–14",
-      "href": "chapters/v2ch13.html",
-      "axiom": "AXIOM-13",
-      "depth": "outline",
-      "blurb": "Machine learning, Markov decision processes, reinforcement learning, explainable AI and hybrid AI–optimization schemes.",
-      "feeds": [
-        "out-twin"
-      ]
-    },
-    {
-      "id": "m-f",
-      "label": "F · Digital twin and autonomy",
-      "col": 7,
-      "order": 6,
-      "stage": "execute",
-      "chapter": "Vol. II, Ch. 15",
-      "href": "chapters/v2ch15.html",
-      "axiom": "AXIOM-15",
-      "depth": "outline",
-      "blurb": "The enterprise digital twin: synchronization with the live enterprise, scenario simulation, MPC and closed-loop adaptation, and an explicit autonomy envelope.",
-      "feeds": [
-        "out-twin",
-        "out-case"
-      ]
-    },
-    {
-      "id": "out-roadmap",
-      "label": "Roadmaps and policy design",
-      "col": 8,
-      "order": 1,
-      "stage": "adapt",
-      "chapter": "Vol. II, Ch. 16",
-      "href": "chapters/v2ch16.html",
-      "axiom": "AXIOM-16",
-      "depth": "outline",
-      "blurb": "Transformation roadmaps, sequencing decisions and policy design that follow from a solved GEOP rather than from workshop consensus."
-    },
-    {
-      "id": "out-capital",
-      "label": "Capital allocation and risk-adjusted strategy",
-      "col": 8,
-      "order": 2,
-      "stage": "adapt",
-      "chapter": "Vol. II, Ch. 16",
-      "href": "chapters/v2ch16.html",
-      "axiom": "AXIOM-16",
-      "depth": "outline",
-      "blurb": "Allocation across the seven capitals, scenario analysis, and strategy stated with its risk adjustment attached."
-    },
-    {
-      "id": "out-twin",
-      "label": "Digital twin execution and AI/ML laboratory",
-      "col": 8,
-      "order": 3,
-      "stage": "monitor",
-      "chapter": "Vol. II, Ch. 15–16",
-      "href": "axiom.html",
-      "axiom": "AXIOM-15",
-      "depth": "outline",
-      "blurb": "Running the twin against the live enterprise, with the AXIOM computational laboratory as the teaching and experimentation surface."
-    },
-    {
-      "id": "out-case",
-      "label": "Certified decisions and case studies",
-      "col": 8,
-      "order": 4,
-      "stage": "monitor",
-      "chapter": "Vol. II, Ch. 16",
-      "href": "chapters/v2ch16.html",
-      "axiom": "AXIOM-16",
-      "depth": "outline",
-      "blurb": "Managerial decisions that carry their certificates with them, worked through the Meridiam Industrial Group integrated case."
-    },
-    {
-      "id": "s-set",
-      "rail": true,
-      "order": 1,
-      "label": "Set theory",
-      "sub": "Sets, mappings",
-      "depth": "outline",
-      "chapter": "Vol. I, Ch. 3",
-      "href": "chapters/v1ch03.html",
-      "blurb": "Sets, relations and mappings: the vocabulary in which state spaces, admissible controls and operators are defined at all.",
-      "feeds": [
-        "s-topological",
-        "r-state"
-      ]
-    },
-    {
-      "id": "s-topological",
-      "rail": true,
-      "order": 2,
-      "label": "Topological spaces",
-      "sub": "Continuity",
-      "depth": "outline",
-      "chapter": "Vol. I, Ch. 3",
-      "href": "chapters/v1ch03.html",
-      "blurb": "Neighbourhoods, continuity and convergence — what it means for a transformation operator to be continuous and for a trajectory to converge.",
-      "feeds": [
-        "s-hausdorff",
-        "s-metric",
-        "r-operator"
-      ]
-    },
-    {
-      "id": "s-hausdorff",
-      "rail": true,
-      "order": 3,
-      "label": "Hausdorff spaces",
-      "sub": "Unique limits",
-      "depth": "outline",
-      "chapter": "Vol. I, Ch. 3",
-      "href": "chapters/v1ch03.html",
-      "blurb": "Separation axioms give uniqueness of limits: an enterprise trajectory cannot converge to two different states.",
-      "feeds": [
-        "s-metric"
-      ]
-    },
-    {
-      "id": "s-metric",
-      "rail": true,
-      "order": 4,
-      "label": "Metric spaces",
-      "sub": "Distance",
-      "depth": "outline",
-      "chapter": "Vol. I, Ch. 3",
-      "href": "chapters/v1ch03.html",
-      "blurb": "Distance between enterprise states — how far x(t) is from a target x*, and whether it is getting closer.",
-      "feeds": [
-        "s-normed",
-        "f-language"
-      ]
-    },
-    {
-      "id": "s-normed",
-      "rail": true,
-      "order": 5,
-      "label": "Normed spaces",
-      "sub": "Magnitude",
-      "depth": "outline",
-      "chapter": "Vol. I, Ch. 3",
-      "href": "chapters/v1ch03.html",
-      "blurb": "Norms give magnitude: the size of a state change, a control effort, or a deviation from plan.",
-      "feeds": [
-        "s-banach",
-        "r-state"
-      ]
-    },
-    {
-      "id": "s-banach",
-      "rail": true,
-      "order": 6,
-      "label": "Banach / Hilbert spaces",
-      "sub": "Completeness",
-      "depth": "outline",
-      "chapter": "Vol. I, Ch. 3",
-      "href": "chapters/v1ch03.html",
-      "blurb": "Completeness makes limits of approximating sequences exist; the inner product makes projection, orthogonality and least-squares estimation available.",
-      "feeds": [
-        "s-manifolds",
-        "r-dyn",
-        "an-neumann"
-      ]
-    },
-    {
-      "id": "s-manifolds",
-      "rail": true,
-      "order": 7,
-      "label": "Manifolds",
-      "sub": "Coordinates",
-      "depth": "outline",
-      "chapter": "Vol. I, Ch. 3",
-      "href": "chapters/v1ch03.html",
-      "blurb": "Local coordinates on a curved state space — useful where constraints make X something other than a flat vector space.",
-      "feeds": [
-        "a-esa"
-      ]
-    },
-    {
-      "id": "s-measure",
-      "rail": true,
-      "order": 8,
-      "label": "Measure, probability",
-      "sub": "Filtration",
-      "depth": "outline",
-      "chapter": "Vol. I, Ch. 8",
-      "href": "chapters/v1ch08.html",
-      "blurb": "Measure-theoretic probability and filtrations: the only precise way to say what the enterprise knows, and when.",
-      "feeds": [
-        "s-processes",
-        "r-dist",
-        "r-stoch"
-      ]
-    },
-    {
-      "id": "s-processes",
-      "rail": true,
-      "order": 9,
-      "label": "Stochastic processes",
-      "sub": "Brownian, jumps",
-      "depth": "outline",
-      "chapter": "Vol. I, Ch. 8",
-      "href": "chapters/v1ch08.html",
-      "blurb": "Brownian motion, Poisson and jump processes, and Markov chains — the concrete disturbance models the dynamics are driven by.",
-      "feeds": [
-        "r-stoch"
-      ]
-    },
-    {
-      "id": "s-optcontrol",
-      "rail": true,
-      "order": 10,
-      "label": "Optimization, control",
-      "sub": "Multipliers",
-      "depth": "outline",
-      "chapter": "Vol. II, Ch. 1–2",
-      "href": "chapters/v2ch01.html",
-      "blurb": "Objectives, constraints, multipliers and policies: the apparatus that turns the unified dynamics into a solvable problem.",
-      "feeds": [
-        "geop",
-        "m-b"
-      ]
-    }
-  ],
-  "legend": [
-    {
-      "sym": "x(t)",
-      "def": "enterprise state vector"
-    },
-    {
-      "sym": "X",
-      "def": "state space"
-    },
-    {
-      "sym": "u(t)",
-      "def": "management controls and decisions"
-    },
-    {
-      "sym": "U",
-      "def": "admissible control space"
-    },
-    {
-      "sym": "w(t)",
-      "def": "environment and disturbance"
-    },
-    {
-      "sym": "W",
-      "def": "disturbance space"
-    },
-    {
-      "sym": "T",
-      "def": "transformation operator"
-    },
-    {
-      "sym": "θ",
-      "def": "model parameters"
-    },
-    {
-      "sym": "J[u]",
-      "def": "objective functional"
-    },
-    {
-      "sym": "Ω",
-      "def": "feasible region"
-    },
-    {
-      "sym": "Viab(Ω)",
-      "def": "viability kernel"
-    },
-    {
-      "sym": "A",
-      "def": "architectural Jacobian"
-    },
-    {
-      "sym": "ρ(A)",
-      "def": "spectral radius, stability indicator"
-    },
-    {
-      "sym": "S",
-      "def": "Neumann multiplier, long-run impact"
-    },
-    {
-      "sym": "V",
-      "def": "value function"
-    },
-    {
-      "sym": "λ, p",
-      "def": "multipliers and costates"
-    },
-    {
-      "sym": "A_S, A_T, A_C, A_P, A_R, U_E",
-      "def": "architecture objects"
-    }
-  ]
+  "glossY": 114,
+  "rail": {
+   "y": 1160,
+   "x0": 30,
+   "pitch": 230,
+   "w": 198,
+   "h": 108,
+   "top": 1096,
+   "band": 250,
+   "bandX": 15,
+   "bandW": 2298
+  },
+  "type": {
+   "label": [
+    28,
+    26,
+    24,
+    22
+   ],
+   "labelLh": 1.18,
+   "hinge": [
+    34,
+    31,
+    28,
+    26
+   ],
+   "hingeLh": 1.2,
+   "math": 23,
+   "hingeMath": 22,
+   "mathLh": 1.2,
+   "sub": 22,
+   "chapter": 18,
+   "chapterLh": 1.2,
+   "band": [
+    32,
+    30,
+    28,
+    26
+   ],
+   "railLabel": [
+    25,
+    23,
+    21
+   ],
+   "railSub": 20
+  }
+ },
+ "stages": [
+  {
+   "id": "represent",
+   "verb": "Represent",
+   "gloss": "Put the enterprise into state, control, disturbance and operator form.",
+   "question": "What is the enterprise, mathematically?",
+   "blurb": "Put the enterprise into state, control, disturbance and operator form. Nothing may be optimized, certified or steered until this move is complete, because every later object is defined on the objects fixed here.",
+   "formalHtml": "⟨ <i>X</i>, 𝒰<sub>ad</sub>, <i>W</i>, <i>T</i>, <i>F</i> ⟩ &nbsp;·&nbsp; <i>x</i>(0) = <i>x</i><sub>0</sub><br>well-posedness: existence · uniqueness · continuous dependence",
+   "theory": [
+    "The move ends when four objects exist and their regularity has been checked: a state space with sufficiency, an admissible policy class closed under the operations the problem needs, a disturbance specification that is a set or a law rather than a forecast, and a law of motion satisfying Carathéodory-type conditions. Failure is common and is usually a failure of sufficiency — a dashboard of indicators presented as a state."
+   ],
+   "detail": [
+    "Fix <em>X</em> and test sufficiency: does the future depend on history only through <em>x</em>(<em>t</em>)?",
+    "Fix 𝒰<sub>ad</sub> honestly, including irreversibility, lumpiness and state-dependent availability.",
+    "Specify <em>w</em> as a set or a law — never as a point forecast.",
+    "Check well-posedness before proceeding; an ill-posed representation makes everything downstream vacuous."
+   ],
+   "handsOn": "A well-posed controlled system, ready to be resolved into architectures."
+  },
+  {
+   "id": "analyze",
+   "verb": "Analyze",
+   "gloss": "Resolve the state into five architectures and study their structure.",
+   "question": "What is it made of, and how do the parts move each other?",
+   "blurb": "Resolve the state into five architectures — state, transformation, capital, performance, risk — and study their internal structure and their cross-couplings. Analysis here is structural, not statistical: what depends on what, what can move before what, and what is priced by what.",
+   "formalHtml": "<i>x</i> = (<i>x</i><sub><i>S</i></sub>, <i>x</i><sub><i>T</i></sub>, <i>x</i><sub><i>C</i></sub>, <i>x</i><sub><i>P</i></sub>, <i>x</i><sub><i>R</i></sub>) &nbsp;·&nbsp; 𝒢 precedence &nbsp;·&nbsp; <i>M</i> coupling",
+   "theory": [
+    "Each architecture contributes a different kind of object to the eventual programme: state architecture contributes the precedence graph and the admissible set, transformation architecture the operator algebra and reachability, capital architecture the resource constraints, performance architecture the objective terms, risk architecture the constraints and ambiguity sets. The five are then unified rather than solved separately — the point of the move is to expose the off-diagonal coupling that siloed analysis hides."
+   ],
+   "detail": [
+    "Five architectures, one state — the decomposition is of description, not of the enterprise.",
+    "Structure first: precedence, admissibility, operator algebra, then measurement and exposure.",
+    "The off-diagonal blocks of <em>M</em> are the whole reason integration is worth its cost.",
+    "Output of this move is UETA: one law of motion consistent across all five layers."
+   ],
+   "handsOn": "The unified architecture U_E, with its coupling register made explicit."
+  },
+  {
+   "id": "certify",
+   "verb": "Certify",
+   "gloss": "Establish feasibility, viability, stability and cross-layer consistency.",
+   "question": "Is this programme fit to run — and how would we know if it were not?",
+   "blurb": "Establish feasibility, viability, stability and cross-layer consistency, and record each as a witness that a third party can verify without re-running the model. Certification precedes optimization, because optimizing over the wrong set produces plans that are optimal and doomed.",
+   "formalHtml": "<i>x</i><sub>0</sub> ∈ Viab(Ω) &nbsp;·&nbsp; ρ(<i>A</i>) &lt; 1 &nbsp;·&nbsp; ∃<i>V</i>: <i>V̇</i> ≤ −<i>W</i> &lt; 0 &nbsp;·&nbsp; ∂<i>J</i>*/∂θ bounded",
+   "theory": [
+    "The chain is ordered so that a failure localizes to one assumption. Kernel membership first: outside Viab(Ω) no admissible policy avoids eventual breach, so no optimization is meaningful. Spectral condition second: if the coupling loop amplifies, every multiplier and every total-effect argument is invalid. Lyapunov certificate third, for the specific trajectory chosen. Sensitivity last, because it states which unpinnable estimate the recommendation is resting on."
+   ],
+   "detail": [
+    "Certificates are witnesses: expensive to find, cheap to check, verifiable by a sceptic.",
+    "Order matters — kernel, then spectrum, then Lyapunov, then sensitivity to θ and to <em>M</em>.",
+    "Non-normal coupling needs transient bounds as well as asymptotic ones.",
+    "The output is an auditable chain, not a score."
+   ],
+   "handsOn": "A certified admissible set over which optimization is meaningful."
+  },
+  {
+   "id": "optimize",
+   "verb": "Optimize",
+   "gloss": "Pose and solve the General Enterprise Optimization Problem.",
+   "question": "Which admissible policy is best, and in what precise sense?",
+   "blurb": "Pose and solve the General Enterprise Optimization Problem: maximize the value functional over admissible policies subject to the unified dynamics, path and terminal constraints, and risk limits. Volume I poses it; Volume II supplies six families of solution methods.",
+   "formalHtml": "max<sub><i>u</i>(·)∈𝒰<sub>ad</sub></sub> &nbsp;<i>J</i>[<i>u</i>] = Φ(<i>x</i>(<i>T</i>)) + ∫<sub>0</sub><sup><i>T</i></sup> <i>L</i> d<i>t</i><br>s.t. &nbsp;<i>ẋ</i> = <i>F</i>(<i>x</i>,<i>u</i>,<i>t</i>;θ), &nbsp;<i>g</i> ≤ 0, &nbsp;<i>h</i> = 0, &nbsp;<i>x</i>(<i>t</i>) ∈ Viab(Ω)",
+   "theory": [
+    "Two solution routes and one discipline. Pontryagin gives necessary conditions and the costate as shadow price of state; dynamic programming gives the value function and sufficiency through a verification theorem, at the cost of the curse of dimensionality. The discipline is that attainment, constraint qualification and time-consistency are settled before either route is run, and that whichever route is used, the answer is reported as a policy with an error bound rather than as a number."
+   ],
+   "detail": [
+    "The decision object is a policy, not a choice: the problem lives in function space.",
+    "Necessary conditions from Pontryagin; sufficiency from HJB plus verification.",
+    "Multipliers and costates are the managerially useful output — internal prices of constraints and capital.",
+    "Report the approximation error; an approximate policy with a bound beats an exact-looking number."
+   ],
+   "handsOn": "Optimal policies π*, value function V, multipliers λ and costates p."
+  },
+  {
+   "id": "execute",
+   "verb": "Execute",
+   "gloss": "Turn optimal policies into intelligent, closed-loop managerial action.",
+   "question": "How does an optimal policy become a decision someone actually takes?",
+   "blurb": "Turn optimal policies into closed-loop managerial action: sequencing that respects the operator algebra, allocation that follows the multipliers, and an intelligence layer that approximates what cannot be solved exactly — inside an autonomy envelope that says where judgement is still required.",
+   "formalHtml": "π* ⟶ roadmap, allocation, mandates<br>MPC: solve on [<i>t</i>, <i>t</i>+<i>H</i>], apply <i>u</i>*(<i>t</i>), re-solve",
+   "theory": [
+    "Execution is where the mathematics either binds or is quietly discarded. The two commonest failures are re-sequencing a roadmap for organizational convenience — which, because operators do not commute, produces a different terminal state than the one that was certified — and reallocating against multipliers that were computed under constraints that have since changed. Both are detectable, and both are reasons to re-solve rather than to improvise."
+   ],
+   "detail": [
+    "Sequencing follows from non-commutativity; re-ordering the roadmap invalidates the certificate.",
+    "Allocation follows the costates: fund until marginal values equalize, net of binding wedges.",
+    "The intelligence layer approximates; the constraint layer certifies. Do not swap their jobs.",
+    "The autonomy envelope states where the twin acts and where a human decides."
+   ],
+   "handsOn": "Roadmaps, allocations and mandates traceable to the solved programme."
+  },
+  {
+   "id": "monitor",
+   "verb": "Monitor",
+   "gloss": "Synchronize the digital twin and watch the enterprise against its plan.",
+   "question": "Is the enterprise where the model says it should be?",
+   "blurb": "Synchronize the digital twin with the live enterprise and watch the trajectory against the certified plan: state estimation under partial observation, tracking of the certificate conditions, and detection of model drift before it becomes a surprise.",
+   "formalHtml": "<i>x̂</i><sub><i>t</i>|<i>t</i>&thinsp;</sub> = 𝔼[<i>x</i><sub><i>t</i></sub>|ℱ<sub><i>t</i></sub><sup><i>y</i></sup>] &nbsp;·&nbsp; innovation <i>e</i><sub><i>t</i></sub> = <i>y</i><sub><i>t</i></sub> − <i>h</i>(<i>x̂</i><sub><i>t</i>|<i>t</i>−1</sub>)<br>drift alarm: &nbsp;CUSUM(<i>e</i>) &gt; <i>c</i> &nbsp;·&nbsp; kernel alarm: &nbsp;<i>x̂</i> ∉ Viab(Ω)",
+   "theory": [
+    "Monitoring in this framework is not dashboarding: the quantities watched are the ones whose violation would invalidate a certificate. Distance to the boundary of the viability kernel, the current spectral radius of the coupling, the realized value against the modelled value, and the innovation sequence of the filter — an innovation sequence that stops looking like white noise is the earliest evidence that the model, not the enterprise, has moved."
+   ],
+   "detail": [
+    "Estimate the state, report the posterior spread, and never present the point estimate alone.",
+    "Watch certificate conditions, not indicators: distance to the kernel boundary, ρ(<em>A</em>), value gap.",
+    "A non-white innovation sequence is the earliest warning that the model has drifted.",
+    "A stale twin is worse than none: it carries the authority of quantification without the warrant."
+   ],
+   "handsOn": "A live estimate of the state and of the certificates' standing."
+  },
+  {
+   "id": "adapt",
+   "verb": "Adapt",
+   "gloss": "Re-solve as the state, environment and constraints move.",
+   "question": "What changes when the world does?",
+   "blurb": "Re-solve as the state, environment and constraints move. Adaptation in DCT is a scheduled, principled re-optimization with fresh certificates, not an improvised deviation from a plan — and the framework specifies both the trigger and the procedure.",
+   "formalHtml": "trigger: &nbsp;<i>x̂</i> approaches ∂Viab(Ω) &nbsp;·&nbsp; θ̂ drift &nbsp;·&nbsp; Ω or <i>J</i> revised<br>procedure: &nbsp;re-estimate → re-certify → re-solve → re-sequence",
+   "theory": [
+    "The move closes the loop back to Represent, and the loop is where the framework's claim to being dynamic is actually cashed. Two properties keep it from becoming thrashing: triggers are stated in advance as certificate violations rather than as discomfort, and each re-solution carries its own certificate chain, so the organization can see which assumption changed and what it cost. Where the criterion involves risk measures or non-exponential discounting, re-optimization must also check time-consistency, or successive re-solutions will reverse each other."
+   ],
+   "detail": [
+    "Triggers are stated in advance as certificate violations, not as discomfort with results.",
+    "Each re-solution carries a fresh certificate chain, so the changed assumption is visible.",
+    "Time-inconsistent criteria make successive re-solutions reverse each other — check before re-solving.",
+    "The loop returns to Represent: the state moved, so the representation is re-examined first."
+   ],
+   "handsOn": "A revised programme, with a new certificate chain and a recorded reason for the change."
+  }
+ ],
+ "bands": [
+  {
+   "col": 1,
+   "title": "Foundations",
+   "where": "Vol. I · Part 1 · Ch. 1–4"
+  },
+  {
+   "col": 2,
+   "title": "Mathematical representation",
+   "where": "Vol. I · Part 2 · Ch. 5–8"
+  },
+  {
+   "col": 3,
+   "title": "Enterprise architectures",
+   "where": "Vol. I · Part 3 · Ch. 6, 9–12"
+  },
+  {
+   "col": 4,
+   "title": "Integration",
+   "where": "Vol. I · Part 4 · Ch. 13"
+  },
+  {
+   "col": 5,
+   "title": "Analysis of UETA",
+   "where": "Vol. I · Part 4 · Ch. 14"
+  },
+  {
+   "col": 6,
+   "title": "The optimization problem",
+   "where": "Vol. I · Part 4 · Ch. 15–16"
+  },
+  {
+   "col": 7,
+   "title": "Solution methods",
+   "where": "Vol. II · Ch. 1–15"
+  },
+  {
+   "col": 8,
+   "title": "Outputs and applications",
+   "where": "Vol. II · Ch. 16"
+  }
+ ],
+ "railNote": "Point-set topology (Hausdorff, metric, manifold) enriches the mathematical foundation. DCT's Enterprise Topology is a separate graph-theoretic construct — see the Enterprise State Architecture.",
+ "nodes": [
+  {
+   "id": "f-question",
+   "label": "The transformation question",
+   "col": 1,
+   "order": 1,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 1",
+   "href": "chapters/v1ch01.html",
+   "axiom": "AXIOM-01",
+   "depth": "full",
+   "blurb": "Why and how do enterprises transform? DCT refuses the narrative answer and demands a mathematical one: a transformation is a trajectory <em>t</em> ↦ <em>x</em>(<em>t</em>) in a state space, generated by admissible controls against a realized environment, and graded by a functional defined on the whole trajectory rather than on its endpoint.",
+   "detail": [
+    "A transformation is a controlled trajectory, not an episode with a beginning and a moral.",
+    "Well-posedness — existence, uniqueness, stability, attainment — is the entry fee, not a technicality.",
+    "Every object downstream on this map answers one clause of this question.",
+    "The question fixes the burden of proof: represent, move, constrain, optimize, certify."
+   ],
+   "feeds": [
+    "f-openadaptive",
+    "f-limitations"
+   ],
+   "formalHtml": "Transformation ≔ <i>t</i> ↦ <i>x</i>(<i>t</i>) ∈ <i>X</i>, &nbsp;<i>t</i> ∈ [0, <i>T</i>]<br>generated by <i>u</i>(·) ∈ 𝒰<sub>ad</sub> against <i>w</i>(·) ∈ 𝒲<br>graded by <i>J</i>[<i>u</i>] = Φ(<i>x</i>(<i>T</i>)) + ∫<sub>0</sub><sup><i>T</i></sup> <i>L</i> d<i>t</i>",
+   "theory": [
+    "Posing transformation as a trajectory converts a management question into a well-posedness question, and well-posedness is a testable property. Four demands follow immediately and in order: <em>existence</em> of a trajectory for each admissible control (the Cauchy problem for the enterprise dynamics), <em>uniqueness</em> given (<i>x</i><sub>0</sub>, <i>u</i>, <i>w</i>) under Carathéodory-type measurability and local Lipschitz conditions, <em>continuous dependence</em> on data via a Grönwall estimate, and <em>attainment</em> of the supremum of <i>J</i> over 𝒰<sub>ad</sub>, which is the Filippov–Cesari existence programme.",
+    "The methodological claim of Chapter 1 is not that narrative accounts of transformation are false but that they are unfalsifiable: with no state there is nothing to move, with no dynamics no counterfactual, with no objective no notion of error. DCT accepts a heavier burden of proof in exchange for refutability."
+   ],
+   "refs": [
+    "Bellman (1957), <em>Dynamic Programming</em>",
+    "Pontryagin et al. (1962), <em>The Mathematical Theory of Optimal Processes</em>",
+    "Cesari (1983), <em>Optimization — Theory and Applications</em>"
+   ]
+  },
+  {
+   "id": "f-openadaptive",
+   "label": "Enterprise as open adaptive system",
+   "col": 1,
+   "order": 2,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 2",
+   "href": "chapters/v1ch02.html",
+   "axiom": "AXIOM-02",
+   "depth": "full",
+   "blurb": "The enterprise exchanges resources and information with an environment it does not control, and revises its own policy in response. Openness forces an exogenous term <em>w</em>(·) into the dynamics; adaptation forces the control to be a measurable function of information rather than a schedule fixed at <em>t</em> = 0.",
+   "detail": [
+    "Openness enters the model as <em>w</em>(<em>t</em>) ∈ <em>W</em>, not as a caveat in the text.",
+    "Adaptation makes the decision object a policy π, so the optimization lives in function space.",
+    "Open-loop and closed-loop values coincide only in the degenerate deterministic case; the difference is the value of information.",
+    "Equilibrium is the wrong idealization here — invariance and viability replace it."
+   ],
+   "feeds": [
+    "f-need",
+    "r-dist"
+   ],
+   "formalHtml": "open: &nbsp;<i>ẋ</i> = <i>F</i>(<i>x</i>, <i>u</i>, <i>w</i>),&nbsp; <i>w</i>(·) exogenous<br>adaptive: &nbsp;<i>u</i>(<i>t</i>) = π(<i>t</i>, <i>x</i>(<i>t</i>)) ⟶ &nbsp;ℱ<sub><i>t</i></sub>-measurable π",
+   "theory": [
+    "The distinction between open-loop <i>u</i>(·) ∈ L<sup>∞</sup>([0,<i>T</i>]; <i>U</i>) and closed-loop π : [0,<i>T</i>] × <i>X</i> → <i>U</i> is not cosmetic. Under deterministic dynamics the two attain the same optimal value; under a non-degenerate disturbance they do not, and the gap is exactly the value of information. Adaptation is therefore a modelling commitment with a price attached: the admissible class becomes a set of policies, the optimization becomes a problem in function space, and dynamic programming becomes the natural solution apparatus.",
+    "Open adaptive systems also inherit a thermodynamic caution. A system that dissipates and imports is never at equilibrium in the Walrasian sense; steady states are at best stationary distributions or invariant sets, which is why viability and invariance, not equilibrium, are the right stability notions in Chapter 14."
+   ],
+   "refs": [
+    "von Bertalanffy (1968), <em>General System Theory</em>",
+    "Ashby (1956), <em>An Introduction to Cybernetics</em>",
+    "Bertsekas & Shreve (1978), <em>Stochastic Optimal Control: The Discrete-Time Case</em>"
+   ]
+  },
+  {
+   "id": "f-limitations",
+   "label": "Limits of existing frameworks",
+   "col": 1,
+   "order": 3,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 1",
+   "href": "chapters/v1ch01.html",
+   "axiom": "AXIOM-01",
+   "depth": "full",
+   "blurb": "Conventional strategy frameworks are static, fragmented and unoptimizable. They classify positions instead of generating motion, and they compress a high-dimensional enterprise into a handful of scalars — a projection that destroys precisely the coupling that makes transformation hard.",
+   "detail": [
+    "Absent state: nothing whose motion could be studied, so every claim is cross-sectional.",
+    "Absent dynamics: no counterfactual trajectory, therefore no attribution of outcome to action.",
+    "Scalar compression: a 2 × 2 grid is a map ℝ<sup>n</sup> → {1,2,3,4} — distinct enterprises collapse to one cell.",
+    "Absent optimization: no objective and no admissible set means 'better' is not defined.",
+    "Each absence is repaired by a named object downstream, and the repair order is forced."
+   ],
+   "feeds": [
+    "f-need"
+   ],
+   "formalHtml": "typical framework: &nbsp;<i>x</i> ↦ <i>s</i> ∈ ℝ<sup><i>k</i></sup>, &nbsp;<i>k</i> ≪ <i>n</i><br>no <i>F</i>, no 𝒰<sub>ad</sub>, no <i>J</i> &nbsp;⟹&nbsp; no optimality, no counterfactual",
+   "theory": [
+    "Four structural absences, each fatal on its own. <em>No state</em>: there is no <i>x</i> ∈ <i>X</i> whose motion could be studied, so all comparisons are cross-sectional. <em>No dynamics</em>: without <i>F</i> there is no counterfactual trajectory, hence no attribution of outcome to action. <em>Scalar compression</em>: a 2 × 2 grid is a map ℝ<sup><i>n</i></sup> → {1,2,3,4}, and any such map has level sets of codimension zero — enterprises in genuinely different positions are declared identical. <em>No optimization formulation</em>: with no objective functional and no admissible set, 'better' is undefined and recommendations cannot be ranked, only advocated.",
+    "The diagnosis matters for what comes next. Each absence is repaired by a specific object on this map, and the repair order is forced: state before dynamics, dynamics before control, control before optimality."
+   ],
+   "refs": [
+    "Porter (1980), <em>Competitive Strategy</em>",
+    "Teece, Pisano & Shuen (1997), 'Dynamic Capabilities and Strategic Management'",
+    "Rumelt (1991), 'How Much Does Industry Matter?'"
+   ]
+  },
+  {
+   "id": "f-need",
+   "label": "Need for state, dynamics, control, optimization",
+   "col": 1,
+   "order": 4,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 2",
+   "href": "chapters/v1ch02.html",
+   "axiom": "AXIOM-02",
+   "depth": "full",
+   "blurb": "What is required is a representation that is simultaneously dynamic, controllable and optimizable. The four requirements are not a wish list but a minimal closure: drop any one and the framework degenerates back into description.",
+   "detail": [
+    "State: where the enterprise is, in enough dimensions that the coupling survives.",
+    "Dynamics: how it moves when acted upon, with regularity strong enough for well-posedness.",
+    "Control: what management may choose, and the constraint set that makes 'may' precise.",
+    "Optimization: which admissible choice is best, under a criterion stated before the analysis, not after.",
+    "Minimality by deletion: drop <em>J</em> and you have a simulator; drop <em>F</em> and you have a scorecard."
+   ],
+   "feeds": [
+    "f-language",
+    "r-state"
+   ],
+   "formalHtml": "⟨ <i>X</i>, &nbsp;𝒰<sub>ad</sub>, &nbsp;<i>F</i>, &nbsp;<i>J</i> ⟩<br>state &nbsp;·&nbsp; admissible controls &nbsp;·&nbsp; law of motion &nbsp;·&nbsp; criterion",
+   "theory": [
+    "Read the quadruple as a control system in the sense of Sontag: <i>X</i> a state space with enough structure to support limits and distances, 𝒰<sub>ad</sub> a set of admissible policies closed under the operations the problem needs, <i>F</i> a transition law with the regularity that makes trajectories exist and depend continuously on data, and <i>J</i> a functional with enough convexity or concavity structure that optimizers exist and first-order conditions are necessary.",
+    "The minimality claim is checkable by deletion. Delete <i>J</i> and the object is a simulation model — it can answer 'what if' but never 'what best'. Delete <i>F</i> and it is a scoring model. Delete 𝒰<sub>ad</sub> and it is a forecasting model. Delete <i>X</i> and nothing remains. This is why Volume I develops all four in sequence before Volume II ever poses a solution method."
+   ],
+   "refs": [
+    "Sontag (1998), <em>Mathematical Control Theory</em>",
+    "Luenberger (1979), <em>Introduction to Dynamic Systems</em>",
+    "Stokey & Lucas (1989), <em>Recursive Methods in Economic Dynamics</em>"
+   ]
+  },
+  {
+   "id": "f-language",
+   "label": "Mathematical language",
+   "col": 1,
+   "order": 5,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 3",
+   "href": "chapters/v1ch03.html",
+   "axiom": "AXIOM-03",
+   "depth": "full",
+   "blurb": "Sets, mappings, vectors, matrices, metrics and norms: the minimum vocabulary in which the four requirements can be written without ambiguity. Chapter 3 is not a refresher — it fixes which structures <em>X</em> is assumed to carry, and every later theorem cites one of them.",
+   "detail": [
+    "Sets and mappings buy composition and feasibility; nothing else.",
+    "Metric buys distance-to-target; norm buys magnitude of change and control effort.",
+    "Inner product buys projection and orthogonality — the basis for estimation and variance decomposition.",
+    "Mixing ordinal and cardinal dimensions in one vector and then taking a Euclidean norm is not permitted."
+   ],
+   "feeds": [
+    "f-modeling",
+    "r-state"
+   ],
+   "formalHtml": "(<i>X</i>, <i>d</i>) metric &nbsp;·&nbsp; (<i>X</i>, ‖·‖) normed &nbsp;·&nbsp; ⟨·,·⟩ inner product<br>𝒰<sub>ad</sub> ⊆ <i>U</i><sup>[0,<i>T</i>]</sup> &nbsp;·&nbsp; <i>T</i> : <i>X</i> × <i>U</i> × <i>W</i> → <i>X</i>",
+   "theory": [
+    "Each layer of structure purchases a specific capability and nothing more. Set and mapping give composition and feasibility. A metric gives distance-to-target and lets 'converging on the target state' mean something. A norm gives magnitude, so control effort and deviation from plan are comparable. An inner product gives projection and orthogonality, which is what makes least squares, Kalman filtering and variance decomposition available later.",
+    "Being explicit about which structure is in force prevents the commonest silent error in applied enterprise modelling: mixing ordinal, cardinal and categorical dimensions inside one vector and then computing a Euclidean distance over the mixture. If a dimension carries only an order, the norm is not defined on it, and Chapter 3 says so."
+   ],
+   "refs": [
+    "Rudin (1976), <em>Principles of Mathematical Analysis</em>",
+    "Aliprantis & Border (2006), <em>Infinite Dimensional Analysis</em>",
+    "Horn & Johnson (2013), <em>Matrix Analysis</em>"
+   ]
+  },
+  {
+   "id": "f-modeling",
+   "label": "Modeling principles",
+   "col": 1,
+   "order": 6,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 4",
+   "href": "chapters/v1ch04.html",
+   "axiom": "AXIOM-04",
+   "depth": "full",
+   "blurb": "Abstraction, decomposition, aggregation, validation and verification — the discipline that keeps an enterprise model both tractable and answerable to evidence. These are the practices that later harden into the certificate chain of Chapter 14.",
+   "detail": [
+    "Abstraction and decomposition are the only real controls on dimension.",
+    "Aggregation is admissible only when it commutes with the dynamics — lumpability, not convenience.",
+    "Verification: does the model solve its own equations? Validation: are they this enterprise's equations?",
+    "These practices become the audit and readiness chain once the architectures are coupled."
+   ],
+   "feeds": [
+    "r-operator",
+    "a-esa"
+   ],
+   "formalHtml": "abstraction: &nbsp;<i>X</i><sup>real</sup> ↠ <i>X</i>, &nbsp;π ∘ <i>F</i><sup>real</sup> ≈ <i>F</i> ∘ π<br>aggregation admissible ⟺ π is a homomorphism of the dynamics",
+   "theory": [
+    "Aggregation is the dangerous step and the one with a precise criterion. An aggregation map π : <i>X</i> → <i>X̂</i> is <em>consistent</em> if the aggregated dynamics commute with it, π(<i>F</i>(<i>x</i>,<i>u</i>)) = <i>F̂</i>(π(<i>x</i>), <i>u</i>) — lumpability in the Markov setting, exact aggregation in the Leontief setting. When commutation fails, the aggregate model is not a coarse version of the truth, it is a different dynamical system, and its optimal policy need not be near-optimal for the disaggregated problem.",
+    "Verification and validation answer different questions and need different evidence: verification asks whether the model solves the equations it claims to solve (numerical convergence, invariant checking, dimensional consistency), validation asks whether those equations describe this enterprise (out-of-sample tracking, identifiability of θ, structural break tests)."
+   ],
+   "refs": [
+    "Zeigler, Praehofer & Kim (2000), <em>Theory of Modeling and Simulation</em>",
+    "Kemeny & Snell (1976), <em>Finite Markov Chains</em> (lumpability)",
+    "Simon & Ando (1961), 'Aggregation of Variables in Dynamic Systems'"
+   ]
+  },
+  {
+   "id": "r-state",
+   "label": "Enterprise state",
+   "col": 2,
+   "order": 1,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 5",
+   "href": "chapters/v1ch05.html",
+   "axiom": "AXIOM-05",
+   "depth": "full",
+   "mathHtml": "<i>x</i>(<i>t</i>) = (<i>x</i><sub>1</sub>(<i>t</i>), …, <i>x<sub>n</sub></i>(<i>t</i>))<sup>⊤</sup> ∈ <i>X</i>",
+   "blurb": "An <em>n</em>-dimensional evolving state vector in a state space <em>X</em>. Everything else in DCT acts on, measures, constrains or steers this object, and the choice of <em>n</em> is a modelling decision with consequences for identifiability, not a matter of taste.",
+   "detail": [
+    "Sufficiency is the test: the future must depend on history only through <em>x</em>(<em>t</em>).",
+    "<em>n</em> is set by decomposition and identifiability, not by data availability.",
+    "<em>X</em> carries metric, norm and sometimes inner-product structure — each used by a named later result.",
+    "<em>x</em>(0) = <em>x</em><sub>0</sub> is the initial condition of every transformation programme, and sensitivity to it is measurable.",
+    "Indicator dashboards fail sufficiency, which is exactly why they cannot be optimized."
+   ],
+   "feeds": [
+    "r-operator",
+    "r-dyn",
+    "a-esa"
+   ],
+   "svgMath": [
+    "x(t) = (x_1(t), …, x_n(t))^⊤ ∈ X"
+   ],
+   "theory": [
+    "The defining property is sufficiency: <i>x</i>(<i>t</i>) must summarize the past well enough that the future depends on history only through it. Formally, for all <i>s</i> > <i>t</i> the conditional law of <i>x</i>(<i>s</i>) given ℱ<sub><i>t</i></sub> depends on ℱ<sub><i>t</i></sub> only via <i>x</i>(<i>t</i>) and the control on [<i>t</i>,<i>s</i>]. A representation that fails sufficiency is not a state — it is a set of indicators, and dynamic programming does not apply to it.",
+    "Structure on <i>X</i> is inherited from the mathematical stack and each piece is load-bearing: completeness for limits of approximating sequences, separability for measurable selection of policies, local compactness of admissible sets for existence of maximizers, and a norm for the Grönwall and Lyapunov estimates. Where constraints curve the feasible set, <i>X</i> is treated as a manifold rather than ℝ<sup><i>n</i></sup>."
+   ],
+   "refs": [
+    "Kalman (1960), 'A New Approach to Linear Filtering and Prediction Problems'",
+    "Sontag (1998), <em>Mathematical Control Theory</em>, ch. 2",
+    "Aliprantis & Border (2006), <em>Infinite Dimensional Analysis</em>"
+   ]
+  },
+  {
+   "id": "r-control",
+   "label": "Management controls",
+   "col": 2,
+   "order": 2,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 5",
+   "href": "chapters/v1ch05.html",
+   "axiom": "AXIOM-05",
+   "depth": "full",
+   "mathHtml": "<i>u</i>(<i>t</i>) ∈ <i>U</i>",
+   "blurb": "Managerial policies and actions drawn from the admissible control space <em>U</em>. Choosing <em>u</em>(·) well is the entire content of the optimization problem; specifying <em>U</em> honestly is what stops that problem from being a fantasy.",
+   "feeds": [
+    "r-operator",
+    "r-dyn"
+   ],
+   "formalHtml": "𝒰<sub>ad</sub> = { <i>u</i> : [0,<i>T</i>] → <i>U</i> &nbsp;|&nbsp; <i>u</i> measurable, ℱ<sub><i>t</i></sub>-adapted, <i>u</i>(<i>t</i>) ∈ <i>U</i>(<i>x</i>(<i>t</i>)) }<br>π : [0,<i>T</i>] × <i>X</i> → <i>U</i> &nbsp;·&nbsp; <i>U</i>(<i>x</i>) a measurable correspondence",
+   "theory": [
+    "Two structural facts about 𝒰<sub>ad</sub> drive almost everything in Volume II. First, state-dependence: <i>U</i>(<i>x</i>) is a correspondence, not a fixed set, because capital, governance and contractual position determine what is available. Existence of an optimal <em>measurable</em> policy then rests on measurable-selection theory — Kuratowski–Ryll-Nardzewski or Michael selection — rather than on ordinary compactness arguments.",
+    "Second, convexity: when <i>U</i> is non-convex the set of reachable states may be non-convex and maximizers may fail to exist, which is why relaxed (chattering) controls and the Filippov convexification of the velocity set appear in existence proofs. In enterprise terms this is the difference between 'invest 40% in digital' and 'run the digital programme 40% of the time' — the relaxed control that makes the mathematics work is not always an admissible managerial act, and the modeller must say which one is meant."
+   ],
+   "detail": [
+    "<em>U</em>(<em>x</em>) is a correspondence: what is available depends on where the enterprise stands.",
+    "Existence of an optimal measurable policy rests on measurable selection, not on compactness alone.",
+    "Non-convex <em>U</em> can destroy existence; relaxed controls repair the mathematics but not always the management.",
+    "Lumpy, irreversible and timing decisions belong here as integrality and switching constraints, not as afterthoughts."
+   ],
+   "refs": [
+    "Bertsekas & Shreve (1978), <em>Stochastic Optimal Control</em>",
+    "Aubin & Frankowska (1990), <em>Set-Valued Analysis</em>",
+    "Warga (1972), <em>Optimal Control of Differential and Functional Equations</em>"
+   ]
+  },
+  {
+   "id": "r-dist",
+   "label": "Environment and disturbance",
+   "col": 2,
+   "order": 3,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 8",
+   "href": "chapters/v1ch08.html",
+   "axiom": "AXIOM-08",
+   "depth": "full",
+   "mathHtml": "<i>w</i>(<i>t</i>) ∈ <i>W</i>",
+   "blurb": "Exogenous shocks, regime shifts and model ambiguity. The enterprise does not choose <em>w</em>(·); it must remain viable across the plausible range of it, which is why <em>W</em> is specified as a set and a law rather than a point forecast.",
+   "feeds": [
+    "r-operator",
+    "r-stoch",
+    "a-erra"
+   ],
+   "formalHtml": "<i>w</i>(·) ∈ 𝒲 ⊆ L<sup>∞</sup>([0,<i>T</i>]; <i>W</i>) &nbsp;or&nbsp; <i>w</i> ~ ℙ ∈ 𝒫<br>stochastic: 𝔼<sub>ℙ</sub>[<i>J</i>] &nbsp;·&nbsp; robust: inf<sub><i>w</i>∈𝒲</sub> <i>J</i> &nbsp;·&nbsp; DRO: inf<sub>ℙ∈𝒫</sub> 𝔼<sub>ℙ</sub>[<i>J</i>]",
+   "theory": [
+    "Three treatments of the same symbol, and the choice among them is a substantive commitment rather than a technical preference. Stochastic: <i>w</i> has a known law and the criterion is an expectation, so rare events are averaged away. Robust: <i>w</i> is adversarial within a set, the criterion is a worst case, and the resulting problem is a minimax dynamic game with a saddle-point requirement. Distributionally robust: the law itself is uncertain within an ambiguity set — a Wasserstein ball or a φ-divergence neighbourhood — which interpolates between the two and admits tractable convex reformulations.",
+    "Knight's distinction between risk and uncertainty is therefore not rhetorical in DCT: it selects which optimization problem is posed in Volume II, and the three choices generally have different optimal policies even on identical data."
+   ],
+   "detail": [
+    "Stochastic, robust and distributionally robust are three different problems, not three attitudes.",
+    "Worst-case formulations become dynamic games and need a saddle-point condition to be meaningful.",
+    "Wasserstein and φ-divergence ambiguity sets give convex, tractable distributionally robust reformulations.",
+    "The choice among the three is a modelling commitment that changes the optimal policy, not just its value."
+   ],
+   "refs": [
+    "Knight (1921), <em>Risk, Uncertainty and Profit</em>",
+    "Ben-Tal, El Ghaoui & Nemirovski (2009), <em>Robust Optimization</em>",
+    "Mohajerin Esfahani & Kuhn (2018), 'Data-driven DRO using the Wasserstein metric'",
+    "Hansen & Sargent (2008), <em>Robustness</em>"
+   ]
+  },
+  {
+   "id": "r-operator",
+   "label": "Transformation operator",
+   "col": 2,
+   "order": 4,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 6",
+   "href": "chapters/v1ch06.html",
+   "axiom": "AXIOM-06",
+   "depth": "full",
+   "mathHtml": "<i>T</i> : <i>X</i> × <i>U</i> × <i>W</i> → <i>X</i>",
+   "blurb": "A mapping that carries one enterprise state to another under a chosen action and a realized environment. Its algebra — composition, feasibility, irreversibility, commutation failure — is what makes transformation <em>programmes</em>, rather than individual moves, analyzable.",
+   "detail": [
+    "Admissible operators form a monoid: composition, identity, but neither commutativity nor inverses.",
+    "Non-commutativity <em>is</em> sequencing; the commutator quantifies what reordering costs.",
+    "Non-invertibility <em>is</em> irreversibility — the formal reason option value attaches to transformation timing.",
+    "Contraction gives a unique fixed point and convergence of repeated application (Banach).",
+    "Set-valued or discontinuous <em>T</em> moves the analysis to differential inclusions."
+   ],
+   "feeds": [
+    "r-dyn",
+    "a-eta"
+   ],
+   "theory": [
+    "Treat the admissible operators as a monoid under composition: closed, associative, with identity 'do nothing', but in general neither commutative nor invertible. Non-commutativity is the mathematical content of sequencing — <i>T</i><sub>2</sub> ∘ <i>T</i><sub>1</sub> ≠ <i>T</i><sub>1</sub> ∘ <i>T</i><sub>2</sub> means the order of a restructuring and a platform migration changes the terminal state, and the commutator measures by how much. Non-invertibility is the content of irreversibility: sunk reorganizations, lost capability, severed relationships.",
+    "Regularity of <i>T</i> is what the stack supplies. Continuity gives stability of programmes under small perturbation; a contraction property gives convergence of iterated application and a unique fixed point by Banach; monotonicity in a suitable order cone gives comparative statics without differentiability. Where <i>T</i> is only upper semicontinuous and set-valued, differential inclusions replace differential equations and Filippov's theory takes over."
+   ],
+   "refs": [
+    "Banach (1922), fixed-point theorem",
+    "Filippov (1988), <em>Differential Equations with Discontinuous Righthand Sides</em>",
+    "Topkis (1998), <em>Supermodularity and Complementarity</em>"
+   ]
+  },
+  {
+   "id": "r-dyn",
+   "label": "Dynamic enterprise systems",
+   "col": 2,
+   "order": 5,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 7",
+   "href": "chapters/v1ch07.html",
+   "axiom": "AXIOM-07",
+   "depth": "full",
+   "mathHtml": "<i>x</i><sub><i>t</i>+1</sub> = <i>f</i>(<i>x<sub>t</sub></i>, <i>u<sub>t</sub></i>, <i>w<sub>t</sub></i>; θ) &nbsp;·&nbsp; <i>ẋ</i>(<i>t</i>) = <i>F</i>(<i>x</i>(<i>t</i>), <i>u</i>(<i>t</i>), <i>w</i>(<i>t</i>); θ)",
+   "blurb": "The operator written as a law of motion, in discrete or continuous time, parameterized by θ. This is the constraint that every optimization in Volume II is solved subject to, and the object whose regularity decides whether that optimization is well posed at all.",
+   "detail": [
+    "Discrete time for decision cycles, continuous time for analysis, control and comparative statics.",
+    "Carathéodory conditions plus Grönwall give uniqueness and an explicit divergence bound — a forecast horizon.",
+    "θ carries estimation, calibration and identification; unidentified θ makes policy advice untransferable.",
+    "Continuous dependence on (<em>x</em><sub>0</sub>, θ) is the licence for every sensitivity result downstream."
+   ],
+   "feeds": [
+    "r-stoch",
+    "a-eta",
+    "ueta"
+   ],
+   "svgMath": [
+    "x_{t+1} = f(x_t, u_t, w_t)"
+   ],
+   "theory": [
+    "Existence and uniqueness are not formalities here. Carathéodory conditions — measurability in <i>t</i>, continuity in (<i>x</i>,<i>u</i>), local Lipschitz in <i>x</i> with an integrable bound — give a unique absolutely continuous solution, and Grönwall's inequality converts the Lipschitz constant into an explicit bound ‖<i>x</i><sub>1</sub>(<i>t</i>) − <i>x</i><sub>2</sub>(<i>t</i>)‖ ≤ e<sup><i>Lt</i></sup>‖<i>x</i><sub>1</sub>(0) − <i>x</i><sub>2</sub>(0)‖ on divergence of nearby trajectories. That bound is the honest statement of forecast horizon for a transformation plan.",
+    "θ is where econometrics enters and where most applied failures live. Identifiability asks whether distinct θ generate distinguishable trajectory laws; without it, calibration fits and policy advice does not transfer. Continuous dependence on θ is what licenses sensitivity analysis of the optimal policy, and its derivative is the object the Architectural Jacobian generalizes to the coupled system."
+   ],
+   "refs": [
+    "Hartman (2002), <em>Ordinary Differential Equations</em>",
+    "Khalil (2002), <em>Nonlinear Systems</em>",
+    "Hansen & Sargent (2013), <em>Recursive Models of Dynamic Linear Economies</em>"
+   ]
+  },
+  {
+   "id": "r-stoch",
+   "label": "Stochastic enterprise dynamics",
+   "col": 2,
+   "order": 6,
+   "stage": "represent",
+   "chapter": "Vol. I, Ch. 8",
+   "href": "chapters/v1ch08.html",
+   "axiom": "AXIOM-08",
+   "depth": "full",
+   "mathHtml": "(Ω, ℱ, ℙ), &nbsp; ℱ<sub><i>t</i></sub>-adapted &nbsp; <i>x</i>(<i>t</i>)",
+   "blurb": "The dynamics placed on a filtered probability space: transition kernels, the Markov property, Brownian and jump drivers, and Monte Carlo evaluation. The filtration is what makes 'the information available at time <em>t</em>' a precise object rather than a figure of speech.",
+   "detail": [
+    "Adaptedness to ℱ<sub><em>t</em></sub> is the no-hindsight constraint every implementable policy must satisfy.",
+    "Itô's formula produces the generator 𝒜; the generator is what enters the HJB equation.",
+    "Diffusion for ordinary noise, Lévy and compound-Poisson jumps for discontinuous transformation events.",
+    "Jumps and constraints break classical smoothness — viscosity solutions become necessary, not optional.",
+    "Partial observation replaces the state equation with a filtering equation on the space of measures."
+   ],
+   "feeds": [
+    "a-erra",
+    "ueta",
+    "m-c"
+   ],
+   "svgMath": [
+    "(Ω, ℱ, ℙ),  ℱ_t-adapted"
+   ],
+   "theory": [
+    "Adaptedness is the whole discipline. A control that is not ℱ<sub><i>t</i></sub>-adapted uses information the enterprise does not have, and every implementable plan must satisfy this measurability constraint — it is the formal statement of 'no hindsight'. Itô's formula then converts the dynamics into the generator 𝒜 acting on test functions, and the generator is what appears in the Hamilton–Jacobi–Bellman equation of Volume II.",
+    "Jump components are not decoration. Diffusion models drift and noise in ordinary operations; compound Poisson and more generally Lévy drivers model the discontinuous transformation events — acquisitions, regulatory shocks, defaults — whose presence makes the value function's smoothness fail and pushes the analysis to viscosity solutions and quasi-variational inequalities. Where the state is only partially observed, the Kushner–Stratonovich or Zakai equation for the conditional law replaces the state equation, and the control problem is posed on the space of measures."
+   ],
+   "refs": [
+    "Karatzas & Shreve (1991), <em>Brownian Motion and Stochastic Calculus</em>",
+    "Øksendal & Sulem (2019), <em>Applied Stochastic Control of Jump Diffusions</em>",
+    "Bain & Crisan (2009), <em>Fundamentals of Stochastic Filtering</em>"
+   ]
+  },
+  {
+   "id": "a-esa",
+   "label": "A_S · Enterprise State Architecture",
+   "col": 3,
+   "order": 1,
+   "stage": "analyze",
+   "chapter": "Vol. I, Ch. 9",
+   "href": "chapters/v1ch09.html",
+   "axiom": "AXIOM-09",
+   "depth": "full",
+   "blurb": "The state space given structure: dimensions grouped into a hierarchy, dependencies and admissibility constraints made explicit, and an Enterprise Topology — a graph-theoretic dependency structure over the state, deliberately distinct from the point-set topology carried in the mathematical stack.",
+   "detail": [
+    "A structured state space, not a flat vector: hierarchy, blocks, and explicit admissibility set Ω<sub>S</sub>.",
+    "Precedence graph 𝒢: which dimensions can move only after others have moved.",
+    "Acyclic 𝒢 ⟹ a topological order ⟹ a legitimately phased programme.",
+    "Strongly connected components are blocks that must move together — the formal limit of phasing.",
+    "Distinct from point-set topology: precedence here, convergence in the stack."
+   ],
+   "feeds": [
+    "ueta"
+   ],
+   "formalHtml": "𝒜<sub><i>S</i></sub> = ⟨ <i>X</i>, &nbsp;{<i>X</i><sub><i>k</i></sub>}<sub><i>k</i>=1..<i>K</i></sub>, &nbsp;𝒢 = (<i>V</i>, <i>E</i>), &nbsp;Ω<sub><i>S</i></sub> ⟩<br><i>X</i> = ⊕<sub><i>k</i></sub> <i>X</i><sub><i>k</i></sub> &nbsp;·&nbsp; (<i>i</i>, <i>j</i>) ∈ <i>E</i> ⟺ <i>x</i><sub><i>j</i></sub> can move only after <i>x</i><sub><i>i</i></sub>",
+   "theory": [
+    "The Enterprise Topology is a directed graph of precedence over state coordinates, and its structure is diagnostic. Acyclicity permits a topological order and hence a staged transformation programme; a strongly connected component is a block of dimensions that must move together, and no sequencing can decouple them. The condensation of 𝒢 into its strongly connected components is therefore the formal object behind 'what can be phased and what cannot'.",
+    "Two cautions the chapter is explicit about. First, this graph is not a topology in the point-set sense; the deliberate name collision is resolved by keeping the two objects in separate chapters, with the stack supplying convergence and the architecture supplying precedence. Second, the decomposition <i>X</i> = ⊕<sub><i>k</i></sub> <i>X</i><sub><i>k</i></sub> is a direct sum of coordinate blocks, not an orthogonal decomposition of the dynamics — the blocks interact, and that interaction is what the coupling register later records."
+   ],
+   "refs": [
+    "Harary (1969), <em>Graph Theory</em>",
+    "Simon (1962), 'The Architecture of Complexity'",
+    "Baldwin & Clark (2000), <em>Design Rules</em>"
+   ]
+  },
+  {
+   "id": "a-eta",
+   "label": "A_T · Enterprise Transformation Architecture",
+   "col": 3,
+   "order": 2,
+   "stage": "analyze",
+   "chapter": "Vol. I, Ch. 6",
+   "href": "chapters/v1ch06.html",
+   "axiom": "AXIOM-06",
+   "depth": "full",
+   "blurb": "The operator family organized into programmes: admissible compositions, transformation pathways, reachability of target states, and the stability of the motion those pathways generate.",
+   "detail": [
+    "Pathways are words in the operator alphabet; the architecture is the grammar of admissible words.",
+    "Reachability: is the target in ℛ(<em>x</em><sub>0</sub>)? Controllability: does ℛ(<em>x</em><sub>0</sub>) cover the feasible set?",
+    "Rank conditions (Kalman, Chow–Rashevskii) decide reachability; the reachable set is usually strictly smaller than hoped.",
+    "Reaching a target and holding it are different theorems — the second needs invariance, not reachability."
+   ],
+   "feeds": [
+    "ueta"
+   ],
+   "formalHtml": "𝒜<sub><i>T</i></sub> = ⟨ 𝒯 = {<i>T</i><sub>α</sub>}, &nbsp;∘, &nbsp;Adm ⟩<br>ℛ(<i>x</i><sub>0</sub>) = { <i>T</i><sub>α<sub><i>m</i></sub></sub> ∘ ⋯ ∘ <i>T</i><sub>α<sub>1</sub></sub>(<i>x</i><sub>0</sub>) &nbsp;:&nbsp; admissible sequences }",
+   "theory": [
+    "A transformation pathway is a word in the operator alphabet, and the architecture is the grammar that says which words are admissible. Reachability then asks whether a target <i>x</i>* lies in ℛ(<i>x</i><sub>0</sub>), and controllability asks whether ℛ(<i>x</i><sub>0</sub>) covers the feasible set. For linear dynamics these reduce to a rank condition on the Kalman controllability matrix; for nonlinear dynamics to the Lie-algebra rank condition of Chow–Rashevskii, and the honest finding is usually that the reachable set is strictly smaller than the feasible set.",
+    "Stability of the pathway is a separate question from reaching the target. A programme can reach <i>x</i>* and fail to hold it, which is why the architecture carries Lyapunov and invariance arguments alongside reachability. The distinction between 'we can get there' and 'we can stay there' is precisely the distinction between reachability and viability, and it is what Chapter 14 turns into a certificate."
+   ],
+   "refs": [
+    "Kalman (1963), 'Mathematical Description of Linear Dynamical Systems'",
+    "Sontag (1998), <em>Mathematical Control Theory</em>",
+    "Isidori (1995), <em>Nonlinear Control Systems</em>"
+   ]
+  },
+  {
+   "id": "a-eca",
+   "label": "A_C · Enterprise Capital Architecture",
+   "col": 3,
+   "order": 3,
+   "stage": "analyze",
+   "chapter": "Vol. I, Ch. 10",
+   "href": "chapters/v1ch10.html",
+   "axiom": "AXIOM-10",
+   "depth": "full",
+   "blurb": "What transformation consumes: financial, human, technological, innovation, governance, relational and strategic capital — each carried as a dimension of the state, none permitted to be a scalar proxy for the others.",
+   "detail": [
+    "Seven capitals carried as state dimensions: financial, human, technological, innovation, governance, relational, strategic.",
+    "Capital acts twice: as accumulating state with its own depreciation, and as an admissibility constraint on operators.",
+    "Resource limits restrict the reachable set; they are not penalties bolted onto the objective.",
+    "Substitution versus complementarity decides whether shadow prices across capitals are comparable or wildly uneven.",
+    "Allocation across capitals becomes a control, and its multiplier is the internal price of that capital."
+   ],
+   "feeds": [
+    "ueta"
+   ],
+   "formalHtml": "<i>c</i>(<i>t</i>) = (<i>c</i><sub>1</sub>, …, <i>c</i><sub>7</sub>)(<i>t</i>) ∈ <i>C</i> ⊆ ℝ<sub>+</sub><sup>7</sup><br><i>ċ</i> = <i>ι</i>(<i>u</i>) − δ ⊙ <i>c</i>, &nbsp;&nbsp;<i>T</i><sub>α</sub> admissible at <i>x</i> ⟺ <i>c</i>(<i>x</i>) ≥ <i>r</i><sub>α</sub>",
+   "theory": [
+    "Capital enters twice and the two roles must not be conflated. As a <em>state</em>, each capital accumulates and depreciates with its own law and its own δ<sub><i>k</i></sub>; human and relational capital in particular depreciate on attention, not on time. As a <em>constraint</em>, the requirement <i>c</i>(<i>x</i>) ≥ <i>r</i><sub>α</sub> determines which operators are admissible, which is how a resource limit becomes a restriction on the reachable set rather than a penalty in the objective.",
+    "Whether the seven capitals substitute or complement is an empirical question with sharp formal consequences. If the production structure is complementary — Leontief-like in the limit — then the binding capital dominates the programme and shadow prices are extremely uneven; if substitution is easy, allocation becomes a smooth convex problem and multipliers are comparable across capitals. The seven-dimensional treatment exists so that this question can be asked at all, rather than assumed away by a single 'investment' variable."
+   ],
+   "refs": [
+    "Leontief (1986), <em>Input–Output Economics</em>",
+    "Arrow, Chenery, Minhas & Solow (1961), 'Capital–Labor Substitution'",
+    "Dixit & Pindyck (1994), <em>Investment under Uncertainty</em>"
+   ]
+  },
+  {
+   "id": "a-epa",
+   "label": "A_P · Enterprise Performance Architecture",
+   "col": 3,
+   "order": 4,
+   "stage": "analyze",
+   "chapter": "Vol. I, Ch. 11",
+   "href": "chapters/v1ch11.html",
+   "axiom": "AXIOM-11",
+   "depth": "full",
+   "blurb": "How the enterprise is measured: financial, operational, innovation, governance and ESG performance. This is the layer that supplies the objective functional its terms, so every modelling sin committed here is inherited by the optimum.",
+   "detail": [
+    "Five performance dimensions mapped by <em>h</em> : <em>X</em> × <em>U</em> → ℝ<sup>m</sup>.",
+    "Observability decides whether closed-loop policies are implementable or need a filter first.",
+    "Fixed weights λ recover only the convex hull of the Pareto frontier — a real limitation, not a nuance.",
+    "Goodhart's law is a misspecification of <em>h</em>, not a moral observation.",
+    "Supplies both the running term <em>L</em> and the terminal term Φ in GEOP."
+   ],
+   "feeds": [
+    "ueta"
+   ],
+   "formalHtml": "<i>y</i>(<i>t</i>) = <i>h</i>(<i>x</i>(<i>t</i>), <i>u</i>(<i>t</i>)) ∈ ℝ<sup><i>m</i></sup><br><i>L</i>(<i>x</i>, <i>u</i>, <i>t</i>) = ⟨λ, <i>y</i>⟩ &nbsp;·&nbsp; Φ(<i>x</i>(<i>T</i>)) terminal value",
+   "theory": [
+    "Measurement is a map <i>h</i> from state to observable outcome, and three of its properties matter. <em>Observability</em>: can <i>x</i> be recovered from the history of <i>y</i>? If not, the performance layer cannot support the closed-loop policies the framework assumes, and a filter must be introduced. <em>Aggregation weights</em>: writing <i>L</i> = ⟨λ, <i>y</i>⟩ imposes a scalarization, and by the standard results in multi-criteria optimization a fixed λ recovers only the convex part of the Pareto frontier — which is why Volume II treats multi-objective methods separately rather than tuning weights.",
+    "<em>Incentive response</em>: because <i>y</i> is both the criterion and the reported number, Goodhart's law is a dynamical statement in this framework — measurement changes <i>h</i>, and a performance architecture that ignores the feedback from measurement to behaviour is misspecified in a way no amount of estimation repairs."
+   ],
+   "refs": [
+    "Kaplan & Norton (1996), <em>The Balanced Scorecard</em>",
+    "Miettinen (1999), <em>Nonlinear Multiobjective Optimization</em>",
+    "Holmström & Milgrom (1991), 'Multitask Principal–Agent Analyses'"
+   ]
+  },
+  {
+   "id": "a-erra",
+   "label": "A_R · Risk, Resilience, Robustness",
+   "col": 3,
+   "order": 5,
+   "stage": "analyze",
+   "chapter": "Vol. I, Ch. 12",
+   "href": "chapters/v1ch12.html",
+   "axiom": "AXIOM-12",
+   "depth": "full",
+   "blurb": "Exposure and endurance: financial, operational, strategic, cyber, governance and environmental risk, together with resilience, robustness, stress treatment and ambiguity. This architecture supplies the constraints and ambiguity sets that Volume II optimizes against.",
+   "detail": [
+    "Risk measures used in optimization must be coherent — VaR is not; CVaR is, and is convex-representable.",
+    "Dynamic problems additionally need time-consistent risk mappings, not iterated static ones.",
+    "Resilience is a hitting time; robustness is a worst case over a perturbation set. Different objects, different certificates.",
+    "Six risk dimensions; cyber and environmental carry fat tails that make expectation-based criteria misleading.",
+    "Supplies the ambiguity sets 𝒫 and the path constraints that bind in Volume II."
+   ],
+   "feeds": [
+    "ueta",
+    "m-c"
+   ],
+   "formalHtml": "ρ : 𝒳 → ℝ &nbsp;coherent: monotone, translation-invariant,<br>positively homogeneous, subadditive<br>resilience: τ(<i>x</i>, ξ) = inf{ <i>s</i> ≥ 0 : <i>x</i>(<i>t</i>+<i>s</i>) ∈ 𝒩(<i>x</i>*) } &nbsp;·&nbsp; robustness: inf<sub>ξ∈Ξ</sub> <i>J</i>",
+   "theory": [
+    "Risk, resilience and robustness are three distinct mathematical objects and the framework refuses to blur them. Risk is a functional ρ on random outcomes; if it is to support optimization without producing incentives to split positions, it must be coherent in the sense of Artzner, Delbaen, Eber and Heath — which excludes value-at-risk and admits conditional value-at-risk, the latter with the Rockafellar–Uryasev convex representation that makes it usable inside a programme. Dynamic consistency adds a further requirement, time-consistency of the conditional risk mappings, which rules out naive iteration of static measures.",
+    "Resilience is a hitting time: how long until the trajectory re-enters a neighbourhood of the target after a shock. Robustness is a worst-case value over a perturbation set. A programme can be highly resilient and not robust (it recovers, but from a much worse place each time) or robust and brittle (it never moves far, but cannot recover when it does). Certifying both, separately, is what the risk architecture contributes to the readiness chain."
+   ],
+   "refs": [
+    "Artzner, Delbaen, Eber & Heath (1999), 'Coherent Measures of Risk'",
+    "Rockafellar & Uryasev (2000), 'Optimization of Conditional Value-at-Risk'",
+    "Shapiro, Dentcheva & Ruszczyński (2021), <em>Lectures on Stochastic Programming</em>"
+   ]
+  },
+  {
+   "id": "ueta",
+   "label": "U_E · Unified Enterprise Transformation Architecture",
+   "col": 4,
+   "order": 1,
+   "stage": "analyze",
+   "w": 276,
+   "h": 216,
+   "chapter": "Vol. I, Ch. 13",
+   "href": "chapters/v1ch13.html",
+   "axiom": "AXIOM-13",
+   "depth": "full",
+   "blurb": "One enterprise under five descriptions. The coupling register <em>M</em> records how each architecture moves the others, and the unified dynamics replace five separate models with a single law of motion that is consistent across layers — the object Volume I analyzes and Volume II optimizes.",
+   "detail": [
+    "One enterprise, five descriptions — not five models with five calibrations.",
+    "Coupling register <em>M</em>: who moves whom, by how much, and with what lag.",
+    "Block-diagonal <em>M</em> is exactly the case where siloed management is optimal; off-diagonal terms measure the cost of silos.",
+    "Cross-layer consistency is imposed by construction, then verified by certificate.",
+    "Differentiating this system is what produces the Architectural Jacobian."
+   ],
+   "feeds": [
+    "an-feasible",
+    "an-jacobian",
+    "an-certificates"
+   ],
+   "formalHtml": "<i>x</i> = (<i>x</i><sub><i>S</i></sub>, <i>x</i><sub><i>T</i></sub>, <i>x</i><sub><i>C</i></sub>, <i>x</i><sub><i>P</i></sub>, <i>x</i><sub><i>R</i></sub>) &nbsp;·&nbsp; <i>M</i> = [<i>M</i><sub><i>kl</i></sub>]<sub>5×5</sub><br><i>ẋ</i><sub><i>k</i></sub> = <i>F</i><sub><i>k</i></sub>(<i>x</i><sub><i>k</i></sub>, <i>u</i>, <i>w</i>) + Σ<sub><i>l</i>≠<i>k</i></sub> <i>M</i><sub><i>kl</i></sub> <i>g</i><sub><i>l</i></sub>(<i>x</i><sub><i>l</i></sub>, <i>u</i>)",
+   "theory": [
+    "The unification is a statement about consistency, not about size. Five separately estimated architecture models will in general disagree: the capital model's implied hiring path will not be the one the performance model prices, and the risk model's stress path will not be the one the transformation model can execute. Imposing one state, one law of motion and one admissible set removes that inconsistency by construction, and the coupling register is where the cross-layer terms are made visible and auditable instead of being hidden in separate calibrations.",
+    "Formally the interest is in the off-diagonal blocks. A block-diagonal <i>M</i> means the architectures are independent and the enterprise decomposes into five separate control problems, which is the case in which conventional siloed practice is defensible. Any non-trivial off-diagonal structure makes the optimal policy for the whole differ from the concatenation of the five separately optimal policies, and the size of that difference is the quantitative case for integration."
+   ],
+   "refs": [
+    "Simon (1962), 'The Architecture of Complexity'",
+    "Mesarović, Macko & Takahara (1970), <em>Theory of Hierarchical, Multilevel Systems</em>",
+    "Lasdon (1970), <em>Optimization Theory for Large Systems</em>"
+   ]
+  },
+  {
+   "id": "an-feasible",
+   "label": "Feasible region",
+   "col": 5,
+   "order": 1,
+   "stage": "certify",
+   "chapter": "Vol. I, Ch. 14",
+   "href": "chapters/v1ch14.html",
+   "axiom": "AXIOM-14",
+   "depth": "full",
+   "mathHtml": "Ω ⊆ <i>X</i>",
+   "blurb": "The set of states the enterprise is permitted to occupy once architecture constraints, resource limits, governance rules and policy commitments are all imposed simultaneously. Feasibility is a property of a state, and it is weaker than anything worth calling sustainable.",
+   "feeds": [
+    "an-viability",
+    "geop"
+   ],
+   "formalHtml": "Ω = { <i>x</i> ∈ <i>X</i> : <i>g</i><sub><i>i</i></sub>(<i>x</i>) ≤ 0, &nbsp;<i>h</i><sub><i>j</i></sub>(<i>x</i>) = 0, &nbsp;<i>i</i> ∈ <i>I</i>, <i>j</i> ∈ <i>J</i> }",
+   "theory": [
+    "The geometry of Ω governs everything computational downstream. Closedness plus boundedness gives compactness and hence existence of maximizers of continuous criteria (Weierstrass); convexity gives sufficiency of first-order conditions and uniqueness of projections; a non-empty interior gives Slater's condition and therefore strong duality with finite multipliers. Where Ω is defined by many active inequalities with empty interior, multipliers can fail to exist and the problem must be regularized before any solver is trusted.",
+    "In enterprise terms the interesting pathology is non-convexity from integrality and from logical constraints ('either the platform migration or the acquisition, not both in the same year'), which turns Ω into a disjunctive set. Its convex hull is what solvers actually work with, and the gap between the two is where most apparent optimality in practice quietly lives."
+   ],
+   "detail": [
+    "Compactness gives existence of maximizers; convexity gives sufficiency of first-order conditions.",
+    "Non-empty interior (Slater) is what guarantees finite multipliers and strong duality.",
+    "Integrality and either/or commitments make Ω disjunctive and non-convex; the relaxation gap matters.",
+    "Feasible today ≠ sustainable: that distinction is the viability kernel's job."
+   ],
+   "refs": [
+    "Rockafellar (1970), <em>Convex Analysis</em>",
+    "Boyd & Vandenberghe (2004), <em>Convex Optimization</em>",
+    "Nemhauser & Wolsey (1988), <em>Integer and Combinatorial Optimization</em>"
+   ]
+  },
+  {
+   "id": "an-viability",
+   "label": "Viability kernel",
+   "col": 5,
+   "order": 2,
+   "stage": "certify",
+   "chapter": "Vol. I, Ch. 14",
+   "href": "chapters/v1ch14.html",
+   "axiom": "AXIOM-14",
+   "depth": "full",
+   "mathHtml": "Viab(Ω)",
+   "blurb": "The subset of the feasible region from which the enterprise can remain feasible indefinitely under <em>some</em> admissible control. Being feasible today is not the same as being sustainable: outside the kernel, every admissible policy eventually violates a constraint, however well managed.",
+   "detail": [
+    "Outside Viab(Ω) every admissible policy eventually breaches — the failure is determined, only the date is open.",
+    "Viability theorem: tangency of the velocity set to the Clarke tangent cone at every boundary point.",
+    "The kernel is the largest closed viable subset: a fixed point in the space of sets, computed by set-valued iteration.",
+    "Capture basins and the invariance kernel are the companion objects for 'can reach' and 'cannot leave'.",
+    "Optimization is meaningful only over the kernel; over Ω it certifies plans that are guaranteed to fail."
+   ],
+   "feeds": [
+    "geop"
+   ],
+   "formalHtml": "Viab(Ω) = { <i>x</i><sub>0</sub> ∈ Ω : ∃ <i>u</i>(·) ∈ 𝒰<sub>ad</sub>, &nbsp;<i>x</i>(<i>t</i>) ∈ Ω &nbsp;∀<i>t</i> ≥ 0 }<br>viability theorem: Viab(Ω) = Ω &nbsp;⟺&nbsp; <i>F</i>(<i>x</i>, <i>U</i>(<i>x</i>)) ∩ <i>T</i><sub>Ω</sub>(<i>x</i>) ≠ ∅ &nbsp;∀<i>x</i> ∈ Ω",
+   "theory": [
+    "Aubin's viability theorem is the result that makes the kernel computable in principle: for a Marchaud set-valued dynamic and a closed constraint set, Ω is viable if and only if at every boundary point the velocity set meets the Clarke tangent cone <i>T</i><sub>Ω</sub>(<i>x</i>). The kernel itself is the largest closed viable subset of Ω, obtained as the limit of a decreasing sequence of set-valued approximations — a fixed point in the space of closed sets, not a solution of an equation.",
+    "The managerial reading is uncomfortable and is the point. A state can satisfy every covenant, ratio and policy limit today and still lie outside Viab(Ω), meaning that no sequence of admissible decisions avoids eventual breach: the breach is already determined, only its date is open. Optimization over Ω rather than over Viab(Ω) therefore produces policies that look optimal and are guaranteed to fail, which is why the certificate chain requires kernel membership before any GEOP solution is accepted."
+   ],
+   "refs": [
+    "Aubin (1991), <em>Viability Theory</em>",
+    "Aubin, Bayen & Saint-Pierre (2011), <em>Viability Theory: New Directions</em>",
+    "Clarke (1983), <em>Optimization and Nonsmooth Analysis</em>"
+   ]
+  },
+  {
+   "id": "an-jacobian",
+   "label": "Architectural Jacobian",
+   "col": 5,
+   "order": 3,
+   "stage": "certify",
+   "chapter": "Vol. I, Ch. 14",
+   "href": "chapters/v1ch14.html",
+   "axiom": "AXIOM-14",
+   "depth": "full",
+   "mathHtml": "<i>A</i> = ∂<i>f</i>/∂<i>x</i>, &nbsp; ρ(<i>A</i>)",
+   "blurb": "Differentiate the unified dynamics and the coupling register becomes a matrix. Its spectral radius is the stability indicator: whether a disturbance in one architecture damps as it travels the coupling loop, or returns amplified.",
+   "detail": [
+    "ρ(<em>A</em>) &lt; 1 in discrete time: cross-layer feedback damps around the loop.",
+    "ρ(<em>A</em>) ≥ 1: the architectures amplify each other and the programme is dynamically unstable.",
+    "Non-normal <em>A</em> can be asymptotically stable and still amplify transiently — check pseudospectra, not only eigenvalues.",
+    "The dominant eigenvector identifies the driving architecture; participation factors rank which coupling to cut.",
+    "Monotone or Metzler structure brings Perron–Frobenius and unambiguous comparative statics."
+   ],
+   "feeds": [
+    "an-neumann",
+    "an-certificates"
+   ],
+   "svgMath": [
+    "A = ∂f/∂x,  ρ(A)"
+   ],
+   "theory": [
+    "Linearize the unified system at a reference trajectory and the local behaviour is governed by the spectrum of <i>A</i> = ∂<i>f</i>/∂<i>x</i>. In discrete time, ρ(<i>A</i>) < 1 gives local asymptotic stability and a convergent Neumann series; in continuous time the condition is that every eigenvalue has negative real part. The relevant subtlety for enterprise work is non-normality: a matrix can satisfy ρ(<i>A</i>) < 1 and still produce large transient amplification, measured by the numerical abscissa or by pseudospectra. A programme can therefore be asymptotically stable and still blow through a covenant on the way.",
+    "Two further properties earn their place in the diagnosis. Block structure: the dominant eigenvector says which architecture drives the loop, and its participation factors say which couplings to cut first. Sign structure: if the linearization is Metzler or the system monotone, then Perron–Frobenius applies, the dominant eigenvalue is real and simple, and comparative statics are unambiguous — a rare and useful situation."
+   ],
+   "refs": [
+    "Horn & Johnson (2013), <em>Matrix Analysis</em>",
+    "Trefethen & Embree (2005), <em>Spectra and Pseudospectra</em>",
+    "Berman & Plemmons (1994), <em>Nonnegative Matrices in the Mathematical Sciences</em>"
+   ]
+  },
+  {
+   "id": "an-neumann",
+   "label": "Neumann multiplier",
+   "col": 5,
+   "order": 4,
+   "stage": "certify",
+   "chapter": "Vol. I, Ch. 14",
+   "href": "chapters/v1ch14.html",
+   "axiom": "AXIOM-14",
+   "depth": "full",
+   "mathHtml": "<i>S</i> = (<i>I</i> − <i>A</i>)<sup>−1</sup><i>B</i>",
+   "blurb": "The total long-run impact of an intervention once it has propagated around every coupling, rather than the first-round effect a single architecture would report. The series converges precisely when the spectral radius condition holds, which is what ties this multiplier to the stability diagnosis.",
+   "detail": [
+    "Total, not first-round, effect of a decision: Σ <em>A</em><sup>k</sup><em>B</em>, term by term interpretable.",
+    "Exists as a convergent Neumann series exactly when ρ(<em>A</em>) &lt; 1 — the same condition as stability.",
+    "A Leontief inverse for the enterprise; entries are total requirements under a fixed linearization.",
+    "Divergence means no finite total effect exists, not that the effect is merely large.",
+    "Turns coupling into an allocation argument: rank interventions by total, not local, response."
+   ],
+   "feeds": [
+    "geop"
+   ],
+   "svgMath": [
+    "S = (I − A)^{−1}B"
+   ],
+   "theory": [
+    "(<i>I</i> − <i>A</i>)<sup>−1</sup> = Σ<sub><i>k</i>≥0</sub> <i>A</i><sup><i>k</i></sup> whenever ρ(<i>A</i>) < 1, and each term has a reading: <i>A</i><sup>0</sup><i>B</i> is the direct effect of the intervention, <i>A</i><i>B</i> the effect after one pass through the couplings, and so on. The multiplier is thus a Leontief inverse for the enterprise rather than for an economy, and the same warning applies: the entries are total requirements, valid only while the linearization and the coupling coefficients hold.",
+    "Divergence is informative rather than merely inconvenient. If ρ(<i>A</i>) ≥ 1 the series has no sum, and the correct conclusion is not that the multiplier is large but that no finite total effect exists at the linearized level — the programme must be restructured to damp the loop before any allocation argument based on total effects can be made at all."
+   ],
+   "refs": [
+    "Leontief (1986), <em>Input–Output Economics</em>",
+    "Berman & Plemmons (1994), <em>Nonnegative Matrices</em>",
+    "Horn & Johnson (2013), <em>Matrix Analysis</em>, §5.6"
+   ]
+  },
+  {
+   "id": "an-certificates",
+   "label": "Certificates, audits, readiness chain",
+   "col": 5,
+   "order": 5,
+   "stage": "certify",
+   "chapter": "Vol. I, Ch. 14",
+   "href": "chapters/v1ch14.html",
+   "axiom": "AXIOM-14",
+   "depth": "full",
+   "blurb": "Lyapunov and stability arguments, propagation sensitivity, kernel membership and cross-layer consistency checks, assembled into an auditable chain that states whether a transformation programme is fit to run — and says in whose terms it would fail.",
+   "detail": [
+    "A certificate is a witness — hard to find, cheap to verify, and verifiable by someone who distrusts the modeller.",
+    "Lyapunov certificates can be searched for by sum-of-squares programming when <em>F</em> is polynomial.",
+    "The chain is ordered so failure localizes: kernel, then spectrum, then Lyapunov, then sensitivity to θ.",
+    "Sensitivity of the optimal value states how much the recommendation rests on unpinnable estimates.",
+    "This is the artefact a board or regulator can inspect without re-running the model."
+   ],
+   "feeds": [
+    "geop",
+    "out-case"
+   ],
+   "formalHtml": "∃ <i>V</i> ∈ C<sup>1</sup>, &nbsp;<i>V</i>(<i>x</i>*) = 0, &nbsp;<i>V</i> &gt; 0 on 𝒩∖{<i>x</i>*}, &nbsp;<i>V̇</i> = ⟨∇<i>V</i>, <i>F</i>⟩ ≤ −<i>W</i>(<i>x</i>) &lt; 0<br>certificate ≔ ⟨ <i>x</i><sub>0</sub> ∈ Viab(Ω), &nbsp;ρ(<i>A</i>) &lt; 1, &nbsp;<i>V</i>, &nbsp;∂<i>J</i>*/∂θ bounded ⟩",
+   "theory": [
+    "A certificate is a witness: an object whose existence can be checked independently of the argument that produced it. A Lyapunov function is the canonical example — finding <i>V</i> may require ingenuity or a sum-of-squares programme, but verifying <i>V̇</i> ≤ 0 is mechanical, and that asymmetry is what makes the claim auditable by a third party who does not trust the modeller.",
+    "The chain is ordered so that failure localizes. Kernel membership first, because optimizing outside Viab(Ω) is meaningless; then spectral stability, because an unstable loop invalidates every multiplier; then the Lyapunov certificate for the chosen trajectory; then sensitivity of the optimal value to θ and to the coupling coefficients, which is the quantitative statement of how much the recommendation depends on estimates nobody can pin down. A board that reads the chain in this order learns not just whether the plan passes but which assumption it is standing on."
+   ],
+   "refs": [
+    "Khalil (2002), <em>Nonlinear Systems</em>",
+    "Parrilo (2003), 'Semidefinite programming relaxations for semialgebraic problems'",
+    "Boyd, El Ghaoui, Feron & Balakrishnan (1994), <em>Linear Matrix Inequalities in System and Control Theory</em>"
+   ]
+  },
+  {
+   "id": "geop",
+   "label": "GEOP · General Enterprise Optimization Problem",
+   "col": 6,
+   "order": 1,
+   "stage": "optimize",
+   "w": 300,
+   "h": 348,
+   "chapter": "Vol. I, Ch. 15–16",
+   "href": "chapters/v1ch15.html",
+   "axiom": "AXIOM-15",
+   "depth": "full",
+   "svgMath": [
+    "max J[u] over u(·)",
+    "J = Φ(x(T)) + ∫L dt",
+    "ẋ = F(x, u, t; θ)",
+    "x(0) = x_0",
+    "g_i(x, u, t) ≤ 0",
+    "h_j(x, u, t) = 0"
+   ],
+   "mathHtml": "max<sub><i>u</i>(·)</sub> <i>J</i>[<i>u</i>] = Φ(<i>x</i>(<i>T</i>)) + ∫<sub>0</sub><sup><i>T</i></sup> <i>L</i>(<i>x</i>(<i>t</i>), <i>u</i>(<i>t</i>), <i>t</i>) d<i>t</i><br>s.t. <i>ẋ</i>(<i>t</i>) = <i>F</i>(<i>x</i>, <i>u</i>, <i>t</i>; θ), &nbsp; <i>x</i>(0) = <i>x</i><sub>0</sub><br><i>g<sub>i</sub></i>(<i>x</i>, <i>u</i>, <i>t</i>) ≤ 0, &nbsp; <i>h<sub>j</sub></i>(<i>x</i>, <i>u</i>, <i>t</i>) = 0",
+   "blurb": "The hinge of the framework: choose the transformation policy that maximizes long-run enterprise value subject to the unified dynamics, path and terminal constraints, risk limits and architectural consistency. Volume I poses it; Volume II solves it, method by method.",
+   "detail": [
+    "Decision object: the policy π or trajectory <em>u</em>(·) — not a single choice at a single date.",
+    "Pontryagin route gives necessary conditions and the costate <em>p</em>(<em>t</em>), the shadow price of state.",
+    "HJB route gives sufficiency via a verification theorem, in the viscosity sense where <em>V</em> is not smooth.",
+    "Path constraints bring measure-valued multipliers; jumps bring quasi-variational inequalities.",
+    "Time-inconsistency from risk measures or hyperbolic discounting must be resolved, not ignored.",
+    "Solution objects carried forward: policies π, value function <em>V</em>, multipliers λ, costates <em>p</em>."
+   ],
+   "feeds": [
+    "m-a",
+    "m-b",
+    "m-c",
+    "m-d",
+    "m-e",
+    "m-f"
+   ],
+   "theory": [
+    "Two routes to a solution, and the framework uses both because each answers a different question. The <em>variational</em> route forms the Hamiltonian ℋ = <i>L</i> + ⟨<i>p</i>, <i>F</i>⟩ and applies the Pontryagin maximum principle: an optimal <i>u</i>*(<i>t</i>) maximizes ℋ pointwise, the costate satisfies <i>ṗ</i> = −∂ℋ/∂<i>x</i> with <i>p</i>(<i>T</i>) = ∇Φ(<i>x</i>(<i>T</i>)), and <i>p</i>(<i>t</i>) is the shadow price of the state — the marginal value of an extra unit of any capital, in the objective's units. Necessary conditions only, and with path constraints they acquire measure-valued multipliers.",
+    "The <em>dynamic-programming</em> route posits the value function <i>V</i>(<i>t</i>, <i>x</i>) = sup 𝔼[Φ + ∫<i>L</i>] and derives the HJB equation ∂<sub><i>t</i></sub><i>V</i> + sup<sub><i>u</i>∈<i>U</i></sub>{ <i>L</i> + 𝒜<sup><i>u</i></sup><i>V</i> } = 0 with <i>V</i>(<i>T</i>, ·) = Φ. Sufficient where a solution exists, but the value function is generally non-smooth at constraint boundaries and after jumps, so solutions are taken in the viscosity sense (Crandall–Lions) and the verification theorem is what converts a candidate into an optimum. Both routes suffer the curse of dimensionality in a five-architecture state, which is precisely why Volume II is a catalogue of methods rather than a single algorithm.",
+    "Three well-posedness questions must be settled before either route is used: attainment of the supremum (Filippov–Cesari conditions on convexity of the velocity set and growth of <i>L</i>), time-consistency of the criterion when risk measures or non-exponential discounting are present — absent it the 'optimal' policy is one no future decision-maker will follow — and constraint qualification, without which multipliers need not exist."
+   ],
+   "refs": [
+    "Pontryagin et al. (1962), <em>The Mathematical Theory of Optimal Processes</em>",
+    "Fleming & Soner (2006), <em>Controlled Markov Processes and Viscosity Solutions</em>",
+    "Yong & Zhou (1999), <em>Stochastic Controls: Hamiltonian Systems and HJB Equations</em>",
+    "Clarke (1983), <em>Optimization and Nonsmooth Analysis</em>"
+   ]
+  },
+  {
+   "id": "m-a",
+   "label": "A · Deterministic and static methods",
+   "col": 7,
+   "order": 1,
+   "stage": "optimize",
+   "chapter": "Vol. II, Ch. 3–4",
+   "href": "chapters/v2ch03.html",
+   "axiom": "AXIOM-03",
+   "depth": "full",
+   "blurb": "Convex and nonlinear programming, KKT conditions, duality and sensitivity: the case where time and uncertainty are deliberately switched off so that the structure of the constraint geometry can be seen and priced.",
+   "feeds": [
+    "out-capital"
+   ],
+   "formalHtml": "max <i>f</i>(<i>z</i>) s.t. <i>g</i>(<i>z</i>) ≤ 0, <i>h</i>(<i>z</i>) = 0<br>∇<i>f</i> = Σ λ<sub><i>i</i></sub>∇<i>g</i><sub><i>i</i></sub> + Σ μ<sub><i>j</i></sub>∇<i>h</i><sub><i>j</i></sub>, &nbsp;λ ≥ 0, &nbsp;λ<sub><i>i</i></sub><i>g</i><sub><i>i</i></sub> = 0<br>∂<i>f</i>*/∂<i>b</i><sub><i>i</i></sub> = λ<sub><i>i</i></sub>",
+   "theory": [
+    "The static case is where the multiplier earns its interpretation. Under a constraint qualification — Slater for convex problems, LICQ or MFCQ otherwise — KKT conditions are necessary, and λ<sub><i>i</i></sub> is the derivative of the optimal value with respect to relaxing constraint <i>i</i>: the internal price of a governance limit, a covenant or a capital ceiling. Strong duality closes the gap between the primal programme and its dual price system, and the dual is often the object management should be reading.",
+    "Conic reformulation is what makes this practical at enterprise scale: second-order cone and semidefinite representations cover risk-return constraints, chance constraints under ellipsoidal uncertainty, and robust counterparts, all with polynomial-time interior-point methods and reliable certificates of optimality."
+   ],
+   "detail": [
+    "Multipliers are prices: λ<sub>i</sub> = ∂(optimal value)/∂(constraint level).",
+    "Constraint qualification is what makes KKT necessary — check Slater or MFCQ before trusting a solver.",
+    "Duality turns the programme into a price system, often the more useful managerial object.",
+    "SOCP and SDP reformulations cover risk-return and robust constraints with certified optimality."
+   ],
+   "refs": [
+    "Boyd & Vandenberghe (2004), <em>Convex Optimization</em>",
+    "Bertsekas (1999), <em>Nonlinear Programming</em>",
+    "Ben-Tal & Nemirovski (2001), <em>Lectures on Modern Convex Optimization</em>"
+   ]
+  },
+  {
+   "id": "m-b",
+   "label": "B · Dynamic methods",
+   "col": 7,
+   "order": 2,
+   "stage": "optimize",
+   "chapter": "Vol. II, Ch. 5–8",
+   "href": "chapters/v2ch05.html",
+   "axiom": "AXIOM-05",
+   "depth": "full",
+   "blurb": "Dynamic optimization and optimal control: the Pontryagin maximum principle, dynamic programming and the Bellman equation, and the Hamilton–Jacobi–Bellman framework in continuous time — with the approximation machinery that makes them computable in five coupled architectures.",
+   "feeds": [
+    "out-roadmap"
+   ],
+   "formalHtml": "<i>V</i>(<i>x</i>) = max<sub><i>u</i>∈<i>U</i>(<i>x</i>)</sub> { <i>L</i>(<i>x</i>, <i>u</i>) + β 𝔼 <i>V</i>(<i>f</i>(<i>x</i>, <i>u</i>, <i>w</i>)) }<br>∂<sub><i>t</i></sub><i>V</i> + sup<sub><i>u</i></sub> { <i>L</i> + 𝒜<sup><i>u</i></sup><i>V</i> } = 0, &nbsp;<i>V</i>(<i>T</i>, ·) = Φ",
+   "theory": [
+    "Blackwell's conditions make the Bellman operator a contraction on a space of bounded functions, so value iteration converges geometrically at rate β and the fixed point is unique; policy iteration converges in finitely many steps for finite action sets and is a Newton method on the Bellman residual. These are the results that license numerical dynamic programming at all.",
+    "Dimension is the binding constraint, not theory. With a five-architecture state the tensor grid is hopeless, so the practical apparatus is approximate dynamic programming: basis-function or neural approximation of <i>V</i>, least-squares Monte Carlo for conditional expectations, and duality-based bounds that bracket the true value so that an approximate policy can be reported with an error estimate rather than a claim."
+   ],
+   "detail": [
+    "Contraction (Blackwell) gives uniqueness and geometric convergence of value iteration.",
+    "Policy iteration is Newton's method on the Bellman residual — few, expensive steps.",
+    "Continuous time: HJB with viscosity solutions; verification converts a candidate into an optimum.",
+    "Five coupled architectures force approximate dynamic programming plus duality bounds on the error."
+   ],
+   "refs": [
+    "Bertsekas (2012), <em>Dynamic Programming and Optimal Control</em>",
+    "Powell (2011), <em>Approximate Dynamic Programming</em>",
+    "Kushner & Dupuis (2001), <em>Numerical Methods for Stochastic Control Problems</em>"
+   ]
+  },
+  {
+   "id": "m-c",
+   "label": "C · Uncertainty methods",
+   "col": 7,
+   "order": 3,
+   "stage": "optimize",
+   "chapter": "Vol. II, Ch. 9–11",
+   "href": "chapters/v2ch09.html",
+   "axiom": "AXIOM-09",
+   "depth": "full",
+   "blurb": "Stochastic, robust and distributionally robust optimization over Wasserstein ambiguity sets, with neuro-fuzzy treatment where the uncertainty is linguistic rather than distributional. Three formalisms for the same symbol <em>w</em>, each with its own notion of a good decision.",
+   "feeds": [
+    "out-capital"
+   ],
+   "formalHtml": "SP: &nbsp;max 𝔼<sub>ℙ</sub>[<i>J</i>] &nbsp;·&nbsp; RO: &nbsp;max inf<sub><i>w</i>∈𝒲</sub> <i>J</i><br>DRO: &nbsp;max inf<sub>ℙ∈𝒫</sub> 𝔼<sub>ℙ</sub>[<i>J</i>], &nbsp;𝒫 = { ℙ : <i>W</i><sub><i>p</i></sub>(ℙ, ℙ̂<sub><i>N</i></sub>) ≤ ε }",
+   "theory": [
+    "Two-stage and multistage stochastic programmes are convex in the recourse structure but grow with the scenario tree, and their honest evaluation requires the sample-average approximation theory that bounds the optimality gap in <i>N</i>. Robust counterparts replace the tree with a set and, for ellipsoidal or polyhedral sets and affine dependence, give tractable conic reformulations of the same size as the nominal problem.",
+    "Distributionally robust optimization over a Wasserstein ball of radius ε is the formulation with the best statistical warrant: the radius can be calibrated to a finite-sample confidence level, the worst-case expectation admits a strong dual as a finite convex programme, and the resulting policies are provably regularized versions of the sample-average ones. It is the natural home for tail risk that is real but rare — cyber, regulatory, climate — where an empirical distribution is not to be believed and a point forecast is worse."
+   ],
+   "detail": [
+    "Sample-average approximation comes with an optimality-gap bound in <em>N</em> — report it.",
+    "Robust counterparts for ellipsoidal or polyhedral sets stay the same size as the nominal problem.",
+    "Wasserstein DRO: radius ε calibrates to a confidence level; the dual is a finite convex programme.",
+    "DRO policies are regularized sample-average policies — the connection is exact, not metaphorical.",
+    "Fuzzy and neuro-fuzzy treatment where the uncertainty is linguistic, not distributional."
+   ],
+   "refs": [
+    "Shapiro, Dentcheva & Ruszczyński (2021), <em>Lectures on Stochastic Programming</em>",
+    "Ben-Tal, El Ghaoui & Nemirovski (2009), <em>Robust Optimization</em>",
+    "Mohajerin Esfahani & Kuhn (2018), 'Data-driven DRO using the Wasserstein metric'"
+   ]
+  },
+  {
+   "id": "m-d",
+   "label": "D · Multi-criteria and decomposition",
+   "col": 7,
+   "order": 4,
+   "stage": "optimize",
+   "chapter": "Vol. II, Ch. 12",
+   "href": "chapters/v2ch12.html",
+   "axiom": "AXIOM-12",
+   "depth": "full",
+   "blurb": "Multi-objective optimization, Pareto frontiers, and decomposition and coordination across architectures and business units — the methods that handle the fact that five architectures do not share one criterion and one solver cannot see the whole state.",
+   "feeds": [
+    "out-roadmap"
+   ],
+   "formalHtml": "max { <i>J</i><sub>1</sub>(<i>u</i>), …, <i>J</i><sub><i>q</i></sub>(<i>u</i>) } &nbsp;·&nbsp; <i>u</i>* Pareto ⟺ ∄<i>u</i>: <i>J</i>(<i>u</i>) ⪰ <i>J</i>(<i>u</i>*), ≠<br>Lagrangian decomposition: &nbsp;max<sub><i>u</i></sub> Σ<sub><i>k</i></sub> [ <i>J</i><sub><i>k</i></sub> − ⟨λ, <i>A</i><sub><i>k</i></sub><i>u</i><sub><i>k</i></sub>⟩ ] + ⟨λ, <i>b</i>⟩",
+   "theory": [
+    "Scalarization by fixed weights is the default and it is lossy: weighted sums recover only the convex portion of the Pareto set, so genuinely attractive non-convex compromises are invisible to it. ε-constraint and reference-point methods recover the rest; the Chebyshev and achievement-scalarizing forms are the ones with a completeness guarantee. Choosing a point on the frontier is a governance act, and the framework's position is that it should be made explicitly, after the frontier is computed, not implicitly through weights chosen beforehand.",
+    "Decomposition is the structural counterpart. Dantzig–Wolfe and Benders split the programme by architecture or business unit and coordinate through prices or cuts; the subgradient-based dual coordination converges slowly but its iterates are interpretable — each λ is a transfer price that the units respond to. Non-convexity leaves a duality gap, and that gap is the formal reason a decentralized organization cannot always be coordinated by prices alone."
+   ],
+   "detail": [
+    "Weighted sums see only the convex part of the frontier; ε-constraint and Chebyshev methods see all of it.",
+    "Compute the frontier first, choose on it second — weights chosen beforehand hide the governance decision.",
+    "Dantzig–Wolfe and Benders coordinate architecture-level subproblems by prices or cuts.",
+    "Dual coordination prices are transfer prices: interpretable, and directly implementable as internal policy.",
+    "A duality gap is the formal reason prices alone cannot always coordinate a decentralized enterprise."
+   ],
+   "refs": [
+    "Miettinen (1999), <em>Nonlinear Multiobjective Optimization</em>",
+    "Conejo et al. (2006), <em>Decomposition Techniques in Mathematical Programming</em>",
+    "Lasdon (1970), <em>Optimization Theory for Large Systems</em>"
+   ]
+  },
+  {
+   "id": "m-e",
+   "label": "E · Intelligence layer",
+   "col": 7,
+   "order": 5,
+   "stage": "execute",
+   "chapter": "Vol. II, Ch. 13–14",
+   "href": "chapters/v2ch13.html",
+   "axiom": "AXIOM-13",
+   "depth": "full",
+   "blurb": "Machine learning, Markov decision processes, reinforcement learning, explainable AI and hybrid AI–optimization schemes: the layer that supplies function approximation and policy learning where the model is too large to solve exactly or too poorly specified to be trusted.",
+   "feeds": [
+    "out-twin"
+   ],
+   "formalHtml": "⟨ 𝒮, 𝒜, <i>P</i>(·|<i>s</i>,<i>a</i>), <i>r</i>, γ ⟩<br><i>Q</i>*(<i>s</i>,<i>a</i>) = <i>r</i> + γ 𝔼[ max<sub><i>a</i>′</sub> <i>Q</i>*(<i>s</i>′,<i>a</i>′) ] &nbsp;·&nbsp; π*(<i>s</i>) ∈ argmax<sub><i>a</i></sub> <i>Q</i>*",
+   "theory": [
+    "The MDP is the same object as the Bellman recursion above, restated so that <i>P</i> may be unknown and sampled rather than specified. What changes is the epistemic status of the answer: with a known model, dynamic programming returns a policy with an error bound; with a learned model or model-free learning, the guarantees are asymptotic or high-probability and depend on exploration, function-approximation error and the mismatch between training and deployment distributions. Policy-gradient and actor–critic methods converge to stationary points, not global optima, and off-policy evaluation is where most silent failure occurs.",
+    "For enterprise use, the framework's position is hybrid rather than substitutional. Learning is used where it is strong — approximating <i>V</i> or <i>Q</i> in high dimension, learning <i>F</i>'s residual structure, screening scenarios — while the constraint and viability structure stays in the optimizer, where it can be certified. Safe and constrained RL with shielding keeps the learned policy inside Viab(Ω), and explainability is a governance requirement here, since a policy no one can interrogate cannot be certified and therefore cannot be adopted."
+   ],
+   "detail": [
+    "An MDP is the Bellman recursion with <em>P</em> unknown and sampled — the mathematics is the same, the guarantees are not.",
+    "Policy gradient and actor–critic reach stationary points, not global optima; off-policy evaluation is the weak joint.",
+    "Hybrid by design: learning approximates value and residual dynamics, the optimizer keeps the constraints.",
+    "Constrained and shielded RL keeps learned policies inside the viability kernel.",
+    "Explainability is a certification requirement: an uninterrogable policy cannot be adopted."
+   ],
+   "refs": [
+    "Puterman (1994), <em>Markov Decision Processes</em>",
+    "Sutton & Barto (2018), <em>Reinforcement Learning</em>",
+    "Bertsekas (2019), <em>Reinforcement Learning and Optimal Control</em>"
+   ]
+  },
+  {
+   "id": "m-f",
+   "label": "F · Digital twin and autonomy",
+   "col": 7,
+   "order": 6,
+   "stage": "execute",
+   "chapter": "Vol. II, Ch. 15",
+   "href": "chapters/v2ch15.html",
+   "axiom": "AXIOM-15",
+   "depth": "full",
+   "blurb": "The enterprise digital twin: state synchronization with the live enterprise, scenario simulation, model-predictive control for closed-loop adaptation, and an explicit autonomy envelope that says which decisions the twin may take unaided.",
+   "feeds": [
+    "out-twin",
+    "out-case"
+   ],
+   "formalHtml": "estimate: &nbsp;<i>x̂</i><sub><i>t</i>|<i>t</i>&thinsp;</sub> = 𝔼[<i>x</i><sub><i>t</i></sub> | ℱ<sub><i>t</i></sub><sup><i>y</i></sup>]<br>MPC: &nbsp;at each <i>t</i>, solve on [<i>t</i>, <i>t</i>+<i>H</i>], apply <i>u</i>*(<i>t</i>), re-solve at <i>t</i>+Δ",
+   "theory": [
+    "Receding-horizon control is where DCT becomes operational: the finite-horizon GEOP is re-solved as the state is re-estimated, and only the first action of each solution is used. Its stability is not automatic — the standard guarantee requires a terminal cost and terminal constraint set that are control-invariant, which is exactly the viability kernel material of Chapter 14 reappearing as a numerical device. Without that terminal ingredient, a well-tuned MPC controller can be recursively infeasible, which in enterprise terms is a plan that is optimal each quarter and cumulatively fatal.",
+    "Synchronization is a filtering problem: a Kalman filter where the linear-Gaussian structure holds, an unscented or particle filter where it does not. The twin's credibility rests on reporting the posterior spread, not the point estimate, and on tracking model drift — a twin that has silently stopped matching the enterprise is more dangerous than no twin, because it carries the authority of quantification. The autonomy envelope is the formal answer: state-dependent bounds within which the twin may act, outside which a human decision is required."
+   ],
+   "detail": [
+    "MPC re-solves the finite-horizon problem and applies only the first action — closed loop by construction.",
+    "Recursive feasibility needs a control-invariant terminal set: the viability kernel returning as a numerical device.",
+    "Synchronization is filtering — report the posterior spread, not just the point estimate.",
+    "Model drift detection is mandatory; an unnoticed stale twin carries unearned authority.",
+    "The autonomy envelope is state-dependent: inside it the twin acts, outside it a human decides."
+   ],
+   "refs": [
+    "Rawlings, Mayne & Diehl (2017), <em>Model Predictive Control</em>",
+    "Mayne et al. (2000), 'Constrained model predictive control: stability and optimality'",
+    "Särkkä (2013), <em>Bayesian Filtering and Smoothing</em>"
+   ]
+  },
+  {
+   "id": "out-roadmap",
+   "label": "Roadmaps and policy design",
+   "col": 8,
+   "order": 1,
+   "stage": "adapt",
+   "chapter": "Vol. II, Ch. 16",
+   "href": "chapters/v2ch16.html",
+   "axiom": "AXIOM-16",
+   "depth": "full",
+   "blurb": "Transformation roadmaps, sequencing decisions and policy design that follow from a solved GEOP rather than from workshop consensus — with the sequencing justified by operator non-commutativity and the phasing limited by the precedence graph.",
+   "theory": [
+    "A roadmap in this framework is the projection of an optimal policy onto the calendar, and it inherits two formal properties worth stating to a board. Sequencing is not a preference: because the operators do not commute, reordering two initiatives changes the terminal state, and the roadmap's order is a computed consequence of that algebra. Phasing is bounded: the strongly connected components of the precedence graph cannot be split across phases, so a roadmap that phases them anyway is not a slower plan but a different and infeasible one.",
+    "Timing carries option value. Where a transformation operator is irreversible and the environment is uncertain, the optimal policy generally waits longer than a net-present-value rule suggests, and the size of that delay is computable from the same value function that produced the roadmap."
+   ],
+   "detail": [
+    "Order is computed, not negotiated: non-commuting operators make sequencing a consequence of the algebra.",
+    "Phases cannot split a strongly connected block of the precedence graph.",
+    "Irreversibility plus uncertainty produces an optimal delay, quantifiable from the value function.",
+    "Every milestone traces to a constraint, a multiplier or a viability condition — not to a workshop."
+   ],
+   "refs": [
+    "Dixit & Pindyck (1994), <em>Investment under Uncertainty</em>",
+    "Topkis (1998), <em>Supermodularity and Complementarity</em>"
+   ]
+  },
+  {
+   "id": "out-capital",
+   "label": "Capital allocation and risk-adjusted strategy",
+   "col": 8,
+   "order": 2,
+   "stage": "adapt",
+   "chapter": "Vol. II, Ch. 16",
+   "href": "chapters/v2ch16.html",
+   "axiom": "AXIOM-16",
+   "depth": "full",
+   "blurb": "Allocation across the seven capitals, scenario analysis, and strategy stated with its risk adjustment attached rather than appended. The multipliers from the solved programme are the internal prices that make allocation decidable.",
+   "theory": [
+    "Allocation is read off the dual. The costate <i>p</i><sub><i>k</i></sub>(<i>t</i>) is the marginal value of capital <i>k</i> at time <i>t</i> in the objective's own units, so the allocation rule 'fund until marginal values equalize' is not an analogy here but the first-order condition itself, subject to the correction that binding constraints drive wedges between capitals that no budgeting process can arbitrage away.",
+    "Risk adjustment enters through the criterion, not afterwards. A programme optimized under expectation and then stress-tested is not the same object as a programme optimized under a coherent risk measure, and the two generally differ in allocation, not merely in reported risk. Stating which was done is part of the deliverable."
+   ],
+   "detail": [
+    "Costates are internal prices of capital; equalizing marginal values <em>is</em> the first-order condition.",
+    "Binding constraints drive permanent wedges between capitals — budgeting cannot arbitrage them away.",
+    "Optimizing under a coherent risk measure and stress-testing an expectation-optimal plan are different objects.",
+    "Scenario results are reported as conditional policies, not as a single adjusted number."
+   ],
+   "refs": [
+    "Rockafellar & Uryasev (2000), 'Optimization of Conditional Value-at-Risk'",
+    "Merton (1990), <em>Continuous-Time Finance</em>"
+   ]
+  },
+  {
+   "id": "out-twin",
+   "label": "Digital twin execution and AI/ML laboratory",
+   "col": 8,
+   "order": 3,
+   "stage": "monitor",
+   "chapter": "Vol. II, Ch. 15–16",
+   "href": "axiom.html",
+   "axiom": "AXIOM-15",
+   "depth": "full",
+   "blurb": "Running the twin against the live enterprise, with the AXIOM computational laboratory as the teaching and experimentation surface: the same model objects, exposed for students to perturb, re-solve and break.",
+   "theory": [
+    "The laboratory closes the loop from theory to evidence. A student changes a coupling coefficient and watches the spectral radius cross one; raises a covenant and watches the viability kernel shrink; switches the criterion from expectation to CVaR and watches the allocation move. These are the experiments that make the framework's claims falsifiable in a classroom rather than merely stated."
+   ],
+   "detail": [
+    "The same objects as the manuscript — state, operators, coupling register, GEOP — exposed for experiment.",
+    "Parameters that change conclusions are the ones worth teaching: ρ(<em>A</em>), ε, δ, the coupling coefficients.",
+    "Reproducibility is part of the pedagogy: pinned environment, seeded runs, saved scenario definitions."
+   ],
+   "refs": []
+  },
+  {
+   "id": "out-case",
+   "label": "Certified decisions and case studies",
+   "col": 8,
+   "order": 4,
+   "stage": "monitor",
+   "chapter": "Vol. II, Ch. 16",
+   "href": "chapters/v2ch16.html",
+   "axiom": "AXIOM-16",
+   "depth": "full",
+   "blurb": "Managerial decisions that carry their certificates with them, worked end to end through the Meridiam Industrial Group integrated case — the same decision taken twice, once with the certificate chain and once without, so the difference is visible.",
+   "theory": [
+    "A certified decision is a triple: the policy, the certificate chain that establishes it is admissible and stable, and the sensitivity statement that says which estimates it depends on. The case study exists to show that the third element is usually the one that changes the decision, and that a recommendation without it is an opinion with better notation."
+   ],
+   "detail": [
+    "A certified decision is policy plus certificate chain plus sensitivity statement — all three, or none.",
+    "The integrated case runs one decision with and without the chain to make the difference concrete.",
+    "What a board can audit: kernel membership, spectral condition, Lyapunov witness, value sensitivity."
+   ],
+   "refs": []
+  },
+  {
+   "id": "s-set",
+   "rail": true,
+   "order": 1,
+   "label": "Set theory",
+   "sub": "Sets, mappings",
+   "depth": "full",
+   "chapter": "Vol. I, Ch. 3",
+   "href": "chapters/v1ch03.html",
+   "blurb": "Sets, relations, mappings and correspondences: the vocabulary in which a state space, an admissible control set and a transformation operator can be defined at all. Nothing in DCT is stated before this layer, and two of its results are load-bearing rather than decorative.",
+   "feeds": [
+    "s-topological",
+    "r-state"
+   ],
+   "formalHtml": "<i>T</i> : <i>X</i> × <i>U</i> × <i>W</i> → <i>X</i> &nbsp;·&nbsp; <i>U</i> : <i>X</i> ⇉ <i>U</i> a correspondence<br>Gr(<i>U</i>) = { (<i>x</i>, <i>u</i>) : <i>u</i> ∈ <i>U</i>(<i>x</i>) } &nbsp;·&nbsp; 𝒫(<i>X</i>), &nbsp;<i>X</i><sup><i>Y</i></sup>, &nbsp;⊕, ⊗",
+   "theory": [
+    "Two set-theoretic facts do real work later. The axiom of choice, in its measurable form, is what lets a pointwise argmax be assembled into a policy: the Kuratowski–Ryll-Nardzewski selection theorem gives a measurable selector for a measurable closed-valued correspondence, and without it 'choose the best action in each state' need not define a measurable, hence implementable, policy. Zorn's lemma underlies the maximal-element arguments used for existence of undominated programmes.",
+    "Correspondences, not functions, are the right primitive for admissibility: <i>U</i>(<i>x</i>) is set-valued, and its regularity is stated as upper or lower hemicontinuity of the graph rather than continuity. Berge's maximum theorem then delivers what economics and control both need — continuity of the value function and upper hemicontinuity of the argmax correspondence — under compact-valued continuous <i>U</i> and continuous objective. Nearly every comparative-statics claim downstream is a corollary of Berge."
+   ],
+   "detail": [
+    "Correspondences, not functions, are the primitive for state-dependent admissibility.",
+    "Kuratowski–Ryll-Nardzewski: measurable selection is what makes a pointwise argmax an implementable policy.",
+    "Berge's maximum theorem: continuity of the value function, upper hemicontinuity of the argmax.",
+    "Cardinality and product structure fix what 'dimension' means before any norm is introduced."
+   ],
+   "refs": [
+    "Aliprantis & Border (2006), <em>Infinite Dimensional Analysis</em>, ch. 17–18",
+    "Berge (1963), <em>Topological Spaces</em>",
+    "Kuratowski & Ryll-Nardzewski (1965), 'A general theorem on selectors'"
+   ]
+  },
+  {
+   "id": "s-topological",
+   "rail": true,
+   "order": 2,
+   "label": "Topological spaces",
+   "sub": "Continuity",
+   "depth": "full",
+   "chapter": "Vol. I, Ch. 3",
+   "href": "chapters/v1ch03.html",
+   "blurb": "Neighbourhoods, open sets, continuity and convergence: what it means for a transformation operator to be continuous, for a trajectory to converge, and for a feasible set to be closed. The layer where stability first becomes expressible.",
+   "feeds": [
+    "s-hausdorff",
+    "s-metric",
+    "r-operator"
+   ],
+   "formalHtml": "τ ⊆ 𝒫(<i>X</i>) : ∅, <i>X</i> ∈ τ; &nbsp;∪<sub>α</sub><i>O</i><sub>α</sub> ∈ τ; &nbsp;<i>O</i><sub>1</sub> ∩ <i>O</i><sub>2</sub> ∈ τ<br><i>f</i> continuous ⟺ <i>f</i><sup>−1</sup>(<i>O</i>) open for all open <i>O</i>",
+   "theory": [
+    "Compactness is the property that matters most and it is genuinely topological: by Weierstrass, a continuous real functional on a compact set attains its supremum, which is the existence half of every optimization statement in the framework. In infinite dimensions — policy spaces, measure spaces — norm compactness fails and one works instead with the weak or weak-* topology, where Banach–Alaoglu restores compactness of the closed unit ball and direct methods in the calculus of variations become available.",
+    "Lower semicontinuity, not continuity, is the right hypothesis for minimization: the direct method requires only that the functional be sequentially lower semicontinuous along minimizing sequences in a topology in which sublevel sets are compact. This is exactly why relaxation and convexification appear in existence proofs for optimal control — the velocity set is convexified so that weak limits of minimizing sequences remain admissible."
+   ],
+   "detail": [
+    "Weierstrass on compact sets is the existence half of every optimization claim in DCT.",
+    "In infinite dimensions use weak-* topology and Banach–Alaoglu; norm compactness is unavailable.",
+    "Lower semicontinuity, not continuity, is the correct hypothesis for the direct method.",
+    "Closedness of Ω is a topological statement and is what makes the viability kernel well defined."
+   ],
+   "refs": [
+    "Munkres (2000), <em>Topology</em>",
+    "Aliprantis & Border (2006), <em>Infinite Dimensional Analysis</em>",
+    "Dacorogna (2008), <em>Direct Methods in the Calculus of Variations</em>"
+   ]
+  },
+  {
+   "id": "s-hausdorff",
+   "rail": true,
+   "order": 3,
+   "label": "Hausdorff spaces",
+   "sub": "Unique limits",
+   "depth": "full",
+   "chapter": "Vol. I, Ch. 3",
+   "href": "chapters/v1ch03.html",
+   "blurb": "Separation axioms. In a Hausdorff space limits are unique, so an enterprise trajectory cannot converge to two different states, and the phrase 'the steady state' refers to one object rather than to whichever the argument happens to need.",
+   "feeds": [
+    "s-metric"
+   ],
+   "formalHtml": "<i>x</i> ≠ <i>y</i> ⟹ ∃ <i>U</i> ∋ <i>x</i>, <i>V</i> ∋ <i>y</i> open, &nbsp;<i>U</i> ∩ <i>V</i> = ∅ &nbsp;(T<sub>2</sub>)<br>⟹ limits unique; compact subsets closed; diagonal closed in <i>X</i> × <i>X</i>",
+   "theory": [
+    "T<sub>2</sub> is cheap for the spaces DCT actually uses — every metric space is Hausdorff — but stating it is not pedantry, because two constructions leave the metric world. Quotient spaces from aggregation need not be Hausdorff: if the aggregation map does not separate distinct enterprise configurations, the quotient carries non-unique limits and 'the aggregate steady state' is ill defined. Spaces of sets under the Hausdorff distance, used for viability kernels, are Hausdorff only after restricting to closed sets, which is why the kernel is defined as the largest <em>closed</em> viable subset.",
+    "Beyond T<sub>2</sub>, normality (T<sub>4</sub>) is what gives Urysohn's lemma and hence the existence of the smooth bump functions and partitions of unity used to construct Lyapunov certificates and to patch local controllers into a global policy."
+   ],
+   "detail": [
+    "Unique limits: the precondition for 'the steady state' to name one object.",
+    "Aggregation quotients can fail Hausdorff — a formal warning about lossy aggregation.",
+    "Hausdorff distance on closed sets is why the viability kernel is defined as the largest closed viable subset.",
+    "Normality gives Urysohn and partitions of unity — the tools for patching local certificates into global ones."
+   ],
+   "refs": [
+    "Munkres (2000), <em>Topology</em>",
+    "Rockafellar & Wets (1998), <em>Variational Analysis</em>, ch. 4"
+   ]
+  },
+  {
+   "id": "s-metric",
+   "rail": true,
+   "order": 4,
+   "label": "Metric spaces",
+   "sub": "Distance",
+   "depth": "full",
+   "chapter": "Vol. I, Ch. 3",
+   "href": "chapters/v1ch03.html",
+   "blurb": "Distance between enterprise states: how far <em>x</em>(<em>t</em>) is from a target <em>x</em>*, whether it is getting closer, and at what rate. The layer at which convergence acquires a speed and fixed-point arguments become available.",
+   "feeds": [
+    "s-normed",
+    "f-language"
+   ],
+   "formalHtml": "<i>d</i> : <i>X</i> × <i>X</i> → ℝ<sub>+</sub>, &nbsp;<i>d</i>(<i>x</i>,<i>y</i>) = 0 ⟺ <i>x</i> = <i>y</i>, &nbsp;symmetry, &nbsp;triangle<br>contraction: <i>d</i>(<i>T x</i>, <i>T y</i>) ≤ <i>k d</i>(<i>x</i>,<i>y</i>), <i>k</i> &lt; 1 ⟹ unique fixed point",
+   "theory": [
+    "Banach's fixed-point theorem on a complete metric space is the workhorse: it gives existence and uniqueness of the fixed point, a constructive iteration, and the a-priori error bound <i>d</i>(<i>x</i><sub><i>n</i></sub>, <i>x</i>*) ≤ <i>k</i><sup><i>n</i></sup><i>d</i>(<i>x</i><sub>0</sub>, <i>x</i><sub>1</sub>)/(1−<i>k</i>). Value iteration in dynamic programming is precisely this theorem with <i>k</i> = β, which is why discounting is not a modelling convenience but the source of the convergence guarantee.",
+    "The choice of metric is a modelling act with consequences. Weighted and Bielecki-type metrics change which maps are contractions without changing the topology, and this is how unbounded or long-horizon problems are brought inside the contraction framework. On sets rather than points, the Hausdorff metric makes set-valued iterations converge — the basis for viability-kernel algorithms — and on probability measures the Wasserstein metric plays the same role, which is where distributionally robust optimization gets its geometry."
+   ],
+   "detail": [
+    "Banach fixed point: existence, uniqueness, a constructive scheme and an explicit error bound.",
+    "Value iteration is Banach with <em>k</em> = β; discounting is where the convergence rate comes from.",
+    "Weighted metrics turn non-contractions into contractions without changing the topology.",
+    "Hausdorff metric for set-valued iteration; Wasserstein metric for ambiguity sets over distributions."
+   ],
+   "refs": [
+    "Banach (1922)",
+    "Stokey & Lucas (1989), <em>Recursive Methods in Economic Dynamics</em>, ch. 3",
+    "Villani (2009), <em>Optimal Transport: Old and New</em>"
+   ]
+  },
+  {
+   "id": "s-normed",
+   "rail": true,
+   "order": 5,
+   "label": "Normed spaces",
+   "sub": "Magnitude",
+   "depth": "full",
+   "chapter": "Vol. I, Ch. 3",
+   "href": "chapters/v1ch03.html",
+   "blurb": "Norms give magnitude: the size of a state change, the effort in a control, the deviation from plan. Once magnitudes exist, so do growth bounds, Lipschitz constants and every quantitative stability estimate in the framework.",
+   "feeds": [
+    "s-banach",
+    "r-state"
+   ],
+   "formalHtml": "‖·‖ : <i>X</i> → ℝ<sub>+</sub>, &nbsp;‖α<i>x</i>‖ = |α|‖<i>x</i>‖, &nbsp;‖<i>x</i>+<i>y</i>‖ ≤ ‖<i>x</i>‖+‖<i>y</i>‖<br>‖<i>A</i>‖ = sup<sub>‖<i>x</i>‖=1</sub> ‖<i>Ax</i>‖ &nbsp;·&nbsp; ρ(<i>A</i>) ≤ ‖<i>A</i>‖, &nbsp;ρ(<i>A</i>) = lim ‖<i>A</i><sup><i>n</i></sup>‖<sup>1/<i>n</i></sup>",
+   "theory": [
+    "The operator norm and the spectral radius are different numbers and the difference is exactly the transient-amplification phenomenon that matters in coupled architectures. Gelfand's formula ρ(<i>A</i>) = lim ‖<i>A</i><sup><i>n</i></sup>‖<sup>1/<i>n</i></sup> says they agree asymptotically; for non-normal <i>A</i> they can differ substantially at finite <i>n</i>, so a system with ρ(<i>A</i>) < 1 can amplify a shock by orders of magnitude before decaying. Reporting only the spectral radius of the Architectural Jacobian is therefore an incomplete stability statement.",
+    "In finite dimensions all norms are equivalent, so the choice affects constants and not conclusions; in the infinite-dimensional policy spaces of Volume II it affects which sequences converge, and the choice becomes substantive. Dual norms are what give multipliers their magnitudes, which is why sensitivity bounds are always stated with respect to a specified pair."
+   ],
+   "detail": [
+    "Operator norm bounds the spectral radius; equality only in the limit (Gelfand).",
+    "Non-normal coupling: ρ(<em>A</em>) &lt; 1 with large transient amplification — report both numbers.",
+    "Finite dimensions: all norms equivalent. Policy spaces: the choice decides what converges.",
+    "Dual norms set the magnitude of multipliers, hence the units of every sensitivity bound."
+   ],
+   "refs": [
+    "Horn & Johnson (2013), <em>Matrix Analysis</em>",
+    "Trefethen & Embree (2005), <em>Spectra and Pseudospectra</em>"
+   ]
+  },
+  {
+   "id": "s-banach",
+   "rail": true,
+   "order": 6,
+   "label": "Banach / Hilbert spaces",
+   "sub": "Completeness",
+   "depth": "full",
+   "chapter": "Vol. I, Ch. 3",
+   "href": "chapters/v1ch03.html",
+   "blurb": "Completeness makes limits of approximating sequences exist; the inner product makes projection, orthogonality and least squares available. Together they are the setting in which every approximation scheme in Volume II is justified.",
+   "feeds": [
+    "s-manifolds",
+    "r-dyn",
+    "an-neumann"
+   ],
+   "formalHtml": "Banach: normed + complete &nbsp;·&nbsp; Hilbert: ⟨·,·⟩ with ‖<i>x</i>‖ = ⟨<i>x</i>,<i>x</i>⟩<sup>1/2</sup><br>projection: &nbsp;<i>x</i> = <i>P</i><sub><i>M</i></sub><i>x</i> ⊕ <i>P</i><sub><i>M</i><sup>⊥</sup></sub><i>x</i> &nbsp;·&nbsp; Neumann: (<i>I</i>−<i>A</i>)<sup>−1</sup> = Σ<sub><i>k</i>≥0</sub><i>A</i><sup><i>k</i></sup>, ‖<i>A</i>‖ &lt; 1",
+   "theory": [
+    "Completeness is what converts 'the iterates are getting closer to each other' into 'the iterates converge to something in the space' — Cauchy implies convergent. Every numerical scheme in the framework, from value iteration to Galerkin approximation of the HJB equation, relies on this, and the Neumann series that defines the enterprise multiplier converges in operator norm for the same reason.",
+    "Hilbert structure adds orthogonality and therefore the projection theorem: a closed convex set admits a unique nearest point, projections are non-expansive, and conditional expectation is exactly the orthogonal projection of L<sup>2</sup> onto the sub-σ-algebra generated by available information. That identification is the reason least-squares Monte Carlo works: the conditional continuation value is a projection, and regression estimates it. The Riesz representation theorem then identifies multipliers with elements of the space itself, which is what gives shadow prices their concrete form."
+   ],
+   "detail": [
+    "Cauchy ⟹ convergent: the licence for every approximation scheme used later.",
+    "Neumann series converges in operator norm when ‖<em>A</em>‖ &lt; 1 — the enterprise multiplier lives here.",
+    "Conditional expectation <em>is</em> orthogonal projection in L²; least-squares Monte Carlo follows directly.",
+    "Riesz representation gives multipliers a concrete form, hence interpretable shadow prices.",
+    "Projection onto a closed convex set is unique and non-expansive — the basis of proximal methods."
+   ],
+   "refs": [
+    "Luenberger (1969), <em>Optimization by Vector Space Methods</em>",
+    "Conway (1990), <em>A Course in Functional Analysis</em>",
+    "Longstaff & Schwartz (2001), 'Valuing American options by simulation'"
+   ]
+  },
+  {
+   "id": "s-manifolds",
+   "rail": true,
+   "order": 7,
+   "label": "Manifolds",
+   "sub": "Coordinates",
+   "depth": "full",
+   "chapter": "Vol. I, Ch. 3",
+   "href": "chapters/v1ch03.html",
+   "blurb": "Local coordinates on a curved state space, for the case where constraints make <em>X</em> something other than a flat vector space: simplices of shares, positive-definite covariance blocks, ratio and rotation constraints.",
+   "feeds": [
+    "a-esa"
+   ],
+   "formalHtml": "charts φ<sub>α</sub> : <i>U</i><sub>α</sub> → ℝ<sup><i>n</i></sup>, &nbsp;φ<sub>β</sub> ∘ φ<sub>α</sub><sup>−1</sup> smooth<br>trajectory: <i>ẋ</i>(<i>t</i>) ∈ <i>T</i><sub><i>x</i>(<i>t</i>)</sub><i>X</i> &nbsp;·&nbsp; constrained descent along geodesics",
+   "theory": [
+    "Where the admissible set is a smooth manifold, optimization should respect the geometry rather than penalize deviations from it: gradients become Riemannian gradients, straight-line steps become retractions or geodesics, and convergence theory carries over with curvature-dependent constants. Allocation vectors on a simplex, correlation and covariance blocks in the cone of positive-definite matrices, and rotation-like governance structures are the concrete DCT cases.",
+    "The tangent-space condition <i>ẋ</i> ∈ <i>T</i><sub><i>x</i></sub><i>X</i> is also the smooth ancestor of the viability tangency condition: viability theory replaces the tangent space of a manifold with the Clarke tangent cone of a merely closed set, which is what lets the same geometric idea survive kinks, corners and inequality constraints."
+   ],
+   "detail": [
+    "Simplices, positive-definite blocks and ratio constraints make <em>X</em> curved, not flat.",
+    "Riemannian gradients and retractions respect the constraint geometry instead of penalizing it.",
+    "The tangent-space condition is the smooth ancestor of the viability tangency condition.",
+    "Clarke tangent cones extend the same geometry to closed sets with kinks and corners."
+   ],
+   "refs": [
+    "Lee (2013), <em>Introduction to Smooth Manifolds</em>",
+    "Absil, Mahony & Sepulchre (2008), <em>Optimization Algorithms on Matrix Manifolds</em>",
+    "Rockafellar & Wets (1998), <em>Variational Analysis</em>"
+   ]
+  },
+  {
+   "id": "s-measure",
+   "rail": true,
+   "order": 8,
+   "label": "Measure, probability",
+   "sub": "Filtration",
+   "depth": "full",
+   "chapter": "Vol. I, Ch. 8",
+   "href": "chapters/v1ch08.html",
+   "blurb": "Measure-theoretic probability and filtrations: the only precise way to say what the enterprise knows and when. Everything about information, adaptedness and conditioning in DCT is a statement about σ-algebras.",
+   "feeds": [
+    "s-processes",
+    "r-dist",
+    "r-stoch"
+   ],
+   "formalHtml": "(Ω, ℱ, ℙ), &nbsp;{ℱ<sub><i>t</i></sub>}<sub><i>t</i>≥0</sub> ↑, &nbsp;usual conditions<br>𝔼[<i>Y</i>|ℱ<sub><i>t</i></sub>] : the ℱ<sub><i>t</i></sub>-measurable <i>Z</i> with ∫<sub><i>A</i></sub><i>Z</i> dℙ = ∫<sub><i>A</i></sub><i>Y</i> dℙ &nbsp;∀<i>A</i> ∈ ℱ<sub><i>t</i></sub>",
+   "theory": [
+    "The filtration is the formal content of 'information available at <i>t</i>', and requiring a control to be ℱ<sub><i>t</i></sub>-adapted is the formal content of 'no hindsight'. Conditional expectation is defined by the Radon–Nikodym theorem, and the tower property 𝔼[𝔼[·|ℱ<sub><i>s</i></sub>]|ℱ<sub><i>t</i></sub>] = 𝔼[·|ℱ<sub><i>t</i></sub>] for <i>t</i> ≤ <i>s</i> is exactly what makes the Bellman recursion legitimate — dynamic programming is the tower property applied to a value functional.",
+    "Two further results are used without ceremony and should not be. The Doob–Dynkin lemma identifies ℱ<sub><i>t</i></sub>-measurable random variables with measurable functions of the observed history, which is what licenses writing a policy as π(<i>t</i>, <i>x</i>). Girsanov's theorem allows a change of measure and is the machinery behind risk-neutral valuation and behind the entropic penalties used in robust control — where the ambiguity radius is a relative-entropy budget, the worst-case measure is an exponential tilt."
+   ],
+   "detail": [
+    "Adaptedness to ℱ<sub><em>t</em></sub> is the no-hindsight constraint; every implementable policy satisfies it.",
+    "The tower property is what makes the Bellman recursion legitimate — dynamic programming is iterated conditioning.",
+    "Doob–Dynkin licenses writing a policy as a measurable function of the observed state.",
+    "Girsanov change of measure underlies both risk-neutral valuation and entropic robust control.",
+    "Almost-sure statements: 'never breaches' means ℙ-a.s., and the null sets have to be named."
+   ],
+   "refs": [
+    "Williams (1991), <em>Probability with Martingales</em>",
+    "Folland (1999), <em>Real Analysis</em>",
+    "Hansen & Sargent (2008), <em>Robustness</em>"
+   ]
+  },
+  {
+   "id": "s-processes",
+   "rail": true,
+   "order": 9,
+   "label": "Stochastic processes",
+   "sub": "Brownian, jumps",
+   "depth": "full",
+   "chapter": "Vol. I, Ch. 8",
+   "href": "chapters/v1ch08.html",
+   "blurb": "Brownian motion, Poisson and jump processes, Lévy drivers and Markov chains: the concrete disturbance models the enterprise dynamics are driven by, each with a generator that determines the form of the optimality equation.",
+   "feeds": [
+    "r-stoch"
+   ],
+   "formalHtml": "d<i>x</i> = <i>b</i>(<i>x</i>,<i>u</i>)d<i>t</i> + σ(<i>x</i>,<i>u</i>)d<i>B</i><sub><i>t</i></sub> + ∫ γ(<i>x</i>,<i>z</i>) <i>Ñ</i>(d<i>t</i>,d<i>z</i>)<br>𝒜<sup><i>u</i></sup>φ = ⟨<i>b</i>, ∇φ⟩ + ½ tr(σσ<sup>⊤</sup>∇²φ) + ∫ [φ(<i>x</i>+γ) − φ(<i>x</i>) − ⟨γ, ∇φ⟩] ν(d<i>z</i>)",
+   "theory": [
+    "The generator is the bridge from process to equation: whichever driver is chosen, 𝒜<sup><i>u</i></sup> is what appears in the HJB equation, so the modelling choice of driver <em>is</em> the choice of which PDE or integro-differential equation must be solved. A pure diffusion gives a second-order parabolic equation; adding jumps gives a non-local integro-differential operator whose solutions are generally only viscosity solutions and whose numerical treatment differs in kind.",
+    "The Markov property is what makes the state sufficient and hence makes dynamic programming applicable; where it fails — path dependence through backlogs, reputation, or contracts with memory — the honest repairs are state augmentation or working with path-dependent equations. Semimartingale structure is the minimal requirement for Itô calculus, and heavy-tailed drivers with infinite variance break the moment conditions that expectation-based criteria silently assume."
+   ],
+   "detail": [
+    "The driver determines the generator, and the generator determines the optimality equation.",
+    "Jumps give a non-local operator and viscosity solutions — a different numerical problem, not a harder one.",
+    "The Markov property is what makes the state sufficient; path dependence is repaired by augmentation.",
+    "Heavy tails break the moment conditions that expectation criteria assume without saying so."
+   ],
+   "refs": [
+    "Karatzas & Shreve (1991), <em>Brownian Motion and Stochastic Calculus</em>",
+    "Protter (2005), <em>Stochastic Integration and Differential Equations</em>",
+    "Cont & Tankov (2004), <em>Financial Modelling with Jump Processes</em>"
+   ]
+  },
+  {
+   "id": "s-optcontrol",
+   "rail": true,
+   "order": 10,
+   "label": "Optimization, control",
+   "sub": "Multipliers",
+   "depth": "full",
+   "chapter": "Vol. II, Ch. 1–2",
+   "href": "chapters/v2ch01.html",
+   "blurb": "Objectives, constraints, multipliers and policies: the apparatus that turns the unified dynamics into a solvable problem. This is the rung of the stack on which GEOP itself stands.",
+   "feeds": [
+    "geop",
+    "m-b"
+   ],
+   "formalHtml": "ℋ(<i>x</i>, <i>u</i>, <i>p</i>, <i>t</i>) = <i>L</i>(<i>x</i>,<i>u</i>,<i>t</i>) + ⟨<i>p</i>, <i>F</i>(<i>x</i>,<i>u</i>,<i>t</i>)⟩<br><i>ṗ</i> = −∂ℋ/∂<i>x</i>, &nbsp;<i>p</i>(<i>T</i>) = ∇Φ(<i>x</i>(<i>T</i>)), &nbsp;<i>u</i>*(<i>t</i>) ∈ argmax<sub><i>u</i>∈<i>U</i></sub> ℋ",
+   "theory": [
+    "Multipliers are derivatives of the optimal value, and that identification is the single most useful fact in the apparatus: λ prices a constraint, the costate <i>p</i>(<i>t</i>) prices the state, and Danskin's theorem and the Milgrom–Segal envelope results say when those derivatives exist and how to compute them without re-solving. Where the value function is non-differentiable, subdifferentials replace gradients and the statements survive in Clarke's generalized form.",
+    "The maximum principle and dynamic programming are two faces of one object: under sufficient regularity <i>p</i>(<i>t</i>) = ∇<sub><i>x</i></sub><i>V</i>(<i>t</i>, <i>x</i>(<i>t</i>)) along the optimal path, so the costate is the gradient of the value function. Necessary conditions from the first route and sufficiency from the second are used together — a candidate is constructed from the maximum principle and then certified by a verification theorem."
+   ],
+   "detail": [
+    "Multipliers are value derivatives: λ prices a constraint, <em>p</em>(<em>t</em>) prices the state.",
+    "Danskin and the envelope theorem give those derivatives without re-solving the problem.",
+    "Costate = gradient of the value function along the optimal path; the two routes are one object.",
+    "Construct with the maximum principle, certify with a verification theorem.",
+    "Non-smoothness is handled by subdifferentials, not by assuming it away."
+   ],
+   "refs": [
+    "Clarke (1983), <em>Optimization and Nonsmooth Analysis</em>",
+    "Seierstad & Sydsæter (1987), <em>Optimal Control Theory with Economic Applications</em>",
+    "Milgrom & Segal (2002), 'Envelope theorems for arbitrary choice sets'"
+   ]
+  }
+ ],
+ "legend": [
+  {
+   "sym": "x(t)",
+   "def": "enterprise state vector"
+  },
+  {
+   "sym": "X",
+   "def": "state space"
+  },
+  {
+   "sym": "u(t)",
+   "def": "management controls and decisions"
+  },
+  {
+   "sym": "U",
+   "def": "admissible control space"
+  },
+  {
+   "sym": "w(t)",
+   "def": "environment and disturbance"
+  },
+  {
+   "sym": "W",
+   "def": "disturbance space"
+  },
+  {
+   "sym": "T",
+   "def": "transformation operator"
+  },
+  {
+   "sym": "θ",
+   "def": "model parameters"
+  },
+  {
+   "sym": "J[u]",
+   "def": "objective functional"
+  },
+  {
+   "sym": "Ω",
+   "def": "feasible region"
+  },
+  {
+   "sym": "Viab(Ω)",
+   "def": "viability kernel"
+  },
+  {
+   "sym": "A",
+   "def": "architectural Jacobian"
+  },
+  {
+   "sym": "ρ(A)",
+   "def": "spectral radius, stability indicator"
+  },
+  {
+   "sym": "S",
+   "def": "Neumann multiplier, long-run impact"
+  },
+  {
+   "sym": "V",
+   "def": "value function"
+  },
+  {
+   "sym": "λ, p",
+   "def": "multipliers and costates"
+  },
+  {
+   "sym": "A_S, A_T, A_C, A_P, A_R, U_E",
+   "def": "architecture objects"
+  }
+ ],
+ "spineNote": "Seven moves, left to right: the order in which DCT is taught and the order in which it is used. Click any move to read it.",
+ "railTitle": "Mathematical stack — what every object above is built out of",
+ "volumeMark": {
+  "afterCol": 6,
+  "left": "Volume I poses the problem",
+  "right": "Volume II solves it"
+ }
 }

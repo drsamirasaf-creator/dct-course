@@ -1,7 +1,7 @@
 /* ---------------------------------------------------------------
    The DCT Map — renderer and interaction layer
    Dependency-free. Reads assets/dct-map/map.json, draws an SVG
-   scene, and wires camera, tracing, guided tour and drawer.
+   scene, and wires panning, tracing, stage panels and the drawer.
    --------------------------------------------------------------- */
 
 (function () {
@@ -147,6 +147,21 @@
       role: "application",
       "aria-label": "Interactive map of the Dynamic Corporate Transformation framework"
     });
+    var defs = el("defs");
+    var lift = el("filter", { id: "dctmap-lift", x: "-20%", y: "-20%",
+                              width: "140%", height: "140%" });
+    lift.appendChild(el("feDropShadow", { dx: "0", dy: "3", stdDeviation: "5",
+                                         "flood-color": "#0F1E3D", "flood-opacity": "0.16" }));
+    defs.appendChild(lift);
+    [["dctmap-arrow", "edge-head"], ["dctmap-arrow-up", "edge-head is-up"],
+     ["dctmap-arrow-down", "edge-head is-down"]].forEach(function (pair) {
+      var mk = el("marker", { id: pair[0], viewBox: "0 0 10 10", refX: "9", refY: "5",
+                              markerWidth: "7", markerHeight: "7", orient: "auto-start-reverse" });
+      mk.appendChild(el("path", { "class": pair[1], d: "M0 1L9 5L0 9z" }));
+      defs.appendChild(mk);
+    });
+    svg.appendChild(defs);
+
     var scene = el("g", { "class": "dctmap__scene" });
     svg.appendChild(scene);
     frame.appendChild(svg);
@@ -165,53 +180,108 @@
 
     /* ---------- chrome: spine, band headers, rail band ---------- */
 
-    var segGap = 10;
+    /* Column zones: a faint wash behind each band so the eight stages of the
+       argument read as zones rather than as a field of loose boxes. */
+    var zoneTop = L.bandLabelY - 46;
+    var zoneBot = L.rail.top - 20;
+    data.bands.forEach(function (b) {
+      if (!(mainCols[b.col] || []).length) return;
+      var cx = L.colX0 + (b.col - 1) * L.colPitch;
+      var pad = (L.colPitch - L.nodeW) / 2 - 3;
+      gChrome.appendChild(el("rect", {
+        "class": "col-zone" + (b.col % 2 ? " is-odd" : ""),
+        x: cx - L.nodeW / 2 - pad, y: zoneTop,
+        width: L.nodeW + pad * 2, height: zoneBot - zoneTop, rx: 3 }));
+    });
+
+    /* The seven-move ribbon. */
+    var segGap = 8;
     var segW = (L.spine.w - segGap * (data.stages.length - 1)) / data.stages.length;
     var spineSegs = {};
     data.stages.forEach(function (st, i) {
       var x = L.spine.x0 + i * (segW + segGap);
       var g = el("g", { "class": "spine-seg", tabindex: "0", role: "button",
-                        "aria-label": "Stage: " + st.verb + ". " + st.gloss });
-      g.appendChild(el("rect", { "class": "spine-box", x: x, y: L.spine.y, width: segW, height: L.spine.h }));
-      g.appendChild(el("text", { "class": "spine-verb", x: x + segW / 2, y: L.spine.y + L.spine.h / 2 + 10,
-                                 "text-anchor": "middle" }, st.verb));
+                        "aria-label": "Move " + (i + 1) + ": " + st.verb + ". " + st.gloss });
+      g.appendChild(el("rect", { "class": "spine-box", x: x, y: L.spine.y,
+                                 width: segW, height: L.spine.h, rx: 2 }));
+      g.appendChild(el("rect", { "class": "spine-keel", x: x, y: L.spine.y + L.spine.h - 3,
+                                 width: segW, height: 3 }));
+      g.appendChild(el("text", { "class": "spine-verb", x: x + segW / 2,
+                                 y: L.spine.y + L.spine.h / 2 + 12, "text-anchor": "middle" }, st.verb));
       gChrome.appendChild(g);
       if (i < data.stages.length - 1) {
         var ax = x + segW + segGap / 2;
         gChrome.appendChild(el("path", { "class": "spine-arrow",
-          d: "M" + (ax - 4) + " " + (L.spine.y + L.spine.h / 2 - 5) + "l7 5l-7 5z" }));
+          d: "M" + (ax - 5) + " " + (L.spine.y + L.spine.h / 2 - 7) + "l9 7l-9 7z" }));
       }
       spineSegs[st.id] = g;
-      g.addEventListener("click", function () { toggleStage(st.id); });
+      g.addEventListener("click", function (e) { e.stopPropagation(); toggleStage(st.id); });
       g.addEventListener("keydown", function (e) {
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleStage(st.id); }
       });
     });
-    var glossText = el("text", { "class": "spine-gloss", x: L.spine.x0, y: L.spine.y + L.spine.h + 26 },
-      "Seven moves, left to right: the order in which DCT is taught and the order in which it is used.");
+    var spineNote = data.spineNote ||
+      "Seven moves, left to right: the order in which DCT is taught and the order in which it is used.";
+    var glossText = el("text", { "class": "spine-gloss", x: L.spine.x0, y: L.glossY }, spineNote);
     gChrome.appendChild(glossText);
+
+    /* One type size for all eight band titles, chosen as the largest at which
+       none of them wraps past two lines, and the rule placed under the tallest
+       of them — so a longer title can never run into its chapter line. */
+    var bandLadder = L.type.band || [32, 30, 28, 26];
+    var bandSize = bandLadder[bandLadder.length - 1], bandLines = {};
+    for (var bi = 0; bi < bandLadder.length; bi++) {
+      var trySize = bandLadder[bi], lines = {}, ok = true;
+      data.bands.forEach(function (b) {
+        lines[b.col] = wrap(b.title, Math.floor(L.nodeW / (trySize * 0.50)));
+        if (lines[b.col].length > 2) ok = false;
+      });
+      bandSize = trySize; bandLines = lines;
+      if (ok) break;
+    }
+    var bandRows = 1;
+    Object.keys(bandLines).forEach(function (k) {
+      bandRows = Math.max(bandRows, bandLines[k].length);
+    });
+    var bandStep = Math.round(bandSize * 1.22);
+    var whereY = L.bandLabelY + (bandRows - 1) * bandStep + 36;
+    var ruleY = whereY + 18;
 
     data.bands.forEach(function (b) {
       var cx = L.colX0 + (b.col - 1) * L.colPitch;
-      var list = (mainCols[b.col] || []);
-      if (!list.length) return;
+      if (!(mainCols[b.col] || []).length) return;
       var half = L.nodeW / 2;
-      wrap(b.title, 17).forEach(function (line, i) {
-        gChrome.appendChild(el("text", { "class": "band-title", x: cx - half,
-          y: L.bandLabelY + i * 32 }, line));
+      (bandLines[b.col] || [b.title]).forEach(function (line, i) {
+        var t = el("text", { "class": "band-title", x: cx - half, y: L.bandLabelY + i * bandStep }, line);
+        t.style.fontSize = bandSize + "px";
+        gChrome.appendChild(t);
       });
-      gChrome.appendChild(el("text", { "class": "band-where", x: cx - half, y: L.bandLabelY + 62 }, b.where));
+      gChrome.appendChild(el("text", { "class": "band-where", x: cx - half, y: whereY }, b.where));
       gChrome.appendChild(el("line", { "class": "band-rule",
-        x1: cx - half, y1: L.bandLabelY + 80, x2: cx + half, y2: L.bandLabelY + 80 }));
+        x1: cx - half, y1: ruleY, x2: cx + half, y2: ruleY }));
     });
 
-    var railTop = L.rail.y - 52;
-    gChrome.appendChild(el("rect", { "class": "rail-band", x: 120, y: railTop,
-      width: vbW - 240, height: 200, rx: 2 }));
-    gChrome.appendChild(el("text", { "class": "rail-title", x: L.rail.x0, y: railTop + 38 },
-      "Mathematical stack — what each object above is built out of"));
-    wrap(data.railNote, 230).forEach(function (line, i) {
-      gChrome.appendChild(el("text", { "class": "rail-note", x: L.rail.x0, y: L.rail.y + L.rail.h + 36 + i * 24 }, line));
+    /* Where Volume I hands over to Volume II. */
+    if (data.volumeMark) {
+      var vx = L.colX0 + (data.volumeMark.afterCol - 0.5) * L.colPitch;
+      gChrome.appendChild(el("line", { "class": "vol-rule", x1: vx, y1: zoneTop, x2: vx, y2: zoneBot }));
+      gChrome.appendChild(el("text", { "class": "vol-mark", x: vx - 14, y: L.glossY,
+        "text-anchor": "end" }, data.volumeMark.left));
+      gChrome.appendChild(el("text", { "class": "vol-mark", x: vx + 14, y: L.glossY },
+        data.volumeMark.right));
+    }
+
+    var railTop = L.rail.top;
+    var bandW = L.rail.bandW || (vbW - L.rail.bandX * 2);
+    gChrome.appendChild(el("rect", { "class": "rail-band", x: L.rail.bandX, y: railTop,
+      width: bandW, height: L.rail.band, rx: 3 }));
+    gChrome.appendChild(el("line", { "class": "rail-keel", x1: L.rail.bandX, y1: railTop,
+      x2: L.rail.bandX + bandW, y2: railTop }));
+    gChrome.appendChild(el("text", { "class": "rail-title", x: L.rail.x0, y: railTop + 42 },
+      data.railTitle || "Mathematical stack"));
+    wrap(data.railNote, 190).forEach(function (line, i) {
+      gChrome.appendChild(el("text", { "class": "rail-note", x: L.rail.x0,
+        y: L.rail.y + L.rail.h + 36 + i * 26 }, line));
     });
 
     /* ---------- edges ---------- */
@@ -239,6 +309,7 @@
               " " + x2 + " " + t.cy;
         }
         var p = el("path", { "class": cls, d: d });
+        if (!s.rail) p.setAttribute("marker-end", "url(#dctmap-arrow)");
         p.__from = s.id; p.__to = t.id;
         gEdges.appendChild(p);
         edgeEls.push(p);
@@ -258,53 +329,64 @@
       g.appendChild(el("rect", { "class": "node-box", x: n.cx - n.w / 2, y: n.cy - n.h / 2,
         width: n.w, height: n.h, rx: 2 }));
 
-      var inner = n.w - 28;
-      var labelSize = hinge ? 30 : 24;
-      var labelLines = wrap(n.label, Math.floor(inner / (labelSize * 0.50)));
-      if (!hinge && labelLines.length > 3) labelLines = labelLines.slice(0, 3);
-      var lh = hinge ? 34 : 28;
-
-      var mathSize = hinge ? 19 : 20;
-      var mathLines;
-      if (n.svgMath) {
-        mathLines = [];
-        [].concat(n.svgMath).forEach(function (line) {
-          mathLines = mathLines.concat(wrap(line, Math.floor(inner / (mathSize * 0.60))));
-        });
-        if (!hinge) mathLines = mathLines.slice(0, 1);
-      } else {
-        var mathTxt = n.mathHtml ? stripTags(n.mathHtml) : (n.sub || "");
-        mathLines = mathTxt ? wrap(mathTxt, Math.floor(inner / (mathSize * 0.60))) : [];
-        mathLines = mathLines.slice(0, hinge ? 7 : 1);
-      }
-
-      var mlh = mathSize + 5;
+      var T = L.type;
+      var inner = n.w - (n.rail ? 20 : 28);
+      var ladder = n.rail ? T.railLabel : (hinge ? T.hinge : T.label);
+      var lhFactor = hinge ? T.hingeLh : T.labelLh;
       var mathCls = (n.mathHtml || n.svgMath) ? "node-math" : "node-sub";
-      var mathNSize = mathCls === "node-math" ? mathSize : 17;
+      var mathSize = mathCls === "node-math"
+        ? (hinge ? T.hingeMath : T.math)
+        : (n.rail ? T.railSub : T.sub);
+      var mathLh = Math.round(mathSize * T.mathLh);
       var chapTxt = n.chapter ? (n.chapter + (n.axiom ? "  ·  " + n.axiom : "")) : "";
 
-      /* Label, notation and the zoom-revealed chapter line all go into one
-         measured stack, so no two rows can ever be placed on top of one
-         another. Measure, drop from the bottom until it fits, then place. */
-      var rows = [];
-      labelLines.forEach(function (line) {
-        rows.push({ t: line, cls: "node-label", s: labelSize, lh: lh, gap: 0 });
-      });
-      mathLines.forEach(function (line, i) {
-        rows.push({ t: line, cls: mathCls, s: mathNSize, lh: mlh, gap: i === 0 ? 10 : 0 });
-      });
-      if (chapTxt) rows.push({ t: chapTxt, cls: "node-detail", s: 15, lh: 18, gap: 5 });
-
-      function stackH() {
-        return rows.reduce(function (a, r) { return a + r.lh + r.gap; }, 0);
+      function mathRows() {
+        var out = [];
+        if (n.svgMath) {
+          [].concat(n.svgMath).forEach(function (line) {
+            out = out.concat(wrap(line, Math.floor(inner / (mathSize * 0.60))));
+          });
+          if (!hinge) out = out.slice(0, 1);
+        } else {
+          var txt = n.mathHtml ? stripTags(n.mathHtml) : (n.sub || "");
+          out = txt ? wrap(txt, Math.floor(inner / (mathSize * 0.60))) : [];
+          out = out.slice(0, hinge ? 8 : 1);
+        }
+        return out;
       }
-      while (stackH() > n.h - 10 && rows.length > 1) rows.pop();
+      function buildRows(size) {
+        var lh = Math.round(size * lhFactor);
+        var out = wrap(n.label, Math.floor(inner / (size * 0.50))).map(function (t) {
+          return { t: t, cls: "node-label", s: size, lh: lh, gap: 0 };
+        });
+        mathRows().forEach(function (line, i) {
+          out.push({ t: line, cls: mathCls, s: mathSize, lh: mathLh, gap: i === 0 ? 9 : 0 });
+        });
+        return out;
+      }
+      function stackH(rs) {
+        return rs.reduce(function (a, r) { return a + r.lh + r.gap; }, 0);
+      }
 
-      var y = hinge ? (n.cy - n.h / 2 + 44) : (n.cy - stackH() / 2 + labelSize * 0.78);
+      /* Label and notation go into one measured stack, and the type steps down
+         the ladder until the whole stack fits the box. Nothing is truncated and
+         no two rows can be placed on top of one another. */
+      var cap = n.h - 12, rows = buildRows(ladder[0]);
+      for (var li = 1; li < ladder.length && stackH(rows) > cap; li++) rows = buildRows(ladder[li]);
+      while (stackH(rows) > cap && rows.length > 1) rows.pop();
+
+      /* The chapter line rides along only where there is genuine room for it. */
+      var chapLh = Math.round(T.chapter * T.chapterLh);
+      if (chapTxt && stackH(rows) + chapLh + 6 <= cap) {
+        rows.push({ t: chapTxt, cls: "node-detail", s: T.chapter, lh: chapLh, gap: 6 });
+      }
+
+      var y = n.cy - stackH(rows) / 2 + rows[0].s * 0.78;
       rows.forEach(function (r) {
         y += r.gap;
-        g.appendChild(notate(el("text", { "class": r.cls, x: n.cx, y: y,
-          "text-anchor": "middle" }), r.t, r.s));
+        var tx = el("text", { "class": r.cls, x: n.cx, y: y, "text-anchor": "middle" });
+        tx.style.fontSize = r.s + "px";
+        g.appendChild(notate(tx, r.t, r.s));
         y += r.lh;
       });
 
@@ -326,18 +408,27 @@
 
     function showTip(n, e) {
       tip.innerHTML = "";
-      tip.appendChild(h("strong", null, n.label));
-      tip.appendChild(document.createTextNode(
-        (n.blurb || "").split(". ").slice(0, 1).join(". ").slice(0, 180) + "."));
+      var st = h("strong");
+      st.innerHTML = notateHTML(n.label);
+      tip.appendChild(st);
+      var meta = [n.chapter, n.axiom].filter(Boolean).join("  \u00b7  ");
+      if (meta) tip.appendChild(h("span", "dctmap__tip-meta", meta));
+      var body = h("span");
+      body.innerHTML = stripTags(n.blurb || "").split(". ").slice(0, 1).join(". ").slice(0, 190) + ".";
+      tip.appendChild(body);
+      tip.appendChild(h("span", "dctmap__tip-cue", "Click to open the full commentary"));
       tip.classList.add("is-on");
       moveTip(e);
     }
     function moveTip(e) {
       var r = frame.getBoundingClientRect();
-      var x = clamp(e.clientX - r.left + 14, 8, r.width - 340);
-      var y = clamp(e.clientY - r.top + 14, 8, r.height - 90);
-      tip.style.left = x + "px";
-      tip.style.top = y + "px";
+      var tw = tip.offsetWidth || 340, th = tip.offsetHeight || 140;
+      var px = e.clientX - r.left, py = e.clientY - r.top;
+      var x = px + 16, y = py + 16;
+      if (x + tw > r.width - 10) x = px - tw - 16;     /* flip left  */
+      if (y + th > r.height - 10) y = py - th - 16;    /* flip above */
+      tip.style.left = clamp(x, 10, Math.max(10, r.width - tw - 10)) + "px";
+      tip.style.top = clamp(y, 10, Math.max(10, r.height - th - 10)) + "px";
     }
     function hideTip() { tip.classList.remove("is-on"); }
 
@@ -382,17 +473,6 @@
       return p.matrixTransform(m);
     }
 
-    svg.addEventListener("wheel", function (e) {
-      e.preventDefault();
-      var p = toScene(e);
-      var k2 = clamp(cam.k * (e.deltaY < 0 ? 1.12 : 1 / 1.12), 0.55, 3.2);
-      var r = k2 / cam.k;
-      cam.x = p.x - (p.x - cam.x) * r;
-      cam.y = p.y - (p.y - cam.y) * r;
-      cam.k = k2;
-      apply();
-    }, { passive: false });
-
     var drag = null;
     svg.addEventListener("pointerdown", function (e) {
       if (e.target.closest && e.target.closest(".node, .spine-seg")) return;
@@ -409,7 +489,7 @@
     svg.addEventListener("pointerup", function () { drag = null; svg.classList.remove("is-dragging"); });
     svg.addEventListener("pointercancel", function () { drag = null; svg.classList.remove("is-dragging"); });
     svg.addEventListener("click", function (e) {
-      if (!(e.target.closest && e.target.closest(".node"))) clearSelection();
+      if (!(e.target.closest && e.target.closest(".node, .spine-seg"))) clearSelection();
     });
 
     /* ---------- selection and tracing ---------- */
@@ -470,49 +550,73 @@
 
     /* ---------- drawer ---------- */
 
-    function openDrawer(n) {
-      drawer.innerHTML = "";
+    function rich(tag, cls, html) {
+      var n = h(tag, cls);
+      n.innerHTML = html;
+      return n;
+    }
+    function section(body, label) {
+      body.appendChild(h("h3", null, label));
+    }
+    function drawerHead(titleHtml, metaText, onClose) {
       var head = h("div", "dctmap__drawer-head");
       var titleWrap = h("div");
-      var t = h("h2", "dctmap__drawer-title");
-      t.innerHTML = notateHTML(n.label);
-      titleWrap.appendChild(t);
-      var stage = (data.stages.filter(function (s) { return s.id === n.stage; })[0] || {}).verb;
-      var meta = [n.chapter, n.axiom, stage].filter(Boolean).join("  ·  ");
-      if (meta) titleWrap.appendChild(h("div", "dctmap__meta", meta));
+      titleWrap.appendChild(rich("h2", "dctmap__drawer-title", titleHtml));
+      if (metaText) titleWrap.appendChild(h("div", "dctmap__meta", metaText));
       head.appendChild(titleWrap);
-      var close = h("button", "dctmap__drawer-close", "×");
+      var close = h("button", "dctmap__drawer-close", "\u00d7");
       close.setAttribute("aria-label", "Close panel");
-      close.addEventListener("click", clearSelection);
+      close.addEventListener("click", onClose);
       head.appendChild(close);
-      drawer.appendChild(head);
+      return head;
+    }
+    function typeset() {
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        try { window.MathJax.typesetPromise([drawer]); } catch (e) { /* no-op */ }
+      }
+    }
+    function openDrawer(n) {
+      drawer.innerHTML = "";
+      drawer.classList.remove("is-stage");
+      var stage = (data.stages.filter(function (s) { return s.id === n.stage; })[0] || {}).verb;
+      var meta = [n.chapter, n.axiom, stage].filter(Boolean).join("  \u00b7  ");
+      drawer.appendChild(drawerHead(notateHTML(n.label), meta, clearSelection));
 
       var body = h("div", "dctmap__drawer-body");
-      if (n.mathHtml) {
-        var m = h("div", "dctmap__math");
-        m.innerHTML = n.mathHtml;
-        body.appendChild(m);
+      var formal = n.formalHtml || n.mathHtml;
+      if (formal) body.appendChild(rich("div", "dctmap__math", formal));
+      if (n.blurb) body.appendChild(rich("p", "dctmap__lede", n.blurb));
+
+      if (n.theory && n.theory.length) {
+        section(body, "Development");
+        n.theory.forEach(function (para) { body.appendChild(rich("p", null, para)); });
       }
-      if (n.blurb) body.appendChild(h("p", null, n.blurb));
       if (n.detail && n.detail.length) {
+        section(body, "Key points");
         var ul = h("ul");
-        n.detail.forEach(function (d) { ul.appendChild(h("li", null, d)); });
+        n.detail.forEach(function (d) { ul.appendChild(rich("li", null, d)); });
         body.appendChild(ul);
       }
+      if (n.refs && n.refs.length) {
+        section(body, "Canonical sources");
+        var ol = h("ul", "dctmap__refs");
+        n.refs.forEach(function (r) { ol.appendChild(rich("li", null, r)); });
+        body.appendChild(ol);
+      }
       if (n.depth === "outline") {
-        body.appendChild(h("p", "dctmap__meta", "Outline entry — full commentary still to be written."));
+        body.appendChild(h("p", "dctmap__meta", "Outline entry \u2014 full commentary still to be written."));
       }
 
       if (n.prereqs.length) {
-        body.appendChild(h("h3", null, "Depends on"));
+        section(body, "Depends on");
         body.appendChild(chips(n.prereqs, "up"));
       }
       if (n.feeds.length) {
-        body.appendChild(h("h3", null, "Feeds into"));
+        section(body, "Feeds into");
         body.appendChild(chips(n.feeds, "down"));
       }
       if (n.href) {
-        body.appendChild(h("h3", null, "Read it"));
+        section(body, "Read it");
         var links = h("div", "dctmap__links");
         var a = h("a", null, n.chapter ? "Open " + n.chapter : "Open the chapter");
         a.href = n.href;
@@ -526,6 +630,46 @@
       }
       drawer.appendChild(body);
       drawer.classList.add("is-open");
+      drawer.scrollTop = 0;
+      typeset();
+    }
+
+    /* ---------- stage drawer: the seven moves, read one at a time ---------- */
+
+    function openStageDrawer(st) {
+      var i = data.stages.map(function (s) { return s.id; }).indexOf(st.id);
+      drawer.innerHTML = "";
+      drawer.classList.add("is-stage");
+      drawer.appendChild(drawerHead(st.verb,
+        "Move " + (i + 1) + " of 7  \u00b7  " + (st.question || st.gloss),
+        function () { toggleStage(st.id); }));
+
+      var body = h("div", "dctmap__drawer-body");
+      if (st.formalHtml) body.appendChild(rich("div", "dctmap__math", st.formalHtml));
+      if (st.blurb) body.appendChild(rich("p", "dctmap__lede", st.blurb));
+      if (st.theory && st.theory.length) {
+        section(body, "Development");
+        st.theory.forEach(function (para) { body.appendChild(rich("p", null, para)); });
+      }
+      if (st.detail && st.detail.length) {
+        section(body, "What this move requires");
+        var ul = h("ul");
+        st.detail.forEach(function (d) { ul.appendChild(rich("li", null, d)); });
+        body.appendChild(ul);
+      }
+      if (st.handsOn) {
+        section(body, "What it hands to the next move");
+        body.appendChild(rich("p", "dctmap__handson", st.handsOn));
+      }
+      var members = nodes.filter(function (n) { return n.stage === st.id; });
+      if (members.length) {
+        section(body, "Objects introduced here");
+        body.appendChild(chips(members.map(function (n) { return n.id; }), "stage"));
+      }
+      drawer.appendChild(body);
+      drawer.classList.add("is-open");
+      drawer.scrollTop = 0;
+      typeset();
     }
     function chips(ids, kind) {
       var box = h("div", "dctmap__chips");
@@ -534,10 +678,7 @@
         if (!n) return;
         var b = h("button", "dctmap__chip dctmap__chip--" + kind);
         b.innerHTML = notateHTML(n.label);
-        b.addEventListener("click", function () {
-          select(id);
-          easeTo(fitTo(boxOf([n]), 300), 420);
-        });
+        b.addEventListener("click", function () { select(id); });
         box.appendChild(b);
       });
       return box;
@@ -554,54 +695,16 @@
       closeDrawer();
       paint();
       var st = data.stages.filter(function (s) { return s.id === activeStage; })[0];
-      glossText.textContent = st
-        ? st.verb + " — " + st.gloss
-        : "Seven moves, left to right: the order in which DCT is taught and the order in which it is used.";
+      glossText.textContent = st ? st.verb + " — " + st.gloss : spineNote;
+      if (st) openStageDrawer(st);
       if (activeStage) {
-        var list = nodes.filter(function (n) { return n.stage === activeStage; });
-        if (list.length) easeTo(fitTo(boxOf(list), 120));
         history.replaceState(null, "", "#stage=" + activeStage);
       } else {
-        easeTo({ k: 1, x: 0, y: 0 });
         history.replaceState(null, "", location.pathname + location.search);
       }
     }
 
-    /* ---------- guided tour ---------- */
-
-    var tour = null;
-    function startTour() {
-      stopTour();
-      var i = 0;
-      tourBtn.textContent = "Stop tour";
-      tourBtn.classList.add("is-on");
-      activeStage = null;
-      (function next() {
-        if (i >= data.stages.length) { stopTour(); easeTo({ k: 1, x: 0, y: 0 }); return; }
-        activeStage = data.stages[i].id;
-        var st = data.stages[i];
-        glossText.textContent = st.verb + " — " + st.gloss;
-        paint();
-        var list = nodes.filter(function (n) { return n.stage === st.id; });
-        if (list.length) easeTo(fitTo(boxOf(list), 120));
-        i++;
-        tour = setTimeout(next, REDUCED ? 1400 : 3600);
-      })();
-    }
-    function stopTour() {
-      if (tour) clearTimeout(tour);
-      tour = null;
-      tourBtn.textContent = "Play the seven moves";
-      tourBtn.classList.remove("is-on");
-    }
-
     /* ---------- control bar ---------- */
-
-    var g1 = h("div", "dctmap__bar-group");
-    var tourBtn = h("button", "dctmap__btn dctmap__btn--play", "Play the seven moves");
-    tourBtn.addEventListener("click", function () { tour ? stopTour() : startTour(); });
-    g1.appendChild(tourBtn);
-    bar.appendChild(g1);
 
     var g2 = h("div", "dctmap__bar-group");
     [["Volume I", 1], ["Volume II", 2]].forEach(function (pair) {
@@ -612,8 +715,6 @@
         Array.prototype.forEach.call(g2.children, function (c) { c.setAttribute("aria-pressed", "false"); });
         b.setAttribute("aria-pressed", volFilter ? "true" : "false");
         paint();
-        var list = nodes.filter(function (n) { return !volFilter || n.vol === volFilter; });
-        easeTo(volFilter ? fitTo(boxOf(list), 100) : { k: 1, x: 0, y: 0 });
       });
       g2.appendChild(b);
     });
@@ -624,7 +725,7 @@
     mathBtn.addEventListener("click", function () { easeTo(fitTo(boxOf(rail), 90)); });
     g3.appendChild(mathBtn);
     var geopBtn = h("button", "dctmap__btn", "Jump to GEOP");
-    geopBtn.addEventListener("click", function () { select("geop"); easeTo(fitTo(boxOf([byId.geop]), 260)); });
+    geopBtn.addEventListener("click", function () { select("geop"); });
     g3.appendChild(geopBtn);
     bar.appendChild(g3);
 
@@ -640,19 +741,21 @@
     });
     var resetBtn = h("button", "dctmap__btn", "Reset view");
     resetBtn.addEventListener("click", function () {
-      stopTour(); volFilter = null; activeStage = null;
+      volFilter = null; activeStage = null;
       Array.prototype.forEach.call(g2.children, function (c) { c.setAttribute("aria-pressed", "false"); });
       clearSelection();
-      glossText.textContent = "Seven moves, left to right: the order in which DCT is taught and the order in which it is used.";
+      glossText.textContent = spineNote;
       easeTo({ k: 1, x: 0, y: 0 });
     });
     g4.appendChild(resetBtn);
     bar.appendChild(g4);
 
-    bar.appendChild(h("span", "dctmap__hint", "Click a box to trace what it needs and what it feeds. Scroll to zoom, drag to pan."));
+    bar.appendChild(h("span", "dctmap__hint", "Click a box to trace what it needs and what it feeds. Click a move along the top to read that stage. Drag to pan."));
 
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") { clearSelection(); stopTour(); }
+      if (e.key === "Escape") {
+        if (activeStage) { toggleStage(activeStage); } else { clearSelection(); }
+      }
     });
 
     /* ---------- legend ---------- */
@@ -671,6 +774,14 @@
     /* ---------- mobile list ---------- */
 
     var list = h("div", "dctmap__list");
+    list.appendChild(h("h3", "dctmap__list-band", "The seven moves"));
+    list.appendChild(h("div", "dctmap__list-where", "The order in which DCT is taught and used"));
+    data.stages.forEach(function (st) {
+      list.appendChild(listItem({
+        label: st.verb, chapter: null, mathHtml: st.formalHtml,
+        blurb: st.blurb, theory: st.theory, detail: st.detail
+      }));
+    });
     data.bands.forEach(function (b) {
       var group = (mainCols[b.col] || []);
       if (!group.length) return;
@@ -696,11 +807,19 @@
         m.innerHTML = n.mathHtml;
         body.appendChild(m);
       }
-      if (n.blurb) body.appendChild(h("p", null, n.blurb));
+      if (n.blurb) { var bl = h("p"); bl.innerHTML = n.blurb; body.appendChild(bl); }
+      (n.theory || []).forEach(function (para) {
+        var pp = h("p"); pp.innerHTML = para; body.appendChild(pp);
+      });
       if (n.detail) {
         var ul = h("ul");
-        n.detail.forEach(function (x) { ul.appendChild(h("li", null, x)); });
+        n.detail.forEach(function (x) { var li = h("li"); li.innerHTML = x; ul.appendChild(li); });
         body.appendChild(ul);
+      }
+      if (n.refs && n.refs.length) {
+        var rl = h("ul", "dctmap__refs");
+        n.refs.forEach(function (x) { var li = h("li"); li.innerHTML = x; rl.appendChild(li); });
+        body.appendChild(rl);
       }
       if (n.href) {
         var links = h("div", "dctmap__links");
@@ -717,11 +836,7 @@
 
     function fromHash() {
       var m = /#node=([\w-]+)/.exec(location.hash);
-      if (m && byId[m[1]]) {
-        select(m[1], true);
-        easeTo(fitTo(boxOf([byId[m[1]]]), 320), 0);
-        return;
-      }
+      if (m && byId[m[1]]) { select(m[1], true); return; }
       var s = /#stage=([\w-]+)/.exec(location.hash);
       if (s && spineSegs[s[1]]) toggleStage(s[1]);
     }

@@ -14,6 +14,7 @@ format:
         <script src="assets/dct-map/map.js" defer></script>
 ---
 
+::: {.dct-map-lede}
 Dynamic Corporate Transformation represents the enterprise as a dynamic system: an
 evolving state $x(t) \in X$, governed by transformation operators, resourced by a
 capital architecture, measured by a performance architecture, exposed through a risk,
@@ -22,13 +23,19 @@ steered by the General Enterprise Optimization Problem.
 
 The map below is that sentence, drawn. It runs left to right in dependency order, from
 the founding question to certified managerial action, over a rail of mathematical
-prerequisites. Click any box to see what it depends on and what it feeds; the rest of
-the map dims so the chain stands alone. Press *Play the seven moves* to walk the
-sequence the course itself follows.
+prerequisites. Click any box for its formal statement, its development and its
+canonical sources; the selected box reverses and the rest of the map dims so the
+dependency chain stands alone. Click any of the seven moves along the top to read that
+stage in full: the question it answers, what it requires, and what it hands to the move after it.
+:::
 
 ```{=html}
 <div id="dct-map" data-dct-map="true" data-src="assets/dct-map/map.json"></div>
 ```
 
-*Every box links to the chapter that develops it and to its AXIOM module. Boxes marked
-as outline entries are placeholders whose commentary is still being written.*
+::: {.dct-map-lede}
+*Every box links to the chapter that develops it and to its AXIOM module. The panels
+are written for a graduate and research audience: the mathematical stack along the
+bottom is stated at the level a referee would expect, not at the level a first course
+would need.*
+:::
